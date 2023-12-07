@@ -1,7 +1,6 @@
-# Bootstrap 5 + WebPack 5 = Boilerplate
+# Seacloud Bootstrap 5
 
-This is a professional front-end template for building web apps and sites faster, without having to create the basic
-setup on your own, every time you start a new project.
+This is a professional front-end for building Seacloud landungs.
 
 The template is based on the [Bootstrap Framework](http://getbootstrap.com/) in version 5 and
 uses [Webpack](https://webpack.js.org/) in version 5 as a flexible and modern module bundler. All common features for
@@ -33,42 +32,16 @@ and newer.
 1. Clone the repository into a new folder for your new project.
 
    ```bash
-   git clone git@github.com:noreading/bootstrap5-webpack-boilerplate.git my-project
-   ```
-2. Remove the .git directory to add your own CVS later.
-
-   ```bash
-   rm -rf .git
+   git clone https://github.com/ocarballido/seacloud-bootstrap.git
    ```
 
-3. Update the `package.json`.
-
-   ```JSON
-      {
-        "name": "my-project",
-        "description": "A description of my new project",
-        "author": "Your Name",
-        "license": "MIT"
-      }
-   ```
-
-4. Enable / Disable bootstrap features in `main.js`.
-
-   ```javascript
-   initBootstrap({
-     tooltip: true,
-     popover: true,
-     toasts: true,
-   });
-   ```
-
-5. Install needed dependencies
+2. Install needed dependencies
 
    ```bash
    npm install
    ```
 
-6. Run webpack
+3. Run webpack
 
    The `dev` command will start a dev server and watch for code changes in JS and SCSS files. Hot reloading is enabled, so
    that any change will be visible in your browser as you type.
@@ -592,3 +565,7 @@ boilerplate, please shoot me an email to code@dominik-hanke.de and I'll update i
     </tr>
   </tbody>
 </table>
+
+## 7. Also credits to:
+
+I want to give credict to [bootstrap5-webpack-boilerplate](https://github.com/noreading/bootstrap5-webpack-boilerplate).
