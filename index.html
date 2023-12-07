@@ -11,16 +11,11 @@
 <body>
 	<section class="fullwidth-carousel bg-white">
 		<div class="position-relative">
-			<!-- Carousel -->
-			<div id="carousel" class="carousel slide" data-ride="carousel" data-bs-touch="true" data-bs-interval="5000" data-bs-ride="carousel">
-				<div class="carousel-indicators dot-pagination">
-					<button type="button" data-bs-target="#carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-					<button type="button" data-bs-target="#carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
-					<button type="button" data-bs-target="#carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
-				</div>
-				<div class="carousel-inner">
-					<!-- Slide -->
-					<div class="carousel-item active">
+			<!-- Slider main container -->
+			<div class="swiper">
+				<!-- Additional required wrapper -->
+				<div class="swiper-wrapper">
+					<div class="swiper-slide">
 						<!-- Image -->
 						<img class="d-none d-md-block w-100" src="images/home/carousel-01.jpg" alt="First slide" />
 						<!-- /Image -->
@@ -32,13 +27,13 @@
 									<div class="col-md col-lg-6 d-md-none mobile-image d-flex align-items-center justify-content-center">
 										<img class="d-block w-100 h-100" src="images/home/carousel-01-content-img-mobile.jpg" alt="Second slide" />
 									</div>
-									<div class="col-md-10 col-lg-8 col-xl-5 bg-white">
-										<div class="px-5 py-5 text-center">
+									<div class="col-md-10 col-lg-8 col-xl-5 white-opacity-8">
+										<div class="px-5 py-5 text-center text-secondary">
 											<p class="display-4 mt-5 mb-3">Boutique</p>
-											<h4 class="text-primary">Hotels at Sea</h4>
-											<div class="divider my-3 bg-primary"></div>
+											<h4 class="">Hotels at Sea</h4>
+											<div class="divider my-3 bg-secondary"></div>
 											<p class="mb-5">Plush suites and deluxe staterooms are serene retreats at sea, with artful interiors, marble bathrooms with golden fixtures, and small sitting areas.</p>
-											<button class="btn btn-outline-primary btn-block-xs mb-4">More info</button>
+											<button class="btn btn-outline-secondary mb-4">More info</button>
 										</div>
 									</div>
 								</div>
@@ -46,10 +41,8 @@
 						</div>
 						<!-- /Content -->
 					</div>
-					<!-- /Slide -->
 
-					<!-- Slide -->
-					<div class="carousel-item">
+					<div class="swiper-slide">
 						<!-- Image -->
 						<img class="d-none d-md-block w-100" src="images/home/carousel-02.jpg" alt="Second slide" />
 						<!-- /Image -->
@@ -64,7 +57,7 @@
 											<h4 class="text-primary">Side of sailing</h4>
 											<div class="divider my-3 bg-primary"></div>
 											<p class="mb-5 text-white">Refined culinary creations complemented by fine wines and spirits take center stage on the SEA CLOUDS. Award-winning chefs, sommeliers, and champagne experts curate epicurean experiences at sea.</p>
-											<button class="btn btn-outline-primary btn-block-xs mb-4">More info</button>
+											<button class="btn btn-outline-primary mb-4">More info</button>
 										</div>
 									</div>
 									<div class="col-md col-lg-6 order-1 order-md-2 mobile-image d-flex align-items-center justify-content-center">
@@ -76,10 +69,7 @@
 						</div>
 						<!-- /Content -->
 					</div>
-					<!-- /Slide -->
-
-					<!-- Slide -->
-					<div class="carousel-item">
+					<div class="swiper-slide">
 						<!-- Image -->
 						<img class="d-none d-md-block w-100" src="images/home/carousel-03.jpg" alt="First slide" />
 						<!-- /Image -->
@@ -91,13 +81,13 @@
 									<div class="col-md col-lg-6 d-md-none mobile-image d-flex align-items-center justify-content-center">
 										<img class="d-block w-100 h-100" src="images/home/carousel-03-content-img-mobile.jpg" alt="Second slide" />
 									</div>
-									<div class="col-md-10 col-lg-8 col-xl-5 bg-white">
-										<div class="px-5 py-5 text-center">
-											<h4 class="text-primary mt-4 mb-3">Sea cloud</h4>
+									<div class="col-md-10 col-lg-8 col-xl-5 white-opacity-8">
+										<div class="px-5 py-5 text-center text-secondary">
+											<h4 class="mt-4 mb-3">Sea cloud</h4>
 											<p class="display-4 mb-3">Inclusives</p>
-											<div class="divider my-3 bg-primary"></div>
+											<div class="divider my-3 bg-secondary"></div>
 											<p class="mb-5">Extra comforts and exclusive experiences are all-included when sailing the luxury of the SEA CLOUDS. Enjoy a welcome bottle of champagne, daily fruit basket in suites and staterooms, open bar, gratuities, water sports, and more.</p>
-											<button class="btn btn-outline-primary btn-block-xs mb-4">More info</button>
+											<button class="btn btn-outline-secondary mb-4">More info</button>
 										</div>
 									</div>
 								</div>
@@ -105,10 +95,10 @@
 						</div>
 						<!-- /Content -->
 					</div>
-					<!-- /Slide -->
 				</div>
+				<!-- If we need pagination -->
+				<div class="swiper-pagination"></div>
 			</div>
-			<!-- /Carousel -->
 		</div>
 	</section>
 </body>

@@ -9,12 +9,14 @@
             max-height: unset;
         }
     }
-    .carousel {
+    .swiper {
         height: unset;
-        .carousel-inner {
+        .swiper-wrapper {
+            align-items: start;
             height: unset;
-            .carousel-item {
+            .swiper-slide {
                 height: unset;
+                overflow: hidden;
                 img {
                     height: unset;
                     object-fit: cover;
@@ -25,25 +27,21 @@
     }
 }
 
-.carousel-indicators {
-    bottom: unset;
-    margin-bottom: 1.5rem;
-    top: 460px;
-    &.dot-pagination {
-        button {
-            background-color: transparent;
-            background-clip: unset;
-            border: 1px solid white;
-            border-radius: 50%;
-            height: 12px;
-            margin-left: 5px;
-            margin-right: 5px;
+.swiper-pagination {
+    margin-bottom: 1rem;
+    .swiper-pagination-bullet {
+        background-color: transparent;
+        background-clip: unset;
+        border: 1px solid $primary;
+        border-radius: 50%;
+        height: 12px;
+        margin-left: 5px;
+        margin-right: 5px;
+        opacity: 1;
+        width: 12px;
+        &.swiper-pagination-bullet-active {
+            background-color: $primary;
             opacity: 1;
-            width: 12px;
-            &.active {
-                background-color: white;
-                opacity: 1;
-            }
         }
         &.primary {
             button {
@@ -71,11 +69,11 @@
                 max-height: unset;
             }
         }
-        .carousel {
+        .swiper {
             height: 100vh;
-            .carousel-inner {
+            .swiper-wrapper {
                 height: 100%;
-                .carousel-item {
+                .swiper-slide {
                     height: 100%;
                     img {
                         height: 100%;
@@ -85,10 +83,14 @@
             }
         }
     }
-    .carousel-indicators {
-        bottom: 0;
+    .swiper-pagination {
         margin-bottom: 2rem;
-        top: unset;
+        .swiper-pagination-bullet {
+            border: 1px solid white;
+            &.swiper-pagination-bullet-active {
+                background-color: white;
+            }
+        }
     }
 }
 @include media-breakpoint-up(lg) {
