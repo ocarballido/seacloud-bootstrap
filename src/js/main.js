@@ -24,10 +24,12 @@ initBootstrap({
 const swiper = new Swiper('.swiper', {
 	slidesPerView: 1,
 	spaceBetween: 0,
-	// autoplay: {
-    //     delay: 5000,
-    //     disableOnInteraction: false,
-    // },
+	speed: 750,
+	loop: true,
+	autoplay: {
+        delay: 5000,
+        disableOnInteraction: false,
+    },
 	pagination: {
 		el: '.swiper-pagination',
 		clickable: true,
