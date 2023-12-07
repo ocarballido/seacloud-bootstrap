@@ -1,6 +1,6 @@
 # Seacloud Bootstrap 5
 
-This is a professional front-end for building Seacloud landungs.
+This is a professional front-end for building Seacloud landings.
 
 The template is based on the [Bootstrap Framework](http://getbootstrap.com/) in version 5 and
 uses [Webpack](https://webpack.js.org/) in version 5 as a flexible and modern module bundler. All common features for
@@ -21,6 +21,7 @@ to make generating responsive images a breeze.
 1. [Adding Google Fonts](#4-adding-google-fonts)
 1. [Adding Responsive Images](#5-adding-responsive-images)
 1. [Image Credits](#6-image-credits)
+1. [Also Credits](#7-also-credits-to)
 
 ## 1. Requirements
 
