@@ -1,0 +1,11 @@
+// General styles
+@import "./general-styles";
+
+// Bootstrap components
+@import 'bootstrap/scss/carousel';
+
+// Custom components
+@import './components/carousel';
+@import './components/divider';
+
+// Custom pages styles

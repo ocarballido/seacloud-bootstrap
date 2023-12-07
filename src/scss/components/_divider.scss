@@ -1,0 +1,11 @@
+.divider {
+    display: inline-flex;
+    height: 1px;
+    min-width: 40px;
+    &.h-2 {
+        height: 2px;
+    }
+    &.center {
+        margin: 0 auto;
+    }
+}

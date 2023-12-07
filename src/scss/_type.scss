@@ -1,0 +1,53 @@
+// Type
+
+h1 {
+	letter-spacing: 4px;
+	text-transform: uppercase;
+}
+h2 {
+	letter-spacing: 4px;
+	text-transform: uppercase;
+}
+h3 {
+	letter-spacing: 3px;
+	text-transform: uppercase;
+}
+h4 {
+	letter-spacing: 3px;
+	text-transform: uppercase;
+}
+h5 {
+	letter-spacing: 2px;
+	text-transform: uppercase;
+}
+h6 {
+	letter-spacing: 2px;
+	text-transform: uppercase;
+}
+
+$sizes: 'primary', 'secondary';
+h1, h2, h3, h4, h5, h5 {
+	&.line-decoration {
+		padding-bottom: 16px;
+		position: relative;
+		&.text-primary {
+			&:before {
+				background-color: $primary;
+			}
+		}
+		&.text-secondary {
+			&:before {
+				background-color: $secondary;
+			}
+		}
+		&:before {
+			bottom: 0;
+			content: '';
+			display: block;
+			height: 1px;
+			left: calc(50% - 20px);
+			position: absolute;
+			width: 40px;
+		}
+	}
+}

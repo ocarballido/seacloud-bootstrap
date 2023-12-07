@@ -1,0 +1,93 @@
+// Colors
+
+$gray-900: #363636 !default;
+$gray-800: #4d4d4d !default;
+$gray-700: #626262 !default;
+$gray-600: #797979 !default;
+$gray-500: #8f8f8f !default;
+$gray-400: #a6a6a6 !default;
+$gray-300: #bcbcbc !default;
+$gray-200: #d2d2d2 !default;
+$gray-100: #e8e8e8 !default;
+$gray-50: #f5f5f5 !default;
+
+$white: #fff !default;
+$black: #000 !default;
+$gold: #d4b08d !default;
+$light-gold: #f0e4d8 !default;
+$seacloud-blue: #0e2050 !default;
+$dark-seacloud-blue: #161d3d !default;
+$light-seacloud-blue: #afdff9 !default;
+$soft-seacloud-blue: #e4f0f5 !default;
+
+$blue: #0063ea !default;
+$red: #ff0d52 !default;
+$orange: #f9a430 !default;
+$yellow: #fff700 !default;
+$green: #19ab65 !default;
+$cyan: #32aed2 !default;
+
+$primary: $gold !default;
+$secondary: $seacloud-blue !default;
+$light: $soft-seacloud-blue !default;
+
+$primary: $yellow !default;
+$secondary: $gray-200 !default;
+$success: $green !default;
+$info: $cyan !default;
+$warning: $orange !default;
+$danger: $red !default;
+
+$light: $gray-100 !default;
+$lighter: $gray-50 !default;
+$dark: #202020 !default;
+
+$theme-colors: (
+  'primary': $primary,
+  'secondary': $secondary,
+  'success': $success,
+  'info': $info,
+  'warning': $warning,
+  'danger': $danger,
+  'light': $light,
+  'dark': $dark,
+);
+
+// Custom color map
+$custom-colors: (
+  'light-gold': $light-gold,
+  'dark-seacloud-blue': $dark-seacloud-blue,
+  'light-seacloud-blue': $light-seacloud-blue,
+);
+
+$theme-colors: map-merge($theme-colors, $custom-colors);
+
+// Fonts
+$font-family-base: 'Roboto';
+$font-size-base: 1rem !default;
+$font-weight-base: 300 !default;
+
+$headings-font-family: 'Libre Baskerville';
+$headings-font-weight: 300;
+$headings-color: $seacloud-blue;
+
+$display-font-family: 'Amalfi Coast';
+
+$h6-font-size: 1rem;
+$h5-font-size: 1.25rem;
+$h4-font-size: 1.563rem;
+$h3-font-size: 1.953rem;
+$h2-font-size: 2.441rem;
+$h1-font-size: 3.052rem;
+
+// Body
+$body-bg: $soft-seacloud-blue !default;
+$body-color: $seacloud-blue !default;
+
+// Borders
+$border-radius: 0;
+
+// Buttons
+$btn-font-size: 0.7rem;
+$btn-padding-y: 0.75rem;
+$btn-padding-x: 2rem;
