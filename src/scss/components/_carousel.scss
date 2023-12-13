@@ -1,4 +1,4 @@
-.fullwidth-carousel {
+.fullscreen-carousel {
     .content {
         position: relative;
         .container {
@@ -56,7 +56,7 @@
 
 // @include media-breakpoint-up(sm) { ... }
 @include media-breakpoint-up(md) {
-    .fullwidth-carousel {
+    .fullscreen-carousel {
         .content {
             left: 0;
             position: absolute;
@@ -94,7 +94,7 @@
     }
 }
 @include media-breakpoint-up(lg) {
-    .fullwidth-carousel {
+    .fullscreen-carousel {
         .content {
             .container {
                 max-width: 960px;
@@ -103,7 +103,7 @@
     }
 }
 @include media-breakpoint-up(xl) {
-    .fullwidth-carousel {
+    .fullscreen-carousel {
         .content {
             .container {
                 max-width: 1140px;
@@ -112,7 +112,7 @@
     }
 }
 @include media-breakpoint-up(xxl) {
-    .fullwidth-carousel {
+    .fullscreen-carousel {
         .content {
             .container {
                 max-width: 1320px;

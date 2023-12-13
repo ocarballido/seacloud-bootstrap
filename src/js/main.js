@@ -21,7 +21,23 @@ initBootstrap({
 });
 
 // Your app code
-const swiper = new Swiper('.swiper', {
+const heroCarousel = new Swiper('#home-hero', {
+	slidesPerView: 1,
+	spaceBetween: 0,
+	speed: 750,
+	loop: true,
+	autoplay: {
+        delay: 5000,
+        disableOnInteraction: false,
+    },
+	pagination: {
+		el: '.swiper-pagination',
+		clickable: true,
+	},
+	modules: [ Autoplay, Navigation, Pagination ],
+});
+
+const commonCarousel = new Swiper('.common-carousel', {
 	slidesPerView: 1,
 	spaceBetween: 0,
 	speed: 750,
