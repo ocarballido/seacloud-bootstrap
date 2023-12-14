@@ -28,6 +28,7 @@
 }
 
 // Media queries
+// Up
 @include media-breakpoint-up(sm) {
     .fullscreen-sm {
         height: 100vh;
@@ -49,5 +50,30 @@
     }
 }
 @include media-breakpoint-up(xxl) {
+    
+}
+
+// Down
+@include media-breakpoint-down(sm) {
+    .text-center-sm {
+        text-align: center;
+    }
+}
+@include media-breakpoint-down(md) {
+    .text-center-md {
+        text-align: center;
+    }
+}
+@include media-breakpoint-down(lg) {
+    .text-center-lg {
+        text-align: center;
+    }
+}
+@include media-breakpoint-down(xl) {
+    .text-center-xl {
+        text-align: center;
+    }
+}
+@include media-breakpoint-down(xxl) {
     
 }

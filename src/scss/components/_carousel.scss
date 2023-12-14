@@ -43,12 +43,15 @@
             background-color: $primary;
             opacity: 1;
         }
-        &.primary {
-            button {
-                border: 1px solid $primary;
-                &.active {
-                    background-color: $primary;
-                }
+    }
+    &.primary {
+        .swiper-pagination-bullet {
+            background-color: transparent;
+            background-clip: unset;
+            border: 1px solid $primary;
+            &.swiper-pagination-bullet-active {
+                background-color: $primary;
+                opacity: 1;
             }
         }
     }
