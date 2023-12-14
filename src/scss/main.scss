@@ -3,8 +3,10 @@
 
 // Bootstrap components
 @import 'bootstrap/scss/carousel';
+@import 'bootstrap/scss/card';
 
 // Custom components
+@import './components/card';
 @import './components/carousel';
 @import './components/divider';
 @import './utils';
@@ -93,6 +95,13 @@
     }
     .divider {
         background-color: $primary;
+    }
+}
+#highlights {
+    .swiper {
+        .swiper-slide {
+            max-width: 350px;
+        }
     }
 }
 

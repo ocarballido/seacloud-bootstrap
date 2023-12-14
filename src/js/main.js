@@ -52,3 +52,15 @@ const commonCarousel = new Swiper('.common-carousel', {
 	},
 	modules: [ Autoplay, Navigation, Pagination ],
 });
+
+const highlightsCarousel = new Swiper('#highlights-carousel', {
+	// slidesPerView: 4,
+	slidesPerView: "auto",
+	spaceBetween: 16,
+	centeredSlides: true,
+	pagination: {
+		el: ".swiper-pagination",
+		clickable: true,
+	},
+	modules: [ Autoplay, Navigation, Pagination ],
+});
