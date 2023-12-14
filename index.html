@@ -31,25 +31,28 @@
 		</nav>
 	</header>-->
 	<!-- Hero section -->
-	<section class="fullscreen-carousel bg-white position-relative">
+	<section id="hero-section" class="fullscreen-carousel fullscreen-section bg-white position-relative d-block d-md-flex align-items-center">
 		<!-- Slider main container -->
-		<div id="home-hero" class="swiper">
+		<div class="swiper home-hero-slider">
 			<!-- Slider Wrapper -->
 			<div class="swiper-wrapper">
 				<div class="swiper-slide">
 					<!-- Image -->
-					<img class="w-100" src="images/home/hero/hero-carousel-01.jpg" alt="First slide" />
+					<img class="w-100 d-none d-md-block" src="images/home/hero/hero-carousel-01.jpg" alt="First slide" />
+					<img class="w-100 d-block d-md-none" src="images/home/hero/hero-carousel-01-mobile.jpg" alt="First slide" />
 					<!-- /Image -->
 				</div>
 
 				<div class="swiper-slide">
 					<!-- Image -->
-					<img class="w-100" src="images/home/hero/hero-carousel-02.jpg" alt="Second slide" />
+					<img class="w-100 d-none d-md-block" src="images/home/hero/hero-carousel-02.jpg" alt="First slide" />
+					<img class="w-100 d-block d-md-none" src="images/home/hero/hero-carousel-02-mobile.jpg" alt="First slide" />
 					<!-- /Image -->
 				</div>
 				<div class="swiper-slide">
 					<!-- Image -->
-					<img class="w-100" src="images/home/hero/hero-carousel-03.jpg" alt="First slide" />
+					<img class="w-100 d-none d-md-block" src="images/home/hero/hero-carousel-03.jpg" alt="First slide" />
+					<img class="w-100 d-block d-md-none" src="images/home/hero/hero-carousel-03-mobile.jpg" alt="First slide" />
 					<!-- /Image -->
 				</div>
 			</div>
@@ -61,16 +64,17 @@
 		<!-- /Slider main container -->
 
 		<!-- Content -->
-		<div class="content z-1 w-100 h-100 d-flex align-items-center top-0 start-0 pointer-events-none">
+		<div class="hero-content w-100 d-flex align-items-center top-0 start-0 position-relative">
 			<div class="container">
 				<div class="row">
 					<div class="col-md-8 col-lg-5 col-xl-4">
-						<div class="px-5 py-5 text-center text-secondary">
+						<div class="px-5 py-5 text-center">
 							<p class="display-1 mt-5 mb-3">Black</p>
 							<h2 class="mb-0">Friday</h2>
 							<p class="lead text-uppercase letter-spacing-md">Sepecial offer</p>
 							<p class="mb-4">With our fantastic special offers you can save <strong>$up to $2,070 per person</strong> on selected cruises</p>
-							<button class="btn btn-secondary mb-4">View voyages</button>
+							<button class="btn btn-secondary d-none d-md-inline-block mb-4">View voyages</button>
+							<button class="btn btn-primary d-inline-block d-md-none mb-4">View voyages</button>
 						</div>
 					</div>
 				</div>

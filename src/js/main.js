@@ -21,7 +21,7 @@ initBootstrap({
 });
 
 // Your app code
-const heroCarousel = new Swiper('#home-hero', {
+const heroCarousel = new Swiper('.home-hero-slider', {
 	slidesPerView: 1,
 	spaceBetween: 0,
 	speed: 750,
