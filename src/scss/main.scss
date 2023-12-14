@@ -11,10 +11,6 @@
 
 // Custom pages styles
 #search-section {
-    // background-image: url("../images/home/search-section/search-bg.jpg");
-    // background-position: center;
-    // background-repeat: no-repeat;
-    // background-size: cover;
     position: relative;
     &:after {
         background-image: url("../images/home/search-section/search-bg.jpg");
@@ -55,6 +51,25 @@
     }
 }
 
+#celebrate {
+    background-image: none;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    .container {
+        max-width: unset;
+    }
+    .content {
+        background-color: $secondary;
+    }
+    .title {
+        color: $primary;
+    }
+    .divider {
+        background-color: $primary;
+    }
+}
+
 // Media queries
 @include media-breakpoint-up(sm) {
     #search-section {
@@ -67,8 +82,6 @@
 }
 @include media-breakpoint-up(md) {
     #search-section {
-        // background-position: center right;
-        // background-size: auto 100%;
         &:after {
             left: unset;
             right: 0;
@@ -88,6 +101,21 @@
             padding-right: 0.75rem;
         }
     }
+    #celebrate {
+        background-image: url("../images/home/celebrate/celebrate-bg.jpg");
+        .container {
+            max-width: 720px;
+        }
+        .content {
+            background-color: transparent;
+        }
+        .title {
+            color: white;
+        }
+        .divider {
+            background-color: white;
+        }
+    }
 }
 @include media-breakpoint-up(lg) {
     #search-section {
@@ -96,6 +124,11 @@
             max-width: 960px;
             padding-left: 0.75rem;
             padding-right: 0.75rem;
+        }
+    }
+    #celebrate {
+        .container {
+            max-width: 960px;
         }
     }
 }
@@ -108,6 +141,11 @@
             padding-right: 0.75rem;
         }
     }
+    #celebrate {
+        .container {
+            max-width: 1140px;
+        }
+    }
 }
 @include media-breakpoint-up(xxl) {
     #search-section {
@@ -116,6 +154,11 @@
             max-width: 1320px;
             padding-left: 0.75rem;
             padding-right: 0.75rem;
+        }
+    }
+    #celebrate {
+        .container {
+            max-width: 1320px;
         }
     }
 }

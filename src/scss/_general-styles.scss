@@ -44,3 +44,30 @@
 @import './type';
 
 // 9. Custom code
+.half-width-image {
+    height: 100%;
+    object-fit: cover;
+    width: 100%;
+}
+.half-width-wraper {
+    box-shadow: inset 0 0 0 3rem #fff;
+}
+.half-width-content {
+    max-width: 400px;
+    padding: 3rem;
+    width: 100%;
+}
+.fullscreen-section {
+    height: unset;
+}
+
+// Media queries
+// @include media-breakpoint-up(sm) { ... }
+@include media-breakpoint-up(md) {
+    .fullscreen-section {
+        height: 100vh;
+    }
+}
+// @include media-breakpoint-up(lg) {}
+// @include media-breakpoint-up(xl) {}
+// @include media-breakpoint-up(xxl) {}
