@@ -12,6 +12,7 @@
 @import './utils';
 
 // Custom pages styles
+// Hero section
 #hero-section {
     .home-hero-slider {
         // height: unset;
@@ -38,6 +39,8 @@
         }
     }
 }
+
+// Search section
 #search-section {
     position: relative;
     &:after {
@@ -79,6 +82,7 @@
     }
 }
 
+// Celebrate section
 #celebrate {
     background-image: none;
     background-position: center;
@@ -97,12 +101,22 @@
         background-color: $primary;
     }
 }
+
+// Highlight section
 #highlights {
     .swiper {
         .swiper-slide {
             max-width: 350px;
         }
     }
+}
+
+// News section
+#news {
+    background-image: url("../images/home/news/news-bg.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 // Media queries

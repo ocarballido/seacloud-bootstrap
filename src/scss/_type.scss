@@ -3,29 +3,34 @@
 h1 {
 	letter-spacing: 4px;
 	text-transform: uppercase;
+	// font-size: 1.75rem;
 }
 h2 {
 	letter-spacing: 4px;
 	text-transform: uppercase;
+	// font-size: 1.5rem;
 }
 h3 {
 	letter-spacing: 3px;
 	text-transform: uppercase;
+	// font-size: 1.25rem;
 }
 h4 {
 	letter-spacing: 3px;
 	text-transform: uppercase;
+	// font-size: 1rem;
 }
 h5 {
 	letter-spacing: 2px;
 	text-transform: uppercase;
+	// font-size: 0.86rem;
 }
 h6 {
 	letter-spacing: 2px;
 	text-transform: uppercase;
+	// font-size: 0.75rem;
 }
 
-$sizes: 'primary', 'secondary';
 h1, h2, h3, h4, h5, h5 {
 	&.line-decoration {
 		padding-bottom: 16px;
@@ -51,3 +56,110 @@ h1, h2, h3, h4, h5, h5 {
 		}
 	}
 }
+
+// Queries
+// @include media-breakpoint-up(sm) {}
+// @include media-breakpoint-up(md) {
+// 	h1 {
+// 		letter-spacing: 4px;
+// 		text-transform: uppercase;
+// 		font-size: 2rem;
+// 	}
+// 	h2 {
+// 		letter-spacing: 4px;
+// 		text-transform: uppercase;
+// 		font-size: 1.75rem;
+// 	}
+// 	h3 {
+// 		letter-spacing: 3px;
+// 		text-transform: uppercase;
+// 		font-size: 1.5rem;
+// 	}
+// 	h4 {
+// 		letter-spacing: 3px;
+// 		text-transform: uppercase;
+// 		font-size: 1.25rem;
+// 	}
+// 	h5 {
+// 		letter-spacing: 2px;
+// 		text-transform: uppercase;
+// 		font-size: 1rem;
+// 	}
+// 	h6 {
+// 		letter-spacing: 2px;
+// 		text-transform: uppercase;
+// 		font-size: 0.85rem;
+// 	}
+// }
+// @include media-breakpoint-up(lg) {
+// 	h1 {
+// 		letter-spacing: 4px;
+// 		text-transform: uppercase;
+// 		font-size: 2.25rem;
+// 	}
+// 	h2 {
+// 		letter-spacing: 4px;
+// 		text-transform: uppercase;
+// 		font-size: 2rem;
+// 	}
+// 	h3 {
+// 		letter-spacing: 3px;
+// 		text-transform: uppercase;
+// 		font-size: 1.75rem;
+// 	}
+// 	h4 {
+// 		letter-spacing: 3px;
+// 		text-transform: uppercase;
+// 		font-size: 1.5rem;
+// 	}
+// 	h5 {
+// 		letter-spacing: 2px;
+// 		text-transform: uppercase;
+// 		font-size: 1.25rem;
+// 	}
+// 	h6 {
+// 		letter-spacing: 2px;
+// 		text-transform: uppercase;
+// 		font-size: 1rem;
+// 	}
+// }
+// @include media-breakpoint-up(xl) {
+// 	h1 {
+// 		letter-spacing: 4px;
+// 		text-transform: uppercase;
+// 		font-size: 2.5rem;
+// 	}
+// 	h2 {
+// 		letter-spacing: 4px;
+// 		text-transform: uppercase;
+// 		font-size: 2.25rem;
+// 	}
+// 	h3 {
+// 		letter-spacing: 3px;
+// 		text-transform: uppercase;
+// 		font-size: 2rem;
+// 	}
+// 	h4 {
+// 		letter-spacing: 3px;
+// 		text-transform: uppercase;
+// 		font-size: 1.75rem;
+// 	}
+// 	h5 {
+// 		letter-spacing: 2px;
+// 		text-transform: uppercase;
+// 		font-size: 1.5rem;
+// 	}
+// 	h6 {
+// 		letter-spacing: 2px;
+// 		text-transform: uppercase;
+// 		font-size: 1.25rem;
+// 	}
+// }
+// @include media-breakpoint-up(xxl) {}
+
+$h6-font-size: 1rem;
+$h5-font-size: 1.25rem;
+$h4-font-size: 1.563rem;
+$h3-font-size: 1.953rem;
+$h2-font-size: 2.441rem;
+$h1-font-size: 3.052rem;
