@@ -26,10 +26,10 @@ const heroCarousel = new Swiper('.home-hero-slider', {
 	spaceBetween: 0,
 	speed: 750,
 	loop: true,
-	// autoplay: {
-    //     delay: 5000,
-    //     disableOnInteraction: false,
-    // },
+	autoplay: {
+        delay: 5000,
+        disableOnInteraction: false,
+    },
 	pagination: {
 		el: '.swiper-pagination',
 		clickable: true,
@@ -43,10 +43,10 @@ const commonCarousel = new Swiper('.common-carousel', {
 	spaceBetween: 0,
 	speed: 750,
 	loop: true,
-	// autoplay: {
-    //     delay: 5000,
-    //     disableOnInteraction: false,
-    // },
+	autoplay: {
+        delay: 5000,
+        disableOnInteraction: false,
+    },
 	pagination: {
 		el: '.swiper-pagination',
 		clickable: true,
@@ -56,7 +56,7 @@ const commonCarousel = new Swiper('.common-carousel', {
 
 // Highlight carousel
 const highlightsCarousel = new Swiper('#highlights-carousel', {
-	// slidesPerView: 4,
+	slidesPerView: 4,
 	slidesPerView: "auto",
 	spaceBetween: 16,
 	centeredSlides: true,
