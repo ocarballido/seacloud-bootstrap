@@ -20,7 +20,7 @@ initBootstrap({
 	toasts: false,
 });
 
-// Your app code
+// Hero carousel
 const heroCarousel = new Swiper('.home-hero-slider', {
 	slidesPerView: 1,
 	spaceBetween: 0,
@@ -37,6 +37,7 @@ const heroCarousel = new Swiper('.home-hero-slider', {
 	modules: [ Autoplay, Navigation, Pagination ],
 });
 
+// Common carousel
 const commonCarousel = new Swiper('.common-carousel', {
 	slidesPerView: 1,
 	spaceBetween: 0,
@@ -53,6 +54,7 @@ const commonCarousel = new Swiper('.common-carousel', {
 	modules: [ Autoplay, Navigation, Pagination ],
 });
 
+// Highlight carousel
 const highlightsCarousel = new Swiper('#highlights-carousel', {
 	// slidesPerView: 4,
 	slidesPerView: "auto",
@@ -64,3 +66,8 @@ const highlightsCarousel = new Swiper('#highlights-carousel', {
 	},
 	modules: [ Autoplay, Navigation, Pagination ],
 });
+
+// Copyright
+const dateEl = document.getElementById('year');
+const currentYear = new Date().getFullYear();
+dateEl.textContent = currentYear;

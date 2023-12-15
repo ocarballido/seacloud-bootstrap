@@ -62,6 +62,24 @@
     height: unset;
 }
 
+// Footer
+footer {
+    .container-fluid {
+        .date {
+            border-top: 2px solid $light-seacloud-blue;
+        }
+    }
+    .nav-list {
+        li {
+            margin-bottom: .75rem;
+        }
+    }
+    .footer-link {
+        font-size: .875rem;
+        text-decoration: none;
+    }
+}
+
 // Media queries
 @include media-breakpoint-up(sm) {
     .half-width-wraper {
