@@ -1,0 +1,52 @@
+.input-group {
+    &.input-mail {
+        background-color: $secondary;
+        border: none;
+        display: block;
+        padding: .45rem;
+        .form-control {
+            background-color: transparent;
+            border: 1px solid $primary;
+            color: white;
+            margin-bottom: .25rem;
+            padding: 1rem .5rem;
+            width: 100%;
+            &:focus {
+                box-shadow: none;
+            }
+            &::placeholder {
+                color: $primary;
+                letter-spacing: 2px;
+                text-transform: uppercase;
+            }
+        }
+        button {
+            width: 100%;
+        }
+    }
+}
+
+// Queries
+// @include media-breakpoint-up(sm) {}
+@include media-breakpoint-up(md) {
+    .input-group {
+        &.input-mail {
+            border: 1px solid $primary;
+            display: flex;
+            .form-control {
+                background-color: transparent;
+                border: none;
+                color: white;
+                padding: unset;
+                margin-bottom: 0;
+                width: unset;
+            }
+            button {
+                width: unset;
+            }
+        }
+    }
+}
+// @include media-breakpoint-up(lg) {}
+// @include media-breakpoint-up(xl) {}
+// @include media-breakpoint-up(xxl) {}
