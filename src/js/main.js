@@ -3,7 +3,12 @@ import '../scss/main.scss';
 
 // Load Bootstrap init
 import {initBootstrap} from "./bootstrap.js";
-import { appbarScrolled } from './general.js';
+import { appbarScrolled, copyright } from './general.js';
+
+// Import GSAP
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger.js";
+gsap.registerPlugin(ScrollTrigger)
 
 // import Swiper JS
 import Swiper from 'swiper';
@@ -22,6 +27,7 @@ initBootstrap({
 });
 
 appbarScrolled()
+copyright()
 
 // Hero carousel
 const heroCarousel = new Swiper('.home-hero-slider', {
@@ -70,7 +76,29 @@ const highlightsCarousel = new Swiper('#highlights-carousel', {
 	modules: [ Autoplay, Navigation, Pagination ],
 });
 
-// Copyright
-const dateEl = document.getElementById('year');
-const currentYear = new Date().getFullYear();
-dateEl.textContent = currentYear;
+// Animation scroll
+let sections = gsap.utils.toArray(".half-width-item");
+
+gsap.to(sections, {
+	xPercent: -100 * (sections.length - 1),
+	ease: "none",
+	scrollTrigger: {
+		trigger: ".half-width-item",
+		pin: ".my-body",
+		pinSpacing: true,
+		scrub: 1,
+		end: "+=3000",
+	}
+});
+
+// gsap.to(sections, {
+// 	xPercent: -100 * (sections.length - 1),
+// 	ease: "none",
+// 	scrollTrigger: {
+// 		trigger: ".half-width-container",
+// 		pin: ".half-width-container",
+// 		pinSpacing: true,
+// 		scrub: 1,
+// 		end: "+=3000",
+// 	}
+// });

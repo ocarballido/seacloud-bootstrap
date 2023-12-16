@@ -8,7 +8,8 @@
     <title>Seacloud Home Carousel</title>
 </head>
 
-<body>
+<body class="my-body">
+	<!-- Appbar -->
 	<header id="appbar" class="navbar fixed-top py-4">
 		<nav class="container-fluid flex-row-reverse flex-lg-row">
 			<!-- Offcanvas Button -->
@@ -127,24 +128,7 @@
 			<!-- /Offcanvas menu -->
 		</nav>
 	</header>
-	<!-- <header class="navbar navbar-expand-lg bd-navbar fixed-top">
-		<nav class="container-xxl bd-gutter flex-wrap flex-lg-nowrap">
-			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-				<span class="navbar-toggler-icon"></span>
-			</button>
-			<div class="collapse navbar-collapse" id="navbarSupportedContent">
-				<ul class="navbar-nav me-auto mb-2 mb-lg-0">
-					<li class="nav-item">
-						<a class="nav-link active" aria-current="page" href="#">Find a cruise</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="#">Special Offers</a>
-					</li>
-				</ul>
-				<div>Iconos</div>
-			</div>
-		</nav>
-	</header> -->
+	<!-- /Appbar -->
 	<!-- Hero section -->
 	<section id="hero-section" class="fullscreen-carousel fullscreen-section bg-white position-relative d-block d-md-flex align-items-center">
 		<!-- Slider main container -->
@@ -464,8 +448,8 @@
 	<!-- /Carousel features section -->
 
 	<!-- Half width section -->
-	<section class="fullscreen-carousel bg-white">
-		<div class="container-fluid position-relative p-0">
+	<section class="container-fluid overflow-hidden position-relative p-0 d-flex flex-row flex-nowrap" style="width: 300%">
+		<div class="half-width-item position-relative p-0 w-100">
 			<div class="row align-items-stretch g-0">
 				<div class="col-md">
 					<img class="half-width-image" src="images/home/curated-moments/curated-moments.jpg" alt="Second slide" />
@@ -482,14 +466,9 @@
 				</div>
 			</div>
 		</div>
-	</section>
-	<!-- /Half width section -->
-
-	<!-- Half width section -->
-	<section class="fullscreen-carousel bg-white">
-		<div class="container-fluid position-relative p-0">
+		<div class="half-width-item position-relative p-0 w-100">
 			<div class="row align-items-stretch g-0">
-				<div class="col-md order-md-2">
+				<div class="col-md">
 					<img class="half-width-image" src="images/home/distinctive-destination/distinctive-destination.jpg" alt="Second slide" />
 				</div>
 				<div class="col-md text-center">
@@ -504,12 +483,7 @@
 				</div>
 			</div>
 		</div>
-	</section>
-	<!-- /Half width section -->
-
-	<!-- Half width section -->
-	<section class="fullscreen-carousel bg-white">
-		<div class="container-fluid position-relative p-0">
+		<div class="half-width-item position-relative p-0 w-100">
 			<div class="row align-items-stretch g-0">
 				<div class="col-md">
 					<img class="half-width-image" src="images/home/sustainability/sustainability.jpg" alt="Second slide" />
