@@ -3,6 +3,7 @@ import '../scss/main.scss';
 
 // Load Bootstrap init
 import {initBootstrap} from "./bootstrap.js";
+import { appbarScrolled } from './general.js';
 
 // import Swiper JS
 import Swiper from 'swiper';
@@ -19,6 +20,8 @@ initBootstrap({
 	popover: false,
 	toasts: false,
 });
+
+appbarScrolled()
 
 // Hero carousel
 const heroCarousel = new Swiper('.home-hero-slider', {
