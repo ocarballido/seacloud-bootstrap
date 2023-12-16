@@ -62,24 +62,6 @@ $custom-colors: (
 
 $theme-colors: map-merge($theme-colors, $custom-colors);
 
-// Fonts
-$font-family-base: 'Roboto';
-$font-size-base: 1rem !default;
-$font-weight-base: 300 !default;
-
-$headings-font-family: 'Libre Baskerville';
-$headings-font-weight: 100;
-$headings-color: $seacloud-blue;
-
-$display-font-family: 'Amalfi Coast';
-
-// $h6-font-size: 1rem;
-// $h5-font-size: 1.25rem;
-// $h4-font-size: 1.563rem;
-// $h3-font-size: 1.953rem;
-// $h2-font-size: 2.441rem;
-// $h1-font-size: 3.052rem;
-
 // Body
 $body-bg: $soft-seacloud-blue !default;
 $body-color: $seacloud-blue !default;
@@ -98,6 +80,36 @@ $btn-font-size-sm: .7rem;
 
 // Card
 $card-border-width: 0;
+
+// Fonts
+$font-family-base: 'Roboto';
+$font-size-base: 1rem !default;
+$font-weight-base: 300 !default;
+
+$headings-font-family: 'Libre Baskerville';
+$headings-font-weight: 100;
+$headings-color: $seacloud-blue;
+
+$display-font-family: 'Amalfi Coast';
+
+// $h6-font-size: 1rem;
+// $h5-font-size: 1.25rem;
+// $h4-font-size: 1.563rem;
+// $h3-font-size: 1.953rem;
+// $h2-font-size: 2.441rem;
+// $h1-font-size: 3.052rem;
+
+// Forms
+$form-select-border-width: 0;
+$form-select-font-size: 14px;
+$form-select-border-radius: 0;
+$form-select-bg: white;
+$form-select-padding-y: 0.85rem;
+$form-select-indicator: url("/images/icons/show-more.svg");
+$form-select-bg-size: 12px 10px;
+$form-select-border-radius-sm: 0;
+$form-select-border-radius-lg: 0;
+$form-select-focus-box-shadow: none;
 
 // Spacing
 $enable-negative-margins: true;

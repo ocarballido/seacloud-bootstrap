@@ -20,6 +20,22 @@
 	width: 100%;
 }
 
+.btn-link-arrow {
+	background-position: right center;
+	background-repeat: no-repeat;
+	background-size: 12px auto;
+	font-size: 1.125rem;
+	font-weight: 400;
+	padding-right: 1rem;
+	text-decoration: none;
+	&.text-primary {
+		background-image: url("/images/icons/double-arrow-right.svg");
+	}
+	&.text-secondary {
+		background-image: url("/images/icons/double-arrow-right-secondary.svg");
+	}
+}
+
 // Social button
 .btn-social {
 	border-radius: 50%;

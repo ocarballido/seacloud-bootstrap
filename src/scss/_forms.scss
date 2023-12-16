@@ -26,6 +26,11 @@
     }
 }
 
+.form-select {
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
 // Queries
 // @include media-breakpoint-up(sm) {}
 @include media-breakpoint-up(md) {
