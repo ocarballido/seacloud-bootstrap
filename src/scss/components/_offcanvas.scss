@@ -1,0 +1,45 @@
+.offcanvas {
+    padding: 2rem;
+    .offcanvas-body {
+        padding: 0;
+    }
+    &.offcanvas-start {
+        width: 100%;
+    }
+    .btn-close {
+        background-color: transparent;
+        border: none;
+        height: 26px;
+        margin-bottom: 3rem;
+        padding: 0;
+        width: 26px;
+    }
+    .navbar-nav {
+        .nav-item {
+            .nav-link {
+                color: $secondary;
+                font-weight: 100;
+                letter-spacing: 2px;
+                margin-bottom: .2rem;
+                text-transform: uppercase;
+                transition: all .25s;
+                &:hover {
+                    color: $primary;
+                    margin-left: 1rem;
+                    &:after {
+                        background-image: url("/images/icons/double-arrow-right.svg");
+                        background-position: right center;
+                        background-repeat: no-repeat;
+                        background-size: 16px auto;
+                        content: "";
+                        display: inline-block;
+                        height: 18px;
+                        margin-left: .25rem;
+                        vertical-align: text-top;
+                        width: 18px;
+                    }
+                }
+            }
+        }
+    }
+}

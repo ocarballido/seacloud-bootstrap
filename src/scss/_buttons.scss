@@ -20,6 +20,12 @@
 	width: 100%;
 }
 
+.navbar-toggler {
+	&:focus {
+		box-shadow: none;
+	}
+}
+
 .btn-link-arrow {
 	background-position: right center;
 	background-repeat: no-repeat;
@@ -40,6 +46,8 @@
 .btn-social {
 	border-radius: 50%;
 	display: inline-block;
+	margin-left: 2px;
+	margin-right: 2px;
 	text-decoration: none;
 	height: 30px;
 	width: 30px;
