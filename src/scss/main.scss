@@ -86,6 +86,14 @@
     }
 }
 
+// Scroll animation section
+#scroll-animation {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
 // Celebrate section
 #celebrate {
     background-image: none;
@@ -167,6 +175,10 @@
             padding-left: 0.75rem;
             padding-right: 0.75rem;
         }
+    }
+    #scroll-animation {
+        flex-wrap: nowrap;
+        width: 300%;
     }
     #celebrate {
         background-image: url("../images/home/celebrate/celebrate-bg.jpg");

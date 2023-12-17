@@ -78,27 +78,18 @@ const highlightsCarousel = new Swiper('#highlights-carousel', {
 
 // Animation scroll
 let sections = gsap.utils.toArray(".half-width-item");
+let responsive = gsap.matchMedia();
 
-gsap.to(sections, {
-	xPercent: -100 * (sections.length - 1),
-	ease: "none",
-	scrollTrigger: {
-		trigger: ".half-width-item",
-		pin: ".my-body",
-		pinSpacing: true,
-		scrub: 1,
-		end: "+=3000",
-	}
+responsive.add("(min-width: 768px)", () => {
+	gsap.to(sections, {
+		xPercent: -100 * (sections.length - 1),
+		ease: "none",
+		scrollTrigger: {
+			trigger: ".half-width-item",
+			pin: ".my-body",
+			pinSpacing: true,
+			scrub: 1,
+			end: "+=3000",
+		}
+	});
 });
-
-// gsap.to(sections, {
-// 	xPercent: -100 * (sections.length - 1),
-// 	ease: "none",
-// 	scrollTrigger: {
-// 		trigger: ".half-width-container",
-// 		pin: ".half-width-container",
-// 		pinSpacing: true,
-// 		scrub: 1,
-// 		end: "+=3000",
-// 	}
-// });
