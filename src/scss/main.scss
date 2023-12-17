@@ -89,13 +89,19 @@ body {
     }
 }
 
-// Scroll animation section
-#scroll-animation {
-    display: flex;
-    flex-direction: row;
+// Scroll animation
+.main{
+    overflow-x: hidden;
+}
+.horizontal-sliders{
+    display:flex;
     flex-wrap: wrap;
-    overflow: hidden;
     width: 100%;
+    overflow-x: hidden;
+}
+.slide{
+    height:100%;
+    width:100%;
 }
 
 // Celebrate section
@@ -180,10 +186,11 @@ body {
             padding-right: 0.75rem;
         }
     }
-    #scroll-animation {
+    .horizontal-sliders{
+        display: flex;
         flex-wrap: nowrap;
-        overflow: hidden;
         width: 300%;
+        overflow-x: hidden;
     }
     #celebrate {
         background-image: url("../images/home/celebrate/celebrate-bg.jpg");

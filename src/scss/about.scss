@@ -16,6 +16,9 @@
 @import './utils';
 
 // Custom pages styles
+body {
+    overflow-x: hidden;
+}
 // Hero section
 #hero-section {
     .hero-image {
@@ -58,13 +61,19 @@
 	background-size: cover;
 }
 
-// Scroll animation section
-#scroll-animation {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    overflow: hidden;
+// Scroll animation
+.main{
+    overflow-x:hidden;
+}
+.horizontal-sliders{
+    display:flex;
+    flex-wrap:wrap;
     width: 100%;
+    overflow-x:hidden;
+}
+.slide{
+    height:100%;
+    width:100%;
 }
 
 // Media queries
@@ -94,10 +103,11 @@
             }
         }
     }
-    #scroll-animation {
+    .horizontal-sliders{
+        display: flex;
         flex-wrap: nowrap;
-        overflow: hidden;
         width: 300%;
+        overflow-x: hidden;
     }
 }
 @include media-breakpoint-up(lg) {

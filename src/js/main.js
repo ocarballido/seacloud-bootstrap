@@ -77,20 +77,22 @@ const highlightsCarousel = new Swiper('#highlights-carousel', {
 });
 
 // Animation scroll
-let sections = gsap.utils.toArray(".half-width-item");
+// let sections = gsap.utils.toArray(".half-width-item");
 let responsive = gsap.matchMedia();
+
+let sections = gsap.utils.toArray(".slide");
 
 responsive.add("(min-width: 768px)", () => {
 	gsap.to(sections, {
 		xPercent: -100 * (sections.length - 1),
 		ease: "none",
 		scrollTrigger: {
-			trigger: ".half-width-item",
-			pin: ".scroll-animation",
+			trigger: ".horizontal-sliders",
+			pin: ".main",
 			pinSpacing: true,
-			start: 'top center',
 			scrub: 1,
-			end: "bottom 80%",
+			start: "top 30%",
+			end: "bottom 30%",
 		}
 	});
 });
