@@ -11,6 +11,11 @@ const htmlPluginConfigs = [
     chunks: ["main"], // Specify which chunks to include (main is defined in your entry points)
   },
   {
+    template: path.resolve(process.cwd(), "special-offers.html"), // Path to another HTML template
+    filename: "special-offers.html", // Output filename (e.g., "public/about.html")
+    chunks: ["special-offers"], // Specify which chunks to include (about is defined in your entry points)
+  },
+  {
     template: path.resolve(process.cwd(), "about.html"), // Path to another HTML template
     filename: "about.html", // Output filename (e.g., "public/about.html")
     chunks: ["about"], // Specify which chunks to include (about is defined in your entry points)
@@ -23,6 +28,7 @@ export default {
   // Define the entry points of our application (can be multiple for different sections of a website)
   entry: {
     main: "./src/js/main.js",
+    "special-offers": "./src/js/special-offers.js",
     about: "./src/js/about.js",
   },
 

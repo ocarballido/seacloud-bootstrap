@@ -1,5 +1,5 @@
 // Load Styles
-import '../scss/about.scss';
+import '../scss/special-offers.scss';
 
 // Load Bootstrap init
 import {initBootstrap} from "./bootstrap.js";
@@ -11,6 +11,9 @@ initBootstrap({
   popover: false,
   toasts: false,
 });
+
+appbarScrolled()
+copyright()
 
 // Your app code
 
