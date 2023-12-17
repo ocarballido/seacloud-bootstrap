@@ -65,10 +65,9 @@ const commonCarousel = new Swiper('.common-carousel', {
 
 // Highlight carousel
 const highlightsCarousel = new Swiper('#highlights-carousel', {
-	slidesPerView: 4,
 	slidesPerView: "auto",
 	spaceBetween: 16,
-	centeredSlides: true,
+	// centeredSlides: true,
 	pagination: {
 		el: ".swiper-pagination",
 		clickable: true,

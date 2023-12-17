@@ -34,6 +34,22 @@
     }
 }
 
+.card-feature {
+    a {
+        color: unset;
+        text-decoration: none;
+    }
+    .card-img {
+        max-height: 320px;
+        object-fit: cover;
+        overflow: hidden;
+        img {
+            height: 100%;
+            width: 100%;
+        }
+    }
+}
+
 // Queries
 // @include media-breakpoint-up(sm) { ... }
 // @include media-breakpoint-up(md) {}

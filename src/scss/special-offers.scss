@@ -18,11 +18,15 @@
 // Custom pages styles
 // Hero section
 #hero-section {
-    .home-hero-slider {
-        // height: unset;
+    .hero-image {
         position: relative;
         width: 100%;
         z-index: 0;
+        img {
+            height: unset;
+            object-fit: cover;
+            object-position: center;
+        }
         &:before {
             /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#0e2050+0,0e2050+99&0+0,1+80 */
             background: linear-gradient(to bottom,  rgba(14,32,80,0) 0%,rgba(14,32,80,1) 80%,rgba(14,32,80,1) 99%);
@@ -38,85 +42,35 @@
     }
     .hero-content {
         background-color: $secondary;
+        .row > div {
+            background-color: transparent;
+        }
         h2, p {
             color: white;
         }
     }
 }
 
-// Search section
-#search-section {
-    position: relative;
-    &:after {
-        background-image: url("../images/home/search-section/search-bg.jpg");
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        content: '';
-        display: block;
-        height: 100%;
-        left: 0;
-        position: absolute;
-        top: 0;
-        width: 100%;
-        z-index: -1;
+#category-two {
+    .thank-you {
+        .content-img {
+            background-image: url("/images/special-offers/category-two/thank-you-bg.jpg");
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
     }
-    .seacrh-container {
-        margin: 0 auto;
-        max-width: 100%;
-        padding-left: 0.75rem;
-        padding-right: 0.75rem;
-        width: 100%;
-    }
-    .seacr-content-columns {
-        margin: 0 auto;
-        max-width: 400px;
-        padding-bottom: 4rem;
-        padding-top: 4rem;
-        width: 100%;
-    }
-    .search-form-container {
-        background-color: $light;
-    }
-    .image {
-        background-image: url("../images/home/search-section/search-bg.jpg");
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
+    .black-friday {
+        .content-img {
+            background-image: url("/images/special-offers/category-two/black-friday-bg.jpg");
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
     }
 }
 
-// Scroll animation section
-#scroll-animation {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    overflow: hidden;
-    width: 100%;
-}
-
-// Celebrate section
-#celebrate {
-    background-image: none;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    .container {
-        max-width: unset;
-    }
-    .content {
-        background-color: $secondary;
-    }
-    .title {
-        color: $primary;
-    }
-    .divider {
-        background-color: $primary;
-    }
-}
-
-// Highlight section
-#highlights {
+#also-like {
     .swiper {
         .swiper-slide {
             max-width: 350px;
@@ -124,122 +78,40 @@
     }
 }
 
-// News section
-#news {
-    background-image: url("../images/home/news/news-bg.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
 // Media queries
 @include media-breakpoint-up(sm) {
-    #search-section {
-        .seacrh-container {
-            max-width: 100%;
-            padding-left: 0.75rem;
-            padding-right: 0.75rem;
-        }
-    }
+    
 }
 @include media-breakpoint-up(md) {
     #hero-section {
-        .home-hero-slider {
+        .hero-image {
             position: absolute;
             &:before {
                 display: none;
             }
+            img {
+                height: 100%;
+                object-fit: cover;
+                object-position: center top;
+            }
         }
         .hero-content {
             background-color: transparent;
+            .row > div {
+                background-color: rgba(255, 255, 255, .8);
+            }
             h2, p {
                 color: $secondary;
             }
         }
     }
-    #search-section {
-        &:after {
-            left: unset;
-            right: 0;
-            top: 0;
-            width: 50%;
-        }
-        .search-form-container {
-            background-color: transparent;
-        }
-        .seacr-content-columns {
-            width: 80%;
-        }
-        .seacrh-container {
-            margin: 0 auto;
-            max-width: 720px;
-            padding-left: 0.75rem;
-            padding-right: 0.75rem;
-        }
-    }
-    #scroll-animation {
-        flex-wrap: nowrap;
-        overflow: hidden;
-        width: 300%;
-    }
-    #celebrate {
-        background-image: url("../images/home/celebrate/celebrate-bg.jpg");
-        .container {
-            max-width: 720px;
-        }
-        .content {
-            background-color: transparent;
-        }
-        .title {
-            color: white;
-        }
-        .divider {
-            background-color: white;
-        }
-    }
 }
 @include media-breakpoint-up(lg) {
-    #search-section {
-        .seacrh-container {
-            margin: 0 auto;
-            max-width: 960px;
-            padding-left: 0.75rem;
-            padding-right: 0.75rem;
-        }
-    }
-    #celebrate {
-        .container {
-            max-width: 960px;
-        }
-    }
+    
 }
 @include media-breakpoint-up(xl) {
-    #search-section {
-        .seacrh-container {
-            margin: 0 auto;
-            max-width: 1140px;
-            padding-left: 0.75rem;
-            padding-right: 0.75rem;
-        }
-    }
-    #celebrate {
-        .container {
-            max-width: 1140px;
-        }
-    }
+    
 }
 @include media-breakpoint-up(xxl) {
-    #search-section {
-        .seacrh-container {
-            margin: 0 auto;
-            max-width: 1320px;
-            padding-left: 0.75rem;
-            padding-right: 0.75rem;
-        }
-    }
-    #celebrate {
-        .container {
-            max-width: 1320px;
-        }
-    }
+    
 }

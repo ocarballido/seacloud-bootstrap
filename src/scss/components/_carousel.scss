@@ -55,6 +55,14 @@
             }
         }
     }
+    &.secondary {
+        .swiper-pagination-bullet {
+            border: 1px solid $secondary;
+            &.swiper-pagination-bullet-active {
+                background-color: $secondary;
+            }
+        }
+    }
 }
 
 // @include media-breakpoint-up(sm) { ... }

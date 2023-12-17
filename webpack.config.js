@@ -127,7 +127,8 @@ export default {
       directory: path.resolve(process.cwd(), "public")
     },
     watchFiles: [
-      path.resolve(process.cwd(), "index.html")
+      path.resolve(process.cwd(), "index.html"),
+      path.resolve(process.cwd(), "special-offers.html"),
     ],
     compress: true,
     port: process.env.PORT || 9090,
