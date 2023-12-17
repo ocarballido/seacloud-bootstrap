@@ -85,10 +85,11 @@ responsive.add("(min-width: 768px)", () => {
 		ease: "none",
 		scrollTrigger: {
 			trigger: ".half-width-item",
-			pin: ".my-body",
+			pin: ".scroll-animation",
 			pinSpacing: true,
+			start: 'top center',
 			scrub: 1,
-			end: "+=3000",
+			end: "bottom center",
 		}
 	});
 });
