@@ -3,7 +3,7 @@ import '../scss/about.scss';
 
 // Load Bootstrap init
 import {initBootstrap} from "./bootstrap.js";
-import { appbarScrolled, copyright } from './general.js';
+import { appbarScrolled, copyright, footerAccordionUx } from './general.js';
 
 // Import GSAP
 import { gsap } from "gsap";
@@ -26,8 +26,9 @@ initBootstrap({
   toasts: false,
 });
 
-appbarScrolled()
-copyright()
+appbarScrolled();
+copyright();
+footerAccordionUx();
 
 // Your app code
 // Also like carousel
