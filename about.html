@@ -4,644 +4,499 @@
     <meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
     <meta http-equiv="x-ua-compatible" content="ie=edge"/>
-    <title>Bootstrap 5 &amp; WebPack 5 Boilerplate</title>
+	<link rel="icon" href="favico.png">
+    <title>Seacloud Home Carousel</title>
 </head>
 
-<body>
-<!-- NAVBAR -->
+<body class="my-body">
+	<!-- Appbar -->
+	<header id="appbar" class="navbar fixed-top py-4">
+		<nav class="container-fluid flex-row-reverse flex-lg-row">
+			<!-- Offcanvas Button -->
+			<button class="navbar-toggler border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+				<img src="images/icons/menu-secondary.svg" width="26" height="26" alt="Open menu">
+			</button>
+			<!-- /Offcanvas Button -->
 
-<nav class="nav-main navbar navbar-expand-lg navbar-dark bg-dark">
-    <div class="container">
-        <a class="navbar-brand" href="#">Boilerplate Inc</a>
-        <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#nav-main"
-            aria-controls="nav-main"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-        >
-            <span class="navbar-toggler-icon"></span>
-        </button>
+			<!-- Menu -->
+			<ul class="navbar-nav main-navbar flex-row flex-wrap align-items-center bd-navbar-nav d-none d-lg-flex">
+				<li class="nav-item mx-3">
+					<a class="nav-link" aria-current="page" href="#">Find a cruise</a>
+				</li>
+				<li class="divider-vertical h-100 bg-secondary" style="min-height: 20px"></li>
+				<li class="nav-item mx-3">
+					<a class="nav-link" href="#">Special Offers</a>
+				</li>
+			</ul>
+			<!-- /Menu -->
 
-        <div class="collapse navbar-collapse" id="nav-main">
-            <ul class="navbar-nav me-auto">
-                <li class="nav-item">
-                    <a
-                        class="nav-link active"
-                        aria-current="page"
-                        href="#">
-                        Home <span class="sr-only">(current)</span>
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#about">About</a>
-                </li>
-                <li class="nav-item dropdown">
-                    <a
-                        class="nav-link dropdown-toggle"
-                        href="#"
-                        id="navbarDropdown"
-                        role="button"
-                        data-bs-toggle="dropdown"
-                        aria-expanded="false"
-                    >
-                        Portfolio
-                    </a>
-                    <div
-                        class="dropdown-menu"
-                        aria-labelledby="navbarDropdown"
-                    >
-                        <a class="dropdown-item" href="#html-and-css">HTML &amp; CSS</a>
-                        <a class="dropdown-item" href="#javascript">JavaScript</a>
-                        <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="#react">React</a>
+			<!-- Logo -->
+			<img class="mx-auto mx-lg-0" src="images/appbar/seacloud-logo.png" width="116" height="85" alt="Logo">
+			<!-- /Logo -->
+
+			<!-- Menu -->
+			<ul class="navbar-nav main-navbar flex-row flex-wrap align-items-center bd-navbar-nav d-none d-lg-flex">
+				<li class="nav-item mx-3">
+					<a class="nav-link" aria-current="page" href="#">CONTACT US</a>
+				</li>
+				<li class="divider-vertical h-100 bg-secondary" style="min-height: 20px"></li>
+				<li class="nav-item mx-3">800 000 0000</li>
+			</ul>
+			<!-- /Menu -->
+
+			<!-- Social -->
+			<div class="social d-none d-lg-flex">
+				<a href="#" class="btn-social">
+					<img src="images/icons/facebook-secondary.svg" alt="Facebook">
+				</a>
+				<a href="#" class="btn-social">
+					<img src="images/icons/instagram-secondary.svg" alt="Instagram">
+				</a>
+				<a href="#" class="btn-social">
+					<img src="images/icons/youtube-secondary.svg" alt="Youtube">
+				</a>
+			</div>
+			<!-- /Social -->
+
+			<!-- Offcanvas menu -->
+			<div class="offcanvas offcanvas-start bg-white" tabindex="-1" id="offcanvasNavbar" data-bs-scroll="true" aria-labelledby="offcanvasNavbarLabel">
+				<button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close">
+					<img src="images/icons/close-secondary.svg" width="26" height="26" alt="Close menu">
+				</button>
+					
+				<div class="offcanvas-body">
+					<div class="container">
+						<ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+							<li class="nav-item">
+								<a class="nav-link active" aria-current="page" href="#">Home</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#">Find a sailing</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#">The Luxury of the Sea Clouds</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#">Our Ships</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#">distinctive Destinations</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#">Sea Clouds Sailing Edition</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#">Special Offers</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#">Discover More</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#">Book your Sailing</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#">Contact Us</a>
+							</li>
+						</ul>
+						<div class="divider my-4 bg-light-seacloud-blue w-100"></div>
+						<ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+							<li class="nav-item">
+								<a class="nav-link" aria-current="page" href="#">English</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#">Help</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#">Contact</a>
+							</li>
+						</ul>
+						<div class="divider my-4 bg-white w-100"></div>
+						<div class="social">
+							<a href="#" class="btn-social">
+								<img src="images/icons/facebook-secondary.svg" alt="Facebook">
+							</a>
+							<a href="#" class="btn-social">
+								<img src="images/icons/instagram-secondary.svg" alt="Instagram">
+							</a>
+							<a href="#" class="btn-social">
+								<img src="images/icons/youtube-secondary.svg" alt="Youtube">
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- /Offcanvas menu -->
+		</nav>
+	</header>
+	<!-- /Appbar -->
+
+	<!-- Hero section -->
+	<section id="hero-section" class="fullscreen-carousel fullscreen-section bg-white position-relative d-block d-md-flex align-items-center">
+        <!-- Image container -->
+		<div class="hero-image h-100">
+			<!-- Image -->
+			<img class="w-100 d-none d-md-block" src="images/special-offers/hero-bg.jpg" alt="First slide" />
+			<img class="w-100 d-block d-md-none" src="images/special-offers/hero-mobile-bg.jpg" alt="First slide" />
+			<!-- /Image -->
+		</div>
+		<!-- /Image container -->
+
+		<!-- Content -->
+		<div class="hero-content w-100 d-flex align-items-center top-0 start-0 position-relative">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-8 col-lg-5">
+						<div class="px-3 py-5 text-center">
+							<p class="display-4 text-primary mt-5 mb-3">Last Chance</p>
+							<h2 class="mb-0">Northern aurope</h2>
+                            <div class="divider my-4 bg-primary"></div>
+							<p class="mb-4">In 2024, the SEA CLOUD SPIRIT will sail along the Atlantic coast to northern Europe for the last time. Up to $ 3000 in savings</p>
+							<img class="" width="15" height="25" src="images/icons/double-arrow-down-primary.svg" alt="Second slide">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- /Content -->
+	</section>
+	<!-- /Hero section -->
+
+    <!-- Special rates section -->
+    <section id="special-rates" class="py-5 bg-secondary text-center text-primary">
+        <div class="container py-4">
+            <div class="row justify-content-center">
+                <div class="col-md-9 col-lg-8 col-xl-7">
+                    <div class="p-4">
+                        <h3 class="text-primary mb-4">Special rates from $6,995</h3>
+                        <p class="lead letter-spacing-xl text-uppercase mb-3">Enjoy 4- to 10-Night Sailings May 28th through July 13th, 2024 & Your Airfare Is On Us!</p>
+                        <p class="mb-4">Book your international flight and receive a <strong>$1,500</strong> per person credit applied to your sailing (<strong>$3,000</strong> per suite/stateroom).</p>
+                        <h5 class="text-primary">Book by december 31, 2023</h5>
                     </div>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#contact">Contact</a>
-                </li>
-            </ul>
-            <form
-                class="d-flex"
-                action="index.html"
-                method="GET"
-            >
-                <div class="input-group">
-                    <input
-                        class="form-control"
-                        name="q"
-                        type="search"
-                        placeholder="Search"
-                        aria-label="Search"
-                    />
-                    <button
-                        class="input-group-btn btn btn-primary"
-                        type="submit"
-                    >
-                        Search
-                    </button>
-                </div>
-            </form>
-        </div>
-    </div>
-    <!-- /container -->
-</nav>
-
-<div class="container">
-
-    <!-- JUMBOTRON -->
-
-    <section id="jumbotron" class="my-4">
-        <div class="bg-light p-5">
-            <h1>Hello, world!</h1>
-            <p>
-                This is a jumbotron example, that is used for many websites today and shows that Bootstrap is
-                successfully
-                loadedd, using all components. Bootstrap feature will help you to create the desired layouts.
-            </p>
-            <p>
-                <a
-                    class="btn btn-primary btn-lg"
-                    href="https://getbootstrap.com/docs/4.1/components/jumbotron/"
-                    role="button"
-                >
-                    Learn more
-                </a>
-            </p>
-        </div>
-    </section>
-
-    <!-- BLOCKQUOTE -->
-
-    <figure class="my-4">
-        <blockquote class="blockquote" id="blockquote">
-            <p>
-                Our greatest weakness lies in giving up. The most certain way to succeed is always to try just one more
-                time.
-            </p>
-        </blockquote>
-        <figcaption class="blockquote-footer pl-3">
-            <cite title="Source Title">Thomas Edison</cite>
-        </figcaption>
-    </figure>
-
-    <!-- IMAGE CARDS -->
-
-    <section id="photos" class="mt-4">
-        <h3>Photos</h3>
-
-        <div class="row album">
-            <div class="col-12 col-md-6 col-lg-4 col-xl-3">
-                <div class="mb-3 mb-md-4">
-                    <img
-                        srcset="
-                            images/album/001-210x210.jpg 210w,
-                            images/album/001-255x255.jpg 255w,
-                            images/album/001-510x510.jpg 510w
-                         "
-                        src="images/album/001-510x510.jpg"
-                        alt="Nature: 1"
-                        class="img-thumbnail"
-                    />
-                </div>
-            </div>
-
-            <div class="col-12 col-md-6 col-lg-4 col-xl-3">
-                <div class="mb-3 mb-md-4">
-                    <img
-                        srcset="
-                            images/album/002-210x210.jpg 210w,
-                            images/album/002-255x255.jpg 255w,
-                            images/album/002-510x510.jpg 510w
-                         "
-                        src="images/album/002-510x510.jpg"
-                        alt="Nature: 1"
-                        class="img-thumbnail"
-                    />
-                </div>
-            </div>
-
-            <div class="col-12 col-md-6 col-lg-4 col-xl-3">
-                <div class="mb-3 mb-md-4">
-                    <img
-                        srcset="
-                            images/album/003-210x210.jpg 210w,
-                            images/album/003-255x255.jpg 255w,
-                            images/album/003-510x510.jpg 510w
-                         "
-                        src="images/album/003-510x510.jpg"
-                        alt="Nature: 1"
-                        class="img-thumbnail"
-                    />
-                </div>
-            </div>
-
-            <div class="col-12 col-md-6 col-lg-4 col-xl-3">
-                <div class="mb-3 mb-md-4">
-                    <img
-                        srcset="
-                            images/album/004-210x210.jpg 210w,
-                            images/album/004-255x255.jpg 255w,
-                            images/album/004-510x510.jpg 510w
-                         "
-                        src="images/album/004-510x510.jpg"
-                        alt="Nature: 1"
-                        class="img-thumbnail"
-                    />
-                </div>
-            </div>
-
-            <div class="col-12 col-md-6 col-lg-4 col-xl-3">
-                <div class="mb-3 mb-md-4">
-                    <img
-                        srcset="
-                            images/album/005-210x210.jpg 210w,
-                            images images/album/005-255x255.jpg 255w,
-                            images/album/005-510x510.jpg 510w
-                         "
-                        src="images/album/005-510x510.jpg"
-                        alt="Nature: 1"
-                        class="img-thumbnail"
-                    />
-                </div>
-            </div>
-
-            <div class="col-12 col-md-6 col-lg-4 col-xl-3">
-                <div class="mb-3 mb-md-4">
-                    <img
-                        srcset="
-                            images/album/006-210x210.jpg 210w,
-                            images/album/006-255x255.jpg 255w,
-                            images/album/006-510x510.jpg 510w
-                         "
-                        src="images/album/006-510x510.jpg"
-                        alt="Nature: 1"
-                        class="img-thumbnail"
-                    />
-                </div>
-            </div>
-
-            <div class="col-12 col-md-6 col-lg-4 col-xl-3">
-                <div class="mb-3 mb-md-4">
-                    <img
-                        srcset="
-                            images/album/007-210x210.jpg 210w,
-                            images/album/007-255x255.jpg 255w,
-                            images/album/007-510x510.jpg 510w
-                         "
-                        src="images/album/007-510x510.jpg"
-                        alt="Nature: 1"
-                        class="img-thumbnail"
-                    />
-                </div>
-            </div>
-
-            <div class="col-12 col-md-6 col-lg-4 col-xl-3">
-                <div class="mb-3 mb-md-4">
-                    <img
-                        srcset="
-                           images/album/008-210x210.jpg 210w,
-                           images/album/008-255x255.jpg 255w,
-                           images/album/008-510x510.jpg 510w
-                         "
-                        src="images/album/008-510x510.jpg"
-                        alt="Nature: 1"
-                        class="img-thumbnail"
-                    />
                 </div>
             </div>
         </div>
     </section>
-    <!-- /photos -->
+    <!-- /Special rates section -->
 
-    <!-- PROGRESS BARS -->
-
-    <section id="progress-bars">
-        <h3>Progress Bars</h3>
-
-        <div class="progress mb-3">
-            <div
-                class="progress-bar bg-success"
-                role="progressbar"
-                style="width: 25%"
-                aria-valuenow="25"
-                aria-valuemin="0"
-                aria-valuemax="100"
-            ></div>
-        </div>
-        <div class="progress mb-3">
-            <div
-                class="progress-bar bg-info"
-                role="progressbar"
-                style="width: 50%"
-                aria-valuenow="50"
-                aria-valuemin="0"
-                aria-valuemax="100"
-            ></div>
-        </div>
-        <div class="progress mb-3">
-            <div
-                class="progress-bar bg-warning"
-                role="progressbar"
-                style="width: 75%"
-                aria-valuenow="75"
-                aria-valuemin="0"
-                aria-valuemax="100"
-            ></div>
-        </div>
-        <div class="progress mb-3">
-            <div
-                class="progress-bar bg-danger"
-                role="progressbar"
-                style="width: 100%"
-                aria-valuenow="100"
-                aria-valuemin="0"
-                aria-valuemax="100"
-            ></div>
-        </div>
-    </section>
-
-    <!-- CONTACT FORM -->
-
-    <section id="contact-form" class="my-4">
-        <h3>Contact Form</h3>
-
-        <form
-            name="contactform"
-            action="mailto:spam@dominik-hanke.de"
-            method="post"
-        >
-            <div class="mb-3">
-                <label for="name">Name</label>
-                <input
-                    type="text"
-                    class="form-control"
-                    id="name"
-                    placeholder="Your name"
-                />
-            </div>
-            <div class="mb-3">
-                <label for="email">Email address</label>
-                <input
-                    type="email"
-                    class="form-control"
-                    id="email"
-                    placeholder="Your email"/>
-            </div>
-            <div class="mb-3">
-                <label for="message">Message</label>
-                <textarea
-                    class="form-control"
-                    id="message"
-                    rows="6"
-                ></textarea>
-            </div>
-            <button
-                type="submit"
-                class="btn btn-primary"
-            >
-                Send email
-            </button>
-        </form>
-    </section>
-
-    <section id="drop-up-split" class="my-4">
-        <h3>DropUp Split Button</h3>
-
-        <div class="btn-group dropup">
-            <button
-                type="button"
-                class="btn btn-outline-secondary"
-            >
-                Main Action
-            </button>
-            <button
-                type="button"
-                class="btn btn-secondary dropdown-toggle dropdown-toggle-split"
-                data-bs-toggle="dropdown"
-                aria-haspopup="true"
-                aria-expanded="false"
-            >
-                <span class="sr-only">Toggle Dropdown</span>
-            </button>
-            <div class="dropdown-menu">
-                <a class="dropdown-item" href="#">Action</a>
-                <a class="dropdown-item" href="#">Another action</a>
-                <a class="dropdown-item" href="#">Something else here</a>
-                <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="#">Separated link</a>
+    <!-- Final farewell section -->
+    <section id="final-farewell" class="py-5 text-center text-white">
+        <div class="container py-4">
+            <div class="row justify-content-center">
+                <div class="col-md-9 col-lg-8 col-xl-7">
+                    <div class="p-4">
+                        <h3 class="text-white mb-5">2024<br>final farewell</h3>
+                        <p class="mb-0">Experience Northern Europe and her sunny Atlantic coasts, totally relaxed aboard our luxury sailing yacht, <a class="text-white" href="">SEA CLOUD SPIRIT</a>. Join us for a final farewell next summer, when the region reveals its legendary treasures along wild and romantic coasts with blooming gardens, famous forts, charming fishing villages, gourmet delights, and more.</p>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
+    <!-- /Final farewell section -->
 
-    <section id="tab-panel" class="my-4">
-        <h3 class="mb-3">Tab Panel</h3>
+    <!-- Half width section -->
+	<section id="scroll-animation" class="container-fluid overflow-hidden position-relative p-0">
+		<div class="half-width-item position-relative p-0 w-100">
+			<div class="row align-items-stretch g-0 h-100">
+				<div class="col-md">
+					<img class="half-width-image" src="images/about/packs/pack-01.jpg" alt="Second slide" />
+				</div>
+				<div class="col-md">
+					<div class="half-width-wraper bg-white h-100 d-flex justify-content-center align-items-center">
+						<div class="px-5">
+                            <img class="mb-5" src="images/about/packs/pack-01-content.jpg" alt="Second slide" />
+                            <p class="lead letter-spacing-lg mb-4">8-Night Taste of the Atlantic Coast</p>
+							<p class="mb-0"><strong>Bilbao to Honfleur</strong></p>
+							<p class="mb-4"><strong>May 28 to June 5, 2024</strong></p>
+							<p class="mb-4">Savor, sip and sail elite epicurean regions, enjoying Basque Country tapas and exquisite seafood dishes in Aquitaine, Brittany and Normandy. In the world's wine capital, Bordeaux delivers its best vintages, while casks from La Rochelle give a taste of Cognac and Pineau. Sommelier Nils Lackner shares insights, equipped with a champagne saber and decanter.</p>
+							<button href="#" class="btn btn-outline-primary">More info</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="half-width-item position-relative p-0 w-100">
+			<div class="row align-items-stretch g-0 h-100">
+				<div class="col-md">
+					<img class="half-width-image" src="images/about/packs/pack-02.jpg" alt="Second slide" />
+				</div>
+				<div class="col-md order-md-1">
+					<div class="half-width-wraper bg-white h-100 d-flex justify-content-center align-items-center">
+						<div class="px-5">
+                            <p class="lead letter-spacing-lg mb-4">8-Night Culinary Summer for Connoisseurs</p>
+							<p class="mb-0"><strong>Edinburgh to Hamburg</strong></p>
+							<p class="mb-4"><strong>June 27 to July 5, 2024</strong></p>
+							<p class="mb-4">Sail into a spirited summer inspired by Nordic cuisine, from the time-honored distilleries of Scotland to the Michelin-star restaurants of Sylt. Sip single malts from Speyside, try Norwegian wild herbs, eat fresh North Sea prawn and aromatic oysters on this culinary sailing adventure.</p>
+							<button href="#" class="btn btn-outline-primary">More info</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="half-width-item position-relative p-0 w-100">
+			<div class="row align-items-stretch g-0 h-100">
+				<div class="col-md">
+					<img class="half-width-image" src="images/about/packs/pack-03.jpg" alt="Second slide" />
+				</div>
+				<div class="col-md">
+					<div class="half-width-wraper bg-white h-100 d-flex justify-content-center align-items-center">
+						<div class="px-5">
+                            <p class="lead letter-spacing-lg mb-4">10-Night Luxury Lifestyle & Relaxing Beats</p>
+							<p class="mb-0"><strong>Hamburg to Bilbao</strong></p>
+							<p class="mb-4"><strong>July 13 to July 23, 2024</strong></p>
+							<p class="mb-4">As part of our signature Curated Moments — exclusive events beyond the sea — we treat you to a special culinary evening in the wine metropolis of Haut-Médoc. "La vie est belle" on summer nights in Bordeaux. Then sail to San Sebastián, the Basque Country port calling to gourmets from around the world.</p>
+							<button href="#" class="btn btn-outline-primary">More info</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- /Half width section -->
 
-        <ul
-            class="nav nav-tabs"
-            id="myTab"
-            role="tablist"
-        >
-            <li class="nav-item">
-                <a
-                    class="nav-link active"
-                    id="home-tab"
-                    data-bs-toggle="tab"
-                    href="#home"
-                    role="tab"
-                    aria-controls="home"
-                    aria-selected="true"
-                >
-                    Home
-                </a>
-            </li>
-            <li class="nav-item">
-                <a
-                    class="nav-link"
-                    id="profile-tab"
-                    data-bs-toggle="tab"
-                    href="#projects"
-                    role="tab"
-                    aria-controls="projects"
-                    aria-selected="false"
-                >
-                    Projects
-                </a>
-            </li>
-        </ul>
-        <div class="tab-content" id="myTabContent">
-            <div
-                class="tab-pane fade show active pt-3"
-                id="home"
-                role="tabpanel"
-                aria-labelledby="home-tab"
-            >
-                <p>This is a nice text about me...</p>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean
-                    massa.
-                    Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
-                </p>
-            </div>
-            <div
-                class="tab-pane fade pt-3"
-                id="projects"
-                role="tabpanel"
-                aria-labelledby="project-tab"
-            >
-                <p>These are my projects...</p>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean
-                    massa.
-                    Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
-                </p>
-            </div>
+    <!-- Also like section -->
+    <section id="also-like" class="py-5">
+        <div class="container py-4">
+            <h2 class="h4 text-center mb-4">You may also like</h2>
+
+            <div id="also-like-carousel" class="swiper pb-5">
+				<div class="swiper-wrapper pb-5">
+					<div class="swiper-slide">
+						<div class="card card-feature bg-white">
+                            <a href="">
+                                <div class="card-img">
+                                    <img src="images/special-offers/also-like/feature-img-01.jpg" class="card-img-top" alt="Feature">
+                                </div>
+                                <div class="card-body text-center p-3 p-md-4 p-lg-5">
+                                    <h5 class="card-title lh-base m-0">Military savings</h5>
+                                    <div class="divider my-2 bg-primary"></div>
+                                    <p class="card-text">Up to<strong> $ 3000 </strong>in savings per stateroom</p>
+                                    <img class="" width="25" height="15" src="images/icons/double-arrow-right.svg" alt="Second slide">
+                                </div>
+                            </a>
+                        </div>
+					</div>
+					<div class="swiper-slide">
+						<div class="card card-feature bg-white">
+                            <a href="">
+                                <div class="card-img">
+                                    <img src="images/special-offers/also-like/feature-img-02.jpg" class="card-img-top" alt="Feature">
+                                </div>
+                                <div class="card-body text-center p-3 p-md-4 p-lg-5">
+                                    <h5 class="card-title lh-base m-0">Military savings</h5>
+                                    <div class="divider my-2 bg-primary"></div>
+                                    <p class="card-text">Up to<strong> $ 3000 </strong>in savings per stateroom</p>
+                                    <img class="" width="25" height="15" src="images/icons/double-arrow-right.svg" alt="Second slide">
+                                </div>
+                            </a>
+                        </div>
+					</div>
+					<div class="swiper-slide">
+						<div class="card card-feature bg-white">
+                            <a href="">
+                                <div class="card-img">
+                                    <img src="images/special-offers/also-like/feature-img-01.jpg" class="card-img-top" alt="Feature">
+                                </div>
+                                <div class="card-body text-center p-3 p-md-4 p-lg-5">
+                                    <h5 class="card-title lh-base m-0">Military savings</h5>
+                                    <div class="divider my-2 bg-primary"></div>
+                                    <p class="card-text">Up to<strong> $ 3000 </strong>in savings per stateroom</p>
+                                    <img class="" width="25" height="15" src="images/icons/double-arrow-right.svg" alt="Second slide">
+                                </div>
+                            </a>
+                        </div>
+					</div>
+					<div class="swiper-slide">
+						<div class="card card-feature bg-white">
+                            <a href="">
+                                <div class="card-img">
+                                    <img src="images/special-offers/also-like/feature-img-03.jpg" class="card-img-top" alt="Feature">
+                                </div>
+                                <div class="card-body text-center p-3 p-md-4 p-lg-5">
+                                    <h5 class="card-title lh-base m-0">Military savings</h5>
+                                    <div class="divider my-2 bg-primary"></div>
+                                    <p class="card-text">Up to<strong> $ 3000 </strong>in savings per stateroom</p>
+                                    <img class="" width="25" height="15" src="images/icons/double-arrow-right.svg" alt="Second slide">
+                                </div>
+                            </a>
+                        </div>
+					</div>
+					<div class="swiper-slide">
+						<div class="card card-feature bg-white">
+                            <a href="">
+                                <div class="card-img">
+                                    <img src="images/special-offers/also-like/feature-img-01.jpg" class="card-img-top" alt="Feature">
+                                </div>
+                                <div class="card-body text-center p-3 p-md-4 p-lg-5">
+                                    <h5 class="card-title lh-base m-0">Military savings</h5>
+                                    <div class="divider my-2 bg-primary"></div>
+                                    <p class="card-text">Up to<strong> $ 3000 </strong>in savings per stateroom</p>
+                                    <img class="" width="25" height="15" src="images/icons/double-arrow-right.svg" alt="Second slide">
+                                </div>
+                            </a>
+                        </div>
+					</div>
+				</div>
+				<!-- Pagination -->
+				<div class="swiper-pagination secondary"></div>
+				<!-- /Pagination -->
+			</div>
         </div>
     </section>
+    <!-- /Also like section -->
 
-    <section id="dismissable-alerts" class="my-4">
-        <h3 class="mb-3">Dismissable Alerts</h3>
+    <!-- Distinctive destination section -->
+    <section id="distinctive-destination" class="position-relative bg-white">
+		<div class="container-fluid px-0">
+			<div class="row align-items-stretch g-0">
+				<div class="col-md">
+					<img class="half-width-image" src="images/about/distinctive-destination/distinctive-destination.jpg" alt="Second slide" />
+				</div>
+				<div class="col-md text-center text-primary">
+					<div class="half-width-wraper bg-secondary h-100 d-flex justify-content-center align-items-center">
+						<div class="p-4">
+							<h4 class="text-primary mb-1 mt-5">DISTINCTIVE DESTINATIONS OFF THE BEATEN PATH</h4>
+							<div class="divider my-3 bg-primary"></div>
+							<p class="mb-5">Enriching discoveries on land complement your luxury sailing at sea. Visit exclusive destinations large cruise ships can’t reach. The SEA CLOUDS sail to the world’s most beautiful places, where upscale local charm welcomes discerning guests, devoid of crowds.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+    <!-- /Distinctive destination section -->
 
-        <div
-            class="alert alert-success alert-dismissible fade show"
-            role="alert"
-        >
-            <strong>Success!</strong> Your updates have been saved.
-            <button type="button"
-                    class="btn-close"
-                    data-bs-dismiss="alert"
-                    aria-label="Close"></button>
-        </div>
+	<!-- Footer -->
+	<footer class="pt-5 bg-white">
+		<div class="container pt-3">
+			<div class="row">
+				<!-- Plan a cruise -->
+				<div class="col-md-6 col-lg">
+					<div class="accordion accordion-flush footer-accordion" id="accordion-planCruise">
+						<div class="accordion-item">
+							<p class="accordion-header">
+								<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-planCruise" aria-expanded="false" aria-controls="flush-planCruise">Plan a Cruise</button>
+							</p>
+							<div id="flush-planCruise" class="accordion-collapse collapse show" data-bs-parent="#accordion-planCruise">
+								<div class="accordion-body">
+									<ul class="nav nav-list d-block list-unstyled">
+										<li><a class="link link-secondary footer-link" href="#">Find a Cruise</a></li>
+										<li><a class="link link-secondary footer-link" href="#">Find a Travel Advisor</a></li>
+										<li><a class="link link-secondary footer-link" href="#">Request a Brochure</a></li>
+										<li><a class="link link-secondary footer-link" href="#">Sign-up for Special Offers</a></li>
+										<li><a class="link link-secondary footer-link" href="#">Group Travel Benefits</a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- /Plan a cruise -->
 
-        <div
-            class="alert alert-danger alert-dismissible fade show"
-            role="alert"
-        >
-            <strong>Error!</strong> Please fill in all fields.
-            <button type="button"
-                    class="btn-close"
-                    data-bs-dismiss="alert"
-                    aria-label="Close"></button>
-        </div>
-    </section>
+				<!-- Resources -->
+				<div class="col-md-6 col-lg">
+					<div class="accordion accordion-flush footer-accordion" id="accordion-resoucers">
+						<div class="accordion-item">
+							<p class="accordion-header">
+								<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-resoucers" aria-expanded="false" aria-controls="flush-resoucers">Plan a Resources</button>
+							</p>
+							<div id="flush-resoucers" class="accordion-collapse collapse show" data-bs-parent="#accordion-resoucers">
+								<div class="accordion-body">
+									<ul class="nav nav-list d-block list-unstyled">
+										<li><a class="link link-secondary footer-link" href="#">Frequently Asked Questions</a></li>
+										<li><a class="link link-secondary footer-link" href="#">Update Marketing Preferences</a></li>
+										<li><a class="link link-secondary footer-link" href="#">Travel Partner Center</a></li>
+										<li><a class="link link-secondary footer-link" href="#">Videos</a></li>
+										<li><a class="link link-secondary footer-link" href="#">Digital Brochures</a></li>
+										<li><a class="link link-secondary footer-link" href="#">Charters, Meetings & Incentives</a></li>
+										<li><a class="link link-secondary footer-link" href="#">Gift Order Form</a></li>
+										<li><a class="link link-secondary footer-link" href="#">Sail & Sustain</a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- /Resources -->
 
-    <section id="tooltips" class="my-4">
-        <h3 class="mb-3">Tooltips</h3>
+				<!-- Company info -->
+				<div class="col-md-6 col-lg">
+					<div class="accordion accordion-flush footer-accordion" id="accordion-compoanyInfo">
+						<div class="accordion-item">
+							<p class="accordion-header">
+								<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-compoanyInfo" aria-expanded="false" aria-controls="flush-compoanyInfo">Company Information</button>
+							</p>
+							<div id="flush-compoanyInfo" class="accordion-collapse collapse show" data-bs-parent="#accordion-compoanyInfo">
+								<div class="accordion-body">
+									<ul class="nav nav-list d-block list-unstyled">
+										<li><a class="link link-secondary footer-link" href="#">About Us</a></li>
+										<li><a class="link link-secondary footer-link" href="#">Careers</a></li>
+										<li><a class="link link-secondary footer-link" href="#">Legal</a></li>
+										<li><a class="link link-secondary footer-link" href="#">Press & Media</a></li>
+										<li><a class="link link-secondary footer-link" href="#">For Investors</a></li>
+										<li><a class="link link-secondary footer-link" href="#">Site Map</a></li>
+										<li><a class="link link-secondary footer-link" href="#">Privacy Policy</a></li>
+										<li><a class="link link-secondary footer-link" href="#">Travel Restrictions</a></li>
+										<li><a class="link link-secondary footer-link" href="#">Contact Us</a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- /Company info -->
 
-        <button
-            type="button"
-            class="btn btn-secondary"
-            data-bs-toggle="tooltip"
-            data-bs-placement="top"
-            title="Tooltip on top"
-        >
-            Tooltip on top
-        </button>
-        <button
-            type="button"
-            class="btn btn-secondary"
-            data-bs-toggle="tooltip"
-            data-bs-placement="right"
-            title="Tooltip on right"
-        >
-            Tooltip on right
-        </button>
-        <button
-            type="button"
-            class="btn btn-secondary"
-            data-bs-toggle="tooltip"
-            data-bs-placement="bottom"
-            title="Tooltip on bottom"
-        >
-            Tooltip on bottom
-        </button>
-        <button
-            type="button"
-            class="btn btn-secondary"
-            data-bs-toggle="tooltip"
-            data-bs-placement="left"
-            title="Tooltip on left"
-        >
-            Tooltip on left
-        </button>
-    </section>
-
-    <section id="popovers" class="my-4">
-        <h3 class="mb-3">Popover</h3>
-
-        <button
-            type="button"
-            class="btn btn-secondary"
-            data-bs-container="body"
-            data-bs-toggle="popover"
-            data-bs-placement="top"
-            data-bs-content="Top popover"
-        >
-            Popover on top
-        </button>
-        <button
-            type="button"
-            class="btn btn-secondary"
-            data-bs-container="body"
-            data-bs-toggle="popover"
-            data-bs-placement="right"
-            data-bs-content="Right popover"
-        >
-            Popover on right
-        </button>
-        <button
-            type="button"
-            class="btn btn-secondary"
-            data-bs-container="body"
-            data-bs-toggle="popover"
-            data-bs-placement="bottom"
-            data-bs-content="Bottom popover"
-        >
-            Popover on bottom
-        </button>
-        <button
-            type="button"
-            class="btn btn-secondary"
-            data-bs-container="body"
-            data-bs-toggle="popover"
-            data-bs-placement="left"
-            data-bs-content="Left popover"
-        >
-            Popover on left
-        </button>
-    </section>
-
-    <section id="toasts" class="my-4">
-        <h4 class="mb-3">Toasts</h4>
-
-        <p>
-            You can use links or buttons to trigger toasts, as this boilerplate includes a small JS script
-            to handle this for you.
-        </p>
-        <p>
-            To use a button add the attributes <code>data-bs-toggle</code> and <code>data-bs-target</code> to it.<br>
-            &lt;button class="btn btn-secondary" data-bs-toggle="toast" data-bs-target"#demoToastOne"&gt;...&lt;/button&gt;
-        </p>
-        <p>
-            To use a link add the attributes <code>data-bs-toggle</code> and <code>href</code> to it.<br>
-            &lt;a href="#demoToastOne" data-bs-toggle="toast"&gt;...&lt;/a&gt;
-        </p>
-
-        <button
-            type="button"
-            class="btn btn-secondary me-2"
-            data-bs-toggle="toast"
-            data-bs-target="#demoToastOne"
-        >
-            Show first toast
-        </button>
-
-        <a
-            data-bs-toggle="toast"
-            href="#demoToastTwo"
-        >
-            Show second toast
-        </a>
-    </section>
-
-    <div class="mb-5">&nbsp;</div>
-</div>
-<!-- /container -->
-
-<!-- Toasts -->
-<div class="position-fixed top-0 end-0 p-3" style="z-index: 11">
-    <div class="toast-container position-static">
-
-        <!-- First toast -->
-        <div
-            id="demoToastOne"
-            class="toast text-bg-success"
-            role="alert"
-            aria-live="assertive"
-            aria-atomic="true"
-        >
-            <div class="toast-header">
-                <strong class="me-auto">Bootstrap</strong>
-                <small>just now</small>
-                <button
-                    type="button"
-                    class="btn-close"
-                    data-bs-dismiss="toast"
-                    aria-label="Close"
-                ></button>
-            </div>
-            <div class="toast-body">
-                Hello, world! This is a toast message.
-            </div>
-        </div><!-- /toast -->
-
-        <!-- Second toast -->
-        <div
-            id="demoToastTwo"
-            class="toast text-bg-danger"
-            role="alert"
-            aria-live="assertive"
-            aria-atomic="true"
-        >
-            <div class="toast-header">
-                <strong class="me-auto">Bootstrap</strong>
-                <small>just now</small>
-                <button
-                    type="button"
-                    class="btn-close"
-                    data-bs-dismiss="toast"
-                    aria-label="Close"
-                ></button>
-            </div>
-            <div class="toast-body">
-                Hello, world! This is a toast message.
-            </div>
-        </div><!-- /toast -->
-
-    </div><!-- /toast-container -->
-</div>
-
+				<!-- Sign up -->
+				<div class="col-md-6 col-lg">
+					<div class="accordion accordion-flush footer-accordion" id="accordion-signUp">
+						<div class="accordion-item">
+							<p class="accordion-header">
+								<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-signUp" aria-expanded="false" aria-controls="flush-signUp">Company Information</button>
+							</p>
+							<div id="flush-signUp" class="accordion-collapse collapse show" data-bs-parent="#accordion-signUp">
+								<div class="accordion-body">
+									<form class="my-4" action="">
+										<div class="input-group input-mail mb-3">
+											<input type="text" class="form-control" placeholder="Your mail" aria-label="Your mail" aria-describedby="mail-button-addon">
+											<button class="btn btn-primary px-2" type="button">
+												<img class="d-none d-md-block" width="25" height="15" src="images/icons/double-arrow-right-secondary.svg" alt="Second slide">
+												<span class="d-block d-md-none"></span>
+											</button>
+										</div>
+									</form>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="accordion accordion-flush footer-accordion" id="accordion-followUs">
+						<div class="accordion-item">
+							<p class="accordion-header">
+								<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-followUs" aria-expanded="false" aria-controls="flush-followUs">Follow us</button>
+							</p>
+							<div id="flush-followUs" class="accordion-collapse collapse show" data-bs-parent="#accordion-followUs">
+								<div class="accordion-body">
+									<div class="social">
+										<a href="#" class="btn-social">
+											<img src="images/icons/facebook-primary.svg" alt="Facebook">
+										</a>
+										<a href="#" class="btn-social">
+											<img src="images/icons/instagram-primary.svg" alt="Instagram">
+										</a>
+										<a href="#" class="btn-social">
+											<img src="images/icons/youtube-primary.svg" alt="Youtube">
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- /Sign up -->
+			</div>
+		</div>
+		<div class="container-fluid text-center">
+			<p class="date py-4 m-0 text-uppercase letter-spacing-md fw-normal"><small>© sea cloud cruises <span id="year"></span></small></p>
+		</div>
+	</footer>
+	<!-- /Footer -->
 </body>
 </html>

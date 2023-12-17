@@ -89,7 +89,7 @@ responsive.add("(min-width: 768px)", () => {
 			pinSpacing: true,
 			start: 'top center',
 			scrub: 1,
-			end: "bottom center",
+			end: "bottom 80%",
 		}
 	});
 });

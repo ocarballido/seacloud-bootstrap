@@ -1,32 +1,111 @@
-//---------------------------------------------
-//
-//  Table of Contents
-//
-//    1. Basics
-//    2. Page Layout
-//    3. Components
-//
-//---------------------------------------------
-
-//---------------------------------------------
-// 1. Basics
-//---------------------------------------------
-
+// General styles
 @import "./general-styles";
 
-// If you do not want to load the customized bootstrap version, just use the following line.
-// @import "~bootstrap/scss/bootstrap";
+// Bootstrap components
+@import 'bootstrap/scss/accordion';
+@import 'bootstrap/scss/carousel';
+@import 'bootstrap/scss/card';
+@import 'bootstrap/scss/forms';
 
-//---------------------------------------------
-// 2. Page Layout
-//---------------------------------------------
+// Custom components
+@import './components/accordion';
+@import './components/card';
+@import './components/carousel';
+@import './components/divider';
+@import './forms';
+@import './utils';
 
-body {
-    background-color: red;
+// Custom pages styles
+// Hero section
+#hero-section {
+    .hero-image {
+        position: relative;
+        width: 100%;
+        z-index: 0;
+        img {
+            height: unset;
+            object-fit: cover;
+            object-position: center;
+        }
+        &:before {
+            /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#0e2050+0,0e2050+99&0+0,1+80 */
+            background: linear-gradient(to bottom,  rgba(14,32,80,0) 0%,rgba(14,32,80,1) 80%,rgba(14,32,80,1) 99%);
+            bottom: 0;
+            content: '';
+            display: block;
+            height: 30%;
+            left: 0;
+            position: absolute;
+            width: 100%;
+            z-index: 2;
+        }
+    }
+    .hero-content {
+        background-color: $secondary;
+        .row > div {
+            background-color: transparent;
+        }
+        h2, p {
+            color: white;
+        }
+    }
 }
 
-//---------------------------------------------
-// 3.Components
-//---------------------------------------------
+#final-farewell {
+    background-image: url("../images/about/final-farewell/final-farewell-bg.jpg");
+    background-position: right center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
 
-@import "components/slider";
+// Scroll animation section
+#scroll-animation {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    overflow: hidden;
+    width: 100%;
+}
+
+// Media queries
+@include media-breakpoint-up(sm) {
+    
+}
+@include media-breakpoint-up(md) {
+    #hero-section {
+        .hero-image {
+            position: absolute;
+            &:before {
+                display: none;
+            }
+            img {
+                height: 100%;
+                object-fit: cover;
+                object-position: center top;
+            }
+        }
+        .hero-content {
+            background-color: transparent;
+            .row > div {
+                background-color: rgba(255, 255, 255, .8);
+            }
+            h2, p {
+                color: $secondary;
+            }
+        }
+    }
+    #scroll-animation {
+        flex-wrap: nowrap;
+        overflow: hidden;
+        width: 300%;
+    }
+}
+@include media-breakpoint-up(lg) {
+    
+}
+@include media-breakpoint-up(xl) {
+    
+}
+@include media-breakpoint-up(xxl) {
+    
+}

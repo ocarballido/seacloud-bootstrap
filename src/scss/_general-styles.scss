@@ -89,6 +89,13 @@
 .fullscreen-section {
     height: unset;
 }
+#also-like {
+    .swiper {
+        .swiper-slide {
+            max-width: 350px;
+        }
+    }
+}
 
 // Footer
 footer {

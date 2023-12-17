@@ -70,14 +70,6 @@
     }
 }
 
-#also-like {
-    .swiper {
-        .swiper-slide {
-            max-width: 350px;
-        }
-    }
-}
-
 // Media queries
 @include media-breakpoint-up(sm) {
     
