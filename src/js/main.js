@@ -88,11 +88,12 @@ responsive.add("(min-width: 768px)", () => {
 		ease: "none",
 		scrollTrigger: {
 			trigger: ".horizontal-sliders",
+			// pin: true,
 			pin: ".main",
 			pinSpacing: true,
 			scrub: 1,
-			start: "top 30%",
-			end: "bottom 30%",
+			start: "center center",
+			// end: "bottom 70%",
 		}
 	});
 });

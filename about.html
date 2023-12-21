@@ -31,7 +31,8 @@
 			<!-- /Menu -->
 
 			<!-- Logo -->
-			<img class="mx-auto mx-lg-0" src="images/appbar/seacloud-logo.png" width="116" height="85" alt="Logo">
+			<img id="appbarLogo" class="mx-auto mx-lg-0" src="images/appbar/seacloud-logo.png" width="116" height="85" alt="Logo">
+			<img id="appbarLogoSymbol" class="mx-auto mx-lg-0 d-none" src="images/appbar/seacloud-symbol.png" width="26" height="34" alt="Logo symbol">
 			<!-- /Logo -->
 
 			<!-- Menu -->
@@ -135,8 +136,8 @@
         <!-- Image container -->
 		<div class="hero-image h-100">
 			<!-- Image -->
-			<img class="w-100 d-none d-md-block" src="images/special-offers/hero-bg.jpg" alt="First slide" />
-			<img class="w-100 d-block d-md-none" src="images/special-offers/hero-mobile-bg.jpg" alt="First slide" />
+			<img class="w-100 d-none d-md-block" src="images/special-offers/hero-bg.jpg" alt="Last chance" />
+			<img class="w-100 d-block d-md-none" src="images/special-offers/hero-mobile-bg.jpg" alt="Last chance" />
 			<!-- /Image -->
 		</div>
 		<!-- /Image container -->
@@ -151,7 +152,7 @@
 							<h2 class="mb-0">Northern aurope</h2>
                             <div class="divider my-4 bg-primary"></div>
 							<p class="mb-4">In 2024, the SEA CLOUD SPIRIT will sail along the Atlantic coast to northern Europe for the last time. Up to $ 3000 in savings</p>
-							<img class="" width="15" height="25" src="images/icons/double-arrow-down-primary.svg" alt="Second slide">
+							<img class="" width="15" height="25" src="images/icons/double-arrow-down-primary.svg" alt="Seacloud icon scroll down">
 						</div>
 					</div>
 				</div>
@@ -201,17 +202,17 @@
 					<div class="half-width-item position-relative p-0 w-100 h-100">
 						<div class="row align-items-stretch g-0 h-100">
 							<div class="col-md">
-								<img class="half-width-image" src="images/about/packs/pack-01.jpg" alt="Second slide" />
+								<img class="half-width-image" src="images/about/packs/pack-01.jpg" alt="8-Night Taste of the Atlantic Coast" />
 							</div>
 							<div class="col-md">
 								<div class="half-width-wraper bg-white h-100 d-flex justify-content-center align-items-center">
 									<div class="px-5">
-										<img class="mb-5" src="images/about/packs/pack-01-content.jpg" alt="Second slide" />
+										<img class="mb-5" src="images/about/packs/pack-01-content.jpg" alt="8-Night Taste of the Atlantic Coast" />
 										<p class="lead letter-spacing-lg mb-4">8-Night Taste of the Atlantic Coast</p>
 										<p class="mb-0"><strong>Bilbao to Honfleur</strong></p>
 										<p class="mb-4"><strong>May 28 to June 5, 2024</strong></p>
 										<p class="mb-4">Savor, sip and sail elite epicurean regions, enjoying Basque Country tapas and exquisite seafood dishes in Aquitaine, Brittany and Normandy. In the world's wine capital, Bordeaux delivers its best vintages, while casks from La Rochelle give a taste of Cognac and Pineau. Sommelier Nils Lackner shares insights, equipped with a champagne saber and decanter.</p>
-										<button href="#" class="btn btn-outline-primary">More info</button>
+										<a href="#" class="btn btn-outline-primary">More info</a>
 									</div>
 								</div>
 							</div>
@@ -222,7 +223,7 @@
 					<div class="half-width-item position-relative p-0 w-100 h-100">
 						<div class="row align-items-stretch g-0 h-100">
 							<div class="col-md">
-								<img class="half-width-image" src="images/about/packs/pack-02.jpg" alt="Second slide" />
+								<img class="half-width-image" src="images/about/packs/pack-02.jpg" alt="8-Night Culinary Summer for Connoisseurs" />
 							</div>
 							<div class="col-md order-md-1">
 								<div class="half-width-wraper bg-white h-100 d-flex justify-content-center align-items-center">
@@ -231,7 +232,7 @@
 										<p class="mb-0"><strong>Edinburgh to Hamburg</strong></p>
 										<p class="mb-4"><strong>June 27 to July 5, 2024</strong></p>
 										<p class="mb-4">Sail into a spirited summer inspired by Nordic cuisine, from the time-honored distilleries of Scotland to the Michelin-star restaurants of Sylt. Sip single malts from Speyside, try Norwegian wild herbs, eat fresh North Sea prawn and aromatic oysters on this culinary sailing adventure.</p>
-										<button href="#" class="btn btn-outline-primary">More info</button>
+										<a href="#" class="btn btn-outline-primary">More info</a>
 									</div>
 								</div>
 							</div>
@@ -242,7 +243,7 @@
 					<div class="half-width-item position-relative p-0 w-100 h-100">
 						<div class="row align-items-stretch g-0 h-100">
 							<div class="col-md">
-								<img class="half-width-image" src="images/about/packs/pack-03.jpg" alt="Second slide" />
+								<img class="half-width-image" src="images/about/packs/pack-03.jpg" alt="10-Night Luxury Lifestyle & Relaxing Beats" />
 							</div>
 							<div class="col-md">
 								<div class="half-width-wraper bg-white h-100 d-flex justify-content-center align-items-center">
@@ -251,7 +252,7 @@
 										<p class="mb-0"><strong>Hamburg to Bilbao</strong></p>
 										<p class="mb-4"><strong>July 13 to July 23, 2024</strong></p>
 										<p class="mb-4">As part of our signature Curated Moments — exclusive events beyond the sea — we treat you to a special culinary evening in the wine metropolis of Haut-Médoc. "La vie est belle" on summer nights in Bordeaux. Then sail to San Sebastián, the Basque Country port calling to gourmets from around the world.</p>
-										<button href="#" class="btn btn-outline-primary">More info</button>
+										<a href="#" class="btn btn-outline-primary">More info</a>
 									</div>
 								</div>
 							</div>
@@ -261,64 +262,6 @@
 			</div>
 		</div>
 	</section>
-	<!--<section id="scroll-animation" class="container-fluid overflow-hidden position-relative p-0">
-		<div class="half-width-item position-relative p-0 w-100">
-			<div class="row align-items-stretch g-0 h-100">
-				<div class="col-md">
-					<img class="half-width-image" src="images/about/packs/pack-01.jpg" alt="Second slide" />
-				</div>
-				<div class="col-md">
-					<div class="half-width-wraper bg-white h-100 d-flex justify-content-center align-items-center">
-						<div class="px-5">
-                            <img class="mb-5" src="images/about/packs/pack-01-content.jpg" alt="Second slide" />
-                            <p class="lead letter-spacing-lg mb-4">8-Night Taste of the Atlantic Coast</p>
-							<p class="mb-0"><strong>Bilbao to Honfleur</strong></p>
-							<p class="mb-4"><strong>May 28 to June 5, 2024</strong></p>
-							<p class="mb-4">Savor, sip and sail elite epicurean regions, enjoying Basque Country tapas and exquisite seafood dishes in Aquitaine, Brittany and Normandy. In the world's wine capital, Bordeaux delivers its best vintages, while casks from La Rochelle give a taste of Cognac and Pineau. Sommelier Nils Lackner shares insights, equipped with a champagne saber and decanter.</p>
-							<button href="#" class="btn btn-outline-primary">More info</button>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="half-width-item position-relative p-0 w-100">
-			<div class="row align-items-stretch g-0 h-100">
-				<div class="col-md">
-					<img class="half-width-image" src="images/about/packs/pack-02.jpg" alt="Second slide" />
-				</div>
-				<div class="col-md order-md-1">
-					<div class="half-width-wraper bg-white h-100 d-flex justify-content-center align-items-center">
-						<div class="px-5">
-                            <p class="lead letter-spacing-lg mb-4">8-Night Culinary Summer for Connoisseurs</p>
-							<p class="mb-0"><strong>Edinburgh to Hamburg</strong></p>
-							<p class="mb-4"><strong>June 27 to July 5, 2024</strong></p>
-							<p class="mb-4">Sail into a spirited summer inspired by Nordic cuisine, from the time-honored distilleries of Scotland to the Michelin-star restaurants of Sylt. Sip single malts from Speyside, try Norwegian wild herbs, eat fresh North Sea prawn and aromatic oysters on this culinary sailing adventure.</p>
-							<button href="#" class="btn btn-outline-primary">More info</button>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="half-width-item position-relative p-0 w-100">
-			<div class="row align-items-stretch g-0 h-100">
-				<div class="col-md">
-					<img class="half-width-image" src="images/about/packs/pack-03.jpg" alt="Second slide" />
-				</div>
-				<div class="col-md">
-					<div class="half-width-wraper bg-white h-100 d-flex justify-content-center align-items-center">
-						<div class="px-5">
-                            <p class="lead letter-spacing-lg mb-4">10-Night Luxury Lifestyle & Relaxing Beats</p>
-							<p class="mb-0"><strong>Hamburg to Bilbao</strong></p>
-							<p class="mb-4"><strong>July 13 to July 23, 2024</strong></p>
-							<p class="mb-4">As part of our signature Curated Moments — exclusive events beyond the sea — we treat you to a special culinary evening in the wine metropolis of Haut-Médoc. "La vie est belle" on summer nights in Bordeaux. Then sail to San Sebastián, the Basque Country port calling to gourmets from around the world.</p>
-							<button href="#" class="btn btn-outline-primary">More info</button>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>-->
-	<!-- /Half width section -->
 
     <!-- Also like section -->
     <section id="also-like" class="py-5">
@@ -331,13 +274,13 @@
 						<div class="card card-feature bg-white">
                             <a href="">
                                 <div class="card-img">
-                                    <img src="images/special-offers/also-like/feature-img-01.jpg" class="card-img-top" alt="Feature">
+                                    <img src="images/special-offers/also-like/feature-img-01.jpg" class="card-img-top" alt="Military savings">
                                 </div>
                                 <div class="card-body text-center p-3 p-md-4 p-lg-5">
                                     <h5 class="card-title lh-base m-0">Military savings</h5>
                                     <div class="divider my-2 bg-primary"></div>
                                     <p class="card-text">Up to<strong> $ 3000 </strong>in savings per stateroom</p>
-                                    <img class="" width="25" height="15" src="images/icons/double-arrow-right.svg" alt="Second slide">
+                                    <img class="" width="25" height="15" src="images/icons/double-arrow-right.svg" alt="Seaclou forward">
                                 </div>
                             </a>
                         </div>
@@ -346,13 +289,13 @@
 						<div class="card card-feature bg-white">
                             <a href="">
                                 <div class="card-img">
-                                    <img src="images/special-offers/also-like/feature-img-02.jpg" class="card-img-top" alt="Feature">
+                                    <img src="images/special-offers/also-like/feature-img-02.jpg" class="card-img-top" alt="Culinary sailings">
                                 </div>
                                 <div class="card-body text-center p-3 p-md-4 p-lg-5">
-                                    <h5 class="card-title lh-base m-0">Military savings</h5>
+                                    <h5 class="card-title lh-base m-0">Culinary sailings</h5>
                                     <div class="divider my-2 bg-primary"></div>
                                     <p class="card-text">Up to<strong> $ 3000 </strong>in savings per stateroom</p>
-                                    <img class="" width="25" height="15" src="images/icons/double-arrow-right.svg" alt="Second slide">
+                                    <img class="" width="25" height="15" src="images/icons/double-arrow-right.svg" alt="Seacloud forward">
                                 </div>
                             </a>
                         </div>
@@ -361,13 +304,13 @@
 						<div class="card card-feature bg-white">
                             <a href="">
                                 <div class="card-img">
-                                    <img src="images/special-offers/also-like/feature-img-01.jpg" class="card-img-top" alt="Feature">
+                                    <img src="images/special-offers/also-like/feature-img-01.jpg" class="card-img-top" alt="Northern Europe">
                                 </div>
                                 <div class="card-body text-center p-3 p-md-4 p-lg-5">
-                                    <h5 class="card-title lh-base m-0">Military savings</h5>
+                                    <h5 class="card-title lh-base m-0">Northern Europe</h5>
                                     <div class="divider my-2 bg-primary"></div>
                                     <p class="card-text">Up to<strong> $ 3000 </strong>in savings per stateroom</p>
-                                    <img class="" width="25" height="15" src="images/icons/double-arrow-right.svg" alt="Second slide">
+                                    <img class="" width="25" height="15" src="images/icons/double-arrow-right.svg" alt="Seacloud forward">
                                 </div>
                             </a>
                         </div>
@@ -382,7 +325,7 @@
                                     <h5 class="card-title lh-base m-0">Military savings</h5>
                                     <div class="divider my-2 bg-primary"></div>
                                     <p class="card-text">Up to<strong> $ 3000 </strong>in savings per stateroom</p>
-                                    <img class="" width="25" height="15" src="images/icons/double-arrow-right.svg" alt="Second slide">
+                                    <img class="" width="25" height="15" src="images/icons/double-arrow-right.svg" alt="Seacloud forward">
                                 </div>
                             </a>
                         </div>
@@ -397,7 +340,7 @@
                                     <h5 class="card-title lh-base m-0">Military savings</h5>
                                     <div class="divider my-2 bg-primary"></div>
                                     <p class="card-text">Up to<strong> $ 3000 </strong>in savings per stateroom</p>
-                                    <img class="" width="25" height="15" src="images/icons/double-arrow-right.svg" alt="Second slide">
+                                    <img class="" width="25" height="15" src="images/icons/double-arrow-right.svg" alt="Seacloud forward">
                                 </div>
                             </a>
                         </div>
@@ -416,7 +359,7 @@
 		<div class="container-fluid px-0">
 			<div class="row align-items-stretch g-0">
 				<div class="col-md">
-					<img class="half-width-image" src="images/about/distinctive-destination/distinctive-destination.jpg" alt="Second slide" />
+					<img class="half-width-image" src="images/about/distinctive-destination/distinctive-destination.jpg" alt="DISTINCTIVE DESTINATIONS OFF THE BEATEN PATH" />
 				</div>
 				<div class="col-md text-center text-primary">
 					<div class="half-width-wraper bg-secondary h-100 d-flex justify-content-center align-items-center">
@@ -524,8 +467,8 @@
 									<form class="my-4" action="">
 										<div class="input-group input-mail mb-3">
 											<input type="text" class="form-control" placeholder="Your mail" aria-label="Your mail" aria-describedby="mail-button-addon">
-											<button class="btn btn-primary px-2" type="button">
-												<img class="d-none d-md-block" width="25" height="15" src="images/icons/double-arrow-right-secondary.svg" alt="Second slide">
+											<button class="btn btn-primary px-2" type="submit">
+												<img class="d-none d-md-block" width="25" height="15" src="images/icons/double-arrow-right-secondary.svg" alt="Sign up">
 												<span class="d-block d-md-none"></span>
 											</button>
 										</div>

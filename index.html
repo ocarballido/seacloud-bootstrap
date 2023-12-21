@@ -31,7 +31,8 @@
 			<!-- /Menu -->
 
 			<!-- Logo -->
-			<img class="mx-auto mx-lg-0" src="images/appbar/seacloud-logo.png" width="116" height="85" alt="Logo">
+			<img id="appbarLogo" class="mx-auto mx-lg-0" src="images/appbar/seacloud-logo.png" width="116" height="85" alt="Logo">
+			<img id="appbarLogoSymbol" class="mx-auto mx-lg-0 d-none" src="images/appbar/seacloud-symbol.png" width="26" height="34" alt="Logo symbol">
 			<!-- /Logo -->
 
 			<!-- Menu -->
@@ -138,21 +139,21 @@
 			<div class="swiper-wrapper">
 				<div class="swiper-slide">
 					<!-- Image -->
-					<img class="w-100 d-none d-md-block" src="images/home/hero/hero-carousel-01.jpg" alt="First slide" />
-					<img class="w-100 d-block d-md-none" src="images/home/hero/hero-carousel-01-mobile.jpg" alt="First slide" />
+					<img class="w-100 d-none d-md-block" src="images/home/hero/hero-carousel-01.jpg" alt="Seacloud slide" />
+					<img class="w-100 d-block d-md-none" src="images/home/hero/hero-carousel-01-mobile.jpg" alt="Seacloud slide" />
 					<!-- /Image -->
 				</div>
 
 				<div class="swiper-slide">
 					<!-- Image -->
-					<img class="w-100 d-none d-md-block" src="images/home/hero/hero-carousel-02.jpg" alt="First slide" />
-					<img class="w-100 d-block d-md-none" src="images/home/hero/hero-carousel-02-mobile.jpg" alt="First slide" />
+					<img class="w-100 d-none d-md-block" src="images/home/hero/hero-carousel-02.jpg" alt="Seacloud slide" />
+					<img class="w-100 d-block d-md-none" src="images/home/hero/hero-carousel-02-mobile.jpg" alt="Seacloud slide" />
 					<!-- /Image -->
 				</div>
 				<div class="swiper-slide">
 					<!-- Image -->
-					<img class="w-100 d-none d-md-block" src="images/home/hero/hero-carousel-03.jpg" alt="First slide" />
-					<img class="w-100 d-block d-md-none" src="images/home/hero/hero-carousel-03-mobile.jpg" alt="First slide" />
+					<img class="w-100 d-none d-md-block" src="images/home/hero/hero-carousel-03.jpg" alt="Seacloud slide" />
+					<img class="w-100 d-block d-md-none" src="images/home/hero/hero-carousel-03-mobile.jpg" alt="Seacloud slide" />
 					<!-- /Image -->
 				</div>
 			</div>
@@ -173,8 +174,8 @@
 							<h2 class="mb-0">Friday</h2>
 							<p class="lead text-uppercase letter-spacing-md">Sepecial offer</p>
 							<p class="mb-4">With our fantastic special offers you can save <strong>$up to $2,070 per person</strong> on selected cruises</p>
-							<button class="btn btn-secondary d-none d-md-inline-block mb-4">View voyages</button>
-							<button class="btn btn-primary d-inline-block d-md-none mb-4">View voyages</button>
+							<a href="#" class="btn btn-secondary d-none d-md-inline-block mb-4">View voyages</a>
+							<a href="#" class="btn btn-primary d-inline-block d-md-none mb-4">View voyages</a>
 						</div>
 					</div>
 				</div>
@@ -186,9 +187,8 @@
 
 	<!-- Search section -->
 	<section id="search-section" class="fullscreen-md d-flex align-items-center">
-		<!-- <div class="container-fluid"></div> -->
 		<div class="seacrh-container">
-			<div class="row pt-md-5 pb-md-5 mb-md-5">
+			<div class="row align-items-center pt-md-5 pb-md-5 mb-md-5">
 				<div class="col-md text-center order-md-2">
 					<div class="seacr-content-columns">
 						<p class="text-secondary lead text-uppercase letter-spacing-lg fw-medium">Sail the luxury of</p>
@@ -271,7 +271,7 @@
 	<!-- Carousel The ship section -->
 	<section class="fullscreen-carousel bg-white">
 		<div class="position-relative">
-			<img class="position-absolute bottom-0 end-0 d-none d-md-block mb-4 me-4" src="images/home/the-ship/the-ship.svg" width="74" height="63" alt="Second slide" />
+			<img class="position-absolute bottom-0 end-0 d-none d-md-block mb-4 me-4" src="images/home/the-ship/the-ship.svg" width="74" height="63" alt="The ship" />
 			<!-- Slider main container -->
 			<div class="swiper common-carousel">
 				<!-- Additional required wrapper -->
@@ -281,16 +281,16 @@
 						<div class="w-100 h-100 content d-flex align-items-center top-0 start-0">
 							<div class="container">
 								<div class="row justify-content-end align-items-center py-5">
-									<div class="col-lg-7 col-xl-8">
+									<div class="col-lg-8 col-xl-7">
 										<p class="display-5 the-ship-title position-relative mb-n1 ms-3 mt-5 mt-md-0 text-center-md">The Ship</p>
-										<img class="img-fluid" src="images/home/the-ship/sea-cloud-spirit.jpg" alt="Second slide" />
+										<img class="img-fluid" src="images/home/the-ship/sea-cloud-spirit.jpg" alt="Sea cloud spirit" />
 									</div>
-									<div class="col-lg-5 col-xl-4">
+									<div class="col-lg-4">
 										<div class="p-3 mt-5 mt-lg-0 text-center-md">
-											<h2 class="text-primary mb-1">Sea cloud spirit</h2>
+											<h2 class="text-primary mb-4">Sea cloud spirit</h2>
 											<div class="divider my-3 bg-primary"></div>
 											<p class="mb-4 text-center-md">She modernized the fleet in 2021 and welcomes 136 guests for an elite hotel experience on board, tended to by an 85-member crew. The authentic sailing ship is flooded with light, luxuries and ultimate relaxation.</p>
-											<button class="btn btn-outline-primary mb-4">View ship</button>
+											<a href="#" class="btn btn-outline-primary mb-4">View ship</a>
 										</div>
 									</div>
 								</div>
@@ -304,16 +304,16 @@
 						<div class="w-100 h-100 content d-flex align-items-center top-0 start-0">
 							<div class="container">
 								<div class="row justify-content-end align-items-center py-5">
-									<div class="col-lg-7 col-xl-8">
+									<div class="col-lg-8 col-xl-7">
 										<p class="display-5 the-ship-title position-relative mb-n1 ms-3 mt-5 mt-md-0 text-center-md">The Ship</p>
-										<img class="img-fluid" src="images/home/the-ship/sea-cloud-2.jpg" alt="Second slide" />
+										<img class="img-fluid" src="images/home/the-ship/sea-cloud-2.jpg" alt="Sea cloud II" />
 									</div>
-									<div class="col-lg-5 col-xl-4">
+									<div class="col-lg-4">
 										<div class="p-3 mt-5 mt-lg-0 text-center-md">
-											<h2 class="text-primary mb-1">Sea cloud II</h2>
+											<h2 class="text-primary mb-4">Sea cloud II</h2>
 											<div class="divider my-3 bg-primary"></div>
 											<p class="mb-4 text-center-md">Built in 2001, with a family resemblance to the original SEA CLOUD, this 2nd generation welcomes 94 guests with expansive decks, outside suites and staterooms, and pampering from a 65-member crew.</p>
-											<button class="btn btn-outline-primary mb-4">View ship</button>
+											<a href="#" class="btn btn-outline-primary mb-4">View ship</a>
 										</div>
 									</div>
 								</div>
@@ -326,16 +326,16 @@
 						<div class="w-100 h-100 content d-flex align-items-center top-0 start-0">
 							<div class="container">
 								<div class="row justify-content-end align-items-center py-5">
-									<div class="col-lg-7 col-xl-8">
+									<div class="col-lg-8 col-xl-7">
 										<p class="display-5 the-ship-title position-relative mb-n1 ms-3 mt-5 mt-md-0 text-center-md">The Ship</p>
-										<img class="img-fluid" src="images/home/the-ship/sea-cloud.jpg" alt="Second slide" />
+										<img class="img-fluid" src="images/home/the-ship/sea-cloud.jpg" alt="Sea cloud" />
 									</div>
-									<div class="col-lg-5 col-xl-4">
+									<div class="col-lg-4">
 										<div class="p-3 mt-5 mt-lg-0 text-center-md">
-											<h2 class="text-primary mb-1">Sea cloud</h2>
+											<h2 class="text-primary mb-4">Sea cloud</h2>
 											<div class="divider my-3 bg-primary"></div>
 											<p class="mb-4 text-center-md">The 1931 private sailing yacht of Marjorie Merriweather Post and Edward Hutton leads our luxury fleet, with every detail radiating the glamour of a bygone era for 64 guests and a crew of 60.</p>
-											<button class="btn btn-outline-primary mb-4">View ship</button>
+											<a href="#" class="btn btn-outline-primary mb-4">View ship</a>
 										</div>
 									</div>
 								</div>
@@ -361,7 +361,7 @@
 				<div class="swiper-wrapper">
 					<div class="swiper-slide">
 						<!-- Image -->
-						<img class="d-none d-md-block w-100" src="images/home/carousel-features/carousel-01.jpg" alt="First slide" />
+						<img class="d-none d-md-block w-100" src="images/home/carousel-features/carousel-01.jpg" alt="Boutique" />
 						<!-- /Image -->
 
 						<!-- Content -->
@@ -369,7 +369,7 @@
 							<div class="container p-0">
 								<div class="row justify-content-end">
 									<div class="col-md col-lg-6 d-md-none mobile-image d-flex align-items-center justify-content-center">
-										<img class="d-block w-100 h-100" src="images/home/carousel-features/carousel-01-content-img-mobile.jpg" alt="Second slide" />
+										<img class="d-block w-100 h-100" src="images/home/carousel-features/carousel-01-content-img-mobile.jpg" alt="Boutique" />
 									</div>
 									<div class="col-md-10 col-lg-8 col-xl-5 white-opacity-8">
 										<div class="px-5 py-5 text-center text-secondary">
@@ -377,7 +377,7 @@
 											<h4 class="">Hotels at Sea</h4>
 											<div class="divider my-3 bg-secondary"></div>
 											<p class="mb-5">Plush suites and deluxe staterooms are serene retreats at sea, with artful interiors, marble bathrooms with golden fixtures, and small sitting areas.</p>
-											<button class="btn btn-outline-secondary mb-4">More info</button>
+											<a href="#" class="btn btn-primary mb-4">More info</a>
 										</div>
 									</div>
 								</div>
@@ -388,7 +388,7 @@
 
 					<div class="swiper-slide">
 						<!-- Image -->
-						<img class="d-none d-md-block w-100" src="images/home/carousel-features/carousel-02.jpg" alt="Second slide" />
+						<img class="d-none d-md-block w-100" src="images/home/carousel-features/carousel-02.jpg" alt="Gourmet" />
 						<!-- /Image -->
 
 						<!-- Content -->
@@ -401,12 +401,12 @@
 											<h4 class="text-primary">Side of sailing</h4>
 											<div class="divider my-3 bg-primary"></div>
 											<p class="mb-5 text-white">Refined culinary creations complemented by fine wines and spirits take center stage on the SEA CLOUDS. Award-winning chefs, sommeliers, and champagne experts curate epicurean experiences at sea.</p>
-											<button class="btn btn-outline-primary mb-4">More info</button>
+											<a href="#" class="btn btn-primary mb-4">More info</a>
 										</div>
 									</div>
 									<div class="col-md col-lg-6 order-1 order-md-2 mobile-image d-flex align-items-center justify-content-center">
-										<img class="d-none d-md-block w-100 h-100" src="images/home/carousel-features/carousel-02-content-img.jpg" alt="Second slide" />
-										<img class="d-block d-md-none w-100 h-100" src="images/home/carousel-features/carousel-02-content-img-mobile.jpg" alt="Second slide" />
+										<img class="d-none d-md-block w-100 h-100" src="images/home/carousel-features/carousel-02-content-img.jpg" alt="Gourmet" />
+										<img class="d-block d-md-none w-100 h-100" src="images/home/carousel-features/carousel-02-content-img-mobile.jpg" alt="Gourmet" />
 									</div>
 								</div>
 							</div>
@@ -415,7 +415,7 @@
 					</div>
 					<div class="swiper-slide">
 						<!-- Image -->
-						<img class="d-none d-md-block w-100" src="images/home/carousel-features/carousel-03.jpg" alt="First slide" />
+						<img class="d-none d-md-block w-100" src="images/home/carousel-features/carousel-03.jpg" alt="Inclusives" />
 						<!-- /Image -->
 
 						<!-- Content -->
@@ -423,7 +423,7 @@
 							<div class="container p-0">
 								<div class="row justify-content-end">
 									<div class="col-md col-lg-6 d-md-none mobile-image d-flex align-items-center justify-content-center">
-										<img class="d-block w-100 h-100" src="images/home/carousel-features/carousel-03-content-img-mobile.jpg" alt="Second slide" />
+										<img class="d-block w-100 h-100" src="images/home/carousel-features/carousel-03-content-img-mobile.jpg" alt="Inclusives" />
 									</div>
 									<div class="col-md-10 col-lg-8 col-xl-5 white-opacity-8">
 										<div class="px-5 py-5 text-center text-secondary">
@@ -431,7 +431,7 @@
 											<p class="display-4 mb-3">Inclusives</p>
 											<div class="divider my-3 bg-secondary"></div>
 											<p class="mb-5">Extra comforts and exclusive experiences are all-included when sailing the luxury of the SEA CLOUDS. Enjoy a welcome bottle of champagne, daily fruit basket in suites and staterooms, open bar, gratuities, water sports, and more.</p>
-											<button class="btn btn-outline-secondary mb-4">More info</button>
+											<a href="#" class="btn btn-primary mb-4">More info</a>
 										</div>
 									</div>
 								</div>
@@ -456,15 +456,15 @@
 					<div class="half-width-item position-relative p-0 w-100 h-100">
 						<div class="row align-items-stretch g-0">
 							<div class="col-md">
-								<img class="half-width-image" src="images/home/curated-moments/curated-moments.jpg" alt="Second slide" />
+								<img class="half-width-image" src="images/home/curated-moments/curated-moments.jpg" alt="Curated Moments" />
 							</div>
 							<div class="col-md text-center">
 								<div class="half-width-wraper bg-white h-100 d-flex justify-content-center align-items-center">
 									<div class="half-width-content">
-										<h3 class="text-primary mb-1">Curated Moments</h3>
+										<h2 class="text-primary mb-1">Curated Moments</h2>
 										<div class="divider my-3 bg-primary"></div>
 										<p class="mb-4 text-center-md">Private events in port come complimentary as part of the SEA CLOUD Difference. Think Steinway piano concerts, after hours at opera houses and museums, culinary vineyard visits, or front-row regatta and racing seats.</p>
-										<img class="" width="25" height="15" src="images/icons/double-arrow-right.svg" alt="Second slide">
+										<img class="" width="25" height="15" src="images/icons/double-arrow-right.svg" alt="Seacloud forward">
 									</div>
 								</div>
 							</div>
@@ -475,15 +475,15 @@
 					<div class="half-width-item position-relative p-0 w-100 h-100">
 						<div class="row align-items-stretch g-0">
 							<div class="col-md">
-								<img class="half-width-image" src="images/home/distinctive-destination/distinctive-destination.jpg" alt="Second slide" />
+								<img class="half-width-image" src="images/home/distinctive-destination/distinctive-destination.jpg" alt="Distinctive Destinations" />
 							</div>
 							<div class="col-md text-center order-md-1">
 								<div class="half-width-wraper bg-light h-100 d-flex justify-content-center align-items-center">
 									<div class="half-width-content">
-										<h3 class="text-primary mb-1">Distinctive Destinations</h3>
+										<h2 class="text-primary mb-1">Distinctive Destinations</h2>
 										<div class="divider my-3 bg-primary"></div>
 										<p class="mb-4 text-center-md">The SEA CLOUDS sail to the world’s most beautiful places, where upscale local charm welcomes discerning guests, devoid of crowds. Every itinerary is hand selected and special, so you can experience the world in a different way.</p>
-										<img class="" width="25" height="15" src="images/icons/double-arrow-right.svg" alt="Second slide">
+										<img class="" width="25" height="15" src="images/icons/double-arrow-right.svg" alt="Seacloud forward">
 									</div>
 								</div>
 							</div>
@@ -494,15 +494,15 @@
 					<div class="half-width-item position-relative p-0 w-100 h-100">
 						<div class="row align-items-stretch g-0">
 							<div class="col-md">
-								<img class="half-width-image" src="images/home/sustainability/sustainability.jpg" alt="Second slide" />
+								<img class="half-width-image" src="images/home/sustainability/sustainability.jpg" alt="Sustainability" />
 							</div>
 							<div class="col-md text-center">
 								<div class="half-width-wraper bg-white h-100 d-flex justify-content-center align-items-center">
 									<div class="half-width-content">
-										<h3 class="text-primary mb-1">Sustainability</h3>
+										<h2 class="text-primary mb-1">Sustainability</h2>
 										<div class="divider my-3 bg-primary"></div>
 										<p class="mb-4 text-center-md">For more than 40 years, responsible tourism at sea and on shore has guided our philosophy of sustainability. With smaller ships and fewer guests, we create more meaningful experiences with less impact left behind.</p>
-										<img class="" width="25" height="15" src="images/icons/double-arrow-right.svg" alt="Second slide">
+										<img class="" width="25" height="15" src="images/icons/double-arrow-right.svg" alt="Seacloud forward">
 									</div>
 								</div>
 							</div>
@@ -521,15 +521,15 @@
 			<div class="container p-0">
 				<div class="row g-0">
 					<div class="col-12 d-block d-md-none">
-						<img class="img-fluid" src="images/home/celebrate/celebrate-bg.jpg" alt="Second slide">
+						<img class="img-fluid" src="images/home/celebrate/celebrate-bg.jpg" alt="Celebrating">
 					</div>
 					<div class="col-md-8 col-lg-5 col-xl-4 content">
 						<div class="px-5 py-5 text-center text-white">
 							<p class="display-5 mt-5 mb-3 title">Celebrating</p>
 							<div class="divider my-3"></div>
 							<p class="mb-4">Commemorate special days in upscale ways on a SEA CLOUD sailing yacht. From birthdays and anniversaries to weddings and honeymoons, we curate exclusive onboard experiences to celebrate life's most cherished moments.</p>
-							<button class="btn btn-primary d-none d-md-inline-block mb-4">More info</button>
-							<button class="btn btn-outline-primary d-inline-block d-md-none mb-4">More info</button>
+							<a href="#" class="btn btn-primary d-none d-md-inline-block mb-4">More info</a>
+							<a href="#" class="btn btn-outline-primary d-inline-block d-md-none mb-4">More info</a>
 						</div>
 					</div>
 				</div>
@@ -542,19 +542,58 @@
 	<!-- Highlights section -->
 	<section id="highlights" class="position-relative py-5">
 		<div class="container py-5">
-			<h5 class="text-secondary text-center mb-4">Our highlights for you</h5>
+			<h2 class="text-secondary text-center mb-4">Our highlights for you</h2>
 			<div id="highlights-carousel" class="swiper pb-5">
 				<div class="swiper-wrapper pb-5">
 					<div class="swiper-slide">
 						<div class="card card-highlights text-bg-dark">
-							<img src="images/highlights/highlights.jpg" class="card-img" alt="Highlights">
+							<img src="images/highlights/highlights.jpg" class="card-img" alt="A COLORFUL CARIBBEAN TIME-OUT">
 							<div class="card-img-overlay">
-								<p class="card-title fw-medium">SIX ISLANDS IN AN EASTER BOUQUET SIX IN AN EASTER BOUQUET SIX ISLANDS IN AN</p>
+								<p class="card-title fw-medium">A COLORFUL CARIBBEAN TIME-OUT</p>
 								<p class="card-text">8 NIGHTS 29/Sep/2023 → 7/Oct/2023</p>
 								<p class="card-text">Nice/France — Naples/Italy</p>
 								<p class="card-text"><a href="#">Sea Cloud Spirit</a></p>
 								<p class="card-text">Watch the classic regatta Les Voiles de Saint Tropez live from board. Our expert on this cruise: sailor and "Les Voiles" expert Jan-Niklas Keltsch.</p>
-								<button class="btn btn-outline-primary btn-sm mb-4">More info</button>
+								<a href="#" class="btn btn-outline-primary btn-sm mb-4">More info</a>
+							</div>
+						</div>
+					</div>
+					<div class="swiper-slide">
+						<div class="card card-highlights text-bg-dark">
+							<img src="images/highlights/highlights-02.jpg" class="card-img" alt="LUXURY LIFESTYLE, RELAXING BEATS">
+							<div class="card-img-overlay">
+								<p class="card-title fw-medium">LUXURY LIFESTYLE, RELAXING BEATS</p>
+								<p class="card-text">8 NIGHTS 29/Sep/2023 → 7/Oct/2023</p>
+								<p class="card-text">Nice/France — Naples/Italy</p>
+								<p class="card-text"><a href="#">Sea Cloud Spirit</a></p>
+								<p class="card-text">Watch the classic regatta Les Voiles de Saint Tropez live from board. Our expert on this cruise: sailor and "Les Voiles" expert Jan-Niklas Keltsch.</p>
+								<a href="#" class="btn btn-outline-primary btn-sm mb-4">More info</a>
+							</div>
+						</div>
+					</div>
+					<div class="swiper-slide">
+						<div class="card card-highlights text-bg-dark">
+							<img src="images/highlights/highlights-03.jpg" class="card-img" alt="SIX ISLANDS IN AN EASTER BOUQUET">
+							<div class="card-img-overlay">
+								<p class="card-title fw-medium">SIX ISLANDS IN AN EASTER BOUQUET</p>
+								<p class="card-text">8 NIGHTS 29/Sep/2023 → 7/Oct/2023</p>
+								<p class="card-text">Nice/France — Naples/Italy</p>
+								<p class="card-text"><a href="#">Sea Cloud Spirit</a></p>
+								<p class="card-text">Watch the classic regatta Les Voiles de Saint Tropez live from board. Our expert on this cruise: sailor and "Les Voiles" expert Jan-Niklas Keltsch.</p>
+								<a href="#" class="btn btn-outline-primary btn-sm mb-4">More info</a>
+							</div>
+						</div>
+					</div>
+					<div class="swiper-slide">
+						<div class="card card-highlights text-bg-dark">
+							<img src="images/highlights/highlights.jpg" class="card-img" alt="ONCE THROUGH THE PANAMA CANAL">
+							<div class="card-img-overlay">
+								<p class="card-title fw-medium">ONCE THROUGH THE PANAMA CANAL</p>
+								<p class="card-text">8 NIGHTS 29/Sep/2023 → 7/Oct/2023</p>
+								<p class="card-text">Nice/France — Naples/Italy</p>
+								<p class="card-text"><a href="#">Sea Cloud Spirit</a></p>
+								<p class="card-text">Watch the classic regatta Les Voiles de Saint Tropez live from board. Our expert on this cruise: sailor and "Les Voiles" expert Jan-Niklas Keltsch.</p>
+								<a href="#" class="btn btn-outline-primary btn-sm mb-4">More info</a>
 							</div>
 						</div>
 					</div>
@@ -567,7 +606,7 @@
 								<p class="card-text">Nice/France — Naples/Italy</p>
 								<p class="card-text"><a href="#">Sea Cloud Spirit</a></p>
 								<p class="card-text">Watch the classic regatta Les Voiles de Saint Tropez live from board. Our expert on this cruise: sailor and "Les Voiles" expert Jan-Niklas Keltsch.</p>
-								<button class="btn btn-outline-primary btn-sm mb-4">More info</button>
+								<a href="#" class="btn btn-outline-primary btn-sm mb-4">More info</a>
 							</div>
 						</div>
 					</div>
@@ -580,7 +619,7 @@
 								<p class="card-text">Nice/France — Naples/Italy</p>
 								<p class="card-text"><a href="#">Sea Cloud Spirit</a></p>
 								<p class="card-text">Watch the classic regatta Les Voiles de Saint Tropez live from board. Our expert on this cruise: sailor and "Les Voiles" expert Jan-Niklas Keltsch.</p>
-								<button class="btn btn-outline-primary btn-sm mb-4">More info</button>
+								<a href="#" class="btn btn-outline-primary btn-sm mb-4">More info</a>
 							</div>
 						</div>
 					</div>
@@ -593,46 +632,7 @@
 								<p class="card-text">Nice/France — Naples/Italy</p>
 								<p class="card-text"><a href="#">Sea Cloud Spirit</a></p>
 								<p class="card-text">Watch the classic regatta Les Voiles de Saint Tropez live from board. Our expert on this cruise: sailor and "Les Voiles" expert Jan-Niklas Keltsch.</p>
-								<button class="btn btn-outline-primary btn-sm mb-4">More info</button>
-							</div>
-						</div>
-					</div>
-					<div class="swiper-slide">
-						<div class="card card-highlights text-bg-dark">
-							<img src="images/highlights/highlights-02.jpg" class="card-img" alt="Highlights">
-							<div class="card-img-overlay">
-								<p class="card-title fw-medium">SIX ISLANDS IN AN EASTER BOUQUET SIX IN AN EASTER BOUQUET SIX ISLANDS IN AN</p>
-								<p class="card-text">8 NIGHTS 29/Sep/2023 → 7/Oct/2023</p>
-								<p class="card-text">Nice/France — Naples/Italy</p>
-								<p class="card-text"><a href="#">Sea Cloud Spirit</a></p>
-								<p class="card-text">Watch the classic regatta Les Voiles de Saint Tropez live from board. Our expert on this cruise: sailor and "Les Voiles" expert Jan-Niklas Keltsch.</p>
-								<button class="btn btn-outline-primary btn-sm mb-4">More info</button>
-							</div>
-						</div>
-					</div>
-					<div class="swiper-slide">
-						<div class="card card-highlights text-bg-dark">
-							<img src="images/highlights/highlights-03.jpg" class="card-img" alt="Highlights">
-							<div class="card-img-overlay">
-								<p class="card-title fw-medium">SIX ISLANDS IN AN EASTER BOUQUET SIX IN AN EASTER BOUQUET SIX ISLANDS IN AN</p>
-								<p class="card-text">8 NIGHTS 29/Sep/2023 → 7/Oct/2023</p>
-								<p class="card-text">Nice/France — Naples/Italy</p>
-								<p class="card-text"><a href="#">Sea Cloud Spirit</a></p>
-								<p class="card-text">Watch the classic regatta Les Voiles de Saint Tropez live from board. Our expert on this cruise: sailor and "Les Voiles" expert Jan-Niklas Keltsch.</p>
-								<button class="btn btn-outline-primary btn-sm mb-4">More info</button>
-							</div>
-						</div>
-					</div>
-					<div class="swiper-slide">
-						<div class="card card-highlights text-bg-dark">
-							<img src="images/highlights/highlights.jpg" class="card-img" alt="Highlights">
-							<div class="card-img-overlay">
-								<p class="card-title fw-medium">SIX ISLANDS IN AN EASTER BOUQUET SIX IN AN EASTER BOUQUET SIX ISLANDS IN AN</p>
-								<p class="card-text">8 NIGHTS 29/Sep/2023 → 7/Oct/2023</p>
-								<p class="card-text">Nice/France — Naples/Italy</p>
-								<p class="card-text"><a href="#">Sea Cloud Spirit</a></p>
-								<p class="card-text">Watch the classic regatta Les Voiles de Saint Tropez live from board. Our expert on this cruise: sailor and "Les Voiles" expert Jan-Niklas Keltsch.</p>
-								<button class="btn btn-outline-primary btn-sm mb-4">More info</button>
+								<a href="#" class="btn btn-outline-primary btn-sm mb-4">More info</a>
 							</div>
 						</div>
 					</div>
@@ -708,7 +708,7 @@
 		<div class="container px-0 pt-5 pb-0 pb-sm-5">
 			<div class="row g-0 align-items-center">
 				<div class="col-md order-lg-2 p-5">
-					<img src="images/home/news/news.png" class="img-fluid" alt="News">
+					<img src="images/home/news/news.webp" class="img-fluid" alt="2024 brochure & 2025 preview">
 				</div>
 				<div class="col-lg order-lg-1 text-center">
 					<div class="p-5 bg-white">
@@ -717,8 +717,8 @@
 						<div class="divider bg-primary"></div>
 						<p>Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
 						<div class="mb-5">
-							<button class="btn btn-outline-primary my-2">2024 brocgure</button>
-							<button class="btn btn-outline-primary my-2">2025 preview</button>
+							<a href="#" class="btn btn-outline-primary my-2">2024 brocgure</a>
+							<a href="#" class="btn btn-outline-primary my-2">2025 preview</a>
 						</div>
 					</div>
 				</div>
@@ -732,7 +732,7 @@
 		<div class="container py-5">
 			<div class="row align-items-center justify-content-between text-primary">
 				<div class="col-md col-lg-5 col-xl-4 text-center mb-5 mb-md-0">
-					<img class="d-block mx-auto mb-4" src="images/home/the-ship/the-ship.svg" width="74" height="63" alt="Second slide">
+					<img class="d-block mx-auto mb-4" src="images/home/the-ship/the-ship.svg" width="74" height="63" alt="The ship">
 					<h3 class="text-primary">Social at sea</h3>
 					<div class="divider bg-primary my-3"></div>
 					<p class="mb-5">Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
@@ -753,7 +753,7 @@
 					<form class="my-4" action="">
 						<div class="input-group input-mail mb-3">
 							<input type="text" class="form-control" placeholder="Your mail" aria-label="Your mail" aria-describedby="mail-button-addon">
-							<button class="btn btn-primary" type="button">Sign up</button>
+							<button class="btn btn-primary" type="submit">Sign up</button>
 						</div>
 					</form>
 					<p class="small text-uppercase letter-spacing-sm text-white"><small>By submitting this form, you are consenting to receive marketing emails from: Sea cloud us . You can revoke your consent to receive emails at any time by using the Safe Unsubscribe® link, found at the bottom of every email. Emails are serviced by Constant Contact</small></p>
@@ -855,8 +855,8 @@
 									<form class="my-4" action="">
 										<div class="input-group input-mail mb-3">
 											<input type="text" class="form-control" placeholder="Your mail" aria-label="Your mail" aria-describedby="mail-button-addon">
-											<button class="btn btn-primary px-2" type="button">
-												<img class="d-none d-md-block" width="25" height="15" src="images/icons/double-arrow-right-secondary.svg" alt="Second slide">
+											<button class="btn btn-primary px-2" type="submit">
+												<img class="d-none d-md-block" width="25" height="15" src="images/icons/double-arrow-right-secondary.svg" alt="Sign up">
 												<span class="d-block d-md-none"></span>
 											</button>
 										</div>
