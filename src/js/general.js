@@ -1,18 +1,12 @@
 // Appbar animation color
 export const appbarScrolled = () => {
-    console.log('General')
     const navElement = document.querySelector('#appbar');
     const appbarLogo = document.querySelector('#appbarLogo');
     const appbarLogoSymbol = document.querySelector('#appbarLogoSymbol');
-    const containsPy4 = navElement.classList.contains('py-4');
-    const containsPy2 = navElement.classList.contains('py-2');
 
     window.addEventListener('scroll', () => {
         if (window.scrollY >= 300) {
             navElement.classList.add('navbar-scrolled');
-            // if (containsPy4) {
-            //     //
-            // }
             navElement.classList.remove('py-4');
             navElement.classList.add('py-1');
             appbarLogo.classList.add('d-none');
@@ -36,8 +30,6 @@ export const copyright = () => {
 
 // Footer accordion
 export const footerAccordionUx = () => {
-    const footerAccordions = document.querySelectorAll('.footer-accordion');
-
     const toggleClassShowOnQuery = () => {
         const screenWidth = window.innerWidth;
 

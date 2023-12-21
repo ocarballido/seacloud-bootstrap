@@ -68,7 +68,6 @@ const commonCarousel = new Swiper('.common-carousel', {
 const highlightsCarousel = new Swiper('#highlights-carousel', {
 	slidesPerView: "auto",
 	spaceBetween: 16,
-	// centeredSlides: true,
 	pagination: {
 		el: ".swiper-pagination",
 		clickable: true,
@@ -77,7 +76,6 @@ const highlightsCarousel = new Swiper('#highlights-carousel', {
 });
 
 // Animation scroll
-// let sections = gsap.utils.toArray(".half-width-item");
 let responsive = gsap.matchMedia();
 
 let sections = gsap.utils.toArray(".slide");
