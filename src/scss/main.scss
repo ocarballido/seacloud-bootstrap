@@ -22,28 +22,9 @@ body {
 // Hero section
 #hero-section {
     .home-hero-slider {
-        // height: unset;
         position: relative;
         width: 100%;
         z-index: 0;
-        &:before {
-            /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#0e2050+0,0e2050+99&0+0,1+80 */
-            background: linear-gradient(to bottom,  rgba(14,32,80,0) 0%,rgba(14,32,80,1) 80%,rgba(14,32,80,1) 99%);
-            bottom: 0;
-            content: '';
-            display: block;
-            height: 30%;
-            left: 0;
-            position: absolute;
-            width: 100%;
-            z-index: 2;
-        }
-    }
-    .hero-content {
-        background-color: $secondary;
-        h2, p {
-            color: white;
-        }
     }
 }
 
@@ -74,8 +55,8 @@ body {
     .seacr-content-columns {
         margin: 0 auto;
         max-width: 400px;
-        padding-bottom: 4rem;
-        padding-top: 4rem;
+        padding-bottom: 7rem;
+        padding-top: 7rem;
         width: 100%;
     }
     .search-form-container {
@@ -135,10 +116,16 @@ body {
 
 // News section
 #news {
-    background-image: url("../images/home/news/news-bg.jpg");
+    background-image: none;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    .image {
+        background-image: url("../images/home/news/news-bg.jpg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
 }
 
 // Media queries
@@ -150,20 +137,17 @@ body {
             padding-right: 0.75rem;
         }
     }
+    #news {
+        background-image: url("../images/home/news/news-bg.jpg");
+        .image {
+            background-image: none;
+        }
+    }
 }
 @include media-breakpoint-up(md) {
     #hero-section {
         .home-hero-slider {
             position: absolute;
-            &:before {
-                display: none;
-            }
-        }
-        .hero-content {
-            background-color: transparent;
-            h2, p {
-                color: $secondary;
-            }
         }
     }
     #search-section {
@@ -184,6 +168,9 @@ body {
             max-width: 720px;
             padding-left: 0.75rem;
             padding-right: 0.75rem;
+        }
+        .image {
+            background-image: none;
         }
     }
     .horizontal-sliders{

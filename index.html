@@ -13,7 +13,7 @@
 	<header id="appbar" class="navbar fixed-top py-4">
 		<nav class="container-fluid flex-row-reverse flex-lg-row">
 			<!-- Offcanvas Button -->
-			<button class="navbar-toggler border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+			<button class="navbar-toggler border-0 ms-n5 ms-md-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
 				<img src="images/icons/menu-secondary.svg" width="26" height="26" alt="Open menu">
 			</button>
 			<!-- /Offcanvas Button -->
@@ -31,7 +31,7 @@
 			<!-- /Menu -->
 
 			<!-- Logo -->
-			<img id="appbarLogo" class="mx-auto mx-lg-0" src="images/appbar/seacloud-logo.png" width="116" height="85" alt="Logo">
+			<img id="appbarLogo" class="mx-auto mx-lg-0" src="images/appbar/seacloud-logo.png" width="94" height="67" alt="Logo">
 			<img id="appbarLogoSymbol" class="mx-auto mx-lg-0 d-none" src="images/appbar/seacloud-symbol.png" width="26" height="34" alt="Logo symbol">
 			<!-- /Logo -->
 
@@ -189,7 +189,7 @@
 	<section id="search-section" class="fullscreen-md d-flex align-items-center">
 		<div class="seacrh-container">
 			<div class="row align-items-center pt-md-5 pb-md-5 mb-md-5">
-				<div class="col-md text-center order-md-2">
+				<div class="col-md text-center order-md-2 image">
 					<div class="seacr-content-columns">
 						<p class="text-secondary lead text-uppercase letter-spacing-lg fw-medium">Sail the luxury of</p>
 						<h2 class="text-secondary h1">Sea<br/>Clouds</h2>
@@ -205,8 +205,8 @@
 			</div>
 			<div class="row justify-content-center search-form-container pb-4 pb-md-0">
 				<div class="col">
-					<div class="row justify-content-between align-items-end mx-3 px-3">
-						<div class="col-auto">
+					<div class="row justify-content-between align-items-end mx-3 px-3 mb-3">
+						<div class="col text-center-md">
 							<p class="display-6 ms-3 ms-md-5"><small>Find your cruise</small></p>
 						</div>
 						<div class="col-auto d-none d-md-block">
@@ -214,7 +214,7 @@
 						</div>
 					</div>
 					<form action="">
-						<div class="row gy-3 g-2 bg-white pb-4 pt-2 mx-3 px-3 justify-content-center">
+						<div class="row gy-2 gx-2 bg-white pb-3 pt-2 mx-3 px-3 justify-content-center">
 							<div class="col-xl col-lg-3 col-md-6 position-relative">
 								<select class="form-select" aria-label="Default select example">
 									<option selected>Destination</option>
@@ -226,6 +226,9 @@
 								<div class="bg-light-seacloud-blue position-absolute top-0 end-0 divider-vertical h-100 d-none d-md-block"></div>
 								<!-- /Vertical divider -->
 							</div>
+
+							<div class="divider d-md-none bg-light-seacloud-blue"></div>
+
 							<div class="col-xl col-lg-3 col-md-6 position-relative">
 								<select class="form-select" aria-label="Default select example">
 									<option selected>Ship</option>
@@ -237,6 +240,9 @@
 								<div class="bg-light-seacloud-blue position-absolute top-0 end-0 divider-vertical h-100 d-none d-md-none d-lg-block"></div>
 								<!-- /Vertical divider -->
 							</div>
+
+							<div class="divider d-md-none bg-light-seacloud-blue"></div>
+
 							<div class="col-xl col-lg-3 col-md-6 position-relative">
 								<select class="form-select" aria-label="Default select example">
 									<option selected>Departure date</option>
@@ -248,6 +254,9 @@
 								<div class="bg-light-seacloud-blue position-absolute top-0 end-0 divider-vertical h-100 d-none d-md-block"></div>
 								<!-- /Vertical divider -->
 							</div>
+
+							<div class="divider d-md-none bg-light-seacloud-blue"></div>
+
 							<div class="col-xl col-lg-3 col-md-6">
 								<select class="form-select" aria-label="Default select example">
 									<option selected>Travel</option>
@@ -256,6 +265,9 @@
 									<option value="3">Three</option>
 								</select>
 							</div>
+
+							<div class="divider d-md-none bg-light-seacloud-blue mb-2"></div>
+
 							<div class="col-xl col-lg-3 col-md-6 d-grid gap-2">
 								<button type="submit" class="btn btn-secondary btn-block mb-3 mb-md-0">Serch</button>
 								<p class="d-block d-md-none text-center"><a class="btn-link-arrow text-secondary" href="">Cruise calendar</a></p>
@@ -374,10 +386,10 @@
 									<div class="col-md-10 col-lg-8 col-xl-5 white-opacity-8">
 										<div class="px-5 py-5 text-center text-secondary">
 											<p class="display-4 mt-5 mb-3">Boutique</p>
-											<h4 class="">Hotels at Sea</h4>
-											<div class="divider my-3 bg-secondary"></div>
+											<h2 class="text-primary">Hotels at Sea</h2>
+											<div class="divider my-3 bg-primary"></div>
 											<p class="mb-5">Plush suites and deluxe staterooms are serene retreats at sea, with artful interiors, marble bathrooms with golden fixtures, and small sitting areas.</p>
-											<a href="#" class="btn btn-primary mb-4">More info</a>
+											<a href="#" class="btn btn-outline-primary mb-4">More info</a>
 										</div>
 									</div>
 								</div>
@@ -398,10 +410,10 @@
 									<div class="col-md col-lg-6 d-flex align-items-center bg-secondary order-2 order-md-1">
 										<div class="px-5 py-5 text-center">
 											<p class="display-4 text-primary mt-5 mb-3">Gourmet</p>
-											<h4 class="text-primary">Side of sailing</h4>
+											<h2 class="text-primary">Side of sailing</h2>
 											<div class="divider my-3 bg-primary"></div>
 											<p class="mb-5 text-white">Refined culinary creations complemented by fine wines and spirits take center stage on the SEA CLOUDS. Award-winning chefs, sommeliers, and champagne experts curate epicurean experiences at sea.</p>
-											<a href="#" class="btn btn-primary mb-4">More info</a>
+											<a href="#" class="btn btn-outline-primary mb-4">More info</a>
 										</div>
 									</div>
 									<div class="col-md col-lg-6 order-1 order-md-2 mobile-image d-flex align-items-center justify-content-center">
@@ -427,11 +439,11 @@
 									</div>
 									<div class="col-md-10 col-lg-8 col-xl-5 white-opacity-8">
 										<div class="px-5 py-5 text-center text-secondary">
-											<h4 class="mt-4 mb-3">Sea cloud</h4>
+											<h2 class="mt-4 mb-3">Sea cloud</h2>
 											<p class="display-4 mb-3">Inclusives</p>
 											<div class="divider my-3 bg-secondary"></div>
 											<p class="mb-5">Extra comforts and exclusive experiences are all-included when sailing the luxury of the SEA CLOUDS. Enjoy a welcome bottle of champagne, daily fruit basket in suites and staterooms, open bar, gratuities, water sports, and more.</p>
-											<a href="#" class="btn btn-primary mb-4">More info</a>
+											<a href="#" class="btn btn-outline-primary mb-4">More info</a>
 										</div>
 									</div>
 								</div>
@@ -478,7 +490,7 @@
 								<img class="half-width-image" src="images/home/distinctive-destination/distinctive-destination.jpg" alt="Distinctive Destinations" />
 							</div>
 							<div class="col-md text-center order-md-1">
-								<div class="half-width-wraper bg-light h-100 d-flex justify-content-center align-items-center">
+								<div class="half-width-wraper bg-light h-100 d-flex justify-content-center align-items-center py-5">
 									<div class="half-width-content">
 										<h2 class="text-primary mb-1">Distinctive Destinations</h2>
 										<div class="divider my-3 bg-primary"></div>
@@ -651,7 +663,7 @@
 				</div>
 			</div>
 			<form action="">
-				<div class="row gy-3 g-2 bg-white pb-4 pt-2 mx-3 px-3 justify-content-center">
+				<div class="row gy-2 gx-2 bg-white pb-3 pt-2 mx-3 px-3 justify-content-center">
 					<div class="col-xl col-lg-3 col-md-6 position-relative">
 						<select class="form-select" aria-label="Default select example">
 							<option selected>Destination</option>
@@ -663,6 +675,9 @@
 						<div class="bg-light-seacloud-blue position-absolute top-0 end-0 divider-vertical h-100 d-none d-md-block"></div>
 						<!-- /Vertical divider -->
 					</div>
+
+					<div class="divider d-md-none bg-light-seacloud-blue"></div>
+
 					<div class="col-xl col-lg-3 col-md-6 position-relative">
 						<select class="form-select" aria-label="Default select example">
 							<option selected>Ship</option>
@@ -674,6 +689,9 @@
 						<div class="bg-light-seacloud-blue position-absolute top-0 end-0 divider-vertical h-100 d-none d-md-none d-lg-block"></div>
 						<!-- /Vertical divider -->
 					</div>
+
+					<div class="divider d-md-none bg-light-seacloud-blue"></div>
+
 					<div class="col-xl col-lg-3 col-md-6 position-relative">
 						<select class="form-select" aria-label="Default select example">
 							<option selected>Departure date</option>
@@ -685,6 +703,9 @@
 						<div class="bg-light-seacloud-blue position-absolute top-0 end-0 divider-vertical h-100 d-none d-md-block"></div>
 						<!-- /Vertical divider -->
 					</div>
+
+					<div class="divider d-md-none bg-light-seacloud-blue"></div>
+
 					<div class="col-xl col-lg-3 col-md-6">
 						<select class="form-select" aria-label="Default select example">
 							<option selected>Travel</option>
@@ -693,6 +714,9 @@
 							<option value="3">Three</option>
 						</select>
 					</div>
+
+					<div class="divider d-md-none bg-light-seacloud-blue mb-2"></div>
+
 					<div class="col-xl col-lg-3 col-md-6 d-grid gap-2">
 						<button type="submit" class="btn btn-secondary btn-block mb-3 mb-md-0">Serch</button>
 						<p class="d-block d-md-none text-center"><a class="btn-link-arrow text-secondary" href="">Cruise calendar</a></p>
@@ -705,9 +729,9 @@
 
 	<!-- News section -->
 	<section id="news" class="position-relative pt-0 pt-md-5 pb-0 pb-sm-5">
-		<div class="container px-0 pt-5 pb-0 pb-sm-5">
+		<div class="container px-0 pt-sm-5 pt-0 pb-0 pb-sm-5">
 			<div class="row g-0 align-items-center">
-				<div class="col-md order-lg-2 p-5">
+				<div class="col-md order-lg-2 p-2 image pt-5 pt-sm-0">
 					<img src="images/home/news/news.webp" class="img-fluid" alt="2024 brochure & 2025 preview">
 				</div>
 				<div class="col-lg order-lg-1 text-center">
@@ -717,8 +741,8 @@
 						<div class="divider bg-primary"></div>
 						<p>Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
 						<div class="mb-5">
-							<a href="#" class="btn btn-outline-primary my-2">2024 brocgure</a>
-							<a href="#" class="btn btn-outline-primary my-2">2025 preview</a>
+							<a href="#" class="btn btn-outline-primary btn-block-sm my-2">2024 brocgure</a>
+							<a href="#" class="btn btn-outline-primary btn-block-sm my-2">2025 preview</a>
 						</div>
 					</div>
 				</div>
@@ -749,7 +773,7 @@
 					</div>
 				</div>
 				<div class="col-md col-lg-6">
-					<p class="lead">Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+					<p class="lead text-center text-md-start">Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
 					<form class="my-4" action="">
 						<div class="input-group input-mail mb-3">
 							<input type="text" class="form-control" placeholder="Your mail" aria-label="Your mail" aria-describedby="mail-button-addon">
@@ -765,7 +789,8 @@
 
 	<!-- Footer -->
 	<footer id="footer" class="pt-5 bg-white">
-		<div class="container pt-3">
+		<div class="container pt-3 px-5 px-sm-4 px-md-2">
+			<img id="appbarLogo" class="d-block d-md-none mx-auto mx-lg-0 mb-5" src="images/appbar/seacloud-logo.png" width="130" height="92" alt="Logo">
 			<div class="row">
 				<!-- Plan a cruise -->
 				<div class="col-md-6 col-lg">
