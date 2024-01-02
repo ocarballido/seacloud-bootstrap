@@ -25,6 +25,9 @@ body {
         position: relative;
         width: 100%;
         z-index: 0;
+        .mobile-image {
+            min-height: 570px;
+        }
     }
 }
 

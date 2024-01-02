@@ -25,32 +25,35 @@ body {
         position: relative;
         width: 100%;
         z-index: 0;
+        .mobile-image {
+            min-height: 570px;
+        }
         img {
             height: unset;
             object-fit: cover;
             object-position: center;
         }
-        &:before {
-            /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#0e2050+0,0e2050+99&0+0,1+80 */
-            background: linear-gradient(to bottom,  rgba(14,32,80,0) 0%,rgba(14,32,80,1) 80%,rgba(14,32,80,1) 99%);
-            bottom: 0;
-            content: '';
-            display: block;
-            height: 30%;
-            left: 0;
-            position: absolute;
-            width: 100%;
-            z-index: 2;
-        }
+        // &:before {
+        //     /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#0e2050+0,0e2050+99&0+0,1+80 */
+        //     background: linear-gradient(to bottom,  rgba(14,32,80,0) 0%,rgba(14,32,80,1) 80%,rgba(14,32,80,1) 99%);
+        //     bottom: 0;
+        //     content: '';
+        //     display: block;
+        //     height: 30%;
+        //     left: 0;
+        //     position: absolute;
+        //     width: 100%;
+        //     z-index: 2;
+        // }
     }
     .hero-content {
-        background-color: $secondary;
+        // background-color: $secondary;
         .row > div {
             background-color: transparent;
         }
-        h2, p {
-            color: white;
-        }
+        // h2, p {
+        //     color: white;
+        // }
     }
 }
 

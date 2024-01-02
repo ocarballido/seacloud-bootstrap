@@ -46,6 +46,12 @@
 @import './components/offcanvas';
 
 // 9. Custom code
+// Layout
+.container {
+    padding-left: 24px;
+    padding-right: 24px;
+}
+
 // Navbar
 .main-navbar {
     .nav-item {
