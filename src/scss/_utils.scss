@@ -50,6 +50,11 @@
     height: 25%;
 }
 
+// Blur
+.blur-10 {
+    backdrop-filter: blur(5px);
+}
+
 // Media queries
 // Up
 @include media-breakpoint-up(sm) {
