@@ -23,20 +23,23 @@
                 margin-bottom: .2rem;
                 text-transform: uppercase;
                 transition: all .25s;
+                &:after {
+                    background-image: none;
+                    background-position: right center;
+                    background-repeat: no-repeat;
+                    background-size: 16px auto;
+                    content: "";
+                    display: inline-block;
+                    height: 18px;
+                    margin-left: .25rem;
+                    vertical-align: text-top;
+                    width: 18px;
+                }
                 &:hover {
                     color: $primary;
                     margin-left: 1rem;
                     &:after {
                         background-image: url("/../../images/icons/double-arrow-right.svg");
-                        background-position: right center;
-                        background-repeat: no-repeat;
-                        background-size: 16px auto;
-                        content: "";
-                        display: inline-block;
-                        height: 18px;
-                        margin-left: .25rem;
-                        vertical-align: text-top;
-                        width: 18px;
                     }
                 }
             }
