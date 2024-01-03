@@ -1,6 +1,6 @@
 // Layout
 .fullscreen-xs {
-    height: 100vh;
+    height: 100vh !important;
 }
 
 // Text
@@ -27,26 +27,49 @@
     pointer-events: none;
 }
 
+// Size
+.mh-75 {
+    max-height: 75% !important;
+}
+.mh-50 {
+    max-height: 50% !important;
+}
+.mh-25 {
+    max-height: 25% !important;
+}
+.h-100-xs {
+    height: 100%;
+}
+.h-75-xs {
+    height: 75%;
+}
+.h-50-xs {
+    height: 50%;
+}
+.h-25-xs {
+    height: 25%;
+}
+
 // Media queries
 // Up
 @include media-breakpoint-up(sm) {
     .fullscreen-sm {
-        height: 100vh;
+        height: 100vh !important;
     }
 }
 @include media-breakpoint-up(md) {
     .fullscreen-md {
-        height: 100vh;
+        height: 100vh !important;
     }
 }
 @include media-breakpoint-up(lg) {
     .fullscreen-lg {
-        height: 100vh;
+        height: 100vh !important;
     }
 }
 @include media-breakpoint-up(xl) {
     .fullscreen-xl {
-        height: 100vh;
+        height: 100vh !important;
     }
 }
 @include media-breakpoint-up(xxl) {
@@ -58,20 +81,68 @@
     .text-center-sm {
         text-align: center;
     }
+    .h-100-sm {
+        height: 100%;
+    }
+    .h-75-sm {
+        height: 75%;
+    }
+    .h-50-sm {
+        height: 50%;
+    }
+    .h-25-sm {
+        height: 25%;
+    }
 }
 @include media-breakpoint-down(md) {
     .text-center-md {
         text-align: center;
+    }
+    .h-100-md {
+        height: 100%;
+    }
+    .h-75-md {
+        height: 75%;
+    }
+    .h-50-md {
+        height: 50%;
+    }
+    .h-25-md {
+        height: 25%;
     }
 }
 @include media-breakpoint-down(lg) {
     .text-center-lg {
         text-align: center;
     }
+    .h-100-lg {
+        height: 100%;
+    }
+    .h-75-lg {
+        height: 75%;
+    }
+    .h-50-lg {
+        height: 50%;
+    }
+    .h-25-lg {
+        height: 25%;
+    }
 }
 @include media-breakpoint-down(xl) {
     .text-center-xl {
         text-align: center;
+    }
+    .h-100-xl {
+        height: 100%;
+    }
+    .h-75-xl {
+        height: 75%;
+    }
+    .h-50-xl {
+        height: 50%;
+    }
+    .h-25-xl {
+        height: 25%;
     }
 }
 @include media-breakpoint-down(xxl) {

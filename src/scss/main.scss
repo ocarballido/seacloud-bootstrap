@@ -58,9 +58,10 @@ body {
     .seacr-content-columns {
         margin: 0 auto;
         max-width: 400px;
-        padding-bottom: 7rem;
-        padding-top: 7rem;
         width: 100%;
+    }
+    .find-your-cruise {
+        font-size: 28px;
     }
     .search-form-container {
         background-color: $light;
@@ -70,6 +71,22 @@ body {
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
+    }
+    .sail-luxury {
+        font-size: 38px;
+        line-height: 48px;
+    }
+}
+
+#the-ships {
+    .the-ships {
+        font-size: 40px;
+    }
+}
+
+#carousel-features {
+    .slide-gourmet {
+        height: 100%;
     }
 }
 
@@ -84,7 +101,7 @@ body {
     overflow-x: hidden;
 }
 .slide{
-    height:100%;
+    height:100vh;
     width:100%;
 }
 
@@ -176,11 +193,20 @@ body {
             background-image: none;
         }
     }
+    #carousel-features {
+        .slide-gourmet {
+            height: 60%;
+        }
+    }
     .horizontal-sliders{
         display: flex;
         flex-wrap: nowrap;
         width: 300%;
         overflow-x: hidden;
+    }
+    .slide{
+        height:100%;
+        width:100%;
     }
     #celebrate {
         background-image: url("../images/home/celebrate/celebrate-bg.jpg");
