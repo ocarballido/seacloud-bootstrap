@@ -550,7 +550,7 @@
 	<section id="highlights" class="position-relative pt-5 pb-4 pb-md-5">
 		<div class="container pt-5 pb-0 pb-md-5">
 			<h2 class="text-secondary text-center mb-4">Our highlights for you</h2>
-			<div id="highlights-carousel" class="swiper pb-5">
+			<div id="highlights-carousel" class="swiper pb-5 mb-4">
 				<div class="swiper-wrapper pb-5">
 					<div class="swiper-slide">
 						<div class="card card-highlights text-bg-dark">
@@ -649,75 +649,79 @@
 				<!-- /Pagination -->
 			</div>
 
-			<div class="row justify-content-between align-items-end mx-3 px-3 mt-5">
-				<div class="col-auto">
-					<p class="display-5 ms-3 ms-md-5 find-your-cruise">Find your cruise</p>
-				</div>
-				<div class="col-auto d-none d-md-block">
-					<p class=""><a class="btn-link-arrow text-secondary" href="">Cruise calendar</a></p>
+			<div class="row justify-content-center search-form-container pb-4 pb-md-0">
+				<div class="col">
+					<div class="row justify-content-between align-items-end mx-3 px-3 mb-3">
+						<div class="col text-center-md">
+							<p class="display-5 ms-3 ms-md-5 find-your-cruise">Find your cruise</p>
+						</div>
+						<div class="col-auto d-none d-md-block">
+							<p class=""><a class="btn-link-arrow text-secondary" href="">Cruise calendar</a></p>
+						</div>
+					</div>
+					<form action="">
+						<div class="row gy-2 gx-2 bg-white pb-3 pt-2 mx-3 px-3 justify-content-center">
+							<div class="col-xl col-lg-3 col-md-6 position-relative">
+								<select class="form-select" aria-label="Default select example">
+									<option selected>Destination</option>
+									<option value="1">One</option>
+									<option value="2">Two</option>
+									<option value="3">Three</option>
+								</select>
+								<!-- Vertical divider -->
+								<div class="bg-light-seacloud-blue position-absolute top-0 end-0 divider-vertical h-100 d-none d-md-block"></div>
+								<!-- /Vertical divider -->
+							</div>
+
+							<div class="divider d-md-none bg-light-seacloud-blue"></div>
+
+							<div class="col-xl col-lg-3 col-md-6 position-relative">
+								<select class="form-select" aria-label="Default select example">
+									<option selected>Ship</option>
+									<option value="1">One</option>
+									<option value="2">Two</option>
+									<option value="3">Three</option>
+								</select>
+								<!-- Vertical divider -->
+								<div class="bg-light-seacloud-blue position-absolute top-0 end-0 divider-vertical h-100 d-none d-md-none d-lg-block"></div>
+								<!-- /Vertical divider -->
+							</div>
+
+							<div class="divider d-md-none bg-light-seacloud-blue"></div>
+
+							<div class="col-xl col-lg-3 col-md-6 position-relative">
+								<select class="form-select" aria-label="Default select example">
+									<option selected>Departure date</option>
+									<option value="1">One</option>
+									<option value="2">Two</option>
+									<option value="3">Three</option>
+								</select>
+								<!-- Vertical divider -->
+								<div class="bg-light-seacloud-blue position-absolute top-0 end-0 divider-vertical h-100 d-none d-md-block"></div>
+								<!-- /Vertical divider -->
+							</div>
+
+							<div class="divider d-md-none bg-light-seacloud-blue"></div>
+
+							<div class="col-xl col-lg-3 col-md-6">
+								<select class="form-select" aria-label="Default select example">
+									<option selected>Travel</option>
+									<option value="1">One</option>
+									<option value="2">Two</option>
+									<option value="3">Three</option>
+								</select>
+							</div>
+
+							<div class="divider d-md-none bg-light-seacloud-blue mb-2"></div>
+
+							<div class="col-xl col-lg-3 col-md-6 d-grid gap-2">
+								<button type="submit" class="btn btn-secondary btn-block mb-3 mb-md-0">Serch</button>
+								<p class="d-block d-md-none text-center"><a class="btn-link-arrow text-secondary" href="">Cruise calendar</a></p>
+							</div>
+						</div>
+					</form>
 				</div>
 			</div>
-			<form action="">
-				<div class="row gy-2 gx-2 bg-white pb-3 pt-2 mx-0 mx-md-3 px-3 justify-content-center">
-					<div class="col-xl col-lg-3 col-md-6 position-relative">
-						<select class="form-select" aria-label="Default select example">
-							<option selected>Destination</option>
-							<option value="1">One</option>
-							<option value="2">Two</option>
-							<option value="3">Three</option>
-						</select>
-						<!-- Vertical divider -->
-						<div class="bg-light-seacloud-blue position-absolute top-0 end-0 divider-vertical h-100 d-none d-md-block"></div>
-						<!-- /Vertical divider -->
-					</div>
-
-					<div class="divider d-md-none bg-light-seacloud-blue"></div>
-
-					<div class="col-xl col-lg-3 col-md-6 position-relative">
-						<select class="form-select" aria-label="Default select example">
-							<option selected>Ship</option>
-							<option value="1">One</option>
-							<option value="2">Two</option>
-							<option value="3">Three</option>
-						</select>
-						<!-- Vertical divider -->
-						<div class="bg-light-seacloud-blue position-absolute top-0 end-0 divider-vertical h-100 d-none d-md-none d-lg-block"></div>
-						<!-- /Vertical divider -->
-					</div>
-
-					<div class="divider d-md-none bg-light-seacloud-blue"></div>
-
-					<div class="col-xl col-lg-3 col-md-6 position-relative">
-						<select class="form-select" aria-label="Default select example">
-							<option selected>Departure date</option>
-							<option value="1">One</option>
-							<option value="2">Two</option>
-							<option value="3">Three</option>
-						</select>
-						<!-- Vertical divider -->
-						<div class="bg-light-seacloud-blue position-absolute top-0 end-0 divider-vertical h-100 d-none d-md-block"></div>
-						<!-- /Vertical divider -->
-					</div>
-
-					<div class="divider d-md-none bg-light-seacloud-blue"></div>
-
-					<div class="col-xl col-lg-3 col-md-6">
-						<select class="form-select" aria-label="Default select example">
-							<option selected>Travel</option>
-							<option value="1">One</option>
-							<option value="2">Two</option>
-							<option value="3">Three</option>
-						</select>
-					</div>
-
-					<div class="divider d-md-none bg-light-seacloud-blue mb-2"></div>
-
-					<div class="col-xl col-lg-3 col-md-6 d-grid gap-2">
-						<button type="submit" class="btn btn-secondary btn-block mb-3 mb-md-0">Serch</button>
-						<p class="d-block d-md-none text-center"><a class="btn-link-arrow text-secondary" href="">Cruise calendar</a></p>
-					</div>
-				</div>
-			</form>
 		</div>
 	</section>
 	<!-- /Highlights section -->
