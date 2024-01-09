@@ -21,6 +21,11 @@ body {
 }
 // Hero section
 #hero-section {
+    height: 900px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     .home-hero-slider {
         position: relative;
         width: 100%;
@@ -33,6 +38,11 @@ body {
 
 // Search section
 #search-section {
+    height: 900px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     position: relative;
     &:after {
         background-image: url("../images/home/search-section/search-bg.jpg");
@@ -76,12 +86,19 @@ body {
 }
 
 #the-ships {
+    height: 900px;
+    min-height: 100vh;
     .the-ships {
         font-size: 40px;
     }
 }
 
 #carousel-features {
+    height: 900px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     .slide-gourmet {
         height: 100%;
     }
@@ -94,8 +111,10 @@ body {
 .horizontal-sliders{
     display:flex;
     flex-wrap: wrap;
+    align-items: stretch;
     width: 100%;
     overflow-x: hidden;
+    height: -webkit-fill-available;
 }
 .slide{
     height:100vh;
