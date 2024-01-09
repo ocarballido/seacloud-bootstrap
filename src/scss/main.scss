@@ -94,6 +94,12 @@ body {
     .the-ships {
         font-size: 40px;
     }
+    .swiper-slide {
+        justify-content: unset;
+    }
+    .content {
+        position: absolute;
+    }
 }
 
 #carousel-features {
@@ -214,6 +220,14 @@ body {
         }
         .image {
             background-image: none;
+        }
+    }
+    #the-ships {
+        .swiper-slide {
+            justify-content: center;
+        }
+        .content {
+            position: relative;
         }
     }
     #carousel-features {
