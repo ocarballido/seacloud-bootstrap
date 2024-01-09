@@ -88,6 +88,9 @@ body {
 #the-ships {
     height: auto;
     min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     .the-ships {
         font-size: 40px;
     }
