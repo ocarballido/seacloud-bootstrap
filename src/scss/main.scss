@@ -21,7 +21,7 @@ body {
 }
 // Hero section
 #hero-section {
-    height: 900px;
+    height: auto;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
@@ -31,21 +31,21 @@ body {
         width: 100%;
         z-index: 0;
         .mobile-image {
-            min-height: 570px;
+            // min-height: 570px;
         }
     }
 }
 
 // Search section
 #search-section {
-    height: 900px;
+    height: auto;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     position: relative;
     &:after {
-        background-image: url("../images/home/search-section/search-bg.jpg");
+        background-image: none;
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
@@ -86,7 +86,7 @@ body {
 }
 
 #the-ships {
-    height: 900px;
+    height: auto;
     min-height: 100vh;
     .the-ships {
         font-size: 40px;
@@ -94,13 +94,16 @@ body {
 }
 
 #carousel-features {
-    height: 900px;
+    height: auto;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     .slide-gourmet {
         height: 100%;
+    }
+    .content {
+        position: absolute;
     }
 }
 
@@ -188,6 +191,7 @@ body {
     }
     #search-section {
         &:after {
+            background-image: url("../images/home/search-section/search-bg.jpg");
             left: unset;
             right: 0;
             top: 0;
@@ -212,6 +216,9 @@ body {
     #carousel-features {
         .slide-gourmet {
             height: 60%;
+        }
+        .content {
+            position: absolute;
         }
     }
     .horizontal-sliders{

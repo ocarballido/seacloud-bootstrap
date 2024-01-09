@@ -10,6 +10,9 @@
         .mobile-image {
             height: 40%;
             max-height: unset;
+            img {
+                object-fit: cover;
+            }
         }
         .mobile-content {
             height: 60%;
@@ -20,15 +23,17 @@
         // min-height: 100vh;
         // display: flex;
         // flex-direction: column;
+        height: 100%;
         .swiper-wrapper {
             align-items: start;
             // height: 100%;
             .swiper-slide {
-                // height: 100%;
-                height: 900px;
+                height: 100%;
+                // height: 900px;
                 min-height: 100vh;
                 display: flex;
                 flex-direction: column;
+                justify-content: center;
                 overflow: hidden;
                 img.cover {
                     // height: 100%;
@@ -83,9 +88,9 @@
 @include media-breakpoint-up(md) {
     .fullscreen-carousel {
         .content {
-            left: 0;
-            position: absolute;
-            top: 0;
+            // left: 0;
+            // position: absolute;
+            // top: 0;
             .container {
                 max-width: 720px;
             }
