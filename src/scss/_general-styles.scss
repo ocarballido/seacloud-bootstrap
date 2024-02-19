@@ -55,11 +55,13 @@
 // Navbar
 .main-navbar {
     .nav-item {
+        align-items: center;
+        display: inline-flex;
         .nav-link {
             color: $secondary;
             font-weight: 100;
             letter-spacing: 2px;
-            margin-bottom: .2rem;
+            // margin-bottom: .2rem;
             text-transform: uppercase;
             &:hover {
                 color: $primary;
