@@ -46,6 +46,21 @@
 @import './components/offcanvas';
 
 // 9. Custom code
+body {
+    overflow-x: hidden;
+    &:before {
+        background: linear-gradient(to bottom,  rgba(255,255,255,1) 30%,rgba(255,255,255,0) 100%);
+        content: '';
+        display: block;
+        height: 360px;
+        left: 0;
+        opacity: 1;
+        position: absolute;
+        top: 0;
+        width: 100%;
+        z-index: 1;
+    }
+}
 // Layout
 .container {
     padding-left: 24px;

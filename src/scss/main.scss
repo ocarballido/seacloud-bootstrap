@@ -16,9 +16,6 @@
 @import './utils';
 
 // Custom pages styles
-body {
-    overflow-x: hidden;
-}
 // Hero section
 #hero-section {
     height: auto;
@@ -26,12 +23,25 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    .hero-content {
+        background-color: $secondary;
+    }
     .home-hero-slider {
         position: relative;
         width: 100%;
         z-index: 0;
-        .mobile-image {
-            // min-height: 570px;
+        &:before {
+            background: rgb(14,32,80);
+            background: linear-gradient(0deg, rgba(14,32,80,1) 14%, rgba(14,32,80,0) 100%);
+            content: '';
+            display: block;
+            height: 160px;
+            left: 0;
+            opacity: 1;
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            z-index: 2;
         }
     }
 }
@@ -196,6 +206,12 @@ body {
     #hero-section {
         .home-hero-slider {
             position: absolute;
+            &:before {
+                display: none;
+            }
+        }
+        .hero-content {
+            background-color: transparent;
         }
     }
     #search-section {
