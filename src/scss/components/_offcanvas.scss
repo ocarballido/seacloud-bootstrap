@@ -20,28 +20,25 @@
         .nav-item {
             .nav-link {
                 color: $secondary;
-                font-weight: 100;
+                font-weight: 400;
                 letter-spacing: 2px;
                 margin-bottom: .2rem;
                 text-transform: uppercase;
                 transition: all .25s;
-                &:after {
-                    background-image: none;
-                    background-position: right center;
-                    background-repeat: no-repeat;
-                    background-size: 16px auto;
-                    content: "";
-                    display: inline-block;
-                    height: 18px;
-                    margin-left: .25rem;
-                    vertical-align: text-top;
-                    width: 18px;
-                }
-                &:hover {
-                    color: $primary;
-                    margin-left: 1rem;
-                    &:after {
-                        background-image: url("../images/icons/double-arrow-right.svg");
+            }
+            .accordion-link {
+                text-decoration: none;
+            }
+            .accordion-list {
+                padding-left: 1rem;
+                list-style-type: disc;
+                li {
+                    margin-bottom: 0.75rem;
+                    &::marker {
+                        color: $primary;
+                    }
+                    &:last-child {
+                        margin-bottom: 0;
                     }
                 }
             }
