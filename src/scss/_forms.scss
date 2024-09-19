@@ -29,6 +29,11 @@
 .form-select {
     letter-spacing: 2px;
     text-transform: uppercase;
+    &.transparent-select {
+        --bs-form-select-bg-img: url(../images/icons/show-more-white.svg);
+        background-color: transparent;
+        color: white;
+    }
 }
 
 // Queries

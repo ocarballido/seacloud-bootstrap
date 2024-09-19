@@ -199,437 +199,293 @@
 	<!-- /Appbar -->
 
 	<!-- Hero section -->
-	<section id="hero-section" class="fullscreen-carousel fullscreen-section bg-white position-relative d-block d-md-flex align-items-center">
-		<!-- Slider main container -->
-		<div class="swiper home-hero-slider">
-			<!-- Slider Wrapper -->
-			<div class="swiper-wrapper">
-				<div class="swiper-slide">
-					<!-- Image -->
-					<img class="cover d-none d-md-block" src="images/home/hero/hero-carousel-01.jpg" alt="Seacloud slide" />
-					<img class="cover d-block d-md-none mobile-image" src="images/home/hero/hero-carousel-01-mobile.jpg" alt="Seacloud slide" />
-					<!-- /Image -->
-				</div>
+	<section class="hero-section full-height-section align-items-end pt-5">
+		<div class="hero-carrousel">
+			<!-- Slider main container -->
+			<div class="swiper home-hero-slider overlay">
+				<!-- Additional required wrapper -->
+				<div class="swiper-wrapper">
+					<div class="swiper-slide">
+						<img class="cover" src="images/home/hero/hero-carousel-01.jpg" alt="Boutique" />
+					</div>
 
-				<div class="swiper-slide">
-					<!-- Image -->
-					<img class="cover d-none d-md-block" src="images/home/hero/hero-carousel-02.jpg" alt="Seacloud slide" />
-					<img class="cover d-block d-md-none mobile-image" src="images/home/hero/hero-carousel-02-mobile.jpg" alt="Seacloud slide" />
-					<!-- /Image -->
-				</div>
-				<div class="swiper-slide">
-					<!-- Image -->
-					<img class="cover d-none d-md-block" src="images/home/hero/hero-carousel-03.jpg" alt="Seacloud slide" />
-					<img class="cover d-block d-md-none mobile-image" src="images/home/hero/hero-carousel-03-mobile.jpg" alt="Seacloud slide" />
-					<!-- /Image -->
-				</div>
-			</div>
-			<!-- /Slider Wrapper -->
-			<!-- Pagination -->
-			<div class="swiper-pagination"></div>
-			<!-- /Pagination -->
-		</div>
-		<!-- /Slider main container -->
-
-		<!-- Content -->
-		<div class="hero-content w-100 d-flex align-items-center top-0 start-0 position-relative">
-			<div class="container">
-				<div class="row">
-					<div class="col-md-8 col-lg-6">
-						<div class="px-5 py-5 text-center d-none d-md-block">
-							<p class="display-3 mb-n2 mb-md-0">The luxury</p>
-							<p class="display-3 mt-2 mb-n2 mb-md-0">is in</p>
-							<p class="display-3 mt-4 mb-n2 mb-md-0">the details</p>
-						</div>
-						<div class="px-5 py-5 text-center d-block d-md-none text-primary">
-							<p class="display-3 mb-n2 mb-md-0">The luxury</p>
-							<p class="display-3 mt-2 mb-n2 mb-md-0">is in</p>
-							<p class="display-3 mt-4 mb-n2 mb-md-0">the details</p>
-						</div>
+					<div class="swiper-slide">
+						<img class="cover" src="images/home/hero/hero-carousel-02.jpg" alt="Gourmet" />
+					</div>
+					<div class="swiper-slide">
+						<img class="cover" src="images/home/hero/hero-carousel-03.jpg" alt="Inclusives" />
+					</div>
+					<div class="swiper-slide">
+						<img class="cover" src="images/home/hero/hero-carousel-04.jpg" alt="Inclusives" />
+					</div>
+					<div class="swiper-slide">
+						<img class="cover" src="images/home/hero/hero-carousel-05.jpg" alt="Inclusives" />
+					</div>
+					<div class="swiper-slide">
+						<img class="cover" src="images/home/hero/hero-carousel-06.jpg" alt="Inclusives" />
 					</div>
 				</div>
+
+				<!-- Pagination -->
+				<div class="swiper-pagination mb-2"></div>
+				<!-- /Pagination -->
 			</div>
 		</div>
-		<!-- /Content -->
+		<div class="container hero-content mt-5 pt-5">
+			<p class="display-5 mb-4 ms-3 find-your-cruise text-white">Find your sailing</p>
+			<form action="" class="">
+				<div class="row gy-2 gx-2 bg-transparent border border-white pb-3 pt-2 mx-3 px-3 justify-content-center">
+					<div class="col-xl col-lg-3 col-md-6 position-relative">
+						<select class="form-select transparent-select" aria-label="Default select example">
+							<option selected>Destination</option>
+							<option value="1">One</option>
+							<option value="2">Two</option>
+							<option value="3">Three</option>
+						</select>
+						<!-- Vertical divider -->
+						<div class="bg-light-seacloud-blue position-absolute top-0 end-0 divider-vertical h-100 d-none d-md-block"></div>
+						<!-- /Vertical divider -->
+					</div>
+
+					<div class="divider d-md-none bg-light-seacloud-blue"></div>
+
+					<div class="col-xl col-lg-3 col-md-6 position-relative">
+						<select class="form-select transparent-select" aria-label="Default select example">
+							<option selected>Ship</option>
+							<option value="1">One</option>
+							<option value="2">Two</option>
+							<option value="3">Three</option>
+						</select>
+						<!-- Vertical divider -->
+						<div class="bg-light-seacloud-blue position-absolute top-0 end-0 divider-vertical h-100 d-none d-md-none d-lg-block"></div>
+						<!-- /Vertical divider -->
+					</div>
+
+					<div class="divider d-md-none bg-light-seacloud-blue"></div>
+
+					<div class="col-xl col-lg-3 col-md-6 position-relative">
+						<select class="form-select transparent-select" aria-label="Default select example">
+							<option selected>Departure date</option>
+							<option value="1">One</option>
+							<option value="2">Two</option>
+							<option value="3">Three</option>
+						</select>
+						<!-- Vertical divider -->
+						<div class="bg-light-seacloud-blue position-absolute top-0 end-0 divider-vertical h-100 d-none d-md-block"></div>
+						<!-- /Vertical divider -->
+					</div>
+
+					<div class="divider d-md-none bg-light-seacloud-blue"></div>
+
+					<div class="col-xl col-lg-3 col-md-6">
+						<select class="form-select transparent-select" aria-label="Default select example">
+							<option selected>Travel</option>
+							<option value="1">One</option>
+							<option value="2">Two</option>
+							<option value="3">Three</option>
+						</select>
+					</div>
+
+					<div class="divider d-md-none bg-light-seacloud-blue mb-2"></div>
+
+					<div class="col-xl col-lg-3 col-md-6 d-grid gap-2">
+						<button type="submit" class="btn btn-primary btn-block mb-3 mb-md-0 text-white">Serch</button>
+						<p class="d-block d-md-none text-center"><a class="btn-link-arrow text-white" href="">Sailing calendar</a></p>
+					</div>
+				</div>
+			</form>
+		</div>
 	</section>
 	<!-- /Hero section -->
 
 	<!-- Search section -->
-	<section id="search-section" class="d-flex align-items-center py-0 py-md-5">
-		<div class="container-fluid">
-			<div class="row align-items-center pt-md-5 pb-md-3 mb-md-5">
-				<div class="col-md text-center order-md-2 image">
-					<div class="seacr-content-columns py-5 py-md-2">
-						<p class="text-secondary lead text-uppercase letter-spacing-lg fw-medium">Sail the luxury of</p>
-						<p class="text-secondary sail-luxury h2">Sea<br/>Clouds</p>
-					</div>
-				</div>
-				<div class="col-md text-center order-md-1 bg-light">
-					<div class="seacr-content-columns px-3 py-5 py-md-2">
-						<h2 class="text-primary">Discover<br>the sea cloud<br>difference</h2>
+	<section id="search-section" class="hero-section full-height-section overlay-blue position-relative align-items-stretch">
+		<div class="container hero-content mt-5 pt-5 d-flex flex-column justify-content-between">
+			<div class="row justify-content-center">
+				<div class="col-md-8 col-lg-6 col-xl-5 mb-5">
+					<div class="p-5 bg-white text-center">
+						<h2 class="text-uppercase text-primary">DISCOVER THE SEA CLOUD Difference</h2>
 						<div class="divider my-3 bg-primary"></div>
-						<p>Since 1979, the SEA CLOUDS have been one of the world's most legendary names in sailing, offering the ultimate opulence at sea. With three authentic tall ships — sails still hoisted by hand — the luxury fleet combines maritime tradition with attention to detail and white-glove service for the refined sophistication of a private yacht. In harmony with nature, the SEA CLOUDS veer away from the crowds, sailing to exclusive destinations with only 64 to 136 guests.</p>
+						<p class="mb-5">Since 1979, the SEA CLOUDS have been one of the world's most legendary names in sailing, offering the ultimate opulence at sea.  In harmony with nature, the SEA CLOUDS veer away from the crowds, sailing to exclusive destinations with only 64 to 136 guests.</p>
+						<a href="#" class="btn btn-outline-primary mb-4">More info</a>
 					</div>
 				</div>
 			</div>
-			<div class="row justify-content-center search-form-container pb-4 pb-md-0">
-				<div class="col">
-					<div class="row justify-content-between align-items-end mx-3 px-3 mb-3">
-						<div class="col text-center-md">
-							<p class="display-5 ms-3 ms-md-5 find-your-cruise">Find your sailing</p>
+			<div>
+				<p class="display-5 mb-4 ms-3 find-your-cruise text-white">Find your sailing</p>
+				<form action="" class="">
+					<div class="row gy-2 gx-2 bg-transparent border border-white pb-3 pt-2 mx-3 px-3 justify-content-center">
+						<div class="col-xl col-lg-3 col-md-6 position-relative">
+							<select class="form-select transparent-select" aria-label="Default select example">
+								<option selected="">Destination</option>
+								<option value="1">One</option>
+								<option value="2">Two</option>
+								<option value="3">Three</option>
+							</select>
+							<!-- Vertical divider -->
+							<div class="bg-light-seacloud-blue position-absolute top-0 end-0 divider-vertical h-100 d-none d-md-block"></div>
+							<!-- /Vertical divider -->
 						</div>
-						<div class="col-auto d-none d-md-block">
-							<p class=""><a class="btn-link-arrow text-secondary" href="">Sailing calendar</a></p>
+	
+						<div class="divider d-md-none bg-light-seacloud-blue"></div>
+	
+						<div class="col-xl col-lg-3 col-md-6 position-relative">
+							<select class="form-select transparent-select" aria-label="Default select example">
+								<option selected="">Ship</option>
+								<option value="1">One</option>
+								<option value="2">Two</option>
+								<option value="3">Three</option>
+							</select>
+							<!-- Vertical divider -->
+							<div class="bg-light-seacloud-blue position-absolute top-0 end-0 divider-vertical h-100 d-none d-md-none d-lg-block"></div>
+							<!-- /Vertical divider -->
+						</div>
+	
+						<div class="divider d-md-none bg-light-seacloud-blue"></div>
+	
+						<div class="col-xl col-lg-3 col-md-6 position-relative">
+							<select class="form-select transparent-select" aria-label="Default select example">
+								<option selected="">Departure date</option>
+								<option value="1">One</option>
+								<option value="2">Two</option>
+								<option value="3">Three</option>
+							</select>
+							<!-- Vertical divider -->
+							<div class="bg-light-seacloud-blue position-absolute top-0 end-0 divider-vertical h-100 d-none d-md-block"></div>
+							<!-- /Vertical divider -->
+						</div>
+	
+						<div class="divider d-md-none bg-light-seacloud-blue"></div>
+	
+						<div class="col-xl col-lg-3 col-md-6">
+							<select class="form-select transparent-select" aria-label="Default select example">
+								<option selected="">Travel</option>
+								<option value="1">One</option>
+								<option value="2">Two</option>
+								<option value="3">Three</option>
+							</select>
+						</div>
+	
+						<div class="divider d-md-none bg-light-seacloud-blue mb-2"></div>
+	
+						<div class="col-xl col-lg-3 col-md-6 d-grid gap-2">
+							<button type="submit" class="btn btn-primary btn-block mb-3 mb-md-0 text-white">Serch</button>
+							<p class="d-block d-md-none text-center"><a class="btn-link-arrow text-white" href="">Sailing calendar</a></p>
 						</div>
 					</div>
-					<form action="">
-						<div class="row gy-2 gx-2 bg-white pb-3 pt-2 mx-3 px-3 justify-content-center">
-							<div class="col-xl col-lg-3 col-md-6 position-relative">
-								<select class="form-select" aria-label="Default select example">
-									<option selected>Destination</option>
-									<option value="1">One</option>
-									<option value="2">Two</option>
-									<option value="3">Three</option>
-								</select>
-								<!-- Vertical divider -->
-								<div class="bg-light-seacloud-blue position-absolute top-0 end-0 divider-vertical h-100 d-none d-md-block"></div>
-								<!-- /Vertical divider -->
-							</div>
-
-							<div class="divider d-md-none bg-light-seacloud-blue"></div>
-
-							<div class="col-xl col-lg-3 col-md-6 position-relative">
-								<select class="form-select" aria-label="Default select example">
-									<option selected>Ship</option>
-									<option value="1">One</option>
-									<option value="2">Two</option>
-									<option value="3">Three</option>
-								</select>
-								<!-- Vertical divider -->
-								<div class="bg-light-seacloud-blue position-absolute top-0 end-0 divider-vertical h-100 d-none d-md-none d-lg-block"></div>
-								<!-- /Vertical divider -->
-							</div>
-
-							<div class="divider d-md-none bg-light-seacloud-blue"></div>
-
-							<div class="col-xl col-lg-3 col-md-6 position-relative">
-								<select class="form-select" aria-label="Default select example">
-									<option selected>Departure date</option>
-									<option value="1">One</option>
-									<option value="2">Two</option>
-									<option value="3">Three</option>
-								</select>
-								<!-- Vertical divider -->
-								<div class="bg-light-seacloud-blue position-absolute top-0 end-0 divider-vertical h-100 d-none d-md-block"></div>
-								<!-- /Vertical divider -->
-							</div>
-
-							<div class="divider d-md-none bg-light-seacloud-blue"></div>
-
-							<div class="col-xl col-lg-3 col-md-6">
-								<select class="form-select" aria-label="Default select example">
-									<option selected>Travel</option>
-									<option value="1">One</option>
-									<option value="2">Two</option>
-									<option value="3">Three</option>
-								</select>
-							</div>
-
-							<div class="divider d-md-none bg-light-seacloud-blue mb-2"></div>
-
-							<div class="col-xl col-lg-3 col-md-6 d-grid gap-2">
-								<button type="submit" class="btn btn-secondary btn-block mb-3 mb-md-0">Serch</button>
-								<p class="d-block d-md-none text-center"><a class="btn-link-arrow text-secondary" href="">Sailing calendar</a></p>
-							</div>
-						</div>
-					</form>
-				</div>
+				</form>
 			</div>
 		</div>
 	</section>
 	<!-- /Search section -->
-	
-	<!-- Carousel The ship section -->
-	<section id="the-ships" class="fullscreen-carousel bg-white">
-		<div class="position-relative pt-3 pt-md-0">
-			<img class="position-absolute bottom-0 end-0 d-none d-md-block mb-4 me-4" src="images/home/the-ship/the-ship.svg" width="74" height="63" alt="The ship" />
-			<p class="display-5 the-ship-title position-absolute w-100 mt-4 text-center-md d-block d-md-none z-3 the-ships">the Ships</p>
-			<!-- Slider main container -->
-			<div class="swiper common-carousel py-3 py-lg-4 py-xl-5">
-				<!-- Additional required wrapper -->
-				<div class="swiper-wrapper">
-					<div class="swiper-slide">
-						<!-- Content -->
-						<div class="w-100 h-100 content d-flex">
-							<div class="container-fluid h-100">
-								<div class="row align-items-center py-5 h-100">
-									<div class="col-md-7 col-lg-8 mobile-image">
-										<p class="display-5 the-ship-title position-relative mb-n1 ms-3 mt-5 mt-md-0 text-center-md d-none d-md-block the-ships">the Ships</p>
-										<img class="w-100 h-100" src="images/home/the-ship/sea-cloud-spirit.jpg" alt="Sea cloud spirit" />
-									</div>
-									<div class="col-md-5 col-lg-4 mobile-content d-flex align-items-center">
-										<div class="p-3 mt-0 mt-lg-0 text-center-md">
-											<h2 class="text-primary mb-0">Sea cloud spirit</h2>
-											<div class="divider my-3 bg-primary"></div>
-											<p class="mb-4 text-center-md">She modernized the fleet in 2021 and welcomes 136 guests for an elite hotel experience on board, tended to by an 85-member crew. The authentic sailing ship is flooded with light, luxuries and ultimate relaxation.</p>
-											<a href="#" class="btn btn-outline-primary mb-4">View ship</a>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-						<!-- /Content -->
-					</div>
 
-					<div class="swiper-slide">
-						<!-- Content -->
-						<div class="w-100 h-100 content d-flex">
-							<div class="container-fluid h-100">
-								<div class="row align-items-center py-5 h-100">
-									<div class="col-md-7 col-lg-8 mobile-image">
-										<p class="display-5 the-ship-title position-relative mb-n1 ms-3 mt-5 mt-md-0 text-center-md d-none d-md-block the-ships">the Ships</p>
-										<img class="w-100 h-100" src="images/home/the-ship/sea-cloud-2.jpg" alt="Sea cloud II" />
-									</div>
-									<div class="col-md-5 col-lg-4 mobile-content d-flex align-items-center">
-										<div class="p-3 mt-0 mt-lg-0 text-center-md">
-											<h2 class="text-primary mb-0">Sea cloud II</h2>
-											<div class="divider my-3 bg-primary"></div>
-											<p class="mb-4 text-center-md">Built in 2001, with a family resemblance to the original SEA CLOUD, this 2nd generation welcomes 94 guests with expansive decks, outside suites and staterooms, and pampering from a 65-member crew.</p>
-											<a href="#" class="btn btn-outline-primary mb-4">View ship</a>
-										</div>
-									</div>
-								</div>
-							</div>
+	<!-- Our sailing yatch section -->
+	<section id="our-sailing-yatch-section" class="hero-section full-height-section bg-white position-relative align-items-stretch">
+		<div class="container hero-content mt-5 pt-5 d-flex flex-column justify-content-center">
+			<div class="row justify-content-center">
+				<p class="display-5 text-center text-primary mb-5">Our Sailing Yachts</p>
+			</div>
+			<div class="row justify-content-center align-items-stretch g-3">
+				<div class="col-lg">
+					<div class="card card-back pb-5">
+						<div class="card-back-image">
+							<img class="" src="images/home/our-sailing-yatch/seacloud-image.jpg" alt="Seacloud" />
 						</div>
-						<!-- /Content -->
-					</div>
-
-					<div class="swiper-slide">
-						<!-- Content -->
-						<div class="w-100 h-100 content d-flex">
-							<div class="container-fluid h-100">
-								<div class="row align-items-center py-5 h-100">
-									<div class="col-md-7 col-lg-8 mobile-image">
-										<p class="display-5 the-ship-title position-relative mb-n1 ms-3 mt-5 mt-md-0 text-center-md d-none d-md-block the-ships">the Ships</p>
-										<img class="w-100 h-100" src="images/home/the-ship/sea-cloud.jpg" alt="Sea cloud II" />
-									</div>
-									<div class="col-md-5 col-lg-4 mobile-content d-flex align-items-center">
-										<div class="p-3 mt-0 mt-lg-0 text-center-md">
-											<h2 class="text-primary mb-0">Sea cloud</h2>
-											<div class="divider my-3 bg-primary"></div>
-											<p class="mb-4 text-center-md">The 1931 private sailing yacht of Marjorie Merriweather Post and Edward Hutton leads our luxury fleet, with every detail radiating the glamour of a bygone era for 64 guests and a crew of 60.</p>
-											<a href="#" class="btn btn-outline-primary mb-4">View ship</a>
-										</div>
-									</div>
-								</div>
-							</div>
+						<div class="card-body text-center">
+							<img class="d-block mx-auto mb-5" src="images/home/our-sailing-yatch/seacloud-icon.png" alt="Seacloud" />
+							<h2 class="text-primary card-back-title">Sea<br>Cloud</h2>
+							<div class="divider mt-5 mb-4 bg-primary"></div>
+							<p class="mb-4 px-0 px-md-2 px-lg-3 px-xl-4">The 1931 private sailing yacht of Marjorie Merriweather Post and Edward Hutton leads our luxury fleet, with every detail radiating the glamour of a bygone era for 64 guests and a crew of 60.</p>
+							<a href="#" class="btn btn-outline-primary mb-5">View ship</a>
 						</div>
-						<!-- /Content -->
 					</div>
 				</div>
-				<!-- Pagination -->
-				<div class="swiper-pagination primary"></div>
-				<!-- /Pagination -->
+				<div class="col-lg">
+					<div class="card card-back pb-5">
+						<div class="card-back-image">
+							<img class="" src="images/home/our-sailing-yatch/seacloud-2-image.jpg" alt="Seacloud" />
+						</div>
+						<div class="card-body text-center">
+							<img class="d-block mx-auto mb-5" src="images/home/our-sailing-yatch/seacloud-2-icon.png" alt="Seacloud" />
+							<h2 class="text-primary card-back-title">Sea<br>Cloud II</h2>
+							<div class="divider mt-5 mb-4 bg-primary"></div>
+							<p class="mb-4 px-0 px-md-2 px-lg-3 px-xl-4">Built in 2001, with a family resemblance to the original SEA CLOUD, this 2nd generation welcomes 94 guests with expansive decks, outside suites and staterooms, and pampering from a 65-member crew.</p>
+							<a href="#" class="btn btn-outline-primary mb-5">View ship</a>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg">
+					<div class="card card-back pb-5">
+						<div class="card-back-image">
+							<img class="" src="images/home/our-sailing-yatch/seacloud-spirit-image.jpg" alt="Seacloud" />
+						</div>
+						<div class="card-body text-center">
+							<img class="d-block mx-auto mb-5" src="images/home/our-sailing-yatch/seacloud-2-icon.png" alt="Seacloud" />
+							<h2 class="text-primary card-back-title">Sea<br>Cloud<br>Sirit</h2>
+							<div class="divider mt-5 mb-4 bg-primary"></div>
+							<p class="mb-4 px-0 px-md-2 px-lg-3 px-xl-4">She modernized the fleet in 2021 and welcomes 136 guests for an elite  experience on board, tended to by an 85-member crew. The authentic sailing ship is flooded with light, luxuries and ultimate relaxation.</p>
+							<a href="#" class="btn btn-outline-primary mb-5">View ship</a>
+						</div>
+					</div>
+				</div>
 			</div>
 		</div>
 	</section>
-	<!-- /Carousel The ship section -->
+	<!-- /Our sailing yatch section -->
 
 	<!-- Carousel features section -->
-	<section id="carousel-features" class="fullscreen-carousel bg-white">
-		<div class="position-relative">
-			<!-- Slider main container -->
-			<div class="swiper common-carousel">
-				<!-- Additional required wrapper -->
-				<div class="swiper-wrapper">
-					<div class="swiper-slide">
-						<!-- Image -->
-						<img class="d-none cover d-md-block w-100" src="images/home/carousel-features/carousel-01.jpg" alt="Boutique" />
-						<!-- /Image -->
-
-						<!-- Content -->
-						<div class="w-100 h-100 content d-flex align-items-center">
-							<div class="container p-0 h-100">
-								<div class="row justify-content-end h-100 align-items-center">
-									<div class="col-md col-lg-6 d-md-none mobile-image d-flex align-items-center justify-content-center">
-										<img class="d-block w-100 h-100" src="images/home/carousel-features/carousel-01-content-img-mobile.jpg" alt="Boutique" />
-									</div>
-									<div class="col-md-10 col-lg-8 col-xl-5 white-opacity-8 blur-10 mobile-content d-flex align-items-center">
-										<div class="px-5 py-3 pt-md-5 text-center text-secondary">
-											<p class="display-5 mt-3 mt-md-5 mb-3">Boutique</p>
-											<h2 class="text-primary">Hotels at Sea</h2>
-											<div class="divider my-2 bg-primary"></div>
-											<p class="mb-3 mb-md-5">Plush suites and deluxe staterooms are serene retreats at sea, with artful interiors, marble bathrooms with golden fixtures, and small sitting areas.</p>
-											<a href="#" class="btn btn-outline-primary mb-4">More info</a>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-						<!-- /Content -->
+	<section id="features-section" class="position-relative">
+		<div id="section-bg" class="d-none d-md-block">
+			<img class="features-bg cover" src="images/home/carousel-features/carousel-01.jpg" alt="Gourmet" style="opacity: 1;"/>
+			<img class="features-bg cover" src="images/home/carousel-features/carousel-02.jpg" alt="Gourmet" style="opacity: 0;" />
+			<img class="features-bg cover" src="images/home/carousel-features/carousel-03.jpg" alt="Gourmet" style="opacity: 0;" />
+		</div>
+		<div class="container position-relative px-0 px-md-3">
+			<div class="row justify-content-end g-0">
+				<div class="col-md-8 col-lg-6 col-xl-5">
+					<div id="section-bg" class="d-block d-md-none">
+						<img class="slides-bg cover" src="images/home/carousel-features/carousel-01-mobile.jpg" alt="Gourmet" style="opacity: 1;"/>
+						<img class="slides-bg cover" src="images/home/carousel-features/carousel-02-mobile.jpg" alt="Gourmet" style="opacity: 0;" />
+						<img class="slides-bg cover" src="images/home/carousel-features/carousel-03-mobile.jpg" alt="Gourmet" style="opacity: 0;" />
 					</div>
-
-					<div class="swiper-slide">
-						<!-- Image -->
-						<img class="d-none cover d-md-block w-100" src="images/home/carousel-features/carousel-02.jpg" alt="Gourmet" />
-						<!-- /Image -->
-
-						<!-- Content -->
-						<div class="w-100 h-100 content d-flex align-items-center">
-							<div class="container p-0 h-100">
-								<div class="row g-0 h-100 align-items-center">
-									<div class="col slide-gourmet">
-										<div class="row g-0 bg-dark-seacloud-blue h-100 overflow-hidden">
-											<div class="col-md col-lg-6 d-flex align-items-center order-2 order-md-1 mobile-content">
-												<div class="px-5 py-3 pt-md-5 text-center">
-													<p class="display-5 text-primary mt-3 mt-md-5 mb-3">Gourmet</p>
-													<h2 class="text-primary">Side of sailing</h2>
-													<div class="divider my-2 bg-primary"></div>
-													<p class="mb-3 mb-md-5 text-white px-2 px-sm-3 px-md-4 px-lg-5">Refined culinary creations complemented by fine wines and spirits take center stage on the SEA CLOUDS. Award-winning chefs, sommeliers, and champagne experts curate epicurean experiences at sea.</p>
-													<a href="#" class="btn btn-outline-primary mb-4">More info</a>
-												</div>
-											</div>
-											<div class="col-md col-lg-6 order-1 order-md-2 mobile-image d-flex align-items-center justify-content-center">
-												<img class="d-none d-md-block w-100 h-100" src="images/home/carousel-features/carousel-02-content-img.jpg" alt="Gourmet" />
-												<img class="d-block d-md-none w-100 h-100" src="images/home/carousel-features/carousel-02-content-img-mobile.jpg" alt="Gourmet" />
-											</div>
-										</div>
-									</div>
+					<div class="px-4 px-lg-5 bg-white home-features-slider-container text-center position-relative">
+						<div class="swiper home-features-slider-desktop">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide">
+									<p class="display-5 text-center text-primary mt-4">Bijoux</p>
+									<h2 class="text-primary card-back-title">Sailing<br>Experiences</h2>
+									<div class="divider mt-4 mb-4 bg-primary"></div>
+									<p class="mb-4 px-0 px-md-2 px-lg-3 px-xl-4">Built in 2001, with a family resemblance to the original SEA CLOUD, this 2nd generation welcomes 94 guests with expansive decks, outside suites and staterooms, and pampering from a 65-member crew.</p>
+									<a href="#" class="btn btn-outline-primary">More info</a>
+								</div>
+								<div class="swiper-slide">
+									<p class="display-5 text-center text-primary mt-4">Riding</p>
+									<h2 class="text-primary card-back-title">The<br>winds</h2>
+									<div class="divider mt-4 mb-4 bg-primary"></div>
+									<p class="mb-4 px-0 px-md-2 px-lg-3 px-xl-4">Don’t miss the thrill of pure sailing when crews release the sails—we are one of the only luxury fleets to still do so completely by hand. Wind-power sustainability is a SEA CLOUD tradition of embracing gentle tourism.</p>
+									<a href="#" class="btn btn-outline-primary">More info</a>
+								</div>
+								<div class="swiper-slide">
+									<p class="display-5 text-center text-primary mt-4">The Luxury</p>
+									<h2 class="text-primary card-back-title">Is in<br>the Details</h2>
+									<div class="divider mt-4 mb-4 bg-primary"></div>
+									<p class="mb-4 px-0 px-md-2 px-lg-3 px-xl-4">Built in 2001, with a family resemblance to the original SEA CLOUD, this 2nd generation welcomes 94 guests with expansive decks, outside suites and staterooms, and pampering from a 65-member crew.</p>
+									<a href="#" class="btn btn-outline-primary">More info</a>
 								</div>
 							</div>
+							<div class="swiper-pagination mb-2"></div>
 						</div>
-						<!-- /Content -->
-					</div>
-					<div class="swiper-slide">
-						<!-- Image -->
-						<img class="d-none cover d-md-block w-100" src="images/home/carousel-features/carousel-03.jpg" alt="Inclusives" />
-						<!-- /Image -->
-
-						<!-- Content -->
-						<div class="w-100 h-100 content d-flex align-items-center">
-							<div class="container p-0 h-100">
-								<div class="row justify-content-end h-100 align-items-center">
-									<div class="col-md col-lg-6 d-md-none mobile-image d-flex align-items-center justify-content-center">
-										<img class="d-block w-100 h-100" src="images/home/carousel-features/carousel-03-content-img-mobile.jpg" alt="Inclusives" />
-									</div>
-									<div class="col-md-10 col-lg-8 col-xl-5 white-opacity-8 blur-10 mobile-content d-flex align-items-center">
-										<div class="px-5 py-3 pt-md-5 text-center text-secondary">
-											<h2 class="mt-2 mt-md-4 mb-3">Sea cloud</h2>
-											<p class="display-5 mb-3">Inclusives</p>
-											<div class="divider my-2 bg-secondary"></div>
-											<p class="mb-3 mb-md-5">Extra comforts and exclusive experiences are all-included when sailing the luxury of the SEA CLOUDS. Enjoy a welcome bottle of champagne, daily fruit basket in suites and staterooms, open bar, gratuities, water sports, and more.</p>
-											<a href="#" class="btn btn-outline-primary mb-4">More info</a>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-						<!-- /Content -->
 					</div>
 				</div>
-				<!-- Pagination -->
-				<div class="swiper-pagination"></div>
-				<!-- /Pagination -->
 			</div>
 		</div>
 	</section>
 	<!-- /Carousel features section -->
 
-	<!-- Half width section -->
-	<section class="bg-white">
-		<div class="main bg-white">
-			<div class="horizontal-sliders">
-				<div class="slide">
-					<div class="half-width-item position-relative p-0 w-100 h-100">
-						<div class="row align-items-stretch g-0 h-100">
-							<div class="col-md">
-								<img class="half-width-image" src="images/home/curated-moments/curated-moments.jpg" alt="Curated Moments" />
-							</div>
-							<div class="col-md text-center">
-								<div class="half-width-wraper bg-white h-100 d-flex justify-content-center align-items-center">
-									<div class="half-width-content">
-										<h2 class="text-primary mb-1">Curated Moments</h2>
-										<div class="divider my-3 bg-primary"></div>
-										<p class="mb-4 text-center-md">Private events in port come complimentary as part of the SEA CLOUD Difference. Think Steinway piano concerts, after hours at opera houses and museums, culinary vineyard visits, or front-row regatta and racing seats.</p>
-										<img class="" width="25" height="15" src="images/icons/double-arrow-right.svg" alt="Seacloud forward">
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="slide">
-					<div class="half-width-item position-relative p-0 w-100 h-100">
-						<div class="row align-items-stretch g-0 h-100">
-							<div class="col-md">
-								<img class="half-width-image" src="images/home/distinctive-destination/distinctive-destination.jpg" alt="Distinctive Destinations" />
-							</div>
-							<div class="col-md text-center order-md-1">
-								<div class="half-width-wraper bg-light h-100 d-flex justify-content-center align-items-center">
-									<div class="half-width-content">
-										<h2 class="text-primary mb-1">Distinctive Destinations</h2>
-										<div class="divider my-3 bg-primary"></div>
-										<p class="mb-4 text-center-md">The SEA CLOUDS sail to the world’s most beautiful places, where upscale local charm welcomes discerning guests, devoid of crowds. Every itinerary is hand selected and special, so you can experience the world in a different way.</p>
-										<img class="" width="25" height="15" src="images/icons/double-arrow-right.svg" alt="Seacloud forward">
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="slide">
-					<div class="half-width-item position-relative p-0 w-100 h-100">
-						<div class="row align-items-stretch g-0 h-100">
-							<div class="col-md">
-								<img class="half-width-image" src="images/home/sustainability/sustainability.jpg" alt="Sustainability" />
-							</div>
-							<div class="col-md text-center">
-								<div class="half-width-wraper bg-white h-100 d-flex justify-content-center align-items-center">
-									<div class="half-width-content">
-										<h2 class="text-primary mb-1">Sustainability</h2>
-										<div class="divider my-3 bg-primary"></div>
-										<p class="mb-4 text-center-md">For more than 40 years, responsible tourism at sea and on shore has guided our philosophy of sustainability. With smaller ships and fewer guests, we create more meaningful experiences with less impact left behind.</p>
-										<img class="" width="25" height="15" src="images/icons/double-arrow-right.svg" alt="Seacloud forward">
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-	<!-- /Half width section -->
-
-	<!-- Celebrate section -->
-	<section id="celebrate" class="fullscreen-section bg-white position-relative">
-		<!-- Content -->
-		<div class="w-100 h-100 d-flex align-items-center">
-			<div class="container p-0">
-				<div class="row g-0">
-					<div class="col-12 d-block d-md-none">
-						<img class="img-fluid" src="images/home/celebrate/celebrate-bg.jpg" alt="Celebrating">
-					</div>
-					<div class="col-md-8 col-lg-5 col-xl-4 content">
-						<div class="px-5 py-5 text-center text-white">
-							<p class="display-5 mt-5 mb-3 title">Celebrating</p>
-							<div class="divider my-3"></div>
-							<p class="mb-4">Commemorate special days in upscale ways on a SEA CLOUD sailing yacht. From birthdays and anniversaries to weddings and honeymoons, we curate exclusive onboard experiences to celebrate life's most cherished moments.</p>
-							<a href="#" class="btn btn-primary d-none d-md-inline-block mb-4">More info</a>
-							<a href="#" class="btn btn-outline-primary d-inline-block d-md-none mb-4">More info</a>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-		<!-- /Content -->
-	</section>
-	<!-- /Celebrate section -->
-
 	<!-- Highlights section -->
-	<section id="highlights" class="position-relative pt-5 pb-4 pb-md-5">
+	<section id="highlights" class="full-height-section bg-secondary position-relative pt-5 pb-4 pb-md-5 d-flex align-items-center">
 		<div class="container pt-5 pb-0 pb-md-5">
-			<h2 class="text-secondary text-center mb-4">Our highlights for you</h2>
+			<h2 class="text-primary text-center mb-5">Our highlights for you</h2>
 			<div id="highlights-carousel" class="swiper pb-5 mb-4">
 				<div class="swiper-wrapper pb-5">
 					<div class="swiper-slide">
@@ -724,25 +580,19 @@
 						</div>
 					</div>
 				</div>
-				<!-- Pagination -->
-				<div class="swiper-pagination primary"></div>
-				<!-- /Pagination -->
 			</div>
 
 			<div class="row justify-content-center search-form-container pb-4 pb-md-0">
 				<div class="col">
 					<div class="row justify-content-between align-items-end mx-3 px-3 mb-3">
 						<div class="col text-center-md">
-							<p class="display-5 ms-3 ms-md-5 find-your-cruise">Find your sailing</p>
-						</div>
-						<div class="col-auto d-none d-md-block">
-							<p class=""><a class="btn-link-arrow text-secondary" href="">Sailing calendar</a></p>
+							<p class="display-5 find-your-cruise text-white">Find your sailing</p>
 						</div>
 					</div>
-					<form action="">
-						<div class="row gy-2 gx-2 bg-white pb-3 pt-2 mx-3 px-3 justify-content-center">
+					<form action="" class="">
+						<div class="row gy-2 gx-2 bg-transparent border border-white pb-3 pt-2 mx-3 px-3 justify-content-center">
 							<div class="col-xl col-lg-3 col-md-6 position-relative">
-								<select class="form-select" aria-label="Default select example">
+								<select class="form-select transparent-select" aria-label="Default select example">
 									<option selected>Destination</option>
 									<option value="1">One</option>
 									<option value="2">Two</option>
@@ -752,11 +602,11 @@
 								<div class="bg-light-seacloud-blue position-absolute top-0 end-0 divider-vertical h-100 d-none d-md-block"></div>
 								<!-- /Vertical divider -->
 							</div>
-
+		
 							<div class="divider d-md-none bg-light-seacloud-blue"></div>
-
+		
 							<div class="col-xl col-lg-3 col-md-6 position-relative">
-								<select class="form-select" aria-label="Default select example">
+								<select class="form-select transparent-select" aria-label="Default select example">
 									<option selected>Ship</option>
 									<option value="1">One</option>
 									<option value="2">Two</option>
@@ -766,11 +616,11 @@
 								<div class="bg-light-seacloud-blue position-absolute top-0 end-0 divider-vertical h-100 d-none d-md-none d-lg-block"></div>
 								<!-- /Vertical divider -->
 							</div>
-
+		
 							<div class="divider d-md-none bg-light-seacloud-blue"></div>
-
+		
 							<div class="col-xl col-lg-3 col-md-6 position-relative">
-								<select class="form-select" aria-label="Default select example">
+								<select class="form-select transparent-select" aria-label="Default select example">
 									<option selected>Departure date</option>
 									<option value="1">One</option>
 									<option value="2">Two</option>
@@ -780,23 +630,23 @@
 								<div class="bg-light-seacloud-blue position-absolute top-0 end-0 divider-vertical h-100 d-none d-md-block"></div>
 								<!-- /Vertical divider -->
 							</div>
-
+		
 							<div class="divider d-md-none bg-light-seacloud-blue"></div>
-
+		
 							<div class="col-xl col-lg-3 col-md-6">
-								<select class="form-select" aria-label="Default select example">
+								<select class="form-select transparent-select" aria-label="Default select example">
 									<option selected>Travel</option>
 									<option value="1">One</option>
 									<option value="2">Two</option>
 									<option value="3">Three</option>
 								</select>
 							</div>
-
+		
 							<div class="divider d-md-none bg-light-seacloud-blue mb-2"></div>
-
+		
 							<div class="col-xl col-lg-3 col-md-6 d-grid gap-2">
-								<button type="submit" class="btn btn-secondary btn-block mb-3 mb-md-0">Serch</button>
-								<p class="d-block d-md-none text-center"><a class="btn-link-arrow text-secondary" href="">Sailing calendar</a></p>
+								<button type="submit" class="btn btn-primary btn-block mb-3 mb-md-0 text-white">Serch</button>
+								<p class="d-block d-md-none text-center"><a class="btn-link-arrow text-white" href="">Sailing calendar</a></p>
 							</div>
 						</div>
 					</form>
@@ -807,21 +657,31 @@
 	<!-- /Highlights section -->
 
 	<!-- News section -->
-	<section id="news" class="position-relative pt-0 pt-md-5 pb-0 pb-sm-5">
-		<div class="container px-0 pt-sm-5 pt-0 pb-0 pb-sm-5">
-			<div class="row g-0 align-items-start justify-content-evenly">
-				<div class="col-lg col-xl-5 order-lg-2 image p-4 p-xl-0">
-					<img src="images/home/news/news.webp" class="img-fluid" alt="2024 brochure & 2025 preview">
+	<section id="news" class="position-relative bg-white">
+		<div class="container-fluid p-0">
+			<div class="row g-3 align-items-end justify-content-evenly">
+				<div class="col-md news-left-column">
+					<div class="news-column-container">
+						<div class="p-5 text-center news-content">
+							<h2 class="px-0 px-md-5">2025<br>Brochure</h2>
+							<div class="divider bg-secondary my-4"></div>
+							<p class="px-0 px-md-5 mb-4">Start planning now for your next luxury getaway. Discover every detail of the SEA CLOUD Difference, including elite itineraries to premier ports aboard sailing yachts.</p>
+							<div class="mb-3">
+								<a href="#" class="btn btn-secondary btn-block-sm">2025 Brochure</a>
+							</div>
+						</div>
+					</div>
 				</div>
-				<div class="col-lg col-xl-5 order-lg-1 text-center">
-					<div class="p-5 bg-white">
-						<p class="display-5 mb-4 mt-5">News</p>
-						<h2 class="text-primary px-0 px-md-5">2024 brochure & 2025 preview</h2>
-						<div class="divider bg-primary"></div>
-						<p class="px-0 px-md-5">Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
-						<div class="mb-5">
-							<a href="#" class="btn btn-outline-primary btn-block-sm my-2">2024 brochure</a>
-							<a href="#" class="btn btn-outline-primary btn-block-sm my-2">2025 preview</a>
+				<!-- <div class="col-md-auto px-2 bg-white d-none d-md-flex"></div> -->
+				<div class="col-md news-right-column">
+					<div class="news-column-container">
+						<div class="p-5 bg-white text-center news-content">
+							<h2 class="px-0 px-md-5">Special<br>Offers</h2>
+							<div class="divider bg-secondary my-4"></div>
+							<p class="px-0 px-md-5 mb-4">Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+							<div class="mb-3">
+								<a href="#" class="btn btn-secondary btn-block-sm">More info</a>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -838,7 +698,7 @@
 					<img class="d-block mx-auto mb-4" src="images/home/the-ship/the-ship.svg" width="74" height="63" alt="The ship">
 					<h3 class="text-primary">Social at sea</h3>
 					<div class="divider bg-primary my-3"></div>
-					<p class="mb-5">Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+					<p class="mb-5">You’re social, we’re social, let’s connect!  Follow, like, love, share, comment, tag. Social moments are happening @SEACLOUD CRUISES</p>
 					<div class="social">
 						<a href="#" class="btn-social">
 							<img src="images/icons/facebook-primary.svg" alt="Facebook">
@@ -852,7 +712,7 @@
 					</div>
 				</div>
 				<div class="col-md col-lg-6">
-					<p class="lead text-center text-md-start">Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+					<p class="lead text-center text-md-start">Email subscribers get early access to our luxury travel deals. Sneak peek all the exclusives first, plus stay in touch with all the updates from our sailing world.</p>
 					<form class="my-4" action="">
 						<div class="input-group input-mail mb-3">
 							<input type="text" class="form-control" placeholder="Your mail" aria-label="Your mail" aria-describedby="mail-button-addon">
@@ -883,9 +743,25 @@
 									<ul class="nav nav-list d-block list-unstyled">
 										<li><a class="link link-secondary footer-link" href="#">Find a Sailing</a></li>
 										<li><a class="link link-secondary footer-link" href="#">Find a Travel Advisor</a></li>
-										<li><a class="link link-secondary footer-link" href="#">Request a Brochure</a></li>
-										<li><a class="link link-secondary footer-link" href="#">Sign-up for Special Offers</a></li>
-										<li><a class="link link-secondary footer-link" href="#">Group Travel Benefits</a></li>
+										<li class="accordion footer-sibling-accordion accordion-flush" id="request-info">
+											<div class="accordion-item">
+												<p class="accordion-header">
+													<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#request-info-acc" aria-expanded="false" aria-controls="request-info-acc">Request info</button>
+												</p>
+												<div id="request-info-acc" class="accordion-collapse collapse show" data-bs-parent="#request-info">
+													<div class="accordion-body">
+														<ul class="nav nav-list d-block sibling-list">
+															<li class="mb-0"><a class="link link-secondary footer-link text-primary" href="#">Order Brochure</a></li>
+															<li class="mb-0"><a class="link link-secondary footer-link text-primary" href="#">Sign Up for Offers</a></li>
+															<li class="mb-0"><a class="link link-secondary footer-link text-primary" href="#">Request Quote</a></li>
+															<li class="mb-0"><a class="link link-secondary footer-link text-primary" href="#">Group Travel Perks</a></li>
+															<li class="mb-0"><a class="link link-secondary footer-link text-primary" href="#">Submit Inquiry</a></li>
+														</ul>
+													</div>
+												</div>
+											</div>
+										</li>
+										<li><a class="link link-secondary footer-link" href="#">Special Offers</a></li>
 									</ul>
 								</div>
 							</div>
@@ -905,12 +781,10 @@
 								<div class="accordion-body">
 									<ul class="nav nav-list d-block list-unstyled">
 										<li><a class="link link-secondary footer-link" href="#">Frequently Asked Questions</a></li>
-										<li><a class="link link-secondary footer-link" href="#">Update Marketing Preferences</a></li>
-										<li><a class="link link-secondary footer-link" href="#">Travel Partner Center</a></li>
-										<li><a class="link link-secondary footer-link" href="#">Videos</a></li>
 										<li><a class="link link-secondary footer-link" href="#">Digital Brochures</a></li>
+										<li><a class="link link-secondary footer-link" href="#">Videos</a></li>
 										<li><a class="link link-secondary footer-link" href="#">Charters, Meetings & Incentives</a></li>
-										<li><a class="link link-secondary footer-link" href="#">Gift Order Form</a></li>
+										<li><a class="link link-secondary footer-link" href="#">Travel Partner Center</a></li>
 										<li><a class="link link-secondary footer-link" href="#">Sail & Sustain</a></li>
 									</ul>
 								</div>
@@ -932,12 +806,26 @@
 									<ul class="nav nav-list d-block list-unstyled">
 										<li><a class="link link-secondary footer-link" href="#">About Us</a></li>
 										<li><a class="link link-secondary footer-link" href="#">Careers</a></li>
-										<li><a class="link link-secondary footer-link" href="#">Legal</a></li>
 										<li><a class="link link-secondary footer-link" href="#">Press & Media</a></li>
-										<li><a class="link link-secondary footer-link" href="#">For Investors</a></li>
-										<li><a class="link link-secondary footer-link" href="#">Site Map</a></li>
+										<li class="accordion footer-sibling-accordion accordion-flush" id="legal">
+											<div class="accordion-item">
+												<p class="accordion-header">
+													<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#legal-acc" aria-expanded="false" aria-controls="legal-acc">Legal</button>
+												</p>
+												<div id="legal-acc" class="accordion-collapse collapse show" data-bs-parent="#legal">
+													<div class="accordion-body">
+														<ul class="nav nav-list d-block sibling-list">
+															<li class="mb-0"><a class="link link-secondary footer-link text-primary" href="#">Terms & Condition</a></li>
+															<li class="mb-0"><a class="link link-secondary footer-link text-primary" href="#">Refunds</a></li>
+															<li class="mb-0"><a class="link link-secondary footer-link text-primary" href="#">EU regulation</a></li>
+															<li class="mb-0"><a class="link link-secondary footer-link text-primary" href="#">Disclaimer of Liability</a></li>
+															<li class="mb-0"><a class="link link-secondary footer-link text-primary" href="#">Legal Details</a></li>
+														</ul>
+													</div>
+												</div>
+											</div>
+										</li>
 										<li><a class="link link-secondary footer-link" href="#">Privacy Policy</a></li>
-										<li><a class="link link-secondary footer-link" href="#">Travel Restrictions</a></li>
 										<li><a class="link link-secondary footer-link" href="#">Contact Us</a></li>
 									</ul>
 								</div>
@@ -949,14 +837,14 @@
 
 				<!-- Sign up -->
 				<div class="col-md-6 col-lg">
-					<div class="accordion accordion-flush footer-accordion" id="accordion-signUp">
+					<div class="accordion accordion-flush footer-accordion" id="accordion-search">
 						<div class="accordion-item">
 							<p class="accordion-header">
-								<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-signUp" aria-expanded="false" aria-controls="flush-signUp">Sign up for exclusive offers</button>
+								<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-search" aria-expanded="false" aria-controls="flush-search">Find a Sailing</button>
 							</p>
-							<div id="flush-signUp" class="accordion-collapse collapse show" data-bs-parent="#accordion-signUp">
+							<div id="flush-search" class="accordion-collapse collapse show" data-bs-parent="#accordion-search">
 								<div class="accordion-body">
-									<form class="my-4" action="">
+									<!-- <form class="my-4" action="">
 										<div class="input-group input-mail mb-3">
 											<input type="text" class="form-control" placeholder="Your mail" aria-label="Your mail" aria-describedby="mail-button-addon">
 											<button class="btn btn-primary px-2" type="submit">
@@ -964,12 +852,52 @@
 												<span class="d-block d-md-none"></span>
 											</button>
 										</div>
+									</form> -->
+									<form action="" class="">
+										<div class="row gy-2 gx-0 bg-transparent pb-3 pt-2 justify-content-center">
+											<div class=" position-relative">
+												<select class="form-select" aria-label="Default select example">
+													<option selected>Ship</option>
+													<option value="1">One</option>
+													<option value="2">Two</option>
+													<option value="3">Three</option>
+												</select>
+											</div>
+						
+											<div class="divider bg-primary"></div>
+						
+											<div class=" position-relative">
+												<select class="form-select" aria-label="Default select example">
+													<option selected>Date</option>
+													<option value="1">One</option>
+													<option value="2">Two</option>
+													<option value="3">Three</option>
+												</select>
+											</div>
+						
+											<div class="divider bg-primary"></div>
+						
+											<div class="">
+												<select class="form-select" aria-label="Default select example">
+													<option selected>Sailing theme</option>
+													<option value="1">One</option>
+													<option value="2">Two</option>
+													<option value="3">Three</option>
+												</select>
+											</div>
+						
+											<div class="divider bg-primary mb-2"></div>
+						
+											<div class=" d-grid gap-2">
+												<button type="submit" class="btn btn-primary btn-block mb-3 mb-md-0 text-white">Serch</button>
+											</div>
+										</div>
 									</form>
 								</div>
 							</div>
 						</div>
 					</div>
-					<div class="accordion accordion-flush footer-accordion border-0" id="accordion-followUs">
+					<!-- <div class="accordion accordion-flush footer-accordion border-0" id="accordion-followUs">
 						<div class="accordion-item">
 							<p class="accordion-header">
 								<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-followUs" aria-expanded="false" aria-controls="flush-followUs">Follow us</button>
@@ -990,7 +918,7 @@
 								</div>
 							</div>
 						</div>
-					</div>
+					</div> -->
 				</div>
 				<!-- /Sign up -->
 			</div>

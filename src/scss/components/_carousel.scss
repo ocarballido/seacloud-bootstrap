@@ -48,7 +48,8 @@
     .swiper-pagination-bullet {
         background-color: transparent;
         background-clip: unset;
-        border: 1px solid $primary;
+        // border: 1px solid $primary;
+        border: 1px solid white;
         border-radius: 50%;
         height: 12px;
         margin-left: 5px;
@@ -56,7 +57,8 @@
         opacity: 1;
         width: 12px;
         &.swiper-pagination-bullet-active {
-            background-color: $primary;
+            // background-color: $primary;
+            background-color: white;
             opacity: 1;
         }
     }
@@ -114,15 +116,15 @@
             }
         }
     }
-    .swiper-pagination {
-        margin-bottom: 2rem;
-        .swiper-pagination-bullet {
-            border: 1px solid white;
-            &.swiper-pagination-bullet-active {
-                background-color: white;
-            }
-        }
-    }
+    // .swiper-pagination {
+    //     margin-bottom: 2rem;
+    //     .swiper-pagination-bullet {
+    //         border: 1px solid white;
+    //         &.swiper-pagination-bullet-active {
+    //             background-color: white;
+    //         }
+    //     }
+    // }
 }
 @include media-breakpoint-up(lg) {
     .fullscreen-carousel {

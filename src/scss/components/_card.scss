@@ -1,5 +1,5 @@
 .card-highlights {
-    height: 600px;
+    height: 500px;
     overflow: hidden;
     .card-img {
         height: 100%;
@@ -7,8 +7,8 @@
         width: 100%;
     }
     .card-img-overlay {
-        background-color: $light;
-        color: $secondary;
+        background-color: $secondary;
+        color: white;
         padding: 1.5rem;
         top: calc(100% - 5.5rem);
         transition: all .2s;
@@ -26,6 +26,7 @@
     &:hover {
         .card-img-overlay {
             background-color: white;
+            color: $secondary;
             top: 120px;
         }
         .card-title {
@@ -46,6 +47,39 @@
         img {
             height: 100%;
             width: 100%;
+        }
+    }
+}
+
+.card-back {
+    background-color: $secondary;
+    color: white;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+    &:hover {
+        .card-back-image {
+            opacity: 0;
+            transform: translateY(100%);
+        }
+    }
+    .card-back-image {
+        height: 100%;
+        left: 0;
+        position: absolute;
+        top: 0;
+        transition: all .25s;
+        width: 100%;
+        img {
+            height: 100%;
+            object-fit: cover;
+            width: 100%;
+        }
+    }
+    .card-body {
+        padding: 2.5rem;
+        .card-back-title {
+            min-height: 100px;
         }
     }
 }

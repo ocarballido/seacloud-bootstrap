@@ -13,8 +13,6 @@ export const appbarScrolled = () => {
             navElement.classList.add('py-1');
             appbarLogo.classList.add('d-none');
             appbarLogoSymbol.classList.remove('d-none', 'py-4');
-            // scrollTop.classList.add('d-none');
-            // scrolled.classList.remove('d-none');
             scrollTop.forEach(function(element) {
                 element.classList.add('d-none');
             });

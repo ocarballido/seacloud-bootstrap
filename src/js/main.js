@@ -36,15 +36,44 @@ const heroCarousel = new Swiper('.home-hero-slider', {
 	spaceBetween: 0,
 	speed: 750,
 	loop: true,
-	// autoplay: {
-    //     delay: 5000,
-    //     disableOnInteraction: false,
-    // },
+	autoplay: {
+        delay: 5000,
+        disableOnInteraction: false,
+    },
 	pagination: {
 		el: '.swiper-pagination',
 		clickable: true,
 	},
 	modules: [ Autoplay, Navigation, Pagination ],
+});
+
+// Features carousel
+const featuresBg = document.getElementsByClassName('features-bg')
+const slidesBg = document.getElementsByClassName('slides-bg')
+const featuresBgOpacity = (imageArr, index) => {
+	for (let i = 0; i < imageArr.length; i ++) {
+		if (i !== index) {
+			imageArr[i].style.opacity = 0;
+		}
+		imageArr[index].style.opacity = 1;
+	}
+}
+console.log(featuresBg)
+const featuresCarouselDesktop = new Swiper('.home-features-slider-desktop', {
+	slidesPerView: 1,
+	spaceBetween: 0,
+	speed: 750,
+	modules: [ Autoplay, Navigation, Pagination ],
+	pagination: {
+		el: '.swiper-pagination',
+		clickable: true,
+	},
+	on: {
+		activeIndexChange: function() {
+			featuresBgOpacity(featuresBg, this.activeIndex)
+			featuresBgOpacity(slidesBg, this.activeIndex)
+		}
+	}
 });
 
 // Common carousel
