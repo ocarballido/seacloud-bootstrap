@@ -233,67 +233,78 @@
 		</div>
 		<div class="container hero-content mt-5 pt-5">
 			<p class="display-5 mb-4 ms-3 find-your-cruise text-white">Find your sailing</p>
-			<form action="" class="">
-				<div class="row gy-2 gx-2 bg-transparent border border-white pb-3 pt-2 mx-3 px-3 justify-content-center">
-					<div class="col-xl col-lg-3 col-md-6 position-relative">
-						<select class="form-select transparent-select" aria-label="Default select example">
-							<option selected>Destination</option>
-							<option value="1">One</option>
-							<option value="2">Two</option>
-							<option value="3">Three</option>
-						</select>
-						<!-- Vertical divider -->
-						<div class="bg-light-seacloud-blue position-absolute top-0 end-0 divider-vertical h-100 d-none d-md-block"></div>
-						<!-- /Vertical divider -->
-					</div>
 
-					<div class="divider d-md-none bg-light-seacloud-blue"></div>
-
-					<div class="col-xl col-lg-3 col-md-6 position-relative">
-						<select class="form-select transparent-select" aria-label="Default select example">
-							<option selected>Ship</option>
-							<option value="1">One</option>
-							<option value="2">Two</option>
-							<option value="3">Three</option>
-						</select>
-						<!-- Vertical divider -->
-						<div class="bg-light-seacloud-blue position-absolute top-0 end-0 divider-vertical h-100 d-none d-md-none d-lg-block"></div>
-						<!-- /Vertical divider -->
-					</div>
-
-					<div class="divider d-md-none bg-light-seacloud-blue"></div>
-
-					<div class="col-xl col-lg-3 col-md-6 position-relative">
-						<select class="form-select transparent-select" aria-label="Default select example">
-							<option selected>Departure date</option>
-							<option value="1">One</option>
-							<option value="2">Two</option>
-							<option value="3">Three</option>
-						</select>
-						<!-- Vertical divider -->
-						<div class="bg-light-seacloud-blue position-absolute top-0 end-0 divider-vertical h-100 d-none d-md-block"></div>
-						<!-- /Vertical divider -->
-					</div>
-
-					<div class="divider d-md-none bg-light-seacloud-blue"></div>
-
-					<div class="col-xl col-lg-3 col-md-6">
-						<select class="form-select transparent-select" aria-label="Default select example">
-							<option selected>Travel</option>
-							<option value="1">One</option>
-							<option value="2">Two</option>
-							<option value="3">Three</option>
-						</select>
-					</div>
-
-					<div class="divider d-md-none bg-light-seacloud-blue mb-2"></div>
-
-					<div class="col-xl col-lg-3 col-md-6 d-grid gap-2">
-						<button type="submit" class="btn btn-primary btn-block mb-3 mb-md-0 text-white">Serch</button>
-						<p class="d-block d-md-none text-center"><a class="btn-link-arrow text-white" href="">Sailing calendar</a></p>
+			<div class="accordion accordion-flush border border-white p-3 accordion-form" id="accordionForm">
+				<div class="accordion-item">
+					<h2 class="accordion-header d-block d-md-none">
+						<button class="accordion-button text-white text-uppercase letter-spacing-md" type="button" data-bs-toggle="collapse" data-bs-target="#collapseForm" aria-expanded="true" aria-controls="collapseForm">Find your sailing</button>
+					</h2>
+					<div id="collapseForm" class="accordion-collapse collapse show" data-bs-parent="#formAccordion">
+						<div class="accordion-body p-0">
+							<form action="" class="">
+								<div class="row gy-2 gx-2 bg-transparent justify-content-center">
+									<div class="col-xl col-lg-3 col-md-6 position-relative">
+										<select class="form-select transparent-select" aria-label="Default select example">
+											<option selected>Destination</option>
+											<option value="1">One</option>
+											<option value="2">Two</option>
+											<option value="3">Three</option>
+										</select>
+										<!-- Vertical divider -->
+										<div class="bg-light-seacloud-blue position-absolute top-0 end-0 divider-vertical h-100 d-none d-md-block"></div>
+										<!-- /Vertical divider -->
+									</div>
+				
+									<div class="divider d-md-none bg-light-seacloud-blue"></div>
+				
+									<div class="col-xl col-lg-3 col-md-6 position-relative">
+										<select class="form-select transparent-select" aria-label="Default select example">
+											<option selected>Ship</option>
+											<option value="1">One</option>
+											<option value="2">Two</option>
+											<option value="3">Three</option>
+										</select>
+										<!-- Vertical divider -->
+										<div class="bg-light-seacloud-blue position-absolute top-0 end-0 divider-vertical h-100 d-none d-md-none d-lg-block"></div>
+										<!-- /Vertical divider -->
+									</div>
+				
+									<div class="divider d-md-none bg-light-seacloud-blue"></div>
+				
+									<div class="col-xl col-lg-3 col-md-6 position-relative">
+										<select class="form-select transparent-select" aria-label="Default select example">
+											<option selected>Departure date</option>
+											<option value="1">One</option>
+											<option value="2">Two</option>
+											<option value="3">Three</option>
+										</select>
+										<!-- Vertical divider -->
+										<div class="bg-light-seacloud-blue position-absolute top-0 end-0 divider-vertical h-100 d-none d-md-block"></div>
+										<!-- /Vertical divider -->
+									</div>
+				
+									<div class="divider d-md-none bg-light-seacloud-blue"></div>
+				
+									<div class="col-xl col-lg-3 col-md-6">
+										<select class="form-select transparent-select" aria-label="Default select example">
+											<option selected>Travel</option>
+											<option value="1">One</option>
+											<option value="2">Two</option>
+											<option value="3">Three</option>
+										</select>
+									</div>
+				
+									<div class="divider d-md-none bg-light-seacloud-blue mb-2"></div>
+				
+									<div class="col-xl col-lg-3 col-md-6 d-grid gap-2">
+										<button type="submit" class="btn btn-primary btn-block mb-3 mb-md-0 text-white">Serch</button>
+									</div>
+								</div>
+							</form>
+						</div>
 					</div>
 				</div>
-			</form>
+			</div>
 		</div>
 	</section>
 	<!-- /Hero section -->
@@ -306,7 +317,7 @@
 					<div class="p-5 bg-white text-center">
 						<h2 class="text-uppercase text-primary">DISCOVER THE SEA CLOUD Difference</h2>
 						<div class="divider my-3 bg-primary"></div>
-						<p class="mb-5">Since 1979, the SEA CLOUDS have been one of the world's most legendary names in sailing, offering the ultimate opulence at sea.  In harmony with nature, the SEA CLOUDS veer away from the crowds, sailing to exclusive destinations with only 64 to 136 guests.</p>
+						<p class="mb-5">Since 1979, the SEA CLOUDS have been one of the world's most legendary names in sailing, offering the ultimate opulence at sea. In harmony with nature, the SEA CLOUDS veer away from the crowds, sailing to exclusive destinations with only 64 to 136 guests.</p>
 						<a href="#" class="btn btn-outline-primary mb-4">More info</a>
 					</div>
 				</div>
@@ -370,7 +381,6 @@
 	
 						<div class="col-xl col-lg-3 col-md-6 d-grid gap-2">
 							<button type="submit" class="btn btn-primary btn-block mb-3 mb-md-0 text-white">Serch</button>
-							<p class="d-block d-md-none text-center"><a class="btn-link-arrow text-white" href="">Sailing calendar</a></p>
 						</div>
 					</div>
 				</form>
@@ -646,7 +656,6 @@
 		
 							<div class="col-xl col-lg-3 col-md-6 d-grid gap-2">
 								<button type="submit" class="btn btn-primary btn-block mb-3 mb-md-0 text-white">Serch</button>
-								<p class="d-block d-md-none text-center"><a class="btn-link-arrow text-white" href="">Sailing calendar</a></p>
 							</div>
 						</div>
 					</form>
@@ -698,7 +707,7 @@
 					<img class="d-block mx-auto mb-4" src="images/home/the-ship/the-ship.svg" width="74" height="63" alt="The ship">
 					<h3 class="text-primary">Social at sea</h3>
 					<div class="divider bg-primary my-3"></div>
-					<p class="mb-5">You’re social, we’re social, let’s connect!  Follow, like, love, share, comment, tag. Social moments are happening @SEACLOUD CRUISES</p>
+					<p class="mb-5">You’re social, we’re social, let’s connect! Follow, like, love, share, comment, tag. Social moments are happening @SEACLOUD CRUISES</p>
 					<div class="social">
 						<a href="#" class="btn-social">
 							<img src="images/icons/facebook-primary.svg" alt="Facebook">

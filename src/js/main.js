@@ -58,7 +58,7 @@ const featuresBgOpacity = (imageArr, index) => {
 		imageArr[index].style.opacity = 1;
 	}
 }
-console.log(featuresBg)
+
 const featuresCarouselDesktop = new Swiper('.home-features-slider-desktop', {
 	slidesPerView: 1,
 	spaceBetween: 0,
@@ -104,23 +104,59 @@ const highlightsCarousel = new Swiper('#highlights-carousel', {
 	modules: [ Autoplay, Navigation, Pagination ],
 });
 
-// Animation scroll
-let responsive = gsap.matchMedia();
+// Footer accordion
+const toggleClassShowOnQuery = () => {
+	const screenWidth = window.innerWidth;
 
-let sections = gsap.utils.toArray(".slide");
+	const accordionForm = document.getElementById("accordionForm");
 
-responsive.add("(min-width: 768px)", () => {
-	gsap.to(sections, {
-		xPercent: -100 * (sections.length - 1),
-		ease: "none",
-		scrollTrigger: {
-			trigger: ".horizontal-sliders",
-			// pin: true,
-			pin: ".main",
-			pinSpacing: true,
-			scrub: 1,
-			start: "center center",
-			// end: "bottom 70%",
+	const accordionsButon = accordionForm.querySelectorAll(".accordion-button");
+	const accordionsBody = accordionForm.querySelectorAll(".accordion-collapse");
+
+	for (let i = 0; i < accordionsBody.length; i++) {
+		const buttonEl = accordionsButon[i];
+		const bodyEl = accordionsBody[i];
+	
+		// Check if the screen width is smaller than 768px
+		if (screenWidth < 768) {
+			// Add the "show" class
+			if (bodyEl.classList.contains('show')) {
+				buttonEl.classList.remove("collapsed");
+				bodyEl.classList.add("show");
+			}
+			buttonEl.classList.add("collapsed");
+			bodyEl.classList.remove("show");
+		} else {
+			// Remove the "show" class
+			if (bodyEl.classList.contains('show')) {
+				buttonEl.classList.add("collapsed");
+				bodyEl.classList.remove("show");
+			}
+			buttonEl.classList.remove("collapsed");
+			bodyEl.classList.add("show");
 		}
-	});
-});
+	}
+}
+
+toggleClassShowOnQuery();
+window.addEventListener("resize", toggleClassShowOnQuery);
+// Animation scroll
+// let responsive = gsap.matchMedia();
+
+// let sections = gsap.utils.toArray(".slide");
+
+// responsive.add("(min-width: 768px)", () => {
+// 	gsap.to(sections, {
+// 		xPercent: -100 * (sections.length - 1),
+// 		ease: "none",
+// 		scrollTrigger: {
+// 			trigger: ".horizontal-sliders",
+// 			// pin: true,
+// 			pin: ".main",
+// 			pinSpacing: true,
+// 			scrub: 1,
+// 			start: "center center",
+// 			// end: "bottom 70%",
+// 		}
+// 	});
+// });

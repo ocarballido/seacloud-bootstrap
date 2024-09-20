@@ -53,51 +53,6 @@
     background-repeat: no-repeat;
     background-size: cover;
     border: 1.5rem solid white;
-    // height: auto;
-    // min-height: 100vh;
-    // display: flex;
-    // flex-direction: column;
-    // justify-content: center;
-    // position: relative;
-    // &:after {
-    //     background-image: none;
-    //     background-position: center;
-    //     background-repeat: no-repeat;
-    //     background-size: cover;
-    //     content: '';
-    //     display: block;
-    //     height: 100%;
-    //     left: 0;
-    //     position: absolute;
-    //     top: 0;
-    //     width: 100%;
-    //     z-index: -1;
-    // }
-    // .seacrh-container {
-    //     margin: 0 auto;
-    //     max-width: 100%;
-    //     padding-left: 0.75rem;
-    //     padding-right: 0.75rem;
-    //     width: 100%;
-    // }
-    // .seacr-content-columns {
-    //     margin: 0 auto;
-    //     max-width: 400px;
-    //     width: 100%;
-    // }
-    // .search-form-container {
-    //     background-color: $light;
-    // }
-    // .image {
-    //     background-image: url("../images/home/search-section/search-bg.jpg");
-    //     background-position: center;
-    //     background-repeat: no-repeat;
-    //     background-size: cover;
-    // }
-    // .sail-luxury {
-    //     font-size: 38px;
-    //     line-height: 48px;
-    // }
 }
 
 // Section Features
@@ -145,37 +100,6 @@
     }
 }
 
-// #the-ships {
-//     height: auto;
-//     min-height: 100vh;
-//     display: flex;
-//     flex-direction: column;
-//     justify-content: center;
-//     .the-ships {
-//         font-size: 40px;
-//     }
-//     .swiper-slide {
-//         justify-content: unset;
-//     }
-//     .content {
-//         position: absolute;
-//     }
-// }
-
-// #carousel-features {
-//     height: auto;
-//     min-height: 100vh;
-//     display: flex;
-//     flex-direction: column;
-//     justify-content: center;
-//     .slide-gourmet {
-//         height: 100%;
-//     }
-//     .content {
-//         position: absolute;
-//     }
-// }
-
 // Scroll animation
 .main{
     overflow-x: hidden;
@@ -204,19 +128,8 @@
 
 // News section
 #news {
-    // background-image: none;
-    // background-position: center;
-    // background-repeat: no-repeat;
-    // background-size: cover;
-    // .image {
-    //     background-image: url("../images/home/news/news-bg.jpg");
-    //     background-position: center;
-    //     background-repeat: no-repeat;
-    //     background-size: cover;
-    // }
     border: 0.75rem solid white;
     .news-right-column {
-        // align-items: flex-end;
         display: flex;
         min-height: 900px;
         .news-column-container {
@@ -227,7 +140,6 @@
         }
     }
     .news-left-column {
-        // align-items: flex-end;
         display: flex;
         min-height: 900px;
         .news-column-container {
@@ -250,18 +162,7 @@
 
 // Media queries
 @include media-breakpoint-up(sm) {
-    // #search-section {
-    //     .seacrh-container {
-    //         max-width: 100%;
-    //         padding-left: 0.75rem;
-    //         padding-right: 0.75rem;
-    //     }
-    // }
     #news {
-        // background-image: url("../images/home/news/news-bg.jpg");
-        // .image {
-        //     background-image: none;
-        // }
         border: 1.25rem solid white;
     }
     #highlights {
@@ -291,46 +192,6 @@
             transform: translateY(0);
         }
     }
-    // #search-section {
-    //     &:after {
-    //         background-image: url("../images/home/search-section/search-bg.jpg");
-    //         left: unset;
-    //         right: 0;
-    //         top: 0;
-    //         width: 50%;
-    //     }
-    //     .search-form-container {
-    //         background-color: transparent;
-    //     }
-    //     .seacr-content-columns {
-    //         width: 80%;
-    //     }
-    //     .seacrh-container {
-    //         margin: 0 auto;
-    //         max-width: 720px;
-    //         padding-left: 0.75rem;
-    //         padding-right: 0.75rem;
-    //     }
-    //     .image {
-    //         background-image: none;
-    //     }
-    // }
-    // #the-ships {
-    //     .swiper-slide {
-    //         justify-content: center;
-    //     }
-    //     .content {
-    //         position: relative;
-    //     }
-    // }
-    // #carousel-features {
-    //     .slide-gourmet {
-    //         height: 60%;
-    //     }
-    //     .content {
-    //         position: absolute;
-    //     }
-    // }
     .horizontal-sliders{
         display: flex;
         flex-wrap: nowrap;
@@ -358,14 +219,6 @@
     }
 }
 @include media-breakpoint-up(lg) {
-    // #search-section {
-    //     .seacrh-container {
-    //         margin: 0 auto;
-    //         max-width: 960px;
-    //         padding-left: 0.75rem;
-    //         padding-right: 0.75rem;
-    //     }
-    // }
     #celebrate {
         .container {
             max-width: 960px;
@@ -373,14 +226,6 @@
     }
 }
 @include media-breakpoint-up(xl) {
-    // #search-section {
-    //     .seacrh-container {
-    //         margin: 0 auto;
-    //         max-width: 1140px;
-    //         padding-left: 0.75rem;
-    //         padding-right: 0.75rem;
-    //     }
-    // }
     #celebrate {
         .container {
             max-width: 1140px;
@@ -388,14 +233,6 @@
     }
 }
 @include media-breakpoint-up(xxl) {
-    // #search-section {
-    //     .seacrh-container {
-    //         margin: 0 auto;
-    //         max-width: 1320px;
-    //         padding-left: 0.75rem;
-    //         padding-right: 0.75rem;
-    //     }
-    // }
     #celebrate {
         .container {
             max-width: 1320px;

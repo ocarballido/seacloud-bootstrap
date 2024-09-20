@@ -98,6 +98,47 @@
             }
         }
     }
+    &.accordion-form {
+        --bs-accordion-bg: transparent;
+        --bs-accordion-active-bg: transparent;
+        --bs-accordion-btn-focus-border-color: transparent;
+        --bs-accordion-border-color: white;
+        --bs-accordion-border-width: 0;
+        --bs-accordion-active-color: #{$secondary};
+        --bs-accordion-btn-color: #{$secondary};
+        --bs-accordion-btn-icon: url('../images/icons/show-more-white.svg');
+        --bs-accordion-btn-active-icon: url('../images/icons/show-more-white.svg');
+        --bs-accordion-btn-padding-x: 0;
+        --bs-accordion-btn-padding-y: 0rem;
+        --bs-accordion-body-padding-x: 0;
+        .accordion-body {
+            padding-top: 0;
+        }
+        .accordion-button {
+            font-family: $font-family-base;
+            font-weight: 300;
+            &:focus {
+                box-shadow: none;
+            }
+            &:after {
+                background-position: center;
+                background-size: 10px 16px;
+                height: 20px;
+                margin-left: 0.25rem;
+                width: 20px;
+            }
+        }
+        .sibling-list {
+            list-style-type: disc;
+            padding-left: 1rem;
+            li {
+                margin-bottom: 0.75rem;
+                &::marker {
+                    color: $primary;
+                }
+            }
+        }
+    }
 }
 
 // Queries
