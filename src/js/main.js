@@ -3,7 +3,7 @@ import '../scss/main.scss';
 
 // Load Bootstrap init
 import {initBootstrap} from "./bootstrap.js";
-import { appbarScrolled, copyright, footerAccordionUx } from './general.js';
+import { appbarScrolled, copyright, footerAccordionUx, featuresBgOpacity } from './general.js';
 
 // Import GSAP
 import { gsap } from "gsap";
@@ -50,14 +50,6 @@ const heroCarousel = new Swiper('.home-hero-slider', {
 // Features carousel
 const featuresBg = document.getElementsByClassName('features-bg')
 const slidesBg = document.getElementsByClassName('slides-bg')
-const featuresBgOpacity = (imageArr, index) => {
-	for (let i = 0; i < imageArr.length; i ++) {
-		if (i !== index) {
-			imageArr[i].style.opacity = 0;
-		}
-		imageArr[index].style.opacity = 1;
-	}
-}
 
 const featuresCarouselDesktop = new Swiper('.home-features-slider-desktop', {
 	slidesPerView: 1,

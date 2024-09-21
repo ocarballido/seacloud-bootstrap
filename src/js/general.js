@@ -42,6 +42,16 @@ export const copyright = () => {
     dateEl.textContent = currentYear;
 }
 
+// Image opacityanimation
+export const featuresBgOpacity = (imageArr, index) => {
+	for (let i = 0; i < imageArr.length; i ++) {
+		if (i !== index) {
+			imageArr[i].style.opacity = 0;
+		}
+		imageArr[index].style.opacity = 1;
+	}
+}
+
 // Footer accordion
 export const footerAccordionUx = () => {
     const toggleClassShowOnQuery = () => {

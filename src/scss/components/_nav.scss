@@ -1,0 +1,86 @@
+.nav {
+    &.fancy-nav {
+        .nav-item {
+            .nav-link {
+                color: $secondary;
+                font-size: 1.09375rem;
+                font-weight: 300;
+                display: flex;
+                justify-content: center;
+                padding-left: 1.5rem;
+                padding-right: 1.5rem;
+                position: relative;
+                width: 100%;
+                &.active {
+                    color: $primary;
+                    &:before {
+                        content: "";
+                        // background-image: url("../images/icons/double-arrow-right-secondary.svg");
+                        background-image: url("../images/icons/double-arrow-right.svg");
+                        background-position: center;
+                        background-repeat: no-repeat;
+                        background-size: contain;
+                        display: inline-block;
+                        height: 14px;
+                        margin-right: .5rem;
+                        margin-top: .5rem;
+                        flex-shrink: 0;
+                        width: 14px;
+                    }
+                    &:after {
+                        content: "";
+                        // background-image: url("../images/icons/double-arrow-left-secondary.svg");
+                        background-image: url("../images/icons/double-arrow-left.svg");
+                        background-position: center;
+                        background-repeat: no-repeat;
+                        background-size: contain;
+                        display: inline-block;
+                        height: 14px;
+                        margin-left: .5rem;
+                        margin-top: .5rem;
+                        flex-shrink: 0;
+                        width: 14px;
+                    }
+                }
+                // &:hover {
+                //     color: $primary;
+                //     &:before {
+                //         content: "";
+                //         // background-image: url("../images/icons/double-arrow-right-secondary.svg");
+                //         background-image: url("../images/icons/double-arrow-right.svg");
+                //         background-position: center;
+                //         background-repeat: no-repeat;
+                //         background-size: contain;
+                //         display: inline-block;
+                //         height: 14px;
+                //         margin-right: .5rem;
+                //         margin-top: .5rem;
+                //         flex-shrink: 0;
+                //         width: 14px;
+                //     }
+                //     &:after {
+                //         content: "";
+                //         // background-image: url("../images/icons/double-arrow-left-secondary.svg");
+                //         background-image: url("../images/icons/double-arrow-left.svg");
+                //         background-position: center;
+                //         background-repeat: no-repeat;
+                //         background-size: contain;
+                //         display: inline-block;
+                //         height: 14px;
+                //         margin-left: .5rem;
+                //         margin-top: .5rem;
+                //         flex-shrink: 0;
+                //         width: 14px;
+                //     }
+                // }
+            }
+        }
+    }
+}
+
+// Queries
+// @include media-breakpoint-up(sm) { ... }
+// @include media-breakpoint-up(md) {}
+// @include media-breakpoint-up(lg) {}
+// @include media-breakpoint-up(xl) {}
+// @include media-breakpoint-up(xxl) {}
