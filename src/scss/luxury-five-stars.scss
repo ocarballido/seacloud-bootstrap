@@ -19,37 +19,89 @@
 
 // Custom pages styles
 // Hero section
-#all-inclusive-hero {
-    background-image: url("../images/seacloud/all-inclusive/all-inclusive-bg.jpg");
+#five-stars-hero {
+    background-image: url("../images/seacloud/five-stars/five-stars-hero.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
 
 // Carousel section
-#all-inclusive-tab-section {
+#half-carousel-section {
     border: 1.25rem solid white;
-    .tab-menu {
-        background-color: #F6EFE8;
-        padding-bottom: 3rem;
-        padding-left: 1rem;
-        padding-right: 1rem;
-        padding-top: 3rem;
-        .tab-menu-content {
-            margin: auto;
-            max-width: 500px;
-            text-align: center;
-        }
+    .carousel-content {
+        background-color: #161D3D;
     }
-    .tab-content {
+    #half-carousel {
+        padding: 5rem 0;
+    }
+    .carousel-content-container {
+        margin: 0 auto;
+        max-width: 400px;
+    }
+    .carousel-images {
+        min-height: 400px;
         position: relative;
-        .tab-image {
+        img {
             left: 0;
             position: absolute;
             top: 0;
-            transition: all .5s;
+            transition: all 0.5s;
         }
     }
+}
+
+// Section Features
+#features-section, #features-section-two {
+    min-height: auto;
+    overflow: hidden;
+    #section-bg {
+        left: 0;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        width: 100%;
+        img {
+            left: 0;
+            position: absolute;
+            transition: all 0.5s;
+            top: 0;
+        }
+    }
+    .home-features-slider-container {
+        margin-top: 16rem;
+        transition: all 0.5s;
+        transform: translateY(calc(100% - 280px));
+        .content {
+            opacity: 0;
+            transition: all .25s;
+        }
+        &:hover {
+            .content {
+                opacity: 1;
+            }
+            transform: translateY(0);
+        }
+        .swiper {
+            .swiper-pagination {
+                bottom: 2rem;
+                .swiper-pagination-bullet {
+                    background-color: $primary;
+                    opacity: .4;
+                }
+                .swiper-pagination-bullet-active {
+                    opacity: 1;
+                }
+            }
+            .swiper-slide {
+                padding-bottom: 8rem;
+                padding-top: 4rem;
+            }
+        }
+    }
+}
+#features-section-two {
+    border: 1.5rem solid white;
 }
 
 // Highlight section
@@ -97,6 +149,16 @@
 
 // Media queries
 @include media-breakpoint-up(sm) {
+    #features-section, #features-section-two {
+        .container {
+            max-width: unset;
+        }
+        // .home-features-slider-container {
+        //     .content {
+        //         opacity: 0;
+        //     }
+        // }
+    }
     #news {
         border: 1.25rem solid white;
     }
@@ -120,11 +182,17 @@
             background-color: transparent;
         }
     }
-    #features-section {
+    #features-section, #features-section-two {
         min-height: 100vh;
+        .container {
+            max-width: 720px;
+        }
         .home-features-slider-container {
             margin-top: 0;
             transform: translateY(0);
+            .content {
+                opacity: 1;
+            }
         }
     }
     .horizontal-sliders{
@@ -137,38 +205,23 @@
         height:100%;
         width:100%;
     }
-    #celebrate {
-        background-image: url("../images/home/celebrate/celebrate-bg.jpg");
-        .container {
-            max-width: 720px;
-        }
-        .content {
-            background-color: transparent;
-        }
-        .title {
-            color: white;
-        }
-        .divider {
-            background-color: white;
-        }
-    }
 }
 @include media-breakpoint-up(lg) {
-    #celebrate {
+    #features-section, #features-section-two {
         .container {
             max-width: 960px;
         }
     }
 }
 @include media-breakpoint-up(xl) {
-    #celebrate {
+    #features-section, #features-section-two {
         .container {
             max-width: 1140px;
         }
     }
 }
 @include media-breakpoint-up(xxl) {
-    #celebrate {
+    #features-section, #features-section-two {
         .container {
             max-width: 1320px;
         }

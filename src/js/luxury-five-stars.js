@@ -30,42 +30,70 @@ appbarScrolled();
 copyright();
 footerAccordionUx();
 
-// Tab
-const tabMenu = document.getElementById('fancy-nav')
-const imagesArr = document.getElementsByClassName('tab-image')
-const tabMenuLinks = document.getElementsByClassName('fancy-link');
-
-tabMenu.addEventListener('mouseover', (event) => {
-	const index = Number(event.target.getAttribute('data-number'))
-
-	for (let i = 0; i < tabMenuLinks.length; i ++) {
-		tabMenuLinks[i].classList.remove('active')
-		if (i === index) {
-			tabMenuLinks[i].classList.add('active')
+// Half carousel
+const slidesImages = document.getElementsByClassName('carousel-img')
+const halfCarousel = new Swiper('#half-carousel', {
+	slidesPerView: "auto",
+	spaceBetween: 16,
+    speed: 750,
+	pagination: {
+		el: ".swiper-pagination",
+		clickable: true,
+	},
+	modules: [ Autoplay, Navigation, Pagination ],
+    on: {
+		activeIndexChange: function() {
+			featuresBgOpacity(slidesImages, this.activeIndex)
 		}
 	}
+});
 
-    featuresBgOpacity(imagesArr, index)
+// Features carousel
+const featuresBg = document.getElementsByClassName('features-bg')
+const slidesBg = document.getElementsByClassName('slides-bg')
+const featuresCarouselDesktop = new Swiper('.home-features-slider-desktop', {
+	slidesPerView: 1,
+	spaceBetween: 0,
+	speed: 750,
+	modules: [ Autoplay, Navigation, Pagination ],
+	pagination: {
+		el: '.swiper-pagination',
+		clickable: true,
+	},
+	on: {
+		activeIndexChange: function() {
+			featuresBgOpacity(featuresBg, this.activeIndex)
+			featuresBgOpacity(slidesBg, this.activeIndex)
+		}
+	}
+});
+
+const featuresBgTwo = document.getElementsByClassName('features-bg-two')
+const slidesBgTwo = document.getElementsByClassName('slides-bg-two')
+const featuresCarouselDesktopTwo = new Swiper('.home-features-slider-desktop-two', {
+	slidesPerView: 1,
+	spaceBetween: 0,
+	speed: 750,
+	modules: [ Autoplay, Navigation, Pagination ],
+	pagination: {
+		el: '.swiper-pagination',
+		clickable: true,
+	},
+	on: {
+		activeIndexChange: function() {
+			featuresBgOpacity(featuresBgTwo, this.activeIndex)
+			featuresBgOpacity(slidesBgTwo, this.activeIndex)
+		}
+	}
 });
 
 // Highlight carousel
 const highlightsCarousel = new Swiper('#highlights-carousel', {
 	slidesPerView: "auto",
 	spaceBetween: 16,
-	pagination: {
-		el: ".swiper-pagination",
-		clickable: true,
-	},
-	modules: [ Autoplay, Navigation, Pagination ],
-});
-
-// Also like carousel
-const alsoLikeCarousel = new Swiper('#also-like-carousel', {
-	slidesPerView: "auto",
-	spaceBetween: 16,
-	pagination: {
-		el: ".swiper-pagination",
-		clickable: true,
-	},
+	// pagination: {
+	// 	el: ".swiper-pagination",
+	// 	clickable: true,
+	// },
 	modules: [ Autoplay, Navigation, Pagination ],
 });
