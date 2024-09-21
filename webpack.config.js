@@ -25,6 +25,11 @@ const htmlPluginConfigs = [
     filename: "luxury-all-inclusive.html", // Output filename (e.g., "public/luxury-all-inclusive.html")
     chunks: ["luxury-all-inclusive"], // Specify which chunks to include (luxury-all-inclusive is defined in your entry points)
   },
+  {
+    template: path.resolve(process.cwd(), "luxury-five-stars.html"), // Path to another HTML template
+    filename: "luxury-five-stars.html", // Output filename (e.g., "public/luxury-five-stars.html")
+    chunks: ["luxury-five-stars"], // Specify which chunks to include (luxury-five-stars is defined in your entry points)
+  },
   // Add more objects for additional HTML files as needed
 ];
 const htmlPlugins = htmlPluginConfigs.map((config) => new HtmlWebpackPlugin(config));
@@ -36,6 +41,7 @@ export default {
     "special-offers": "./src/js/special-offers.js",
     about: "./src/js/about.js",
     "luxury-all-inclusive": "./src/js/luxury-all-inclusive.js",
+    "luxury-five-stars": "./src/js/luxury-five-stars.js",
   },
 
   // Define the destination directory and filenames of compiled resources
@@ -137,6 +143,7 @@ export default {
       path.resolve(process.cwd(), "special-offers.html"),
       path.resolve(process.cwd(), "about.html"),
       path.resolve(process.cwd(), "luxury-all-inclusive.html"),
+      path.resolve(process.cwd(), "luxury-five-stars.html"),
     ],
     compress: true,
     port: process.env.PORT || 9090,
