@@ -216,35 +216,6 @@ body {
 }
 
 // OLD
-.half-width-image {
-    height: 100%;
-    object-fit: cover;
-    width: 100%;
-}
-.half-width-wraper {
-    box-shadow: none;
-    padding: 0;
-    // box-shadow: inset 0 0 0 1.5rem #fff;
-    // padding: 1.5rem;
-    &.bg-secondary {
-        box-shadow: inset 0 0 0 1.5rem $secondary;
-    }
-}
-.half-width-content {
-    max-width: 400px;
-    padding: 1.5rem;
-    width: 100%;
-}
-.fullscreen-section {
-    height: unset;
-}
-#also-like {
-    .swiper {
-        .swiper-slide {
-            max-width: 350px;
-        }
-    }
-}
 
 .find-your-cruise {
     font-size: 28px;
