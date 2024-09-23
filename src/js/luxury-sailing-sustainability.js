@@ -1,5 +1,5 @@
 // Load Styles
-import '../scss/luxury-lifestyle.scss';
+import '../scss/luxury-sailing-sustainability.scss';
 
 // Load Bootstrap init
 import {initBootstrap} from "./bootstrap.js";
@@ -30,20 +30,40 @@ appbarScrolled();
 copyright();
 footerAccordionUx();
 
-// Half carousel
-const slidesImages = document.getElementsByClassName('carousel-img')
-const halfCarousel = new Swiper('#half-carousel', {
-	slidesPerView: "auto",
-	spaceBetween: 16,
-    speed: 750,
+const poster2 = document.getElementsByClassName('poster-2-features-bg')
+const poster2Mobile = document.getElementsByClassName('poster-2-features-bg-mobile')
+const posterCarouse = new Swiper('.poster-carousel-2', {
+	slidesPerView: 1,
+	spaceBetween: 0,
+	speed: 750,
+	modules: [ Autoplay, Navigation, Pagination ],
 	pagination: {
-		el: ".swiper-pagination",
+		el: '.swiper-pagination',
 		clickable: true,
 	},
-	modules: [ Autoplay, Navigation, Pagination ],
-    on: {
+	on: {
 		activeIndexChange: function() {
-			featuresBgOpacity(slidesImages, this.activeIndex)
+			featuresBgOpacity(poster2, this.activeIndex)
+			featuresBgOpacity(poster2Mobile, this.activeIndex)
+		}
+	}
+});
+
+const poster3Bg = document.getElementsByClassName('poster-3-features-bg')
+const poster3BgMobile = document.getElementsByClassName('poster-3-features-bg-mobile')
+const poster3Carousel = new Swiper('.poster-carousel-3', {
+	slidesPerView: 1,
+	spaceBetween: 0,
+	speed: 750,
+	modules: [ Autoplay, Navigation, Pagination ],
+	pagination: {
+		el: '.swiper-pagination',
+		clickable: true,
+	},
+	on: {
+		activeIndexChange: function() {
+			featuresBgOpacity(poster3Bg, this.activeIndex)
+			featuresBgOpacity(poster3BgMobile, this.activeIndex)
 		}
 	}
 });

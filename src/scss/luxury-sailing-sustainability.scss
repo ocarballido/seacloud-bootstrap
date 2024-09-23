@@ -1,0 +1,186 @@
+// General styles
+@import "./general-styles";
+
+// Bootstrap components
+@import 'bootstrap/scss/accordion';
+@import 'bootstrap/scss/carousel';
+@import 'bootstrap/scss/card';
+@import 'bootstrap/scss/forms';
+@import 'bootstrap/scss/nav';
+
+// Custom components
+@import './components/accordion';
+@import './components/card';
+@import './components/carousel';
+@import './components/divider';
+@import './components/nav';
+@import './forms';
+@import './utils';
+
+// Custom pages styles
+// Hero section
+#hero {
+    background-image: url("../images/seacloud/sailing-sustainability/luxury-sailing-sustainability-hero.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+// Section Poster
+.poster-section {
+    #section-bg {
+        left: 0;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        width: 100%;
+        img {
+            left: 0;
+            position: absolute;
+            transition: all 0.5s;
+            top: 0;
+        }
+    }
+    .content-container {
+        padding-bottom: 8rem;
+        padding-top: 4rem;
+    }
+    .swiper-pagination {
+        bottom: 60px !important;
+    }
+    #section-bg-mobile {
+        height: 450px;
+        overflow: hidden;
+        position: relative;
+        width: 100%;
+        img {
+            left: 0;
+            position: absolute;
+            transition: all 0.5s;
+            top: 0;
+        }
+    }
+}
+#poster-section, #poster-section-3 {
+    border: 1.25rem solid white;
+}
+#poster-section-2, #poster-section-3 {
+    min-height: auto;
+}
+
+// Highlight section
+#highlights {
+    .swiper {
+        .swiper-slide {
+            max-width: 300px;
+        }
+    }
+}
+
+// News section
+#news {
+    border: 0.75rem solid white;
+    .news-right-column {
+        display: flex;
+        min-height: 900px;
+        .news-column-container {
+            background-image: url("../images/home/news/news-right-bg.jpg");
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+    }
+    .news-left-column {
+        display: flex;
+        min-height: 900px;
+        .news-column-container {
+            background-image: url("../images/home/news/news-left-bg.jpg");
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+    }
+    .news-column-container {
+        align-items: flex-end;
+        display: flex;
+        width: 100%;
+    }
+    .news-content {
+        max-width: 450px;
+        margin: 0 auto;
+    }
+}
+
+// Media queries
+@include media-breakpoint-up(sm) {
+    #poster-section-2, #poster-section-3 {
+        .container {
+            max-width: unset;
+        }
+        // .home-features-slider-container {
+        //     .content {
+        //         opacity: 0;
+        //     }
+        // }
+    }
+    #news {
+        border: 1.25rem solid white;
+    }
+    #highlights {
+        .swiper {
+            .swiper-slide {
+                max-width: 350px;
+            }
+        }
+    }
+}
+@include media-breakpoint-up(md) {
+    #hero-section {
+        .home-hero-slider {
+            position: absolute;
+            &:before {
+                display: none;
+            }
+        }
+        .hero-content {
+            background-color: transparent;
+        }
+    }
+    #poster-section-2, #poster-section-3 {
+        min-height: 100vh;
+        .container {
+            max-width: 720px;
+        }
+        .home-features-slider-container {
+            margin-top: 0;
+            transform: translateY(0);
+            .content {
+                opacity: 1;
+            }
+        }
+    }
+    #poster-section-2, #poster-section-3 {
+        min-height: 100vh;
+    }
+}
+@include media-breakpoint-up(lg) {
+    #poster-section-2, #poster-section-3 {
+        .container {
+            max-width: 960px;
+        }
+    }
+}
+@include media-breakpoint-up(xl) {
+    #poster-section-2, #poster-section-3 {
+        .container {
+            max-width: 1140px;
+        }
+    }
+}
+@include media-breakpoint-up(xxl) {
+    #poster-section-2, #poster-section-3 {
+        .container {
+            max-width: 1320px;
+        }
+    }
+}
