@@ -40,6 +40,11 @@ const htmlPluginConfigs = [
     filename: "luxury-sailing-sustainability.html", // Output filename (e.g., "public/luxury-sailing-sustainability.html")
     chunks: ["luxury-sailing-sustainability"], // Specify which chunks to include (luxury-sailing-sustainability is defined in your entry points)
   },
+  {
+    template: path.resolve(process.cwd(), "luxury-celebrate.html"), // Path to another HTML template
+    filename: "luxury-celebrate.html", // Output filename (e.g., "public/luxury-celebrate.html")
+    chunks: ["luxury-celebrate"], // Specify which chunks to include (luxury-celebrate is defined in your entry points)
+  },
   // Add more objects for additional HTML files as needed
 ];
 const htmlPlugins = htmlPluginConfigs.map((config) => new HtmlWebpackPlugin(config));
@@ -54,6 +59,7 @@ export default {
     "luxury-five-stars": "./src/js/luxury-five-stars.js",
     "luxury-lifestyle": "./src/js/luxury-lifestyle.js",
     "luxury-sailing-sustainability": "./src/js/luxury-sailing-sustainability.js",
+    "luxury-celebrate": "./src/js/luxury-celebrate.js",
   },
 
   // Define the destination directory and filenames of compiled resources
@@ -158,6 +164,7 @@ export default {
       path.resolve(process.cwd(), "luxury-five-stars.html"),
       path.resolve(process.cwd(), "luxury-lifestyle.html"),
       path.resolve(process.cwd(), "luxury-sailing-sustainability.html"),
+      path.resolve(process.cwd(), "luxury-celebrate.html"),
     ],
     compress: true,
     port: process.env.PORT || 9090,
