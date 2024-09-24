@@ -50,6 +50,11 @@
     height: 25%;
 }
 
+// Border
+.bordered-section {
+    border: 0.75rem solid white;
+}
+
 // Blur
 .blur-10 {
     backdrop-filter: blur(5px);
@@ -70,6 +75,9 @@
 @include media-breakpoint-up(lg) {
     .fullscreen-lg {
         height: 100vh !important;
+    }
+    .bordered-section {
+        border: 1.5rem solid white;
     }
 }
 @include media-breakpoint-up(xl) {

@@ -136,6 +136,27 @@ body {
     display: flex;
     position: relative;
 }
+.hero-cover {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    .hero-cover-image {
+        flex-grow: 1;
+        min-height: 400px;
+        position: relative;
+        width: 100%;
+        img {
+            height: 100%;
+            object-fit: cover;
+            object-position: center;
+            position: absolute;
+            width: 100%;
+        }
+    }
+    .hero-cover-content {
+        width: 100%;
+    }
+}
 .hero-carrousel {
     height: 100%;
     position: absolute;

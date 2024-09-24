@@ -1,0 +1,57 @@
+// General styles
+@import "./general-styles";
+
+// Bootstrap components
+@import 'bootstrap/scss/accordion';
+@import 'bootstrap/scss/carousel';
+@import 'bootstrap/scss/card';
+@import 'bootstrap/scss/forms';
+@import 'bootstrap/scss/nav';
+
+// Custom components
+@import './components/accordion';
+@import './components/card';
+@import './components/carousel';
+@import './components/divider';
+@import './components/nav';
+@import './forms';
+@import './utils';
+
+// Custom pages styles
+// Hero section
+#hero {
+    // background-image: url("../images/terms-and-condition/hero.jpg");
+    // background-position: center;
+    // background-repeat: no-repeat;
+    // background-size: cover;
+    .image-cover {
+        flex-grow: 1;
+        min-height: 400px;
+        position: relative;
+        width: 100%;
+        img {
+            height: 100%;
+            object-fit: cover;
+            object-position: center;
+            position: absolute;
+            width: 100%;
+        }
+    }
+}
+
+// Media queries
+@include media-breakpoint-up(sm) {
+    
+}
+@include media-breakpoint-up(md) {
+    
+}
+@include media-breakpoint-up(lg) {
+    
+}
+@include media-breakpoint-up(xl) {
+    
+}
+@include media-breakpoint-up(xxl) {
+    
+}

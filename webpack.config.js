@@ -50,6 +50,11 @@ const htmlPluginConfigs = [
     filename: "yachts-sea-cloud.html", // Output filename (e.g., "public/yachts-sea-cloud.html")
     chunks: ["yachts-sea-cloud"], // Specify which chunks to include (yachts-sea-cloud is defined in your entry points)
   },
+  {
+    template: path.resolve(process.cwd(), "terms-and-conditions.html"), // Path to another HTML template
+    filename: "terms-and-conditions.html", // Output filename (e.g., "public/terms-and-conditions.html")
+    chunks: ["terms-and-conditions"], // Specify which chunks to include (terms-and-conditions is defined in your entry points)
+  },
   // Add more objects for additional HTML files as needed
 ];
 const htmlPlugins = htmlPluginConfigs.map((config) => new HtmlWebpackPlugin(config));
@@ -66,6 +71,7 @@ export default {
     "luxury-sailing-sustainability": "./src/js/luxury-sailing-sustainability.js",
     "luxury-celebrate": "./src/js/luxury-celebrate.js",
     "yachts-sea-cloud": "./src/js/yachts-sea-cloud.js",
+    "terms-and-conditions": "./src/js/terms-and-conditions.js",
   },
 
   // Define the destination directory and filenames of compiled resources
@@ -172,6 +178,7 @@ export default {
       path.resolve(process.cwd(), "luxury-sailing-sustainability.html"),
       path.resolve(process.cwd(), "luxury-celebrate.html"),
       path.resolve(process.cwd(), "yachts-sea-cloud.html"),
+      path.resolve(process.cwd(), "terms-and-conditions.html"),
     ],
     compress: true,
     port: process.env.PORT || 9090,
