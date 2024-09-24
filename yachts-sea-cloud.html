@@ -1,0 +1,777 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <meta http-equiv="x-ua-compatible" content="ie=edge"/>
+	<link rel="icon" href="favico.png">
+    <title>Seacloud</title>
+</head>
+
+<body class="my-body">
+	<!-- Appbar -->
+	<header id="appbar" class="navbar fixed-top py-4">
+		<nav class="w-100 px-3">
+			<div class="row align-items-center flex-lg-row flex-row-reverse">
+				<div class="col-auto d-flex">
+					<button class="navbar-toggler border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+						<img src="images/icons/menu-secondary.svg" width="26" height="26" alt="Open menu">
+						<span class="offcanvas-menu-text">Menu</span>
+					</button>
+				</div>
+				<div class="col">
+					<div class="row justify-content-around">
+						<div class="col-auto d-none d-lg-flex">
+							<ul class="navbar-nav main-navbar d-flex flex-row">
+								<li class="nav-item mx-2 mx-xl-3">
+									<a class="nav-link text-center" aria-current="page" href="#">
+										<span class="scroll-top">Find<br>a sailing</span>
+										<span class="scrolled d-none">Find a sailing</span>
+									</a>
+								</li>
+								<li class="nav-item mx-2 mx-xl-3">
+									<a class="nav-link text-center" href="#">
+										<span class="scroll-top">Special<br>Offers</span>
+										<span class="scrolled d-none"">Special Offers</span>
+									</a>
+								</li>
+							</ul>
+						</div>
+						<div class="col-auto d-flex align-items-center">
+							<img id="appbarLogo" class="" src="images/appbar/seacloud-logo.png" width="112" height="80" alt="Logo">
+							<img id="appbarLogoSymbol" class="d-none my-2" src="images/appbar/seacloud-symbol.png" width="31" height="40" alt="Logo symbol">
+						</div>
+						<div class="col-auto d-none d-lg-flex">
+							<ul class="navbar-nav main-navbar flex-row flex-wrap align-items-center bd-navbar-nav d-none d-lg-flex">
+								<li class="nav-item mx-2 mx-xl-3">
+									<a class="nav-link text-center" aria-current="page" href="#">
+										<span class="scroll-top">Book your<br>sailing</span>
+										<span class="scrolled d-none">Book your sailing</span>
+									</a>
+								</li>
+								<li class="nav-item mx-2 mx-xl-3">
+									<a class="nav-link text-center" aria-current="page" href="#">
+										<span class="scroll-top">Request<br>information</span>
+										<span class="scrolled d-none">Request information</span>
+									</a>
+								</li>
+								<li class="nav-item mx-2 mx-xl-3 letter-spacing-md text-center text-uppercase fw-normal d-none d-xl-flex">
+									<p class="m-0 text-center">
+										<span class="scroll-top">
+											Call us
+											<br>
+											<img class="me-0" width="18" height="18" src="images/icons/phone-call.svg" alt="Phone number">
+											1.888.732.2568
+										</span>
+										<span class="scrolled d-none">
+											<img class="me-0" width="18" height="18" src="images/icons/phone-call.svg" alt="Phone number">
+											1.888.732.2568
+										</span>
+									</p>
+								</li>
+							</ul>
+						</div>
+					 </div>
+				</div>
+			</div>
+
+			<!-- Offcanvas menu -->
+			<div class="offcanvas offcanvas-start bg-white" tabindex="-1" id="offcanvasNavbar" data-bs-scroll="true" aria-labelledby="offcanvasNavbarLabel">
+				<button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close">
+					<img src="images/icons/close-secondary.svg" width="26" height="26" alt="Close menu">
+				</button>
+					
+				<div class="offcanvas-body">
+					<div class="container">
+						<ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+							<li class="nav-item">
+								<a class="nav-link active" aria-current="page" href="#">Home</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#">Find a sailing</a>
+							</li>
+							<li class="nav-item">
+								<div class="accordion offcanvas-accordion" id="accordion-01">
+									<div class="accordion-item">
+										<p class="accordion-header">
+											<button class="nav-link accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-01" aria-expanded="true" aria-controls="collapse-01">
+												The Luxury of the sea Clouds
+											</button>
+										</p>
+										<div id="collapse-01" class="accordion-collapse collapse" data-bs-parent="#accordion-01">
+											<div class="accordion-body px-0">
+												<ul class="accordion-list">
+													<li><a class="accordion-link" href="#">Sea Clouds All-Inclusive Fares</a></li>
+													<li><a class="accordion-link" href="#">Five Star Amenities</a></li>
+													<li><a class="accordion-link" href="#">The Sea Cloud Difference</a></li>
+													<li><a class="accordion-link" href="#">Sailing Sustainability</a></li>
+													<li><a class="accordion-link" href="#">Let's Celebrate</a></li>
+												</ul>
+											</div>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li class="nav-item">
+								<div class="accordion offcanvas-accordion" id="accordion-02">
+									<div class="accordion-item">
+										<p class="accordion-header">
+											<button class="nav-link accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-02" aria-expanded="true" aria-controls="collapse-02">
+												Our Sailing Yachts
+											</button>
+										</p>
+										<div id="collapse-02" class="accordion-collapse collapse" data-bs-parent="#accordion-02">
+											<div class="accordion-body px-0">
+												<ul class="accordion-list">
+													<li><a class="accordion-link" href="#">Sea Cloud</a></li>
+													<li><a class="accordion-link" href="#">Sea Cloud II</a></li>
+													<li><a class="accordion-link" href="#">Sea Cloud Spirit</a></li>
+												</ul>
+											</div>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li class="nav-item">
+								<div class="accordion offcanvas-accordion" id="accordion-03">
+									<div class="accordion-item">
+										<p class="accordion-header">
+											<button class="nav-link accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-03" aria-expanded="true" aria-controls="collapse-03">
+												Distinctive destinations
+											</button>
+										</p>
+										<div id="collapse-03" class="accordion-collapse collapse" data-bs-parent="#accordion-03">
+											<div class="accordion-body px-0">
+												<ul class="accordion-list">
+													<li><a class="accordion-link" href="#">World Map</a></li>
+													<li><a class="accordion-link" href="#">Caribbean</a></li>
+													<li><a class="accordion-link" href="#">Atlantic Crossing</a></li>
+													<li><a class="accordion-link" href="#">Mediterranean</a></li>
+												</ul>
+											</div>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#">Special Offers</a>
+							</li>
+							<li class="nav-item">
+								<div class="accordion offcanvas-accordion" id="accordion-04">
+									<div class="accordion-item">
+										<p class="accordion-header">
+											<button class="nav-link accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-04" aria-expanded="true" aria-controls="collapse-04">
+												Discover More
+											</button>
+										</p>
+										<div id="collapse-04" class="accordion-collapse collapse" data-bs-parent="#accordion-04">
+											<div class="accordion-body px-0">
+												<ul class="accordion-list">
+													<li><a class="accordion-link" href="#">Digital brochure</a></li>
+													<li><a class="accordion-link" href="#">Videos</a></li>
+													<li><a class="accordion-link" href="#">Virtual Tours</a></li>
+													<li><a class="accordion-link" href="#">Social Media</a></li>
+												</ul>
+											</div>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#">Book your Sailing</a>
+							</li>
+						</ul>
+						<div class="divider my-4 bg-transparent w-100"></div>
+						<ul class="navbar-nav d-block flex-grow-1 pe-3">
+							<li class="nav-item d-inline-block me-3">
+								<a class="nav-link" href="#">Help</a>
+							</li>
+							<li class="nav-item d-inline-block">
+								<a class="nav-link" href="#">Contact Us</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<!-- /Offcanvas menu -->
+		</nav>
+	</header>
+	<!-- /Appbar -->
+
+	<!-- Hero section -->
+	<section id="hero" class="poster-section full-height-section position-relative d-flex align-items-start">
+		<div id="section-bg" class="">
+			<img class="features-bg cover" src="images/yachts/sea-cloud/hero.jpg" alt="Gourmet" style="opacity: 1;"/>
+		</div>
+		<div class="container position-relative px-md-3">
+			<div class="row justify-content-end g-0">
+				<div class="col-md-8 col-lg-6 col-xl-5 mb-3 mb-md-0">
+					<div class="px-4 px-lg-5 bg-white content-container text-center position-relative">
+                        <img class="mb-4" src="images/icons/seacloud-icon.png" />
+                        <h2 class="text-primary card-back-title">SEA CLOUD</h2>
+                        <p class="mb-4 px-0 px-md-2 px-lg-3 px-xl-4">An affluent history permeates throughout this special fleet beginning with its leader, the original SEA CLOUD. Her story starts in the upper echelon of 1931 society, when Marjorie Merriweather Post and her husband, Edward F. Hutton, commissioned a grand four-masted barque. It would be the largest private sailing yacht in the world at the time, and served as a sophisticated stage for their extravagant life hosting nobility, dignitaries, and celebrities.</p>
+                        <div class="accordion fancy-accordion" id="accordion-hero">
+                            <div class="accordion-item">
+                                <div class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-hero" aria-expanded="true" aria-controls="collapse-hero">
+                                        The Luxury of the sea Clouds
+                                    </button>
+                                </div>
+                                <div id="collapse-hero" class="accordion-collapse collapse" data-bs-parent="#accordion-hero">
+                                    <div class="accordion-body px-0">
+                                        <p class="m-0">
+                                            64 Guests<br>32 Outside Staterooms<br>60 Crew<br>Restaurant, Lido Deck with Bar, Lounge with Library  <br>32,000 Sq Ft Total Sail Area. <br>29 Sails<br>4 Masts</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- /Hero section -->
+
+    <!-- Postcard section -->
+	<section id="postcard-section" class="postcard-section position-relative bg-white">
+		<div class="container-fluid p-0 position-relative">
+			<div class="row g-0">
+                <div class="col-md postcard-images">
+                    <img src="images/yachts/sea-cloud/postcard-01.jpg" class="postcard-img cover" alt="Carousel 1">
+                    <img src="images/yachts/sea-cloud/postcard-02.jpg" class="postcard-img cover" alt="Carousel 2">
+                    <img src="images/yachts/sea-cloud/postcard-03.jpg" class="postcard-img cover" alt="Carousel 3">
+                    <img src="images/yachts/sea-cloud/postcard-04.jpg" class="postcard-img cover" alt="Carousel 4">
+                    <img src="images/yachts/sea-cloud/postcard-05.jpg" class="postcard-img cover" alt="Carousel 5">
+                    <img src="images/yachts/sea-cloud/postcard-06.jpg" class="postcard-img cover" alt="Carousel 6">
+                    <img src="images/yachts/sea-cloud/postcard-07.jpg" class="postcard-img cover" alt="Carousel 7">
+                </div>
+				<div class="col-md overflow-hidden">
+                    <div class="swiper postcard-carousel">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="content-container text-center">
+                                    <p class="display-5 text-primary mt-4">Distinctive</p>
+                                    <h2 class="text-primary">details</h2>
+                                    <div class="divider mt-4 mb-4 bg-primary"></div>
+                                    <p class="">Throughout the next nine decades, SEA CLOUD, would live many lives under various names, until 1979 when she was rescued and meticulously restored. Today, she radiates the glamour of Merriweather Post's impeccable tastes for an intimate handful of guests. With original suites and classic sailing decks, she leads the fleet as one of only a few passenger ships hand-rigged without electronic controls.</p>
+                                    <img class="f" src="images/icons/double-arrow-right.svg" alt="Arrowa"/>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="content-container text-center">
+                                    <p class="display-5 text-primary mt-4">Distinctive</p>
+                                    <h2 class="text-primary">details</h2>
+                                    <div class="divider mt-4 mb-4 bg-primary"></div>
+                                    <p class="">The SEA CLOUD's opulent charm shows in the Italian marble fireplaces, French antiques, oak-paneled dining room, gleaming brass, and parquet wood. Eight of the original suites have been carefully restored to their original glamour, including Merriweather's, Hutton's, and their daughter Dina Merrill's. The rest pamper guests with modern amenities in a contemporary ambiance of light and warm woods.</p>
+                                    <img class="f" src="images/icons/double-arrow-right.svg" alt="Arrowa"/>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="content-container text-center">
+                                    <p class="display-5 text-primary mt-4">Distinctive</p>
+                                    <h2 class="text-primary">details</h2>
+                                    <div class="divider mt-4 mb-4 bg-primary"></div>
+                                    <p class="">Even the bath fixtures exemplify the splendor on board with golden swans in the suites. The SEA CLOUD offers an intimate sailing experience with only 32 suites and staterooms, creating an ambiance with the feel of a private yacht. Guests quickly find a favorite space, from the lido bar for alfresco lunch and sunset cocktails and the open-air blue lagoon to the leisure lounge for expert lectures.</p>
+                                    <img class="f" src="images/icons/double-arrow-right.svg" alt="Arrowa"/>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="content-container text-center">
+                                    <p class="display-5 text-primary mt-4">Distinctive</p>
+                                    <h2 class="text-primary">details</h2>
+                                    <div class="divider mt-4 mb-4 bg-primary"></div>
+                                    <p class="">With her 95th birthday approaching in 2026, this grand dame will head to dry-dock in October 2025 to get pampered and revamped for the momentous occasion, marked with celebratory farewell sailings.</p>
+                                    <img class="f" src="images/icons/double-arrow-right.svg" alt="Arrowa"/>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="content-container text-center">
+                                    <p class="display-5 text-primary mt-4">Distinctive</p>
+                                    <h2 class="text-primary">details</h2>
+                                    <div class="divider mt-4 mb-4 bg-primary"></div>
+                                    <p class="">It will be a posh party along the Iberian Coast for her birthday sailing in April 2025, following a grand goodbye to the Caribbean in March. And October marks her final farewell in the Med, before heading into dry dock. She'll emerge fully refreshed in 2026 for a year of 95th anniversary events.</p>
+                                    <img class="f" src="images/icons/double-arrow-right.svg" alt="Arrowa"/>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="content-container text-center">
+                                    <p class="display-5 text-primary mt-4">Distinctive</p>
+                                    <h2 class="text-primary">details</h2>
+                                    <div class="divider mt-4 mb-4 bg-primary"></div>
+                                    <p class="">The SEA CLOUD offers an intimate sailing experience with only 32 suites and staterooms, creating an ambiance with the feel of a private yacht. Eight of the original suites have been carefully restored to their original glamour, including Merriweather's, Hutton's, and their daughter Dina Merrill's. The rest pamper guests with modern amenities in a contemporary ambiance of light and warm woods.</p>
+                                    <img class="f" src="images/icons/double-arrow-right.svg" alt="Arrowa"/>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="content-container text-center">
+                                    <p class="display-5 text-primary mt-4">Distinctive</p>
+                                    <h2 class="text-primary">details</h2>
+                                    <div class="divider mt-4 mb-4 bg-primary"></div>
+                                    <p class="">The SEA CLOUD combines opulent charm with the thrill of an authentic windjammer — even the masts are made of wood rather than aluminum. Italian marble fireplaces, French antiques, an oak-paneled dining room, golden swan bath fixtures, gleaming brass, and parquet wood exemplify the splendor aboard. Guests quickly find a favorite space, from the lido bar for alfresco lunch and sunset cocktails and the open-air blue lagoon to the leisure lounge for expert lectures, the common areas add to its historic allure.</p>
+                                    <img class="f" src="images/icons/double-arrow-right.svg" alt="Arrowa"/>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-pagination primary mb-5"></div>
+                    </div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- /Postcard section -->
+
+    <!-- Deck plan section -->
+	<section id="deck-plan-section" class="position-relative bg-white">
+		<div class="container-fluid p-0 position-relative">
+			
+		</div>
+	</section>
+	<!-- /Deck plan section -->
+
+	<!-- Highlights section -->
+	<section id="highlights" class="full-height-section bg-secondary position-relative pt-5 pb-4 pb-md-5 d-flex align-items-center">
+		<div class="container pt-5 pb-0 pb-md-5">
+			<h2 class="text-primary text-center mb-5">Our highlights for you</h2>
+			<div id="highlights-carousel" class="swiper pb-5 mb-4">
+				<div class="swiper-wrapper pb-5">
+					<div class="swiper-slide">
+						<div class="card card-highlights text-bg-dark">
+							<img src="images/highlights/highlights.jpg" class="card-img" alt="A COLORFUL CARIBBEAN TIME-OUT">
+							<div class="card-img-overlay">
+								<p class="card-title fw-medium">A COLORFUL CARIBBEAN TIME-OUT</p>
+								<p class="card-text">8 NIGHTS 29/Sep/2023 → 7/Oct/2023</p>
+								<p class="card-text">Nice/France — Naples/Italy</p>
+								<p class="card-text"><a href="#">Sea Cloud Spirit</a></p>
+								<p class="card-text">Watch the classic regatta Les Voiles de Saint Tropez live from board. Our expert on this cruise: sailor and "Les Voiles" expert Jan-Niklas Keltsch.</p>
+								<a href="#" class="btn btn-outline-primary btn-sm mb-4">More info</a>
+							</div>
+						</div>
+					</div>
+					<div class="swiper-slide">
+						<div class="card card-highlights text-bg-dark">
+							<img src="images/highlights/highlights-02.jpg" class="card-img" alt="LUXURY LIFESTYLE, RELAXING BEATS">
+							<div class="card-img-overlay">
+								<p class="card-title fw-medium">LUXURY LIFESTYLE, RELAXING BEATS</p>
+								<p class="card-text">8 NIGHTS 29/Sep/2023 → 7/Oct/2023</p>
+								<p class="card-text">Nice/France — Naples/Italy</p>
+								<p class="card-text"><a href="#">Sea Cloud Spirit</a></p>
+								<p class="card-text">Watch the classic regatta Les Voiles de Saint Tropez live from board. Our expert on this cruise: sailor and "Les Voiles" expert Jan-Niklas Keltsch.</p>
+								<a href="#" class="btn btn-outline-primary btn-sm mb-4">More info</a>
+							</div>
+						</div>
+					</div>
+					<div class="swiper-slide">
+						<div class="card card-highlights text-bg-dark">
+							<img src="images/highlights/highlights-03.jpg" class="card-img" alt="SIX ISLANDS IN AN EASTER BOUQUET">
+							<div class="card-img-overlay">
+								<p class="card-title fw-medium">SIX ISLANDS IN AN EASTER BOUQUET</p>
+								<p class="card-text">8 NIGHTS 29/Sep/2023 → 7/Oct/2023</p>
+								<p class="card-text">Nice/France — Naples/Italy</p>
+								<p class="card-text"><a href="#">Sea Cloud Spirit</a></p>
+								<p class="card-text">Watch the classic regatta Les Voiles de Saint Tropez live from board. Our expert on this cruise: sailor and "Les Voiles" expert Jan-Niklas Keltsch.</p>
+								<a href="#" class="btn btn-outline-primary btn-sm mb-4">More info</a>
+							</div>
+						</div>
+					</div>
+					<div class="swiper-slide">
+						<div class="card card-highlights text-bg-dark">
+							<img src="images/highlights/highlights.jpg" class="card-img" alt="ONCE THROUGH THE PANAMA CANAL">
+							<div class="card-img-overlay">
+								<p class="card-title fw-medium">ONCE THROUGH THE PANAMA CANAL</p>
+								<p class="card-text">8 NIGHTS 29/Sep/2023 → 7/Oct/2023</p>
+								<p class="card-text">Nice/France — Naples/Italy</p>
+								<p class="card-text"><a href="#">Sea Cloud Spirit</a></p>
+								<p class="card-text">Watch the classic regatta Les Voiles de Saint Tropez live from board. Our expert on this cruise: sailor and "Les Voiles" expert Jan-Niklas Keltsch.</p>
+								<a href="#" class="btn btn-outline-primary btn-sm mb-4">More info</a>
+							</div>
+						</div>
+					</div>
+					<div class="swiper-slide">
+						<div class="card card-highlights text-bg-dark">
+							<img src="images/highlights/highlights-02.jpg" class="card-img" alt="Highlights">
+							<div class="card-img-overlay">
+								<p class="card-title fw-medium">SIX ISLANDS IN AN EASTER BOUQUET SIX IN AN EASTER BOUQUET SIX ISLANDS IN AN</p>
+								<p class="card-text">8 NIGHTS 29/Sep/2023 → 7/Oct/2023</p>
+								<p class="card-text">Nice/France — Naples/Italy</p>
+								<p class="card-text"><a href="#">Sea Cloud Spirit</a></p>
+								<p class="card-text">Watch the classic regatta Les Voiles de Saint Tropez live from board. Our expert on this cruise: sailor and "Les Voiles" expert Jan-Niklas Keltsch.</p>
+								<a href="#" class="btn btn-outline-primary btn-sm mb-4">More info</a>
+							</div>
+						</div>
+					</div>
+					<div class="swiper-slide">
+						<div class="card card-highlights text-bg-dark">
+							<img src="images/highlights/highlights-03.jpg" class="card-img" alt="Highlights">
+							<div class="card-img-overlay">
+								<p class="card-title fw-medium">SIX ISLANDS IN AN EASTER BOUQUET SIX IN AN EASTER BOUQUET SIX ISLANDS IN AN</p>
+								<p class="card-text">8 NIGHTS 29/Sep/2023 → 7/Oct/2023</p>
+								<p class="card-text">Nice/France — Naples/Italy</p>
+								<p class="card-text"><a href="#">Sea Cloud Spirit</a></p>
+								<p class="card-text">Watch the classic regatta Les Voiles de Saint Tropez live from board. Our expert on this cruise: sailor and "Les Voiles" expert Jan-Niklas Keltsch.</p>
+								<a href="#" class="btn btn-outline-primary btn-sm mb-4">More info</a>
+							</div>
+						</div>
+					</div>
+					<div class="swiper-slide">
+						<div class="card card-highlights text-bg-dark">
+							<img src="images/highlights/highlights.jpg" class="card-img" alt="Highlights">
+							<div class="card-img-overlay">
+								<p class="card-title fw-medium">SIX ISLANDS IN AN EASTER BOUQUET SIX IN AN EASTER BOUQUET SIX ISLANDS IN AN</p>
+								<p class="card-text">8 NIGHTS 29/Sep/2023 → 7/Oct/2023</p>
+								<p class="card-text">Nice/France — Naples/Italy</p>
+								<p class="card-text"><a href="#">Sea Cloud Spirit</a></p>
+								<p class="card-text">Watch the classic regatta Les Voiles de Saint Tropez live from board. Our expert on this cruise: sailor and "Les Voiles" expert Jan-Niklas Keltsch.</p>
+								<a href="#" class="btn btn-outline-primary btn-sm mb-4">More info</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="row justify-content-center search-form-container pb-4 pb-md-0">
+				<div class="col">
+					<div class="row justify-content-between align-items-end mx-3 px-3 mb-3">
+						<div class="col text-center-md">
+							<p class="display-5 find-your-cruise text-white">Find your sailing</p>
+						</div>
+					</div>
+					<form action="" class="">
+						<div class="row gy-2 gx-2 bg-transparent border border-white pb-3 pt-2 mx-3 px-3 justify-content-center">
+							<div class="col-xl col-lg-3 col-md-6 position-relative">
+								<select class="form-select transparent-select" aria-label="Default select example">
+									<option selected>Destination</option>
+									<option value="1">One</option>
+									<option value="2">Two</option>
+									<option value="3">Three</option>
+								</select>
+								<!-- Vertical divider -->
+								<div class="bg-light-seacloud-blue position-absolute top-0 end-0 divider-vertical h-100 d-none d-md-block"></div>
+								<!-- /Vertical divider -->
+							</div>
+		
+							<div class="divider d-md-none bg-light-seacloud-blue"></div>
+		
+							<div class="col-xl col-lg-3 col-md-6 position-relative">
+								<select class="form-select transparent-select" aria-label="Default select example">
+									<option selected>Ship</option>
+									<option value="1">One</option>
+									<option value="2">Two</option>
+									<option value="3">Three</option>
+								</select>
+								<!-- Vertical divider -->
+								<div class="bg-light-seacloud-blue position-absolute top-0 end-0 divider-vertical h-100 d-none d-md-none d-lg-block"></div>
+								<!-- /Vertical divider -->
+							</div>
+		
+							<div class="divider d-md-none bg-light-seacloud-blue"></div>
+		
+							<div class="col-xl col-lg-3 col-md-6 position-relative">
+								<select class="form-select transparent-select" aria-label="Default select example">
+									<option selected>Departure date</option>
+									<option value="1">One</option>
+									<option value="2">Two</option>
+									<option value="3">Three</option>
+								</select>
+								<!-- Vertical divider -->
+								<div class="bg-light-seacloud-blue position-absolute top-0 end-0 divider-vertical h-100 d-none d-md-block"></div>
+								<!-- /Vertical divider -->
+							</div>
+		
+							<div class="divider d-md-none bg-light-seacloud-blue"></div>
+		
+							<div class="col-xl col-lg-3 col-md-6">
+								<select class="form-select transparent-select" aria-label="Default select example">
+									<option selected>Travel</option>
+									<option value="1">One</option>
+									<option value="2">Two</option>
+									<option value="3">Three</option>
+								</select>
+							</div>
+		
+							<div class="divider d-md-none bg-light-seacloud-blue mb-2"></div>
+		
+							<div class="col-xl col-lg-3 col-md-6 d-grid gap-2">
+								<button type="submit" class="btn btn-primary btn-block mb-3 mb-md-0 text-white">Serch</button>
+							</div>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- /Highlights section -->
+
+	<!-- News section -->
+	<section id="news" class="position-relative bg-white">
+		<div class="container-fluid p-0">
+			<div class="row g-3 align-items-end justify-content-evenly">
+				<div class="col-md news-left-column">
+					<div class="news-column-container">
+						<div class="p-5 text-center news-content">
+							<h2 class="px-0 px-md-5">2025<br>Brochure</h2>
+							<div class="divider bg-secondary my-4"></div>
+							<p class="px-0 px-md-5 mb-4">Start planning now for your next luxury getaway. Discover every detail of the SEA CLOUD Difference, including elite itineraries to premier ports aboard sailing yachts.</p>
+							<div class="mb-3">
+								<a href="#" class="btn btn-secondary btn-block-sm">2025 Brochure</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- <div class="col-md-auto px-2 bg-white d-none d-md-flex"></div> -->
+				<div class="col-md news-right-column">
+					<div class="news-column-container">
+						<div class="p-5 bg-white text-center news-content">
+							<h2 class="px-0 px-md-5">Special<br>Offers</h2>
+							<div class="divider bg-secondary my-4"></div>
+							<p class="px-0 px-md-5 mb-4">Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+							<div class="mb-3">
+								<a href="#" class="btn btn-secondary btn-block-sm">More info</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- /News section -->
+	
+	<!-- Social sea section -->
+	<section id="social-sea" class="position-relative py-5 bg-dark-seacloud-blue">
+		<div class="container py-5">
+			<div class="row align-items-center justify-content-between text-primary">
+				<div class="col-md col-lg-5 col-xl-4 text-center mb-5 mb-md-0">
+					<img class="d-block mx-auto mb-4" src="images/home/the-ship/the-ship.svg" width="74" height="63" alt="The ship">
+					<h3 class="text-primary">Social at sea</h3>
+					<div class="divider bg-primary my-3"></div>
+					<p class="mb-5">You’re social, we’re social, let’s connect! Follow, like, love, share, comment, tag. Social moments are happening @SEACLOUD CRUISES</p>
+					<div class="social">
+						<a href="#" class="btn-social">
+							<img src="images/icons/facebook-primary.svg" alt="Facebook">
+						</a>
+						<a href="#" class="btn-social">
+							<img src="images/icons/instagram-primary.svg" alt="Instagram">
+						</a>
+						<a href="#" class="btn-social">
+							<img src="images/icons/youtube-primary.svg" alt="Youtube">
+						</a>
+					</div>
+				</div>
+				<div class="col-md col-lg-6">
+					<p class="lead text-center text-md-start">Email subscribers get early access to our luxury travel deals. Sneak peek all the exclusives first, plus stay in touch with all the updates from our sailing world.</p>
+					<form class="my-4" action="">
+						<div class="input-group input-mail mb-3">
+							<input type="text" class="form-control" placeholder="Your mail" aria-label="Your mail" aria-describedby="mail-button-addon">
+							<button class="btn btn-primary" type="submit">Sign up</button>
+						</div>
+					</form>
+					<p class="small text-uppercase letter-spacing-sm text-white text-center-md"><small>By submitting this form, you are consenting to receive marketing emails from: Sea cloud us . You can revoke your consent to receive emails at any time by using the Safe Unsubscribe® link, found at the bottom of every email. Emails are serviced by Constant Contact</small></p>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- /Social sea section -->
+
+	<!-- Footer -->
+	<footer id="footer" class="pt-5 bg-white">
+		<div class="container pt-3 px-5 px-sm-4 px-md-2">
+			<img id="appbarLogo" class="d-block d-md-none mx-auto mx-lg-0 mb-5" src="images/appbar/seacloud-logo.png" width="130" height="92" alt="Logo">
+			<div class="row">
+				<!-- Plan a Sailing -->
+				<div class="col-md-6 col-lg">
+					<div class="accordion accordion-flush footer-accordion" id="accordion-planCruise">
+						<div class="accordion-item">
+							<p class="accordion-header">
+								<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-planCruise" aria-expanded="false" aria-controls="flush-planCruise">Plan a Sailing</button>
+							</p>
+							<div id="flush-planCruise" class="accordion-collapse collapse show" data-bs-parent="#accordion-planCruise">
+								<div class="accordion-body">
+									<ul class="nav nav-list d-block list-unstyled">
+										<li><a class="link link-secondary footer-link" href="#">Find a Sailing</a></li>
+										<li><a class="link link-secondary footer-link" href="#">Find a Travel Advisor</a></li>
+										<li class="accordion footer-sibling-accordion accordion-flush" id="request-info">
+											<div class="accordion-item">
+												<p class="accordion-header">
+													<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#request-info-acc" aria-expanded="false" aria-controls="request-info-acc">Request info</button>
+												</p>
+												<div id="request-info-acc" class="accordion-collapse collapse show" data-bs-parent="#request-info">
+													<div class="accordion-body">
+														<ul class="nav nav-list d-block sibling-list">
+															<li class="mb-0"><a class="link link-secondary footer-link text-primary" href="#">Order Brochure</a></li>
+															<li class="mb-0"><a class="link link-secondary footer-link text-primary" href="#">Sign Up for Offers</a></li>
+															<li class="mb-0"><a class="link link-secondary footer-link text-primary" href="#">Request Quote</a></li>
+															<li class="mb-0"><a class="link link-secondary footer-link text-primary" href="#">Group Travel Perks</a></li>
+															<li class="mb-0"><a class="link link-secondary footer-link text-primary" href="#">Submit Inquiry</a></li>
+														</ul>
+													</div>
+												</div>
+											</div>
+										</li>
+										<li><a class="link link-secondary footer-link" href="#">Special Offers</a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- /Plan a Sailing -->
+
+				<!-- Resources -->
+				<div class="col-md-6 col-lg">
+					<div class="accordion accordion-flush footer-accordion" id="accordion-resoucers">
+						<div class="accordion-item">
+							<p class="accordion-header">
+								<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-resoucers" aria-expanded="false" aria-controls="flush-resoucers">Plan a Resources</button>
+							</p>
+							<div id="flush-resoucers" class="accordion-collapse collapse show" data-bs-parent="#accordion-resoucers">
+								<div class="accordion-body">
+									<ul class="nav nav-list d-block list-unstyled">
+										<li><a class="link link-secondary footer-link" href="#">Frequently Asked Questions</a></li>
+										<li><a class="link link-secondary footer-link" href="#">Digital Brochures</a></li>
+										<li><a class="link link-secondary footer-link" href="#">Videos</a></li>
+										<li><a class="link link-secondary footer-link" href="#">Charters, Meetings & Incentives</a></li>
+										<li><a class="link link-secondary footer-link" href="#">Travel Partner Center</a></li>
+										<li><a class="link link-secondary footer-link" href="#">Sail & Sustain</a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- /Resources -->
+
+				<!-- Company info -->
+				<div class="col-md-6 col-lg">
+					<div class="accordion accordion-flush footer-accordion" id="accordion-compoanyInfo">
+						<div class="accordion-item">
+							<p class="accordion-header">
+								<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-compoanyInfo" aria-expanded="false" aria-controls="flush-compoanyInfo">Sign up for exclusive offers</button>
+							</p>
+							<div id="flush-compoanyInfo" class="accordion-collapse collapse show" data-bs-parent="#accordion-compoanyInfo">
+								<div class="accordion-body">
+									<ul class="nav nav-list d-block list-unstyled">
+										<li><a class="link link-secondary footer-link" href="#">About Us</a></li>
+										<li><a class="link link-secondary footer-link" href="#">Careers</a></li>
+										<li><a class="link link-secondary footer-link" href="#">Press & Media</a></li>
+										<li class="accordion footer-sibling-accordion accordion-flush" id="legal">
+											<div class="accordion-item">
+												<p class="accordion-header">
+													<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#legal-acc" aria-expanded="false" aria-controls="legal-acc">Legal</button>
+												</p>
+												<div id="legal-acc" class="accordion-collapse collapse show" data-bs-parent="#legal">
+													<div class="accordion-body">
+														<ul class="nav nav-list d-block sibling-list">
+															<li class="mb-0"><a class="link link-secondary footer-link text-primary" href="#">Terms & Condition</a></li>
+															<li class="mb-0"><a class="link link-secondary footer-link text-primary" href="#">Refunds</a></li>
+															<li class="mb-0"><a class="link link-secondary footer-link text-primary" href="#">EU regulation</a></li>
+															<li class="mb-0"><a class="link link-secondary footer-link text-primary" href="#">Disclaimer of Liability</a></li>
+															<li class="mb-0"><a class="link link-secondary footer-link text-primary" href="#">Legal Details</a></li>
+														</ul>
+													</div>
+												</div>
+											</div>
+										</li>
+										<li><a class="link link-secondary footer-link" href="#">Privacy Policy</a></li>
+										<li><a class="link link-secondary footer-link" href="#">Contact Us</a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- /Company info -->
+
+				<!-- Sign up -->
+				<div class="col-md-6 col-lg">
+					<div class="accordion accordion-flush footer-accordion" id="accordion-search">
+						<div class="accordion-item">
+							<p class="accordion-header">
+								<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-search" aria-expanded="false" aria-controls="flush-search">Find a Sailing</button>
+							</p>
+							<div id="flush-search" class="accordion-collapse collapse show" data-bs-parent="#accordion-search">
+								<div class="accordion-body">
+									<!-- <form class="my-4" action="">
+										<div class="input-group input-mail mb-3">
+											<input type="text" class="form-control" placeholder="Your mail" aria-label="Your mail" aria-describedby="mail-button-addon">
+											<button class="btn btn-primary px-2" type="submit">
+												<img width="25" height="15" src="images/icons/double-arrow-right-secondary.svg" alt="Sign up">
+												<span class="d-block d-md-none"></span>
+											</button>
+										</div>
+									</form> -->
+									<form action="" class="">
+										<div class="row gy-2 gx-0 bg-transparent pb-3 pt-2 justify-content-center">
+											<div class=" position-relative">
+												<select class="form-select" aria-label="Default select example">
+													<option selected>Ship</option>
+													<option value="1">One</option>
+													<option value="2">Two</option>
+													<option value="3">Three</option>
+												</select>
+											</div>
+						
+											<div class="divider bg-primary"></div>
+						
+											<div class=" position-relative">
+												<select class="form-select" aria-label="Default select example">
+													<option selected>Date</option>
+													<option value="1">One</option>
+													<option value="2">Two</option>
+													<option value="3">Three</option>
+												</select>
+											</div>
+						
+											<div class="divider bg-primary"></div>
+						
+											<div class="">
+												<select class="form-select" aria-label="Default select example">
+													<option selected>Sailing theme</option>
+													<option value="1">One</option>
+													<option value="2">Two</option>
+													<option value="3">Three</option>
+												</select>
+											</div>
+						
+											<div class="divider bg-primary mb-2"></div>
+						
+											<div class=" d-grid gap-2">
+												<button type="submit" class="btn btn-primary btn-block mb-3 mb-md-0 text-white">Serch</button>
+											</div>
+										</div>
+									</form>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- <div class="accordion accordion-flush footer-accordion border-0" id="accordion-followUs">
+						<div class="accordion-item">
+							<p class="accordion-header">
+								<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-followUs" aria-expanded="false" aria-controls="flush-followUs">Follow us</button>
+							</p>
+							<div id="flush-followUs" class="accordion-collapse collapse show" data-bs-parent="#accordion-followUs">
+								<div class="accordion-body">
+									<div class="social">
+										<a href="#" class="btn-social">
+											<img src="images/icons/facebook-primary.svg" alt="Facebook">
+										</a>
+										<a href="#" class="btn-social">
+											<img src="images/icons/instagram-primary.svg" alt="Instagram">
+										</a>
+										<a href="#" class="btn-social">
+											<img src="images/icons/youtube-primary.svg" alt="Youtube">
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div> -->
+				</div>
+				<!-- /Sign up -->
+			</div>
+		</div>
+		<div class="container-fluid text-center px-5 px-sm-4">
+			<p class="date py-4 m-0 text-uppercase letter-spacing-md fw-normal"><small>© sea cloud cruises <span id="year"></span></small></p>
+		</div>
+	</footer>
+	<!-- /Footer -->
+</body>
+</html>

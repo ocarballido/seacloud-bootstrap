@@ -21,6 +21,8 @@
             }
             &:after {
                 background-size: 10px 16px;
+                display: inline-block;
+                vertical-align: middle;
                 height: 16px;
                 width: 10px;
             }
@@ -53,6 +55,7 @@
                 background-position: center;
                 background-size: 10px 16px;
                 display: inline-block;
+                vertical-align: middle;
                 height: 20px;
                 margin-left: 0.25rem;
                 width: 20px;
@@ -83,6 +86,8 @@
             &:after {
                 background-position: center;
                 background-size: 10px 16px;
+                display: inline-block;
+                vertical-align: middle;
                 height: 20px;
                 margin-left: 0.25rem;
                 width: 20px;
@@ -124,6 +129,8 @@
             &:after {
                 background-position: center;
                 background-size: 10px 16px;
+                display: inline-block;
+                vertical-align: middle;
                 height: 20px;
                 margin-left: 0.25rem;
                 width: 20px;
@@ -138,6 +145,47 @@
                     color: $primary;
                 }
             }
+        }
+    }
+    &.fancy-accordion {
+        --bs-accordion-bg: white;
+        --bs-accordion-active-bg: white;
+        --bs-accordion-btn-focus-border-color: transparent;
+        --bs-accordion-border-color: transparent;
+        --bs-accordion-border-width: none;
+        --bs-accordion-active-color: #{$secondary};
+        --bs-accordion-btn-color: #{$secondary};
+        --bs-accordion-btn-icon: url('../images/icons/show-more.svg');
+        --bs-accordion-btn-active-icon: url('../images/icons/show-more.svg');
+        --bs-accordion-btn-padding-x: 0;
+        --bs-accordion-body-padding-x: 0;
+        .accordion-button {
+            border-bottom: 1px solid $primary;
+            border-top: 1px solid $primary;
+            display: block;
+            font-size: .875rem;
+            font-weight: 300;
+            letter-spacing: 1px;
+            text-align: center;
+            text-transform: uppercase;
+            &:focus {
+                box-shadow: none;
+            }
+            &:after {
+                background-size: 10px 16px;
+                display: inline-block;
+                vertical-align: middle;
+                height: 16px;
+                width: 10px;
+            }
+        }
+        .accordion-collapse {
+            &.show, .collapsing {
+                border-bottom: 1px solid $primary;
+            }
+        }
+        .accordion-body {
+            padding: 1rem;
         }
     }
 }
