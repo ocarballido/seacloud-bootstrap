@@ -20,13 +20,18 @@
 .faq-container {
     margin-bottom: 2rem;
 }
+#filter {
+    width: 100%;
+}
 
 // Media queries
 @include media-breakpoint-up(sm) {
     
 }
 @include media-breakpoint-up(md) {
-    
+    #filter {
+        width: auto;
+    }
 }
 @include media-breakpoint-up(lg) {
     
