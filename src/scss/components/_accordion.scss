@@ -188,6 +188,44 @@
             padding: 1rem;
         }
     }
+    &.legal-accordion {
+        --bs-accordion-bg: transparent;
+        --bs-accordion-active-bg: transparent;
+        --bs-accordion-btn-focus-border-color: transparent;
+        --bs-accordion-border-color: transparent;
+        --bs-accordion-border-width: none;
+        --bs-accordion-active-color: #{$secondary};
+        --bs-accordion-btn-color: #{$secondary};
+        --bs-accordion-btn-icon: url('../images/icons/show-more.svg');
+        --bs-accordion-btn-active-icon: url('../images/icons/show-more.svg');
+        --bs-accordion-btn-padding-x: 1rem;
+        --bs-accordion-body-padding-x: 1rem;
+        .accordion-button {
+            // border-bottom: 1px solid $secondary;
+            border-top: 1px solid $secondary;
+            display: flex;
+            justify-content: space-between;
+            font-size: .875rem;
+            font-weight: 300;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            &:focus {
+                box-shadow: none;
+            }
+            &:after {
+                background-position: center;
+                background-size: 10px 16px;
+                display: inline-block;
+                vertical-align: middle;
+                height: 20px;
+                margin-left: 0.25rem;
+                width: 20px;
+            }
+        }
+        .accordion-body {
+            padding: 1rem;
+        }
+    }
 }
 
 // Queries

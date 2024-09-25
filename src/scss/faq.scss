@@ -17,6 +17,9 @@
 @import './utils';
 
 // Custom pages styles
+.faq-container {
+    margin-bottom: 2rem;
+}
 
 // Media queries
 @include media-breakpoint-up(sm) {

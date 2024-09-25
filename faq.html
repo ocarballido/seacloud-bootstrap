@@ -1,0 +1,1159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <meta http-equiv="x-ua-compatible" content="ie=edge"/>
+	<link rel="icon" href="favico.png">
+    <title>Seacloud</title>
+</head>
+
+<body class="my-body">
+	<!-- Appbar -->
+	<header id="appbar" class="navbar fixed-top py-4">
+		<nav class="w-100 px-3">
+			<div class="row align-items-center flex-lg-row flex-row-reverse">
+				<div class="col-auto d-flex">
+					<button class="navbar-toggler border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+						<img src="images/icons/menu-secondary.svg" width="26" height="26" alt="Open menu">
+						<span class="offcanvas-menu-text">Menu</span>
+					</button>
+				</div>
+				<div class="col">
+					<div class="row justify-content-around">
+						<div class="col-auto d-none d-lg-flex">
+							<ul class="navbar-nav main-navbar d-flex flex-row">
+								<li class="nav-item mx-2 mx-xl-3">
+									<a class="nav-link text-center" aria-current="page" href="#">
+										<span class="scroll-top">Find<br>a sailing</span>
+										<span class="scrolled d-none">Find a sailing</span>
+									</a>
+								</li>
+								<li class="nav-item mx-2 mx-xl-3">
+									<a class="nav-link text-center" href="#">
+										<span class="scroll-top">Special<br>Offers</span>
+										<span class="scrolled d-none"">Special Offers</span>
+									</a>
+								</li>
+							</ul>
+						</div>
+						<div class="col-auto d-flex align-items-center">
+							<img id="appbarLogo" class="" src="images/appbar/seacloud-logo.png" width="112" height="80" alt="Logo">
+							<img id="appbarLogoSymbol" class="d-none my-2" src="images/appbar/seacloud-symbol.png" width="31" height="40" alt="Logo symbol">
+						</div>
+						<div class="col-auto d-none d-lg-flex">
+							<ul class="navbar-nav main-navbar flex-row flex-wrap align-items-center bd-navbar-nav d-none d-lg-flex">
+								<li class="nav-item mx-2 mx-xl-3">
+									<a class="nav-link text-center" aria-current="page" href="#">
+										<span class="scroll-top">Book your<br>sailing</span>
+										<span class="scrolled d-none">Book your sailing</span>
+									</a>
+								</li>
+								<li class="nav-item mx-2 mx-xl-3">
+									<a class="nav-link text-center" aria-current="page" href="#">
+										<span class="scroll-top">Request<br>information</span>
+										<span class="scrolled d-none">Request information</span>
+									</a>
+								</li>
+								<li class="nav-item mx-2 mx-xl-3 letter-spacing-md text-center text-uppercase fw-normal d-none d-xl-flex">
+									<p class="m-0 text-center">
+										<span class="scroll-top">
+											Call us
+											<br>
+											<img class="me-0" width="18" height="18" src="images/icons/phone-call.svg" alt="Phone number">
+											1.888.732.2568
+										</span>
+										<span class="scrolled d-none">
+											<img class="me-0" width="18" height="18" src="images/icons/phone-call.svg" alt="Phone number">
+											1.888.732.2568
+										</span>
+									</p>
+								</li>
+							</ul>
+						</div>
+					 </div>
+				</div>
+			</div>
+
+			<!-- Offcanvas menu -->
+			<div class="offcanvas offcanvas-start bg-white" tabindex="-1" id="offcanvasNavbar" data-bs-scroll="true" aria-labelledby="offcanvasNavbarLabel">
+				<button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close">
+					<img src="images/icons/close-secondary.svg" width="26" height="26" alt="Close menu">
+				</button>
+					
+				<div class="offcanvas-body">
+					<div class="container">
+						<ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+							<li class="nav-item">
+								<a class="nav-link active" aria-current="page" href="#">Home</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#">Find a sailing</a>
+							</li>
+							<li class="nav-item">
+								<div class="accordion offcanvas-accordion" id="accordion-01">
+									<div class="accordion-item">
+										<p class="accordion-header">
+											<button class="nav-link accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-reservation-01" aria-expanded="true" aria-controls="collapse-reservation-01">
+												The Luxury of the sea Clouds
+											</button>
+										</p>
+										<div id="collapse-reservation-01" class="accordion-collapse collapse" data-bs-parent="#accordion-01">
+											<div class="accordion-body px-0">
+												<ul class="accordion-list">
+													<li><a class="accordion-link" href="#">Sea Clouds All-Inclusive Fares</a></li>
+													<li><a class="accordion-link" href="#">Five Star Amenities</a></li>
+													<li><a class="accordion-link" href="#">The Sea Cloud Difference</a></li>
+													<li><a class="accordion-link" href="#">Sailing Sustainability</a></li>
+													<li><a class="accordion-link" href="#">Let's Celebrate</a></li>
+												</ul>
+											</div>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li class="nav-item">
+								<div class="accordion offcanvas-accordion" id="accordion-02">
+									<div class="accordion-item">
+										<p class="accordion-header">
+											<button class="nav-link accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-reservation-02" aria-expanded="true" aria-controls="collapse-reservation-02">
+												Our Sailing Yachts
+											</button>
+										</p>
+										<div id="collapse-reservation-02" class="accordion-collapse collapse" data-bs-parent="#accordion-02">
+											<div class="accordion-body px-0">
+												<ul class="accordion-list">
+													<li><a class="accordion-link" href="#">Sea Cloud</a></li>
+													<li><a class="accordion-link" href="#">Sea Cloud II</a></li>
+													<li><a class="accordion-link" href="#">Sea Cloud Spirit</a></li>
+												</ul>
+											</div>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li class="nav-item">
+								<div class="accordion offcanvas-accordion" id="accordion-03">
+									<div class="accordion-item">
+										<p class="accordion-header">
+											<button class="nav-link accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-reservation-03" aria-expanded="true" aria-controls="collapse-reservation-03">
+												Distinctive destinations
+											</button>
+										</p>
+										<div id="collapse-reservation-03" class="accordion-collapse collapse" data-bs-parent="#accordion-03">
+											<div class="accordion-body px-0">
+												<ul class="accordion-list">
+													<li><a class="accordion-link" href="#">World Map</a></li>
+													<li><a class="accordion-link" href="#">Caribbean</a></li>
+													<li><a class="accordion-link" href="#">Atlantic Crossing</a></li>
+													<li><a class="accordion-link" href="#">Mediterranean</a></li>
+												</ul>
+											</div>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#">Special Offers</a>
+							</li>
+							<li class="nav-item">
+								<div class="accordion offcanvas-accordion" id="accordion-04">
+									<div class="accordion-item">
+										<p class="accordion-header">
+											<button class="nav-link accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-reservation-04" aria-expanded="true" aria-controls="collapse-reservation-04">
+												Discover More
+											</button>
+										</p>
+										<div id="collapse-reservation-04" class="accordion-collapse collapse" data-bs-parent="#accordion-04">
+											<div class="accordion-body px-0">
+												<ul class="accordion-list">
+													<li><a class="accordion-link" href="#">Digital brochure</a></li>
+													<li><a class="accordion-link" href="#">Videos</a></li>
+													<li><a class="accordion-link" href="#">Virtual Tours</a></li>
+													<li><a class="accordion-link" href="#">Social Media</a></li>
+												</ul>
+											</div>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#">Book your Sailing</a>
+							</li>
+						</ul>
+						<div class="divider my-4 bg-transparent w-100"></div>
+						<ul class="navbar-nav d-block flex-grow-1 pe-3">
+							<li class="nav-item d-inline-block me-3">
+								<a class="nav-link" href="#">Help</a>
+							</li>
+							<li class="nav-item d-inline-block">
+								<a class="nav-link" href="#">Contact Us</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<!-- /Offcanvas menu -->
+		</nav>
+	</header>
+	<!-- /Appbar -->
+
+	<!-- Hero section -->
+	<section id="hero" class="hero-cover bg-white full-height-section">
+        <div class="hero-cover-image">
+            <img class="" src="images/terms-and-condition/hero.jpg" alt="Terms and conditions">
+        </div>
+		<div class="container-fluid hero-cover-content py-5 text-center bg-white">
+			<p class="display-4 mb-3 mt-5 text-primary">Faq</p>
+		</div>
+	</section>
+	<!-- /Hero section -->
+
+	<!-- Content section -->
+	<section class="bg-body py-5 bordered-section">
+		<div class="container">
+			<div class="filter-container mb-4 d-block d-md-none">
+				<div class=" position-relative">
+					<select id="filter" class="form-select bg-transparent border border-secondary" aria-label="Default select example">
+						<option value="all" selected>browse help topics</option>
+						<option value="reservation">Reservation</option>
+						<option value="arrival-departure">ARRIVAL AND DEPARTURE</option>
+						<option value="prior-sailing">PRIOR TO SAILING</option>
+						<option value="life-onboard">LIFE ON BOARD</option>
+						<option value="suites-amenities">STATEROOMS/SUITES & AMENITIES</option>
+						<option value="shore-excursions">SHORE EXCURSIONS</option>
+						<option value="health-safety">HEALTH AND SAFETY</option>
+						<option value="tech">WIFI, PHONE, AND ELECTRICITY</option>
+						<option value="general-info">GENERAL INFORMATION</option>
+					</select>
+				</div>
+			</div>
+			<div class="faq-container" data-category="reservation">
+				<p class="lead fw-normal">QUESTIONS & ANSWERS: RESERVATION</p>
+				<div class="accordion legal-accordion" id="accordion-reservation">
+					<div class="accordion-item">
+						<p class="accordion-header">
+							<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-reservation-01" aria-expanded="true" aria-controls="collapse-reservation-01">How do I make a reservation?</button>
+						</p>
+						<div id="collapse-reservation-01" class="accordion-collapse collapse" data-bs-parent="#accordion-reservation">
+							<div class="accordion-body">
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+							</div>
+						</div>
+					</div>
+					<div class="accordion-item">
+						<p class="accordion-header">
+							<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-reservation-02" aria-expanded="false" aria-controls="collapse-reservation-02">Can I put an option?</button>
+						</p>
+						<div id="collapse-reservation-02" class="accordion-collapse collapse" data-bs-parent="#accordion-reservation">
+							<div class="accordion-body">
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+							</div>
+						</div>
+					</div>
+					<div class="accordion-item">
+						<p class="accordion-header">
+							<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-reservation-03" aria-expanded="false" aria-controls="collapse-reservation-03">What is the booking process?</button>
+						</p>
+						<div id="collapse-reservation-03" class="accordion-collapse collapse" data-bs-parent="#accordion-reservation">
+							<div class="accordion-body">
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+							</div>
+						</div>
+					</div>
+					<div class="accordion-item">
+						<p class="accordion-header">
+							<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-reservation-04" aria-expanded="false" aria-controls="collapse-reservation-04">What is a guaranteed cabin</button>
+						</p>
+						<div id="collapse-reservation-04" class="accordion-collapse collapse" data-bs-parent="#accordion-reservation">
+							<div class="accordion-body">
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+							</div>
+						</div>
+					</div>
+					<div class="accordion-item">
+						<p class="accordion-header">
+							<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-reservation-05" aria-expanded="false" aria-controls="collapse-reservation-05">Do you offer a wait list?</button>
+						</p>
+						<div id="collapse-reservation-05" class="accordion-collapse collapse" data-bs-parent="#accordion-reservation">
+							<div class="accordion-body">
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+							</div>
+						</div>
+					</div>
+					<div class="accordion-item">
+						<p class="accordion-header">
+							<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-reservation-06" aria-expanded="false" aria-controls="collapse-reservation-06">Do you offer staterooms for solo traveler?</button>
+						</p>
+						<div id="collapse-reservation-06" class="accordion-collapse collapse" data-bs-parent="#accordion-reservation">
+							<div class="accordion-body">
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+							</div>
+						</div>
+					</div>
+					<div class="accordion-item">
+						<p class="accordion-header">
+							<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-reservation-07" aria-expanded="false" aria-controls="collapse-reservation-07">Do you offer pre or post stays</button>
+						</p>
+						<div id="collapse-reservation-07" class="accordion-collapse collapse" data-bs-parent="#accordion-reservation">
+							<div class="accordion-body">
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="faq-container" data-category="arrival-departure">
+				<p class="lead fw-normal">QUESTIONS & ANSWERS: ARRIVAL AND DEPARTURE</p>
+				<div class="accordion legal-accordion" id="accordion-arrival-departure">
+					<div class="accordion-item">
+						<p class="accordion-header">
+							<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-arrival-departure-01" aria-expanded="true" aria-controls="collapse-arrival-departure-01">Do you offer assistance for arrival and departure?</button>
+						</p>
+						<div id="collapse-arrival-departure-01" class="accordion-collapse collapse" data-bs-parent="#accordion-arrival-departure">
+							<div class="accordion-body">
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+							</div>
+						</div>
+					</div>
+					<div class="accordion-item">
+						<p class="accordion-header">
+							<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-arrival-departure-02" aria-expanded="false" aria-controls="collapse-arrival-departure-02">Do you offer transfers?</button>
+						</p>
+						<div id="collapse-arrival-departure-02" class="accordion-collapse collapse" data-bs-parent="#accordion-arrival-departure">
+							<div class="accordion-body">
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+							</div>
+						</div>
+					</div>
+					<div class="accordion-item">
+						<p class="accordion-header">
+							<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-arrival-departure-03" aria-expanded="false" aria-controls="collapse-arrival-departure-03">What are the restrictions regarding luggage?</button>
+						</p>
+						<div id="collapse-arrival-departure-03" class="accordion-collapse collapse" data-bs-parent="#accordion-arrival-departure">
+							<div class="accordion-body">
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+							</div>
+						</div>
+					</div>
+					<div class="accordion-item">
+						<p class="accordion-header">
+							<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-arrival-departure-04" aria-expanded="false" aria-controls="collapse-arrival-departure-04">When does embarkation/disembarkation take place?</button>
+						</p>
+						<div id="collapse-arrival-departure-04" class="accordion-collapse collapse" data-bs-parent="#accordion-arrival-departure">
+							<div class="accordion-body">
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="faq-container" data-category="prior-sailing">
+				<p class="lead fw-normal">QUESTIONS & ANSWERS: PRIOR TO SAILING</p>
+				<div class="accordion legal-accordion" id="accordion-prior-sailing">
+					<div class="accordion-item">
+						<p class="accordion-header">
+							<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-prior-sailing-01" aria-expanded="true" aria-controls="collapse-prior-sailing-01">What documents are needed for embarkation and cruise in general?</button>
+						</p>
+						<div id="collapse-prior-sailing-01" class="accordion-collapse collapse" data-bs-parent="#accordion-prior-sailing">
+							<div class="accordion-body">
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+							</div>
+						</div>
+					</div>
+					<div class="accordion-item">
+						<p class="accordion-header">
+							<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-prior-sailing-02" aria-expanded="false" aria-controls="collapse-prior-sailing-02">What is the bankruptcy policy by German law?</button>
+						</p>
+						<div id="collapse-prior-sailing-02" class="accordion-collapse collapse" data-bs-parent="#accordion-prior-sailing">
+							<div class="accordion-body">
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+							</div>
+						</div>
+					</div>
+					<div class="accordion-item">
+						<p class="accordion-header">
+							<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-prior-sailing-03" aria-expanded="false" aria-controls="collapse-prior-sailing-03">Do you offer travel insurance?</button>
+						</p>
+						<div id="collapse-prior-sailing-03" class="accordion-collapse collapse" data-bs-parent="#accordion-prior-sailing">
+							<div class="accordion-body">
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+							</div>
+						</div>
+					</div>
+					<div class="accordion-item">
+						<p class="accordion-header">
+							<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-prior-sailing-04" aria-expanded="false" aria-controls="collapse-prior-sailing-04">Do I need a visa?</button>
+						</p>
+						<div id="collapse-prior-sailing-04" class="accordion-collapse collapse" data-bs-parent="#accordion-prior-sailing">
+							<div class="accordion-body">
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="faq-container" data-category="life-onboard">
+				<p class="lead fw-normal">QUESTIONS & ANSWERS: LIFE ON BOARD</p>
+				<div class="accordion legal-accordion" id="accordion-life-onboard">
+					<div class="accordion-item">
+						<p class="accordion-header">
+							<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-life-onboard-01" aria-expanded="true" aria-controls="collapse-life-onboard-01">Language on board and during shore excursions</button>
+						</p>
+						<div id="collapse-life-onboard-01" class="accordion-collapse collapse" data-bs-parent="#accordion-life-onboard">
+							<div class="accordion-body">
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+							</div>
+						</div>
+					</div>
+					<div class="accordion-item">
+						<p class="accordion-header">
+							<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-life-onboard-02" aria-expanded="false" aria-controls="collapse-life-onboard-02">Onboard activities</button>
+						</p>
+						<div id="collapse-life-onboard-02" class="accordion-collapse collapse" data-bs-parent="#accordion-life-onboard">
+							<div class="accordion-body">
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+							</div>
+						</div>
+					</div>
+					<div class="accordion-item">
+						<p class="accordion-header">
+							<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-life-onboard-03" aria-expanded="false" aria-controls="collapse-life-onboard-03">Can you help set sails?</button>
+						</p>
+						<div id="collapse-life-onboard-03" class="accordion-collapse collapse" data-bs-parent="#accordion-life-onboard">
+							<div class="accordion-body">
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+							</div>
+						</div>
+					</div>
+					<div class="accordion-item">
+						<p class="accordion-header">
+							<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-life-onboard-04" aria-expanded="false" aria-controls="collapse-life-onboard-04">What is the dress code on board?</button>
+						</p>
+						<div id="collapse-life-onboard-04" class="accordion-collapse collapse" data-bs-parent="#accordion-life-onboard">
+							<div class="accordion-body">
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+							</div>
+						</div>
+					</div>
+					<div class="accordion-item">
+						<p class="accordion-header">
+							<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-life-onboard-05" aria-expanded="false" aria-controls="collapse-life-onboard-05">What meals are included?</button>
+						</p>
+						<div id="collapse-life-onboard-05" class="accordion-collapse collapse" data-bs-parent="#accordion-life-onboard">
+							<div class="accordion-body">
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+							</div>
+						</div>
+					</div>
+					<div class="accordion-item">
+						<p class="accordion-header">
+							<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-life-onboard-06" aria-expanded="false" aria-controls="collapse-life-onboard-06">Can I make reservation in the restaurant?</button>
+						</p>
+						<div id="collapse-life-onboard-06" class="accordion-collapse collapse" data-bs-parent="#accordion-life-onboard">
+							<div class="accordion-body">
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+							</div>
+						</div>
+					</div>
+					<div class="accordion-item">
+						<p class="accordion-header">
+							<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-life-onboard-07" aria-expanded="false" aria-controls="collapse-life-onboard-07">Is there a Gala/Captain´s Dinner on board?</button>
+						</p>
+						<div id="collapse-life-onboard-07" class="accordion-collapse collapse" data-bs-parent="#accordion-life-onboard">
+							<div class="accordion-body">
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+							</div>
+						</div>
+					</div>
+					<div class="accordion-item">
+						<p class="accordion-header">
+							<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-life-onboard-08" aria-expanded="false" aria-controls="collapse-life-onboard-08">Do you offer laundry service?</button>
+						</p>
+						<div id="collapse-life-onboard-08" class="accordion-collapse collapse" data-bs-parent="#accordion-life-onboard">
+							<div class="accordion-body">
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+							</div>
+						</div>
+					</div>
+					<div class="accordion-item">
+						<p class="accordion-header">
+							<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-life-onboard-09" aria-expanded="false" aria-controls="collapse-life-onboard-09">Is smoking permitted on board?</button>
+						</p>
+						<div id="collapse-life-onboard-09" class="accordion-collapse collapse" data-bs-parent="#accordion-life-onboard">
+							<div class="accordion-body">
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+							</div>
+						</div>
+					</div>
+					<div class="accordion-item">
+						<p class="accordion-header">
+							<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-life-onboard-10" aria-expanded="false" aria-controls="collapse-life-onboard-10">What are additional costs on board?</button>
+						</p>
+						<div id="collapse-life-onboard-10" class="accordion-collapse collapse" data-bs-parent="#accordion-life-onboard">
+							<div class="accordion-body">
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+							</div>
+						</div>
+					</div>
+					<div class="accordion-item">
+						<p class="accordion-header">
+							<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-life-onboard-11" aria-expanded="false" aria-controls="collapse-life-onboard-11">How can I pay on board?</button>
+						</p>
+						<div id="collapse-life-onboard-11" class="accordion-collapse collapse" data-bs-parent="#accordion-life-onboard">
+							<div class="accordion-body">
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+							</div>
+						</div>
+					</div>
+					<div class="accordion-item">
+						<p class="accordion-header">
+							<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-life-onboard-12" aria-expanded="false" aria-controls="collapse-life-onboard-12">Is it possible to change foreign currencies on board?</button>
+						</p>
+						<div id="collapse-life-onboard-12" class="accordion-collapse collapse" data-bs-parent="#accordion-life-onboard">
+							<div class="accordion-body">
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+							</div>
+						</div>
+					</div>
+					<div class="accordion-item">
+						<p class="accordion-header">
+							<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-life-onboard-13" aria-expanded="false" aria-controls="collapse-life-onboard-13">Are gratuities included?</button>
+						</p>
+						<div id="collapse-life-onboard-13" class="accordion-collapse collapse" data-bs-parent="#accordion-life-onboard">
+							<div class="accordion-body">
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="faq-container" data-category="suites-amenities">
+				<p class="lead fw-normal">QUESTIONS & ANSWERS: STATEROOMS/SUITES & AMENITIES</p>
+				<div class="accordion legal-accordion" id="accordion-suites-amenities">
+					<div class="accordion-item">
+						<p class="accordion-header">
+							<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-suites-amenities-01" aria-expanded="true" aria-controls="collapse-suites-amenities-01">Staterooms</button>
+						</p>
+						<div id="collapse-suites-amenities-01" class="accordion-collapse collapse" data-bs-parent="#accordion-suites-amenities">
+							<div class="accordion-body">
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+							</div>
+						</div>
+					</div>
+					<div class="accordion-item">
+						<p class="accordion-header">
+							<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-suites-amenities-02" aria-expanded="false" aria-controls="collapse-suites-amenities-02">Reception</button>
+						</p>
+						<div id="collapse-suites-amenities-02" class="accordion-collapse collapse" data-bs-parent="#accordion-suites-amenities">
+							<div class="accordion-body">
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+							</div>
+						</div>
+					</div>
+					<div class="accordion-item">
+						<p class="accordion-header">
+							<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-suites-amenities-03" aria-expanded="false" aria-controls="collapse-suites-amenities-03">Bridge</button>
+						</p>
+						<div id="collapse-suites-amenities-03" class="accordion-collapse collapse" data-bs-parent="#accordion-suites-amenities">
+							<div class="accordion-body">
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+							</div>
+						</div>
+					</div>
+					<div class="accordion-item">
+						<p class="accordion-header">
+							<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-suites-amenities-04" aria-expanded="false" aria-controls="collapse-suites-amenities-04">Bars</button>
+						</p>
+						<div id="collapse-suites-amenities-04" class="accordion-collapse collapse" data-bs-parent="#accordion-suites-amenities">
+							<div class="accordion-body">
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+							</div>
+						</div>
+					</div>
+					<div class="accordion-item">
+						<p class="accordion-header">
+							<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-suites-amenities-05" aria-expanded="false" aria-controls="collapse-suites-amenities-05">Lounge</button>
+						</p>
+						<div id="collapse-suites-amenities-05" class="accordion-collapse collapse" data-bs-parent="#accordion-suites-amenities">
+							<div class="accordion-body">
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+							</div>
+						</div>
+					</div>
+					<div class="accordion-item">
+						<p class="accordion-header">
+							<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-suites-amenities-06" aria-expanded="false" aria-controls="collapse-suites-amenities-06">Restaurant & wines</button>
+						</p>
+						<div id="collapse-suites-amenities-06" class="accordion-collapse collapse" data-bs-parent="#accordion-suites-amenities">
+							<div class="accordion-body">
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+							</div>
+						</div>
+					</div>
+					<div class="accordion-item">
+						<p class="accordion-header">
+							<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-suites-amenities-07" aria-expanded="false" aria-controls="collapse-suites-amenities-07">Library</button>
+						</p>
+						<div id="collapse-suites-amenities-07" class="accordion-collapse collapse" data-bs-parent="#accordion-suites-amenities">
+							<div class="accordion-body">
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+							</div>
+						</div>
+					</div>
+					<div class="accordion-item">
+						<p class="accordion-header">
+							<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-suites-amenities-08" aria-expanded="false" aria-controls="collapse-suites-amenities-08">Boutique</button>
+						</p>
+						<div id="collapse-suites-amenities-08" class="accordion-collapse collapse" data-bs-parent="#accordion-suites-amenities">
+							<div class="accordion-body">
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+							</div>
+						</div>
+					</div>
+					<div class="accordion-item">
+						<p class="accordion-header">
+							<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-suites-amenities-09" aria-expanded="false" aria-controls="collapse-suites-amenities-09">Crew area</button>
+						</p>
+						<div id="collapse-suites-amenities-09" class="accordion-collapse collapse" data-bs-parent="#accordion-suites-amenities">
+							<div class="accordion-body">
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+							</div>
+						</div>
+					</div>
+					<div class="accordion-item">
+						<p class="accordion-header">
+							<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-suites-amenities-10" aria-expanded="false" aria-controls="collapse-suites-amenities-10">Towels and blankets</button>
+						</p>
+						<div id="collapse-suites-amenities-10" class="accordion-collapse collapse" data-bs-parent="#accordion-suites-amenities">
+							<div class="accordion-body">
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+							</div>
+						</div>
+					</div>
+					<div class="accordion-item">
+						<p class="accordion-header">
+							<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-suites-amenities-11" aria-expanded="false" aria-controls="collapse-suites-amenities-11">Deck chairs</button>
+						</p>
+						<div id="collapse-suites-amenities-11" class="accordion-collapse collapse" data-bs-parent="#accordion-suites-amenities">
+							<div class="accordion-body">
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+							</div>
+						</div>
+					</div>
+					<div class="accordion-item">
+						<p class="accordion-header">
+							<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-suites-amenities-12" aria-expanded="false" aria-controls="collapse-suites-amenities-12">Mail and postcards</button>
+						</p>
+						<div id="collapse-suites-amenities-12" class="accordion-collapse collapse" data-bs-parent="#accordion-suites-amenities">
+							<div class="accordion-body">
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+							</div>
+						</div>
+					</div>
+					<div class="accordion-item">
+						<p class="accordion-header">
+							<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-suites-amenities-13" aria-expanded="false" aria-controls="collapse-suites-amenities-13">Daily newspaper</button>
+						</p>
+						<div id="collapse-suites-amenities-13" class="accordion-collapse collapse" data-bs-parent="#accordion-suites-amenities">
+							<div class="accordion-body">
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="faq-container" data-category="shore-excursions">
+				<p class="lead fw-normal">QUESTIONS & ANSWERS: SHORE EXCURSIONS</p>
+				<div class="accordion legal-accordion" id="accordion-shore-excursions">
+					<div class="accordion-item">
+						<p class="accordion-header">
+							<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-shore-excursions-01" aria-expanded="true" aria-controls="collapse-shore-excursions-01">Do you offer shore excursions, where can I find details and booking process?</button>
+						</p>
+						<div id="collapse-shore-excursions-01" class="accordion-collapse collapse" data-bs-parent="#accordion-shore-excursions">
+							<div class="accordion-body">
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+							</div>
+						</div>
+					</div>
+					<div class="accordion-item">
+						<p class="accordion-header">
+							<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-shore-excursions-02" aria-expanded="false" aria-controls="collapse-shore-excursions-02">What is the official language on board and on shore excursions?</button>
+						</p>
+						<div id="collapse-shore-excursions-02" class="accordion-collapse collapse" data-bs-parent="#accordion-shore-excursions">
+							<div class="accordion-body">
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+							</div>
+						</div>
+					</div>
+					<div class="accordion-item">
+						<p class="accordion-header">
+							<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-shore-excursions-03" aria-expanded="false" aria-controls="collapse-shore-excursions-03">Are individual shore excursions possible?</button>
+						</p>
+						<div id="collapse-shore-excursions-03" class="accordion-collapse collapse" data-bs-parent="#accordion-shore-excursions">
+							<div class="accordion-body">
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="faq-container" data-category="health-safety">
+				<p class="lead fw-normal">QUESTIONS & ANSWERS: HEALTH AND SAFETY</p>
+				<div class="accordion legal-accordion" id="accordion-health-safety">
+					<div class="accordion-item">
+						<p class="accordion-header">
+							<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-health-safety-01" aria-expanded="true" aria-controls="collapse-health-safety-01">Safety</button>
+						</p>
+						<div id="collapse-health-safety-01" class="accordion-collapse collapse" data-bs-parent="#accordion-health-safety">
+							<div class="accordion-body">
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+							</div>
+						</div>
+					</div>
+					<div class="accordion-item">
+						<p class="accordion-header">
+							<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-health-safety-02" aria-expanded="false" aria-controls="collapse-health-safety-02">I am allergic/diabetic. How can I communicate my dietary requirements?</button>
+						</p>
+						<div id="collapse-health-safety-02" class="accordion-collapse collapse" data-bs-parent="#accordion-health-safety">
+							<div class="accordion-body">
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+							</div>
+						</div>
+					</div>
+					<div class="accordion-item">
+						<p class="accordion-header">
+							<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-health-safety-03" aria-expanded="false" aria-controls="collapse-health-safety-03">Do you have a doctor/clinic on board?</button>
+						</p>
+						<div id="collapse-health-safety-03" class="accordion-collapse collapse" data-bs-parent="#accordion-health-safety">
+							<div class="accordion-body">
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+							</div>
+						</div>
+					</div>
+					<div class="accordion-item">
+						<p class="accordion-header">
+							<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-health-safety-04" aria-expanded="false" aria-controls="collapse-health-safety-04">Accessibility/Tender service</button>
+						</p>
+						<div id="collapse-health-safety-04" class="accordion-collapse collapse" data-bs-parent="#accordion-health-safety">
+							<div class="accordion-body">
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+							</div>
+						</div>
+					</div>
+					<div class="accordion-item">
+						<p class="accordion-header">
+							<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-health-safety-05" aria-expanded="false" aria-controls="collapse-health-safety-05">Are the ships wheelchair accessible?</button>
+						</p>
+						<div id="collapse-health-safety-05" class="accordion-collapse collapse" data-bs-parent="#accordion-health-safety">
+							<div class="accordion-body">
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+							</div>
+						</div>
+					</div>
+					<div class="accordion-item">
+						<p class="accordion-header">
+							<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-health-safety-06" aria-expanded="false" aria-controls="collapse-health-safety-06">Are there elevators on board?</button>
+						</p>
+						<div id="collapse-health-safety-06" class="accordion-collapse collapse" data-bs-parent="#accordion-health-safety">
+							<div class="accordion-body">
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+							</div>
+						</div>
+					</div>
+					<div class="accordion-item">
+						<p class="accordion-header">
+							<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-health-safety-07" aria-expanded="false" aria-controls="collapse-health-safety-07">Where can I safely store my valuables on board?</button>
+						</p>
+						<div id="collapse-health-safety-07" class="accordion-collapse collapse" data-bs-parent="#accordion-health-safety">
+							<div class="accordion-body">
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+							</div>
+						</div>
+					</div>
+					<div class="accordion-item">
+						<p class="accordion-header">
+							<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-health-safety-08" aria-expanded="false" aria-controls="collapse-health-safety-08">Lost and found</button>
+						</p>
+						<div id="collapse-health-safety-08" class="accordion-collapse collapse" data-bs-parent="#accordion-health-safety">
+							<div class="accordion-body">
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+							</div>
+						</div>
+					</div>
+					<div class="accordion-item">
+						<p class="accordion-header">
+							<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-health-safety-09" aria-expanded="false" aria-controls="collapse-health-safety-09">Visitors on board</button>
+						</p>
+						<div id="collapse-health-safety-09" class="accordion-collapse collapse" data-bs-parent="#accordion-health-safety">
+							<div class="accordion-body">
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="faq-container" data-category="tech">
+				<p class="lead fw-normal">QUESTIONS & ANSWERS: WIFI, PHONE, AND ELECTRICITY</p>
+				<div class="accordion legal-accordion" id="accordion-tech">
+					<div class="accordion-item">
+						<p class="accordion-header">
+							<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-tech-01" aria-expanded="true" aria-controls="collapse-tech-01">Is there internet access on board?</button>
+						</p>
+						<div id="collapse-tech-01" class="accordion-collapse collapse" data-bs-parent="#accordion-tech">
+							<div class="accordion-body">
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+							</div>
+						</div>
+					</div>
+					<div class="accordion-item">
+						<p class="accordion-header">
+							<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-tech-02" aria-expanded="false" aria-controls="collapse-tech-02">Can I be reached by e-mail on board?</button>
+						</p>
+						<div id="collapse-tech-02" class="accordion-collapse collapse" data-bs-parent="#accordion-tech">
+							<div class="accordion-body">
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+							</div>
+						</div>
+					</div>
+					<div class="accordion-item">
+						<p class="accordion-header">
+							<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-tech-03" aria-expanded="false" aria-controls="collapse-tech-03">Can I be reached by phone on board?</button>
+						</p>
+						<div id="collapse-tech-03" class="accordion-collapse collapse" data-bs-parent="#accordion-tech">
+							<div class="accordion-body">
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+							</div>
+						</div>
+					</div>
+					<div class="accordion-item">
+						<p class="accordion-header">
+							<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-tech-04" aria-expanded="false" aria-controls="collapse-tech-04">What is the voltage on board?</button>
+						</p>
+						<div id="collapse-tech-04" class="accordion-collapse collapse" data-bs-parent="#accordion-tech">
+							<div class="accordion-body">
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="faq-container" data-category="general-info">
+				<p class="lead fw-normal">QUESTIONS & ANSWERS: GENERAL INFORMATION</p>
+				<div class="accordion legal-accordion" id="accordion-general-info">
+					<div class="accordion-item">
+						<p class="accordion-header">
+							<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-general-info-01" aria-expanded="true" aria-controls="collapse-general-info-01">What does “Tender service” mean?</button>
+						</p>
+						<div id="collapse-general-info-01" class="accordion-collapse collapse" data-bs-parent="#accordion-general-info">
+							<div class="accordion-body">
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+							</div>
+						</div>
+					</div>
+					<div class="accordion-item">
+						<p class="accordion-header">
+							<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-general-info-02" aria-expanded="false" aria-controls="collapse-general-info-02">What are zodiacs?</button>
+						</p>
+						<div id="collapse-general-info-02" class="accordion-collapse collapse" data-bs-parent="#accordion-general-info">
+							<div class="accordion-body">
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+							</div>
+						</div>
+					</div>
+					<div class="accordion-item">
+						<p class="accordion-header">
+							<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-general-info-03" aria-expanded="false" aria-controls="collapse-general-info-03">Can I bring animals on board?</button>
+						</p>
+						<div id="collapse-general-info-03" class="accordion-collapse collapse" data-bs-parent="#accordion-general-info">
+							<div class="accordion-body">
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+							</div>
+						</div>
+					</div>
+					<div class="accordion-item">
+						<p class="accordion-header">
+							<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-general-info-04" aria-expanded="false" aria-controls="collapse-general-info-04">Are the ships suitable for children?</button>
+						</p>
+						<div id="collapse-general-info-04" class="accordion-collapse collapse" data-bs-parent="#accordion-general-info">
+							<div class="accordion-body">
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+							</div>
+						</div>
+					</div>
+					<div class="accordion-item">
+						<p class="accordion-header">
+							<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-general-info-05" aria-expanded="false" aria-controls="collapse-general-info-05">Can arrange a welcome note/gift for family/friends traveling onboard SEA CLOUDs?</button>
+						</p>
+						<div id="collapse-general-info-05" class="accordion-collapse collapse" data-bs-parent="#accordion-general-info">
+							<div class="accordion-body">
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+							</div>
+						</div>
+					</div>
+					<div class="accordion-item">
+						<p class="accordion-header">
+							<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-general-info-06" aria-expanded="false" aria-controls="collapse-general-info-06">Can I get legally married on board?</button>
+						</p>
+						<div id="collapse-general-info-06" class="accordion-collapse collapse" data-bs-parent="#accordion-general-info">
+							<div class="accordion-body">
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+							</div>
+						</div>
+					</div>
+					<div class="accordion-item">
+						<p class="accordion-header">
+							<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-general-info-07" aria-expanded="false" aria-controls="collapse-general-info-07">Itinerary changes</button>
+						</p>
+						<div id="collapse-general-info-07" class="accordion-collapse collapse" data-bs-parent="#accordion-general-info">
+							<div class="accordion-body">
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- /Content section -->
+	
+	<!-- Social sea section -->
+	<section id="social-sea" class="position-relative py-5 bg-dark-seacloud-blue">
+		<div class="container py-5">
+			<div class="row align-items-center justify-content-between text-primary">
+				<div class="col-md col-lg-5 col-xl-4 text-center mb-5 mb-md-0">
+					<img class="d-block mx-auto mb-4" src="images/home/the-ship/the-ship.svg" width="74" height="63" alt="The ship">
+					<h3 class="text-primary">Social at sea</h3>
+					<div class="divider bg-primary my-3"></div>
+					<p class="mb-5">You’re social, we’re social, let’s connect! Follow, like, love, share, comment, tag. Social moments are happening @SEACLOUD CRUISES</p>
+					<div class="social">
+						<a href="#" class="btn-social">
+							<img src="images/icons/facebook-primary.svg" alt="Facebook">
+						</a>
+						<a href="#" class="btn-social">
+							<img src="images/icons/instagram-primary.svg" alt="Instagram">
+						</a>
+						<a href="#" class="btn-social">
+							<img src="images/icons/youtube-primary.svg" alt="Youtube">
+						</a>
+					</div>
+				</div>
+				<div class="col-md col-lg-6">
+					<p class="lead text-center text-md-start">Email subscribers get early access to our luxury travel deals. Sneak peek all the exclusives first, plus stay in touch with all the updates from our sailing world.</p>
+					<form class="my-4" action="">
+						<div class="input-group input-mail mb-3">
+							<input type="text" class="form-control" placeholder="Your mail" aria-label="Your mail" aria-describedby="mail-button-addon">
+							<button class="btn btn-primary" type="submit">Sign up</button>
+						</div>
+					</form>
+					<p class="small text-uppercase letter-spacing-sm text-white text-center-md"><small>By submitting this form, you are consenting to receive marketing emails from: Sea cloud us . You can revoke your consent to receive emails at any time by using the Safe Unsubscribe® link, found at the bottom of every email. Emails are serviced by Constant Contact</small></p>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- /Social sea section -->
+
+	<!-- Footer -->
+	<footer id="footer" class="pt-5 bg-white">
+		<div class="container pt-3 px-5 px-sm-4 px-md-2">
+			<img id="appbarLogo" class="d-block d-md-none mx-auto mx-lg-0 mb-5" src="images/appbar/seacloud-logo.png" width="130" height="92" alt="Logo">
+			<div class="row">
+				<!-- Plan a Sailing -->
+				<div class="col-md-6 col-lg">
+					<div class="accordion accordion-flush footer-accordion" id="accordion-planCruise">
+						<div class="accordion-item">
+							<p class="accordion-header">
+								<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-planCruise" aria-expanded="false" aria-controls="flush-planCruise">Plan a Sailing</button>
+							</p>
+							<div id="flush-planCruise" class="accordion-collapse collapse show" data-bs-parent="#accordion-planCruise">
+								<div class="accordion-body">
+									<ul class="nav nav-list d-block list-unstyled">
+										<li><a class="link link-secondary footer-link" href="#">Find a Sailing</a></li>
+										<li><a class="link link-secondary footer-link" href="#">Find a Travel Advisor</a></li>
+										<li class="accordion footer-sibling-accordion accordion-flush" id="request-info">
+											<div class="accordion-item">
+												<p class="accordion-header">
+													<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#request-info-acc" aria-expanded="false" aria-controls="request-info-acc">Request info</button>
+												</p>
+												<div id="request-info-acc" class="accordion-collapse collapse show" data-bs-parent="#request-info">
+													<div class="accordion-body">
+														<ul class="nav nav-list d-block sibling-list">
+															<li class="mb-0"><a class="link link-secondary footer-link text-primary" href="#">Order Brochure</a></li>
+															<li class="mb-0"><a class="link link-secondary footer-link text-primary" href="#">Sign Up for Offers</a></li>
+															<li class="mb-0"><a class="link link-secondary footer-link text-primary" href="#">Request Quote</a></li>
+															<li class="mb-0"><a class="link link-secondary footer-link text-primary" href="#">Group Travel Perks</a></li>
+															<li class="mb-0"><a class="link link-secondary footer-link text-primary" href="#">Submit Inquiry</a></li>
+														</ul>
+													</div>
+												</div>
+											</div>
+										</li>
+										<li><a class="link link-secondary footer-link" href="#">Special Offers</a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- /Plan a Sailing -->
+
+				<!-- Resources -->
+				<div class="col-md-6 col-lg">
+					<div class="accordion accordion-flush footer-accordion" id="accordion-resoucers">
+						<div class="accordion-item">
+							<p class="accordion-header">
+								<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-resoucers" aria-expanded="false" aria-controls="flush-resoucers">Plan a Resources</button>
+							</p>
+							<div id="flush-resoucers" class="accordion-collapse collapse show" data-bs-parent="#accordion-resoucers">
+								<div class="accordion-body">
+									<ul class="nav nav-list d-block list-unstyled">
+										<li><a class="link link-secondary footer-link" href="#">Frequently Asked Questions</a></li>
+										<li><a class="link link-secondary footer-link" href="#">Digital Brochures</a></li>
+										<li><a class="link link-secondary footer-link" href="#">Videos</a></li>
+										<li><a class="link link-secondary footer-link" href="#">Charters, Meetings & Incentives</a></li>
+										<li><a class="link link-secondary footer-link" href="#">Travel Partner Center</a></li>
+										<li><a class="link link-secondary footer-link" href="#">Sail & Sustain</a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- /Resources -->
+
+				<!-- Company info -->
+				<div class="col-md-6 col-lg">
+					<div class="accordion accordion-flush footer-accordion" id="accordion-compoanyInfo">
+						<div class="accordion-item">
+							<p class="accordion-header">
+								<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-compoanyInfo" aria-expanded="false" aria-controls="flush-compoanyInfo">Sign up for exclusive offers</button>
+							</p>
+							<div id="flush-compoanyInfo" class="accordion-collapse collapse show" data-bs-parent="#accordion-compoanyInfo">
+								<div class="accordion-body">
+									<ul class="nav nav-list d-block list-unstyled">
+										<li><a class="link link-secondary footer-link" href="#">About Us</a></li>
+										<li><a class="link link-secondary footer-link" href="#">Careers</a></li>
+										<li><a class="link link-secondary footer-link" href="#">Press & Media</a></li>
+										<li class="accordion footer-sibling-accordion accordion-flush" id="legal">
+											<div class="accordion-item">
+												<p class="accordion-header">
+													<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#legal-acc" aria-expanded="false" aria-controls="legal-acc">Legal</button>
+												</p>
+												<div id="legal-acc" class="accordion-collapse collapse show" data-bs-parent="#legal">
+													<div class="accordion-body">
+														<ul class="nav nav-list d-block sibling-list">
+															<li class="mb-0"><a class="link link-secondary footer-link text-primary" href="#">Terms & Condition</a></li>
+															<li class="mb-0"><a class="link link-secondary footer-link text-primary" href="#">Refunds</a></li>
+															<li class="mb-0"><a class="link link-secondary footer-link text-primary" href="#">EU faq</a></li>
+															<li class="mb-0"><a class="link link-secondary footer-link text-primary" href="#">Disclaimer of Liability</a></li>
+															<li class="mb-0"><a class="link link-secondary footer-link text-primary" href="#">Legal Details</a></li>
+														</ul>
+													</div>
+												</div>
+											</div>
+										</li>
+										<li><a class="link link-secondary footer-link" href="#">Privacy Policy</a></li>
+										<li><a class="link link-secondary footer-link" href="#">Contact Us</a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- /Company info -->
+
+				<!-- Sign up -->
+				<div class="col-md-6 col-lg">
+					<div class="accordion accordion-flush footer-accordion" id="accordion-search">
+						<div class="accordion-item">
+							<p class="accordion-header">
+								<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-search" aria-expanded="false" aria-controls="flush-search">Find a Sailing</button>
+							</p>
+							<div id="flush-search" class="accordion-collapse collapse show" data-bs-parent="#accordion-search">
+								<div class="accordion-body">
+									<!-- <form class="my-4" action="">
+										<div class="input-group input-mail mb-3">
+											<input type="text" class="form-control" placeholder="Your mail" aria-label="Your mail" aria-describedby="mail-button-addon">
+											<button class="btn btn-primary px-2" type="submit">
+												<img width="25" height="15" src="images/icons/double-arrow-right-secondary.svg" alt="Sign up">
+												<span class="d-block d-md-none"></span>
+											</button>
+										</div>
+									</form> -->
+									<form action="" class="">
+										<div class="row gy-2 gx-0 bg-transparent pb-3 pt-2 justify-content-center">
+											<div class=" position-relative">
+												<select class="form-select" aria-label="Default select example">
+													<option selected>Ship</option>
+													<option value="1">One</option>
+													<option value="2">Two</option>
+													<option value="3">Three</option>
+												</select>
+											</div>
+						
+											<div class="divider bg-primary"></div>
+						
+											<div class=" position-relative">
+												<select class="form-select" aria-label="Default select example">
+													<option selected>Date</option>
+													<option value="1">One</option>
+													<option value="2">Two</option>
+													<option value="3">Three</option>
+												</select>
+											</div>
+						
+											<div class="divider bg-primary"></div>
+						
+											<div class="">
+												<select class="form-select" aria-label="Default select example">
+													<option selected>Sailing theme</option>
+													<option value="1">One</option>
+													<option value="2">Two</option>
+													<option value="3">Three</option>
+												</select>
+											</div>
+						
+											<div class="divider bg-primary mb-2"></div>
+						
+											<div class=" d-grid gap-2">
+												<button type="submit" class="btn btn-primary btn-block mb-3 mb-md-0 text-white">Serch</button>
+											</div>
+										</div>
+									</form>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- <div class="accordion accordion-flush footer-accordion border-0" id="accordion-followUs">
+						<div class="accordion-item">
+							<p class="accordion-header">
+								<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-followUs" aria-expanded="false" aria-controls="flush-followUs">Follow us</button>
+							</p>
+							<div id="flush-followUs" class="accordion-collapse collapse show" data-bs-parent="#accordion-followUs">
+								<div class="accordion-body">
+									<div class="social">
+										<a href="#" class="btn-social">
+											<img src="images/icons/facebook-primary.svg" alt="Facebook">
+										</a>
+										<a href="#" class="btn-social">
+											<img src="images/icons/instagram-primary.svg" alt="Instagram">
+										</a>
+										<a href="#" class="btn-social">
+											<img src="images/icons/youtube-primary.svg" alt="Youtube">
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div> -->
+				</div>
+				<!-- /Sign up -->
+			</div>
+		</div>
+		<div class="container-fluid text-center px-5 px-sm-4">
+			<p class="date py-4 m-0 text-uppercase letter-spacing-md fw-normal"><small>© sea cloud cruises <span id="year"></span></small></p>
+		</div>
+	</footer>
+	<!-- /Footer -->
+</body>
+</html>

@@ -55,6 +55,36 @@ const htmlPluginConfigs = [
     filename: "terms-and-conditions.html", // Output filename (e.g., "public/terms-and-conditions.html")
     chunks: ["terms-and-conditions"], // Specify which chunks to include (terms-and-conditions is defined in your entry points)
   },
+  {
+    template: path.resolve(process.cwd(), "refund-instructions.html"), // Path to another HTML template
+    filename: "refund-instructions.html", // Output filename (e.g., "public/refund-instructions.html")
+    chunks: ["refund-instructions"], // Specify which chunks to include (refund-instructions is defined in your entry points)
+  },
+  {
+    template: path.resolve(process.cwd(), "eu-regulation.html"), // Path to another HTML template
+    filename: "eu-regulation.html", // Output filename (e.g., "public/eu-regulation.html")
+    chunks: ["eu-regulation"], // Specify which chunks to include (eu-regulation is defined in your entry points)
+  },
+  {
+    template: path.resolve(process.cwd(), "disclaimer-or-liability.html"), // Path to another HTML template
+    filename: "disclaimer-or-liability.html", // Output filename (e.g., "public/disclaimer-or-liability.html")
+    chunks: ["disclaimer-or-liability"], // Specify which chunks to include (disclaimer-or-liability is defined in your entry points)
+  },
+  {
+    template: path.resolve(process.cwd(), "legal-details.html"), // Path to another HTML template
+    filename: "legal-details.html", // Output filename (e.g., "public/legal-details.html")
+    chunks: ["legal-details"], // Specify which chunks to include (legal-details is defined in your entry points)
+  },
+  {
+    template: path.resolve(process.cwd(), "privacy-information.html"), // Path to another HTML template
+    filename: "privacy-information.html", // Output filename (e.g., "public/privacy-information.html")
+    chunks: ["privacy-information"], // Specify which chunks to include (privacy-information is defined in your entry points)
+  },
+  {
+    template: path.resolve(process.cwd(), "faq.html"), // Path to another HTML template
+    filename: "faq.html", // Output filename (e.g., "public/faq.html")
+    chunks: ["faq"], // Specify which chunks to include (faq is defined in your entry points)
+  },
   // Add more objects for additional HTML files as needed
 ];
 const htmlPlugins = htmlPluginConfigs.map((config) => new HtmlWebpackPlugin(config));
@@ -72,6 +102,12 @@ export default {
     "luxury-celebrate": "./src/js/luxury-celebrate.js",
     "yachts-sea-cloud": "./src/js/yachts-sea-cloud.js",
     "terms-and-conditions": "./src/js/terms-and-conditions.js",
+    "refund-instructions": "./src/js/refund-instructions.js",
+    "eu-regulation": "./src/js/eu-regulation.js",
+    "disclaimer-or-liability": "./src/js/disclaimer-or-liability.js",
+    "legal-details": "./src/js/legal-details.js",
+    "privacy-information": "./src/js/privacy-information.js",
+    "faq": "./src/js/faq.js",
   },
 
   // Define the destination directory and filenames of compiled resources
@@ -179,6 +215,12 @@ export default {
       path.resolve(process.cwd(), "luxury-celebrate.html"),
       path.resolve(process.cwd(), "yachts-sea-cloud.html"),
       path.resolve(process.cwd(), "terms-and-conditions.html"),
+      path.resolve(process.cwd(), "refund-instructions.html"),
+      path.resolve(process.cwd(), "eu-regulation.html"),
+      path.resolve(process.cwd(), "disclaimer-or-liability.html"),
+      path.resolve(process.cwd(), "legal-details.html"),
+      path.resolve(process.cwd(), "privacy-information.html"),
+      path.resolve(process.cwd(), "faq.html"),
     ],
     compress: true,
     port: process.env.PORT || 9090,
