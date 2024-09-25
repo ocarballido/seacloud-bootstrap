@@ -7,8 +7,8 @@
         width: 100%;
     }
     .card-img-overlay {
-        background-color: $secondary;
-        color: white;
+        background-color: $dark-seacloud-blue;
+        color: $primary;
         padding: 1.5rem;
         top: calc(100% - 5.5rem);
         transition: all .2s;
