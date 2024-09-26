@@ -27,24 +27,35 @@
 }
 // Antilles
 #antilles {
-    background-image: url("../images/destinations/caribbean/antilles-bg.jpg");
+    background-image: none;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    min-height: auto;
+    img {
+        width: 100%;
+    }
 }
 // Bahamas
 #bahamas {
-    background-image: url("../images/destinations/caribbean/bahamas-bg.jpg");
+    background-image: none;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    img {
+        width: 100%;
+    }
 }
 // Central america
 #central-america {
-    background-image: url("../images/destinations/caribbean/central-america-bg.jpg");
+    background-image: none;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    min-height: auto;
+    img {
+        width: 100%;
+    }
 }
 // Highlight section
 #highlights {
@@ -91,6 +102,11 @@
 
 // Media queries
 @include media-breakpoint-up(sm) {
+    #antilles, #bahamas, #central-america {
+        .container {
+            max-width: 100%;
+        }
+    }
     #news {
         border: 1.25rem solid white;
     }
@@ -103,10 +119,45 @@
     }
 }
 @include media-breakpoint-up(md) {
+    #antilles {
+        background-image: url("../images/destinations/caribbean/antilles-bg.jpg");
+        min-height: 100vh;
+        .container {
+            max-width: 720px;
+        }
+    }
+    #central-america {
+        background-image: url("../images/destinations/caribbean/central-america-bg.jpg");
+        min-height: 100vh;
+        .container {
+            max-width: 720px;
+        }
+    }
+    #bahamas {
+        background-image: url("../images/destinations/caribbean/bahamas-bg.jpg");
+        .container {
+            max-width: 720px;
+        }
+    }
 }
 @include media-breakpoint-up(lg) {
+    #antilles, #bahamas, #central-america {
+        .container {
+            max-width: 960px;
+        }
+    }
 }
 @include media-breakpoint-up(xl) {
+    #antilles, #bahamas, #central-america {
+        .container {
+            max-width: 1140px;
+        }
+    }
 }
 @include media-breakpoint-up(xxl) {
+    #antilles, #bahamas, #central-america {
+        .container {
+            max-width: 1320px;
+        }
+    }
 }
