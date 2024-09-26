@@ -100,6 +100,11 @@ const htmlPluginConfigs = [
     filename: "destinations-atlantic-crossing.html", // Output filename (e.g., "public/destinations-atlantic-crossing.html")
     chunks: ["destinations-atlantic-crossing"], // Specify which chunks to include (destinations-atlantic-crossing is defined in your entry points)
   },
+  {
+    template: path.resolve(process.cwd(), "destinations-mediterranean.html"), // Path to another HTML template
+    filename: "destinations-mediterranean.html", // Output filename (e.g., "public/destinations-mediterranean.html")
+    chunks: ["destinations-mediterranean"], // Specify which chunks to include (destinations-mediterranean is defined in your entry points)
+  },
   // Add more objects for additional HTML files as needed
 ];
 const htmlPlugins = htmlPluginConfigs.map((config) => new HtmlWebpackPlugin(config));
@@ -126,6 +131,7 @@ export default {
     "destinations-world-map": "./src/js/destinations-world-map.js",
     "destinations-caribbean": "./src/js/destinations-caribbean.js",
     "destinations-atlantic-crossing": "./src/js/destinations-atlantic-crossing.js",
+    "destinations-mediterranean": "./src/js/destinations-mediterranean.js",
   },
 
   // Define the destination directory and filenames of compiled resources
@@ -242,6 +248,7 @@ export default {
       path.resolve(process.cwd(), "destinations-world-map.html"),
       path.resolve(process.cwd(), "destinations-caribbean.html"),
       path.resolve(process.cwd(), "destinations-atlantic-crossing.html"),
+      path.resolve(process.cwd(), "destinations-mediterranean.html"),
     ],
     compress: true,
     port: process.env.PORT || 9090,

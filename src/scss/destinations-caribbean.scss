@@ -42,6 +42,7 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    min-height: auto;
     img {
         width: 100%;
     }
@@ -135,6 +136,7 @@
     }
     #bahamas {
         background-image: url("../images/destinations/caribbean/bahamas-bg.jpg");
+        min-height: 100vh;
         .container {
             max-width: 720px;
         }

@@ -1,0 +1,165 @@
+// General styles
+@import "./general-styles";
+
+// Bootstrap components
+@import 'bootstrap/scss/accordion';
+@import 'bootstrap/scss/carousel';
+@import 'bootstrap/scss/card';
+@import 'bootstrap/scss/forms';
+@import 'bootstrap/scss/nav';
+
+// Custom components
+@import './components/accordion';
+@import './components/card';
+@import './components/carousel';
+@import './components/divider';
+@import './components/nav';
+@import './forms';
+@import './utils';
+
+// Custom pages styles
+// Hero
+#hero {
+    background-image: url("../images/destinations/mediterranean/hero.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+// Antilles
+#spain-portugal-morocco {
+    background-image: none;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: auto;
+    img {
+        width: 100%;
+    }
+}
+// Bahamas
+#french-riviera {
+    background-image: none;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: auto;
+    img {
+        width: 100%;
+    }
+}
+// Central america
+#greece-italy-sicily-croatia {
+    background-image: none;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: auto;
+    img {
+        width: 100%;
+    }
+}
+// Highlight section
+#highlights {
+    .swiper {
+        .swiper-slide {
+            max-width: 300px;
+        }
+    }
+}
+
+// News section
+#news {
+    border: 0.75rem solid white;
+    .news-right-column {
+        display: flex;
+        min-height: 900px;
+        .news-column-container {
+            background-image: url("../images/home/news/news-right-bg.jpg");
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+    }
+    .news-left-column {
+        display: flex;
+        min-height: 900px;
+        .news-column-container {
+            background-image: url("../images/home/news/news-left-bg.jpg");
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+    }
+    .news-column-container {
+        align-items: flex-end;
+        display: flex;
+        width: 100%;
+    }
+    .news-content {
+        max-width: 450px;
+        margin: 0 auto;
+    }
+}
+
+// Media queries
+@include media-breakpoint-up(sm) {
+    #spain-portugal-morocco, #french-riviera, #greece-italy-sicily-croatia {
+        .container {
+            max-width: 100%;
+        }
+    }
+    #news {
+        border: 1.25rem solid white;
+    }
+    #highlights {
+        .swiper {
+            .swiper-slide {
+                max-width: 350px;
+            }
+        }
+    }
+}
+@include media-breakpoint-up(md) {
+    #spain-portugal-morocco {
+        background-image: url("../images/destinations/mediterranean/spain-portugal-morocco-bg.jpg");
+        min-height: 100vh;
+        .container {
+            max-width: 720px;
+        }
+    }
+    #greece-italy-sicily-croatia {
+        background-image: url("../images/destinations/mediterranean/greece-italy-sicily-croatia-bg.jpg");
+        min-height: 100vh;
+        .container {
+            max-width: 720px;
+        }
+    }
+    #french-riviera {
+        background-image: url("../images/destinations/mediterranean/french-riviera-bg.jpg");
+        min-height: 100vh;
+        .container {
+            max-width: 720px;
+        }
+    }
+}
+@include media-breakpoint-up(lg) {
+    #spain-portugal-morocco, #french-riviera, #greece-italy-sicily-croatia {
+        .container {
+            max-width: 960px;
+        }
+    }
+}
+@include media-breakpoint-up(xl) {
+    #spain-portugal-morocco, #french-riviera, #greece-italy-sicily-croatia {
+        .container {
+            max-width: 1140px;
+        }
+    }
+}
+@include media-breakpoint-up(xxl) {
+    #spain-portugal-morocco, #french-riviera, #greece-italy-sicily-croatia {
+        .container {
+            max-width: 1320px;
+        }
+    }
+}
