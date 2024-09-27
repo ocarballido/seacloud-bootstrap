@@ -27,18 +27,22 @@
 }
 
 .btn-link-arrow {
-	background-position: right center;
+	background-position: right 16px;
 	background-repeat: no-repeat;
-	background-size: 12px auto;
-	font-size: 1.125rem;
+	background-size: 6px auto;
+	font-size: 1rem;
 	font-weight: 400;
+	padding-left: 0.35rem;
 	padding-right: 1rem;
 	text-decoration: none;
 	&.text-primary {
-		background-image: url("../images/icons/double-arrow-right.svg");
+		background-image: url("../images/icons/arrow-primary-right.svg");
 	}
 	&.text-secondary {
-		background-image: url("../images/icons/double-arrow-right-secondary.svg");
+		background-image: url("../images/icons/arrow-secondary-right.svg");
+	}
+	&.small {
+		font-size: 0.75rem;
 	}
 }
 
