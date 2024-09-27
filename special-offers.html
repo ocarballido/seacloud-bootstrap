@@ -11,45 +11,69 @@
 <body class="my-body">
 	<!-- Appbar -->
 	<header id="appbar" class="navbar fixed-top py-4">
-		<nav class="container-fluid flex-row-reverse flex-lg-row">
-			<!-- Offcanvas Button -->
-			<button class="navbar-toggler border-0 ms-n5 ms-md-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
-				<img src="images/icons/menu-secondary.svg" width="26" height="26" alt="Open menu">
-			</button>
-			<!-- /Offcanvas Button -->
-
-			<!-- Rest -->
-			<div class="d-flex flex-grow-1 justify-content-evenly align-items-center">
-				<!-- Menu -->
-				<ul class="navbar-nav main-navbar flex-row flex-wrap align-items-center bd-navbar-nav d-none d-lg-flex ms-0 ms-lg-n5">
-					<li class="nav-item mx-3">
-						<a class="nav-link" aria-current="page" href="#">Find a sailing</a>
-					</li>
-					<li class="divider-vertical h-100 bg-secondary" style="min-height: 20px"></li>
-					<li class="nav-item mx-3">
-						<a class="nav-link" href="#">Special Offers</a>
-					</li>
-				</ul>
-				<!-- /Menu -->
-
-				<!-- Logo -->
-				<img id="appbarLogo" class="ms-0 ms-lg-n5" src="images/appbar/seacloud-logo.png" width="112" height="80" alt="Logo">
-				<img id="appbarLogoSymbol" class="ms-0 ms-lg-n5 d-none" src="images/appbar/seacloud-symbol.png" width="31" height="40" alt="Logo symbol">
-				<!-- /Logo -->
-
-				<!-- Menu -->
-				<ul class="navbar-nav main-navbar flex-row flex-wrap align-items-center bd-navbar-nav d-none d-lg-flex">
-					<li class="nav-item mx-3">
-						<a class="nav-link" aria-current="page" href="#">REQUEST BROCHURE</a>
-					</li>
-					<li class="nav-item mx-3 letter-spacing-md">
-						<img class="me-2" width="18" height="18" src="images/icons/phone-call.svg" alt="Phone number">
-						800 000 0000
-					</li>
-				</ul>
-				<!-- /Menu -->
+		<nav class="w-100 px-3">
+			<div class="row align-items-center flex-lg-row flex-row-reverse">
+				<div class="col-auto d-flex">
+					<button class="navbar-toggler border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+						<img src="images/icons/menu-secondary.svg" width="26" height="26" alt="Open menu">
+						<span class="offcanvas-menu-text">Menu</span>
+					</button>
+				</div>
+				<div class="col">
+					<div class="row justify-content-around">
+						<div class="col-auto d-none d-lg-flex">
+							<ul class="navbar-nav main-navbar d-flex flex-row">
+								<li class="nav-item mx-2 mx-xl-3">
+									<a class="nav-link text-center" aria-current="page" href="#">
+										<span class="scroll-top">Find<br>a sailing</span>
+										<span class="scrolled d-none">Find a sailing</span>
+									</a>
+								</li>
+								<li class="nav-item mx-2 mx-xl-3">
+									<a class="nav-link text-center" href="#">
+										<span class="scroll-top">Special<br>Offers</span>
+										<span class="scrolled d-none"">Special Offers</span>
+									</a>
+								</li>
+							</ul>
+						</div>
+						<div class="col-auto d-flex align-items-center">
+							<img id="appbarLogo" class="" src="images/appbar/seacloud-logo.png" width="112" height="80" alt="Logo">
+							<img id="appbarLogoSymbol" class="d-none my-2" src="images/appbar/seacloud-symbol.png" width="31" height="40" alt="Logo symbol">
+						</div>
+						<div class="col-auto d-none d-lg-flex">
+							<ul class="navbar-nav main-navbar flex-row flex-wrap align-items-center bd-navbar-nav d-none d-lg-flex">
+								<li class="nav-item mx-2 mx-xl-3">
+									<a class="nav-link text-center" aria-current="page" href="#">
+										<span class="scroll-top">Book your<br>sailing</span>
+										<span class="scrolled d-none">Book your sailing</span>
+									</a>
+								</li>
+								<li class="nav-item mx-2 mx-xl-3">
+									<a class="nav-link text-center" aria-current="page" href="#">
+										<span class="scroll-top">Request<br>information</span>
+										<span class="scrolled d-none">Request information</span>
+									</a>
+								</li>
+								<li class="nav-item mx-2 mx-xl-3 letter-spacing-md text-center text-uppercase fw-normal d-none d-xl-flex">
+									<p class="m-0 text-center">
+										<span class="scroll-top">
+											Call us
+											<br>
+											<img class="me-0" width="18" height="18" src="images/icons/phone-call.svg" alt="Phone number">
+											1.888.732.2568
+										</span>
+										<span class="scrolled d-none">
+											<img class="me-0" width="18" height="18" src="images/icons/phone-call.svg" alt="Phone number">
+											1.888.732.2568
+										</span>
+									</p>
+								</li>
+							</ul>
+						</div>
+					 </div>
+				</div>
 			</div>
-			<!-- /Rest -->
 
 			<!-- Offcanvas menu -->
 			<div class="offcanvas offcanvas-start bg-white" tabindex="-1" id="offcanvasNavbar" data-bs-scroll="true" aria-labelledby="offcanvasNavbarLabel">
@@ -175,217 +199,151 @@
 	<!-- /Appbar -->
 
 	<!-- Hero section -->
-	<section id="hero-section" class="fullscreen-carousel fullscreen-section bg-white position-relative d-block d-md-flex align-items-center">
-        <!-- Image container -->
-		<div class="hero-image h-100">
-			<!-- Image -->
-			<img class="w-100 d-none d-md-block" src="images/special-offers/hero-bg.jpg" alt="Last chance" />
-			<img class="w-100 d-block d-md-none mobile-image" src="images/special-offers/hero-mobile-bg.jpg" alt="Last chance" />
-			<!-- /Image -->
+	<section id="hero" class="full-height-section d-flex align-items-end align-items-md-center pt-5">
+        <div class="container">
+            <div class="row justify-content-end align-items-center mb-3">
+                <div class="col-md-7 col-lg-6 col-xl-5 col-xxl-4 bg-white p-3 p-md-4 p-lg-5 text-center">
+                    <p class="display-4 mb-4 text-primary pt-5">Special<br>offers</p>
+                    <div class="divider bg-primary my-4"></div>
+                    <p class="">Find our best luxury travel deals right here. Not only are our destinations distinctive, so are these limited-time deals. Sail the world with exclusive rates, onboard credits, and always all-inclusive.</p>
+                </div>
+            </div>
 		</div>
-		<!-- /Image container -->
+	</section>
+	<!-- /Hero section -->
 
-		<!-- Content -->
-		<div class="hero-content w-100 d-flex align-items-center top-0 start-0 position-relative">
-			<div class="container">
-				<div class="row">
-					<div class="col-md-8 col-lg-5">
-						<div class="px-3 py-5 text-center">
-							<p class="display-5 text-primary mt-5 mb-3">Last Chance</p>
-							<h2 class="mb-0">Northern aurope</h2>
-							<div class="divider my-4 bg-primary"></div>
-							<p class="mb-4">In 2024, the SEA CLOUD SPIRIT will sail along the Atlantic coast to northern Europe for the last time. Up to $ 3000 in savings</p>
-							<a href="#" class="btn btn-primary mb-4">More info</a>
+	<!-- Section 1 -->
+	<section id="section-1" class="full-height-section d-flex align-items-center bordered-section">
+        <div class="container px-0 px-md-3">
+			<img class="d-block d-md-none img-fluid" src="images/special-offers/section-1-mobile.jpg" alt="Let the sparks fly">
+            <div class="row justify-content-start align-items-center">
+                <div class="col-md-8 col-lg-7 col-xl-6 bg-dark-seacloud-blue p-5 text-center">
+                    <h2 class="text-primary mt-5">LET THE<br>SPARKS FLY</h2>
+					<p class="display-4 mb-4 text-primary pt-5">Caribbean<br>Sale</p>
+                    <div class="divider bg-primary my-4"></div>
+                    <p class="text-primary mb-4">30% OFF CURRENT SAVINGS RATE. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel.</p>
+					<a href="#" class="btn btn-primary mb-5">More info</a>
+                </div>
+            </div>
+		</div>
+	</section>
+	<!-- /Section 1 -->
+
+	<!-- Section 2 -->
+	<section id="section-2" class="position-relative bg-white">
+		<div class="container-fluid p-0">
+			<div class="row g-3 align-items-end justify-content-evenly">
+				<div class="col-lg section-2-left-column">
+					<div class="section-2-column-container">
+						<img class="image-bobile d-block d-lg-none img-fluid" src="images/special-offers/section-2-left-mobile.jpg" alt="Antilles">
+						<div class="py-5 px-3 bg-dark-seacloud-blue text-center section-2-content">
+							<h2 class="px-0 px-md-5 text-white">Sea cloud</h2>
+							<p class="display-6 mb-4 text-primary pt-3">Summer<br>savings</p>
+							<div class="divider bg-primary my-4"></div>
+							<p class="px-0 px-md-5 mb-4 text-white text-uppercase letter-spacing-md">$ 500 onboard credit per stateroom</p>
+							<p class="px-0 px-md-5 mb-4 text-white">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.</p>
+							<img src="images/icons/double-arrow-right.svg" width="24" alt="Arrow">
+						</div>
+					</div>
+				</div>
+				<div class="col-lg section-2-right-column">
+					<div class="section-2-column-container">
+						<img class="image-bobile d-block d-lg-none img-fluid" src="images/special-offers/section-2-right-mobile.jpg" alt="Antilles">
+						<div class="py-5 px-3 bg-dark-seacloud-blue text-center section-2-content">
+							<p class="display-6 mb-4 text-primary pt-3">Summer savings</p>
+							<h2 class="px-0 px-md-5 text-white">Culinary<br>series</h2>
+							<div class="divider bg-primary my-4"></div>
+							<p class="px-0 px-md-5 mb-4 text-white text-uppercase letter-spacing-md">$ 500 onboard credit per stateroom</p>
+							<p class="px-0 px-md-5 mb-4 text-white">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.</p>
+							<img src="images/icons/double-arrow-right.svg" width="24" alt="Arrow">
 						</div>
 					</div>
 				</div>
 			</div>
 		</div>
-		<!-- /Content -->
 	</section>
-	<!-- /Hero section -->
+	<!-- /Section 2 -->
 
-    <!-- Category two section -->
-    <section id="category-two" class="py-5 bg-white">
-        <div class="container py-4">
-            <h2 class="h4 text-center mb-4">Category two</h2>
-            <div class="row g-0 align-items-stretch thank-you mb-4">
-                <div class="col-md-6 col-lg-7 col-xl-8 content-img text-center d-flex justify-content-center align-items-center py-5">
-                    <div class="py-5">
-                        <h3 class="h1">Thank<br>you</h3>
-                        <p class="lead text-uppercase letter-spacing-md m-0">For your service</p>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-5 col-xl-4 d-flex justify-content-center align-items-center bg-secondary text-center">
-                    <div class="px-3 px-md-4 px-lg-5 py-5">
-                        <h3 class="text-white">Military savings</h3>
-                        <div class="divider bg-primary my-3"></div>
-                        <p class="text-white"><strong>$ 500</strong> onboard credit per person</p>
-                        <img class="" width="25" height="15" src="images/icons/double-arrow-right.svg" alt="Seacloud forward">
-                    </div>
-                </div>
-            </div>
-            
-            <div class="row g-0 align-items-stretch black-friday mb-4">
-                <div class="col-md-6 col-lg-7 col-xl-8 content-img text-center d-flex justify-content-center align-items-center py-5 order-md-2">
-                    <div class="py-5">
-                        <p class="fs-3 text-uppercase text-white">Black friday</p>
-                        <p class="display-5 text-white">Cyber Monday</p>
-                        <p class="fs-3 text-uppercase text-white m-0">Sale</p>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-5 col-xl-4 d-flex justify-content-center align-items-center bg-secondary text-center">
-                    <div class="px-3 px-md-4 px-lg-5 py-5">
-                        <h3 class="text-white">Caribbean</h3>
-                        <div class="divider bg-primary my-3"></div>
-                        <p class="text-white">Up to $ 500 onboard credit per person</p>
-                        <img class="" width="25" height="15" src="images/icons/double-arrow-right.svg" alt="Seaclou forward">
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- /Category two section -->
-
-    <!-- Also like section -->
-    <section id="also-like" class="py-5">
-        <div class="container py-4">
-            <h2 class="h4 text-center mb-4">You may also like</h2>
-
-            <div id="also-like-carousel" class="swiper pb-5">
-				<div class="swiper-wrapper pb-5">
+	<!-- Highlights section -->
+	<section id="also-interesting" class="bg-white position-relative pt-5 pb-4 pb-md-5 d-flex align-items-center">
+		<div class="container pt-5 pb-0 pb-md-5">
+			<h2 class="text-primary text-center mb-5">You may also like</h2>
+			<div id="also-interesting-carousel" class="swiper">
+				<div class="swiper-wrapper">
 					<div class="swiper-slide">
-						<div class="card card-feature bg-white">
-                            <a href="">
-                                <div class="card-img">
-                                    <img src="images/special-offers/also-like/feature-img-01.jpg" class="card-img-top" alt="Military savings">
-                                </div>
-                                <div class="card-body text-center p-3 p-md-4 p-lg-5">
-                                    <h5 class="card-title lh-base m-0">Military savings</h5>
-                                    <div class="divider my-2 bg-primary"></div>
-                                    <p class="card-text">Up to<strong> $ 3000 </strong>in savings per stateroom</p>
-                                    <img class="" width="25" height="15" src="images/icons/double-arrow-right.svg" alt="Seaclou forward">
-                                </div>
-                            </a>
-                        </div>
+						<div class="card h-100 bg-white">
+							<img src="images/special-offers/also-like-bahamas.jpg" class="card-img" alt="A COLORFUL CARIBBEAN TIME-OUT">
+							<div class="card-body text-center p-4">
+								<h5 class="text-primary lh-xxl letter-spacing-xxl mt-3">Bahamas for sailing entusiasts</h5>
+								<div class="divider bg-primary my-4"></div>
+								<p class="card-text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque .</p>
+								<img class="mt-4" src="images/icons/double-arrow-right.svg" width="24" alt="Arrow">
+							</div>
+						</div>
 					</div>
 					<div class="swiper-slide">
-						<div class="card card-feature bg-white">
-                            <a href="">
-                                <div class="card-img">
-                                    <img src="images/special-offers/also-like/feature-img-02.jpg" class="card-img-top" alt="Culinary sailings">
-                                </div>
-                                <div class="card-body text-center p-3 p-md-4 p-lg-5">
-                                    <h5 class="card-title lh-base m-0">Culinary sailings</h5>
-                                    <div class="divider my-2 bg-primary"></div>
-                                    <p class="card-text">Up to<strong> $ 3000 </strong>in savings per stateroom</p>
-                                    <img class="" width="25" height="15" src="images/icons/double-arrow-right.svg" alt="Seacloud forward">
-                                </div>
-                            </a>
-                        </div>
+						<div class="card h-100 bg-white">
+							<img src="images/special-offers/also-like-3-sails.jpg" class="card-img" alt="A COLORFUL CARIBBEAN TIME-OUT">
+							<div class="card-body text-center p-4">
+								<h5 class="text-primary lh-xxl letter-spacing-xxl mt-3">3 sails free sail</h5>
+								<div class="divider bg-primary my-4"></div>
+								<p class="card-text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque .</p>
+								<img class="mt-4" src="images/icons/double-arrow-right.svg" width="24" alt="Arrow">
+							</div>
+						</div>
 					</div>
 					<div class="swiper-slide">
-						<div class="card card-feature bg-white">
-                            <a href="">
-                                <div class="card-img">
-                                    <img src="images/special-offers/also-like/feature-img-01.jpg" class="card-img-top" alt="Northern Europe">
-                                </div>
-                                <div class="card-body text-center p-3 p-md-4 p-lg-5">
-                                    <h5 class="card-title lh-base m-0">Northern Europe</h5>
-                                    <div class="divider my-2 bg-primary"></div>
-                                    <p class="card-text">Up to<strong> $ 3000 </strong>in savings per stateroom</p>
-                                    <img class="" width="25" height="15" src="images/icons/double-arrow-right.svg" alt="Seacloud forward">
-                                </div>
-                            </a>
-                        </div>
-					</div>
-					<div class="swiper-slide">
-						<div class="card card-feature bg-white">
-                            <a href="">
-                                <div class="card-img">
-                                    <img src="images/special-offers/also-like/feature-img-03.jpg" class="card-img-top" alt="Feature">
-                                </div>
-                                <div class="card-body text-center p-3 p-md-4 p-lg-5">
-                                    <h5 class="card-title lh-base m-0">Military savings</h5>
-                                    <div class="divider my-2 bg-primary"></div>
-                                    <p class="card-text">Up to<strong> $ 3000 </strong>in savings per stateroom</p>
-                                    <img class="" width="25" height="15" src="images/icons/double-arrow-right.svg" alt="Seacloud forward">
-                                </div>
-                            </a>
-                        </div>
-					</div>
-					<div class="swiper-slide">
-						<div class="card card-feature bg-white">
-                            <a href="">
-                                <div class="card-img">
-                                    <img src="images/special-offers/also-like/feature-img-01.jpg" class="card-img-top" alt="Feature">
-                                </div>
-                                <div class="card-body text-center p-3 p-md-4 p-lg-5">
-                                    <h5 class="card-title lh-base m-0">Military savings</h5>
-                                    <div class="divider my-2 bg-primary"></div>
-                                    <p class="card-text">Up to<strong> $ 3000 </strong>in savings per stateroom</p>
-                                    <img class="" width="25" height="15" src="images/icons/double-arrow-right.svg" alt="Seacloud forward">
-                                </div>
-                            </a>
-                        </div>
+						<div class="card h-100 bg-white">
+							<img src="images/special-offers/also-like-authentic-journey.jpg" class="card-img" alt="A COLORFUL CARIBBEAN TIME-OUT">
+							<div class="card-body text-center p-4">
+								<h5 class="text-primary lh-xxl letter-spacing-xxl mt-3">Authentic Journeys</h5>
+								<div class="divider bg-primary my-4"></div>
+								<p class="card-text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque .</p>
+								<img class="mt-4" src="images/icons/double-arrow-right.svg" width="24" alt="Arrow">
+							</div>
+						</div>
 					</div>
 				</div>
-				<!-- Pagination -->
-				<div class="swiper-pagination secondary"></div>
-				<!-- /Pagination -->
 			</div>
-        </div>
-    </section>
-    <!-- /Also like section -->
+		</div>
+	</section>
+	<!-- /Highlights section -->
 
-    <!-- Social section -->
-    <section id="social-sea" class="position-relative py-5 bg-white">
+	<!-- Social sea section -->
+	<section id="social-sea" class="position-relative py-5 bg-dark-seacloud-blue">
 		<div class="container py-5">
-			<div class="row align-items-center justify-content-between text-secondary">
-				<div class="col-md text-center mb-5 mb-md-0 px-3 px-md-4 px-lg-5">
-					<p class="fs-5">Please sign up for our newsletter and check our website to always receive our latest offers.Throughout the year, we have sailings with air credits, no single supplement, attractive additional savings or add-ons on select departures.</p>
+			<div class="row align-items-center justify-content-between text-primary">
+				<div class="col-md col-lg-5 col-xl-4 text-center mb-5 mb-md-0">
+					<img class="d-block mx-auto mb-4" src="images/home/the-ship/the-ship.svg" width="74" height="63" alt="The ship">
+					<h3 class="text-primary">Social at sea</h3>
+					<div class="divider bg-primary my-3"></div>
+					<p class="mb-5">You’re social, we’re social, let’s connect! Follow, like, love, share, comment, tag. Social moments are happening @SEACLOUD CRUISES</p>
+					<div class="social">
+						<a href="#" class="btn-social">
+							<img src="images/icons/facebook-primary.svg" alt="Facebook">
+						</a>
+						<a href="#" class="btn-social">
+							<img src="images/icons/instagram-primary.svg" alt="Instagram">
+						</a>
+						<a href="#" class="btn-social">
+							<img src="images/icons/youtube-primary.svg" alt="Youtube">
+						</a>
+					</div>
 				</div>
-				<div class="col-md">
+				<div class="col-md col-lg-6">
+					<p class="lead text-center text-md-start">Email subscribers get early access to our luxury travel deals. Sneak peek all the exclusives first, plus stay in touch with all the updates from our sailing world.</p>
 					<form class="my-4" action="">
 						<div class="input-group input-mail mb-3">
 							<input type="text" class="form-control" placeholder="Your mail" aria-label="Your mail" aria-describedby="mail-button-addon">
 							<button class="btn btn-primary" type="submit">Sign up</button>
 						</div>
 					</form>
-					<p class="small text-uppercase letter-spacing-sm"><small>By submitting this form, you are consenting to receive marketing emails from: Sea cloud us . You can revoke your consent to receive emails at any time by using the Safe Unsubscribe® link, found at the bottom of every email. Emails are serviced by Constant Contact</small></p>
+					<p class="small text-uppercase letter-spacing-sm text-white text-center-md"><small>By submitting this form, you are consenting to receive marketing emails from: Sea cloud us . You can revoke your consent to receive emails at any time by using the Safe Unsubscribe® link, found at the bottom of every email. Emails are serviced by Constant Contact</small></p>
 				</div>
 			</div>
 		</div>
 	</section>
-    <!-- /Social section -->
-
-    <!-- Sailing experience section -->
-    <section id="sailing-experience" class="position-relative bg-white">
-		<div class="container-fluid px-0">
-			<div class="row align-items-stretch g-0">
-				<div class="col-md order-md-2">
-					<img class="half-width-image" src="images/special-offers/sailing-experience/sailing-experience.jpg" alt="Maritime lifestyle meets sailing experience" />
-				</div>
-				<div class="col-md text-center text-primary">
-					<div class="half-width-wraper bg-secondary h-100 d-flex justify-content-center align-items-center">
-						<div class="p-4">
-                            <img class="d-block mx-auto mb-4" src="images/home/the-ship/the-ship.svg" width="74" height="63" alt="The ship">
-                            <p class="lead letter-spacing-xl text-uppercase">Sailing<br>cruise experience</p>
-							<h4 class="text-primary mb-1">Maritime lifestyle meets sailing experience</h4>
-							<div class="divider my-3 bg-primary"></div>
-							<p class="mb-4 text-center-md">A trip on our SEA CLOUDs combines maritime lifestyle, casual elegance and the feeling of traveling on a private yacht. The cuisine is always based on regional cuisine and pampers you at the highest level. Under white, billowed sails you are very close to the elements.</p>
-							<div class="social">
-                                <a href="#" class="btn btn-outline-primary my-2">Sea cloud</a>
-                                <a href="#" class="btn btn-outline-primary my-2">Sea cloud II</a>
-                                <a href="#" class="btn btn-outline-primary my-2">Sea cloud spirit</a>
-                            </div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-    <!-- /Sailing experience section -->
+	<!-- /Social sea section -->
 
 	<!-- Footer -->
 	<footer id="footer" class="pt-5 bg-white">
@@ -404,9 +362,25 @@
 									<ul class="nav nav-list d-block list-unstyled">
 										<li><a class="link link-secondary footer-link" href="#">Find a Sailing</a></li>
 										<li><a class="link link-secondary footer-link" href="#">Find a Travel Advisor</a></li>
-										<li><a class="link link-secondary footer-link" href="#">Request a Brochure</a></li>
-										<li><a class="link link-secondary footer-link" href="#">Sign-up for Special Offers</a></li>
-										<li><a class="link link-secondary footer-link" href="#">Group Travel Benefits</a></li>
+										<li class="accordion footer-sibling-accordion accordion-flush" id="request-info">
+											<div class="accordion-item">
+												<p class="accordion-header">
+													<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#request-info-acc" aria-expanded="false" aria-controls="request-info-acc">Request info</button>
+												</p>
+												<div id="request-info-acc" class="accordion-collapse collapse show" data-bs-parent="#request-info">
+													<div class="accordion-body">
+														<ul class="nav nav-list d-block sibling-list">
+															<li class="mb-0"><a class="link link-secondary footer-link text-primary" href="#">Order Brochure</a></li>
+															<li class="mb-0"><a class="link link-secondary footer-link text-primary" href="#">Sign Up for Offers</a></li>
+															<li class="mb-0"><a class="link link-secondary footer-link text-primary" href="#">Request Quote</a></li>
+															<li class="mb-0"><a class="link link-secondary footer-link text-primary" href="#">Group Travel Perks</a></li>
+															<li class="mb-0"><a class="link link-secondary footer-link text-primary" href="#">Submit Inquiry</a></li>
+														</ul>
+													</div>
+												</div>
+											</div>
+										</li>
+										<li><a class="link link-secondary footer-link" href="#">Special Offers</a></li>
 									</ul>
 								</div>
 							</div>
@@ -426,12 +400,10 @@
 								<div class="accordion-body">
 									<ul class="nav nav-list d-block list-unstyled">
 										<li><a class="link link-secondary footer-link" href="#">Frequently Asked Questions</a></li>
-										<li><a class="link link-secondary footer-link" href="#">Update Marketing Preferences</a></li>
-										<li><a class="link link-secondary footer-link" href="#">Travel Partner Center</a></li>
-										<li><a class="link link-secondary footer-link" href="#">Videos</a></li>
 										<li><a class="link link-secondary footer-link" href="#">Digital Brochures</a></li>
+										<li><a class="link link-secondary footer-link" href="#">Videos</a></li>
 										<li><a class="link link-secondary footer-link" href="#">Charters, Meetings & Incentives</a></li>
-										<li><a class="link link-secondary footer-link" href="#">Gift Order Form</a></li>
+										<li><a class="link link-secondary footer-link" href="#">Travel Partner Center</a></li>
 										<li><a class="link link-secondary footer-link" href="#">Sail & Sustain</a></li>
 									</ul>
 								</div>
@@ -453,12 +425,26 @@
 									<ul class="nav nav-list d-block list-unstyled">
 										<li><a class="link link-secondary footer-link" href="#">About Us</a></li>
 										<li><a class="link link-secondary footer-link" href="#">Careers</a></li>
-										<li><a class="link link-secondary footer-link" href="#">Legal</a></li>
 										<li><a class="link link-secondary footer-link" href="#">Press & Media</a></li>
-										<li><a class="link link-secondary footer-link" href="#">For Investors</a></li>
-										<li><a class="link link-secondary footer-link" href="#">Site Map</a></li>
+										<li class="accordion footer-sibling-accordion accordion-flush" id="legal">
+											<div class="accordion-item">
+												<p class="accordion-header">
+													<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#legal-acc" aria-expanded="false" aria-controls="legal-acc">Legal</button>
+												</p>
+												<div id="legal-acc" class="accordion-collapse collapse show" data-bs-parent="#legal">
+													<div class="accordion-body">
+														<ul class="nav nav-list d-block sibling-list">
+															<li class="mb-0"><a class="link link-secondary footer-link text-primary" href="#">Terms & Condition</a></li>
+															<li class="mb-0"><a class="link link-secondary footer-link text-primary" href="#">Refunds</a></li>
+															<li class="mb-0"><a class="link link-secondary footer-link text-primary" href="#">EU regulation</a></li>
+															<li class="mb-0"><a class="link link-secondary footer-link text-primary" href="#">Disclaimer of Liability</a></li>
+															<li class="mb-0"><a class="link link-secondary footer-link text-primary" href="#">Legal Details</a></li>
+														</ul>
+													</div>
+												</div>
+											</div>
+										</li>
 										<li><a class="link link-secondary footer-link" href="#">Privacy Policy</a></li>
-										<li><a class="link link-secondary footer-link" href="#">Travel Restrictions</a></li>
 										<li><a class="link link-secondary footer-link" href="#">Contact Us</a></li>
 									</ul>
 								</div>
@@ -470,14 +456,14 @@
 
 				<!-- Sign up -->
 				<div class="col-md-6 col-lg">
-					<div class="accordion accordion-flush footer-accordion" id="accordion-signUp">
+					<div class="accordion accordion-flush footer-accordion" id="accordion-search">
 						<div class="accordion-item">
 							<p class="accordion-header">
-								<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-signUp" aria-expanded="false" aria-controls="flush-signUp">Sign up for exclusive offers</button>
+								<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-search" aria-expanded="false" aria-controls="flush-search">Find a Sailing</button>
 							</p>
-							<div id="flush-signUp" class="accordion-collapse collapse show" data-bs-parent="#accordion-signUp">
+							<div id="flush-search" class="accordion-collapse collapse show" data-bs-parent="#accordion-search">
 								<div class="accordion-body">
-									<form class="my-4" action="">
+									<!-- <form class="my-4" action="">
 										<div class="input-group input-mail mb-3">
 											<input type="text" class="form-control" placeholder="Your mail" aria-label="Your mail" aria-describedby="mail-button-addon">
 											<button class="btn btn-primary px-2" type="submit">
@@ -485,12 +471,52 @@
 												<span class="d-block d-md-none"></span>
 											</button>
 										</div>
+									</form> -->
+									<form action="" class="">
+										<div class="row gy-2 gx-0 bg-transparent pb-3 pt-2 justify-content-center">
+											<div class=" position-relative">
+												<select class="form-select" aria-label="Default select example">
+													<option selected>Ship</option>
+													<option value="1">One</option>
+													<option value="2">Two</option>
+													<option value="3">Three</option>
+												</select>
+											</div>
+						
+											<div class="divider bg-primary"></div>
+						
+											<div class=" position-relative">
+												<select class="form-select" aria-label="Default select example">
+													<option selected>Date</option>
+													<option value="1">One</option>
+													<option value="2">Two</option>
+													<option value="3">Three</option>
+												</select>
+											</div>
+						
+											<div class="divider bg-primary"></div>
+						
+											<div class="">
+												<select class="form-select" aria-label="Default select example">
+													<option selected>Sailing theme</option>
+													<option value="1">One</option>
+													<option value="2">Two</option>
+													<option value="3">Three</option>
+												</select>
+											</div>
+						
+											<div class="divider bg-primary mb-2"></div>
+						
+											<div class=" d-grid gap-2">
+												<button type="submit" class="btn btn-primary btn-block mb-3 mb-md-0 text-white">Serch</button>
+											</div>
+										</div>
 									</form>
 								</div>
 							</div>
 						</div>
 					</div>
-					<div class="accordion accordion-flush footer-accordion border-0" id="accordion-followUs">
+					<!-- <div class="accordion accordion-flush footer-accordion border-0" id="accordion-followUs">
 						<div class="accordion-item">
 							<p class="accordion-header">
 								<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-followUs" aria-expanded="false" aria-controls="flush-followUs">Follow us</button>
@@ -511,7 +537,7 @@
 								</div>
 							</div>
 						</div>
-					</div>
+					</div> -->
 				</div>
 				<!-- /Sign up -->
 			</div>

@@ -16,97 +16,171 @@
 @import './utils';
 
 // Custom pages styles
-// Hero section
-#hero-section {
-    .hero-image {
-        position: relative;
+// Hero
+#hero {
+    background-image: url("../images/special-offers/hero.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+// Section 1
+#section-1 {
+    background-image: none;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: none;
+    min-height: auto;
+    img {
         width: 100%;
-        z-index: 0;
-        .mobile-image {
-            min-height: 570px;
-        }
-        img {
-            height: unset;
-            object-fit: cover;
-            object-position: center;
-        }
-        // &:before {
-        //     /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#0e2050+0,0e2050+99&0+0,1+80 */
-        //     background: linear-gradient(to bottom,  rgba(14,32,80,0) 0%,rgba(14,32,80,1) 80%,rgba(14,32,80,1) 99%);
-        //     bottom: 0;
-        //     content: '';
-        //     display: block;
-        //     height: 30%;
-        //     left: 0;
-        //     position: absolute;
-        //     width: 100%;
-        //     z-index: 2;
-        // }
-    }
-    .hero-content {
-        // background-color: $secondary;
-        .row > div {
-            background-color: transparent;
-        }
-        // h2, p {
-        //     color: white;
-        // }
+        border: .85rem solid white;
     }
 }
 
-#category-two {
-    .thank-you {
-        .content-img {
-            background-image: url("../images/special-offers/category-two/thank-you-bg.jpg");
+// Section 2
+#section-2 {
+    border: 0.75rem solid white;
+    border-top: 0.75rem solid white;
+    padding-bottom: 2rem;
+    .section-2-right-column {
+        display: flex;
+        .section-2-column-container {
+            background-image: url("../images/special-offers/section-2-right-bg.jpg");
             background-position: center;
             background-repeat: no-repeat;
             background-size: cover;
         }
     }
-    .black-friday {
-        .content-img {
-            background-image: url("../images/special-offers/category-two/black-friday-bg.jpg");
+    .section-2-left-column {
+        display: flex;
+        .section-2-column-container {
+            background-image: url("../images/special-offers/section-2-left-bg.jpg");
             background-position: center;
             background-repeat: no-repeat;
             background-size: cover;
+        }
+    }
+    .section-2-column-container {
+        align-items: flex-end;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        .image-bobile {
+            width: 100%;
+        }
+    }
+    .section-2-content {
+        margin: 0 auto;
+        margin-bottom: 0;
+        width: 100%;
+    }
+}
+
+// Highlight section
+#also-interesting {
+    background: rgb(22,29,61);
+    background: linear-gradient(0deg, rgba(22,29,61,1) 0%, rgba(255,255,255,1) 70%);
+    .swiper {
+        .swiper-slide {
+            height: auto;
+            max-width: 300px;
         }
     }
 }
 
 // Media queries
 @include media-breakpoint-up(sm) {
-    
+    #section-1 {
+        .container {
+            max-width: 100%;
+        }
+    }
+    #section-2 {
+        .container {
+            max-width: 100%;
+        }
+    }
 }
 @include media-breakpoint-up(md) {
-    #hero-section {
-        .hero-image {
-            position: absolute;
-            &:before {
-                display: none;
-            }
-            img {
-                height: 100%;
-                object-fit: cover;
-                object-position: center top;
-            }
+    #section-1 {
+        background-image: url("../images/special-offers/section-1-bg.jpg");
+        border: 1.5rem solid white;
+        min-height: 100vh;
+        .container {
+            max-width: 720px;
         }
-        .hero-content {
-            background-color: transparent;
-            .row > div {
-                background-color: rgba(255, 255, 255, .8);
-            }
-            h2, p {
-                color: $secondary;
+        img {
+            border: none;
+        }
+    }
+    #also-interesting {
+        .swiper {
+            .swiper-slide {
+                max-width: 400px;
             }
         }
     }
 }
+
 @include media-breakpoint-up(lg) {
-    
+    #section-1, #section-2 {
+        .container {
+            max-width: 960px;
+        }
+    }
+    #section-2 {
+        padding-bottom: 6rem;
+        .section-2-left-column {
+            min-height: 900px;
+        }
+        .section-2-right-column {
+            min-height: 900px;
+        }
+        .section-2-content {
+            margin-bottom: -6rem;
+            max-width: 450px;
+        }
+        .section-2-column-container {
+            flex-direction: unset;
+        }
+    }
+    #section-2 {
+        border: 1.5rem solid white;
+        border-top: none;
+        .container {
+            max-width: 720px;
+        }
+    }
+    #also-interesting {
+        .swiper {
+            .swiper-slide {
+                max-width: 100%;
+            }
+        }
+    }
 }
 @include media-breakpoint-up(xl) {
-    
+    #section-1, #section-2 {
+        .container {
+            max-width: 960px;
+        }
+    }
+    #section-2 {
+        .section-2-content {
+            max-width: 450px;
+        }
+    }
 }
 @include media-breakpoint-up(xxl) {
-    
+    #section-1, #section-2 {
+        .container {
+            max-width: 960px;
+        }
+    }
+    #section-2 {
+        .section-2-content {
+            max-width: 450px;
+        }
+    }
 }

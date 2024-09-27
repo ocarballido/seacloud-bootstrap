@@ -26,13 +26,14 @@ copyright();
 footerAccordionUx();
 
 // Your app code
-// Also like carousel
-const alsoLikeCarousel = new Swiper('#also-like-carousel', {
-	slidesPerView: "auto",
+// Highlight carousel
+const highlightsCarousel = new Swiper('#also-interesting-carousel', {
+	slidesPerView: 'auto',
 	spaceBetween: 16,
-	pagination: {
-		el: ".swiper-pagination",
-		clickable: true,
-	},
 	modules: [ Autoplay, Navigation, Pagination ],
+	breakpoints: {
+		992: {
+			slidesPerView: 3,
+		}
+	}
 });
