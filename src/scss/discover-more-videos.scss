@@ -1,0 +1,107 @@
+// General styles
+@import "./general-styles";
+
+// Bootstrap components
+@import 'bootstrap/scss/accordion';
+@import 'bootstrap/scss/carousel';
+@import 'bootstrap/scss/card';
+@import 'bootstrap/scss/forms';
+
+// Custom components
+@import './components/accordion';
+@import './components/card';
+@import './components/carousel';
+@import './components/divider';
+@import './forms';
+@import './utils';
+
+// Custom pages styles
+// Videos
+#videos {
+    .videos-carousel-container {
+        padding-bottom: 3rem;
+    }
+    .swiper {
+        padding-bottom: 4rem;
+        position: relative;
+        .swiper-slide {
+            max-width: 300px;
+        }
+        .swiper-pagination {
+            bottom: 1rem;
+            top: unset;
+            .swiper-pagination-bullet {
+                border-color: $primary;
+            }
+            .swiper-pagination-bullet-active {
+                background-color: $primary;
+            }
+        }
+    }
+}
+
+// News section
+#news {
+    border: 0.75rem solid white;
+    .news-right-column {
+        display: flex;
+        min-height: 900px;
+        .news-column-container {
+            background-image: url("../images/home/news/news-right-bg.jpg");
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+    }
+    .news-left-column {
+        display: flex;
+        min-height: 900px;
+        .news-column-container {
+            background-image: url("../images/home/news/news-left-bg.jpg");
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+    }
+    .news-column-container {
+        align-items: flex-end;
+        display: flex;
+        width: 100%;
+    }
+    .news-content {
+        max-width: 450px;
+        margin: 0 auto;
+    }
+}
+
+// Media queries
+@include media-breakpoint-up(sm) {
+    #news {
+        border: 1.25rem solid white;
+    }
+}
+@include media-breakpoint-up(md) {
+    #videos {
+        .swiper {
+            .swiper-slide {
+                max-width: 400px;
+            }
+        }
+    }
+}
+
+@include media-breakpoint-up(lg) {
+    #videos {
+        .swiper {
+            .swiper-slide {
+                max-width: 100%;
+            }
+        }
+    }
+}
+@include media-breakpoint-up(xl) {
+    
+}
+@include media-breakpoint-up(xxl) {
+    
+}

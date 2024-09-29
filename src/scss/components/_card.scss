@@ -84,6 +84,36 @@
     }
 }
 
+.card-video {
+    background-color: transparent;
+    .card-img-container {
+        height: 280px;
+        overflow: hidden;
+        position: relative;
+        .play-icon {
+            left: calc(50% - 44px);
+            position: absolute;
+            top: calc(50% - 44px);
+            z-index: 1;
+        }
+        .card-img {
+            height: 100%;
+            object-fit: cover;
+            object-position: center;
+            transition: all .5s;
+            width: 100%;
+        }
+    }
+    .card-text {
+        color: white;
+    }
+    &:hover {
+        .card-img {
+            transform: scale(1.1);
+        }
+    }
+}
+
 // Queries
 // @include media-breakpoint-up(sm) { ... }
 // @include media-breakpoint-up(md) {}

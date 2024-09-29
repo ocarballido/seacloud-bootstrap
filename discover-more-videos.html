@@ -1,0 +1,681 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <meta http-equiv="x-ua-compatible" content="ie=edge"/>
+	<link rel="icon" href="favico.png">
+    <title>Seacloud</title>
+</head>
+
+<body class="my-body">
+	<!-- Appbar -->
+	<header id="appbar" class="navbar fixed-top py-4">
+		<nav class="w-100 px-3">
+			<div class="row align-items-center flex-lg-row flex-row-reverse">
+				<div class="col-auto d-flex">
+					<button class="navbar-toggler border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+						<img src="images/icons/menu-secondary.svg" width="26" height="26" alt="Open menu">
+						<span class="offcanvas-menu-text">Menu</span>
+					</button>
+				</div>
+				<div class="col">
+					<div class="row justify-content-around">
+						<div class="col-auto d-none d-lg-flex">
+							<ul class="navbar-nav main-navbar d-flex flex-row">
+								<li class="nav-item mx-2 mx-xl-3">
+									<a class="nav-link text-center" aria-current="page" href="#">
+										<span class="scroll-top">Find<br>a sailing</span>
+										<span class="scrolled d-none">Find a sailing</span>
+									</a>
+								</li>
+								<li class="nav-item mx-2 mx-xl-3">
+									<a class="nav-link text-center" href="#">
+										<span class="scroll-top">Special<br>Offers</span>
+										<span class="scrolled d-none"">Special Offers</span>
+									</a>
+								</li>
+							</ul>
+						</div>
+						<div class="col-auto d-flex align-items-center">
+							<img id="appbarLogo" class="" src="images/appbar/seacloud-logo.png" width="112" height="80" alt="Logo">
+							<img id="appbarLogoSymbol" class="d-none my-2" src="images/appbar/seacloud-symbol.png" width="31" height="40" alt="Logo symbol">
+						</div>
+						<div class="col-auto d-none d-lg-flex">
+							<ul class="navbar-nav main-navbar flex-row flex-wrap align-items-center bd-navbar-nav d-none d-lg-flex">
+								<li class="nav-item mx-2 mx-xl-3">
+									<a class="nav-link text-center" aria-current="page" href="#">
+										<span class="scroll-top">Book your<br>sailing</span>
+										<span class="scrolled d-none">Book your sailing</span>
+									</a>
+								</li>
+								<li class="nav-item mx-2 mx-xl-3">
+									<a class="nav-link text-center" aria-current="page" href="#">
+										<span class="scroll-top">Request<br>information</span>
+										<span class="scrolled d-none">Request information</span>
+									</a>
+								</li>
+								<li class="nav-item mx-2 mx-xl-3 letter-spacing-md text-center text-uppercase fw-normal d-none d-xl-flex">
+									<p class="m-0 text-center">
+										<span class="scroll-top">
+											Call us
+											<br>
+											<img class="me-0" width="18" height="18" src="images/icons/phone-call.svg" alt="Phone number">
+											1.888.732.2568
+										</span>
+										<span class="scrolled d-none">
+											<img class="me-0" width="18" height="18" src="images/icons/phone-call.svg" alt="Phone number">
+											1.888.732.2568
+										</span>
+									</p>
+								</li>
+							</ul>
+						</div>
+					 </div>
+				</div>
+			</div>
+
+			<!-- Offcanvas menu -->
+			<div class="offcanvas offcanvas-start bg-white" tabindex="-1" id="offcanvasNavbar" data-bs-scroll="true" aria-labelledby="offcanvasNavbarLabel">
+				<button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close">
+					<img src="images/icons/close-secondary.svg" width="26" height="26" alt="Close menu">
+				</button>
+					
+				<div class="offcanvas-body">
+					<div class="container">
+						<ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+							<li class="nav-item">
+								<a class="nav-link active" aria-current="page" href="#">Home</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#">Find a sailing</a>
+							</li>
+							<li class="nav-item">
+								<div class="accordion offcanvas-accordion" id="accordion-offcanvas-luxury">
+									<div class="accordion-item">
+										<p class="accordion-header">
+											<button class="nav-link accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-offcanvas-luxury-01" aria-expanded="true" aria-controls="collapse-offcanvas-luxury-01">
+												The Luxury of the sea Clouds
+											</button>
+										</p>
+										<div id="collapse-offcanvas-luxury-01" class="accordion-collapse collapse" data-bs-parent="#accordion-offcanvas-luxury">
+											<div class="accordion-body px-0">
+												<ul class="accordion-list">
+													<li><a class="accordion-link" href="#">Sea Clouds All-Inclusive Fares</a></li>
+													<li><a class="accordion-link" href="#">Five Star Amenities</a></li>
+													<li><a class="accordion-link" href="#">The Sea Cloud Difference</a></li>
+													<li><a class="accordion-link" href="#">Sailing Sustainability</a></li>
+													<li><a class="accordion-link" href="#">Let's Celebrate</a></li>
+												</ul>
+											</div>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li class="nav-item">
+								<div class="accordion offcanvas-accordion" id="accordion-offcanvas-yachts">
+									<div class="accordion-item">
+										<p class="accordion-header">
+											<button class="nav-link accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-offcanvas-yachts-02" aria-expanded="true" aria-controls="collapse-offcanvas-yachts-02">
+												Our Sailing Yachts
+											</button>
+										</p>
+										<div id="collapse-offcanvas-yachts-02" class="accordion-collapse collapse" data-bs-parent="#accordion-offcanvas-yachts">
+											<div class="accordion-body px-0">
+												<ul class="accordion-list">
+													<li><a class="accordion-link" href="#">Sea Cloud</a></li>
+													<li><a class="accordion-link" href="#">Sea Cloud II</a></li>
+													<li><a class="accordion-link" href="#">Sea Cloud Spirit</a></li>
+												</ul>
+											</div>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li class="nav-item">
+								<div class="accordion offcanvas-accordion" id="accordion-offcanvas-destinations">
+									<div class="accordion-item">
+										<p class="accordion-header">
+											<button class="nav-link accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-offcanvas-destinations-03" aria-expanded="true" aria-controls="collapse-offcanvas-destinations-03">
+												Distinctive destinations
+											</button>
+										</p>
+										<div id="collapse-offcanvas-destinations-03" class="accordion-collapse collapse" data-bs-parent="#accordion-offcanvas-destinations">
+											<div class="accordion-body px-0">
+												<ul class="accordion-list">
+													<li><a class="accordion-link" href="#">World Map</a></li>
+													<li><a class="accordion-link" href="#">Caribbean</a></li>
+													<li><a class="accordion-link" href="#">Atlantic Crossing</a></li>
+													<li><a class="accordion-link" href="#">Mediterranean</a></li>
+												</ul>
+											</div>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#">Special Offers</a>
+							</li>
+							<li class="nav-item">
+								<div class="accordion offcanvas-accordion" id="accordion-offcanvas-discover">
+									<div class="accordion-item">
+										<p class="accordion-header">
+											<button class="nav-link accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-offcanvas-discover-04" aria-expanded="true" aria-controls="collapse-offcanvas-discover-04">
+												Discover More
+											</button>
+										</p>
+										<div id="collapse-offcanvas-discover-04" class="accordion-collapse collapse" data-bs-parent="#accordion-offcanvas-discover">
+											<div class="accordion-body px-0">
+												<ul class="accordion-list">
+													<li><a class="accordion-link" href="#">Digital brochure</a></li>
+													<li><a class="accordion-link" href="#">Videos</a></li>
+													<li><a class="accordion-link" href="#">Virtual Tours</a></li>
+													<li><a class="accordion-link" href="#">Social Media</a></li>
+												</ul>
+											</div>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#">Book your Sailing</a>
+							</li>
+						</ul>
+						<div class="divider my-4 bg-transparent w-100"></div>
+						<ul class="navbar-nav d-block flex-grow-1 pe-3">
+							<li class="nav-item d-inline-block me-3">
+								<a class="nav-link" href="#">Help</a>
+							</li>
+							<li class="nav-item d-inline-block">
+								<a class="nav-link" href="#">Contact Us</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<!-- /Offcanvas menu -->
+		</nav>
+	</header>
+	<!-- /Appbar -->
+
+	<!-- Hero section -->
+	<section id="hero" class="hero-cover bg-white full-height-section align-items-end flex-column pt-5">
+        <div class="hero-cover-image">
+            <img class="" src="images/discover-more/videos/hero.jpg" alt="Terms and conditions">
+        </div>
+		<div class="container-fluid hero-cover-content py-5 text-center bg-dark-seacloud-blue">
+            <p class="display-5 my-4 text-primary">Videos</p>
+			<div class="divider bg-primary my-4"></div>
+		</div>
+	</section>
+	<!-- /Hero section -->
+
+	<!-- Videos section -->
+	<section id="videos" class="py-5 bg-dark-seacloud-blue">
+        <div class="container text-center py-3">
+			<div class="videos-carousel-container">
+				<div id="welcome-videos-carousel" class="swiper">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide">
+							<a href="#" class="card card-video">
+								<div class="card-img-container">
+									<img src="images/icons/play.svg" class="play-icon" alt="Play video">
+									<img src="images/discover-more/videos/videos-thumbnails/welcome-01.jpg" class="card-img" alt="Video">
+								</div>
+								<div class="card-body text-center">
+									<p class="card-text m-0">Introducing the three SEA CLOUDs</p>
+								</div>
+							</a>
+						</div>
+						<div class="swiper-slide">
+							<a href="#" class="card card-video">
+								<div class="card-img-container">
+									<img src="images/icons/play.svg" class="play-icon" alt="Play video">
+									<img src="images/discover-more/videos/videos-thumbnails/welcome-02.jpg" class="card-img" alt="Video">
+								</div>
+								<div class="card-body text-center">
+									<p class="card-text m-0">SEA CLOUD CRUISES image clip</p>
+								</div>
+							</a>
+						</div>
+						<div class="swiper-slide">
+							<a href="#" class="card card-video">
+								<div class="card-img-container">
+									<img src="images/icons/play.svg" class="play-icon" alt="Play video">
+									<img src="images/discover-more/videos/videos-thumbnails/welcome-03.jpg" class="card-img" alt="Video">
+								</div>
+								<div class="card-body text-center">
+									<p class="card-text m-0">Sail setting in real handwork</p>
+								</div>
+							</a>
+						</div>
+					</div>
+					<div class="swiper-pagination mb-2"></div>
+				</div>
+			</div>
+			<div class="mb-5">
+				<h2 class="text-primary mb-5">Our yatchs</h2>
+				<div id="yatchs-videos-carousel" class="swiper">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide">
+							<a href="#" class="card card-video">
+								<div class="card-img-container">
+									<img src="images/icons/play.svg" class="play-icon" alt="Play video">
+									<img src="images/discover-more/videos/videos-thumbnails/our-yatchs-01.jpg" class="card-img" alt="Video">
+								</div>
+								<div class="card-body text-center">
+									<p class="card-text m-0">SEA CLOUD</p>
+								</div>
+							</a>
+						</div>
+						<div class="swiper-slide">
+							<a href="#" class="card card-video">
+								<div class="card-img-container">
+									<img src="images/icons/play.svg" class="play-icon" alt="Play video">
+									<img src="images/discover-more/videos/videos-thumbnails/our-yatchs-02.jpg" class="card-img" alt="Video">
+								</div>
+								<div class="card-body text-center">
+									<p class="card-text m-0">SEA CLOUD II</p>
+								</div>
+							</a>
+						</div>
+						<div class="swiper-slide">
+							<a href="#" class="card card-video">
+								<div class="card-img-container">
+									<img src="images/icons/play.svg" class="play-icon" alt="Play video">
+									<img src="images/discover-more/videos/videos-thumbnails/our-yatchs-03.jpg" class="card-img" alt="Video">
+								</div>
+								<div class="card-body text-center">
+									<p class="card-text m-0">Sail setting in real handwork</p>
+								</div>
+							</a>
+						</div>
+					</div>
+					<div class="swiper-pagination mb-2"></div>
+				</div>
+			</div>
+			<div class="mb-5">
+				<h2 class="text-primary mb-5">More videos</h2>
+				<div id="more-videos-carousel" class="swiper">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide">
+							<a href="#" class="card card-video">
+								<div class="card-img-container">
+									<img src="images/icons/play.svg" class="play-icon" alt="Play video">
+									<img src="images/discover-more/videos/videos-thumbnails/more-videos-01.jpg" class="card-img" alt="Video">
+								</div>
+								<div class="card-body text-center">
+									<p class="card-text m-0">Introducing the three SEA CLOUDs</p>
+								</div>
+							</a>
+						</div>
+						<div class="swiper-slide">
+							<a href="#" class="card card-video">
+								<div class="card-img-container">
+									<img src="images/icons/play.svg" class="play-icon" alt="Play video">
+									<img src="images/discover-more/videos/videos-thumbnails/more-videos-02.jpg" class="card-img" alt="Video">
+								</div>
+								<div class="card-body text-center">
+									<p class="card-text m-0">SEA CLOUD CRUISES image clip</p>
+								</div>
+							</a>
+						</div>
+						<div class="swiper-slide">
+							<a href="#" class="card card-video">
+								<div class="card-img-container">
+									<img src="images/icons/play.svg" class="play-icon" alt="Play video">
+									<img src="images/discover-more/videos/videos-thumbnails/more-videos-03.jpg" class="card-img" alt="Video">
+								</div>
+								<div class="card-body text-center">
+									<p class="card-text m-0">Sail setting in real handwork</p>
+								</div>
+							</a>
+						</div>
+						<div class="swiper-slide">
+							<a href="#" class="card card-video">
+								<div class="card-img-container">
+									<img src="images/icons/play.svg" class="play-icon" alt="Play video">
+									<img src="images/discover-more/videos/videos-thumbnails/more-videos-04.jpg" class="card-img" alt="Video">
+								</div>
+								<div class="card-body text-center">
+									<p class="card-text m-0">Introducing the three SEA CLOUDs</p>
+								</div>
+							</a>
+						</div>
+						<div class="swiper-slide">
+							<a href="#" class="card card-video">
+								<div class="card-img-container">
+									<img src="images/icons/play.svg" class="play-icon" alt="Play video">
+									<img src="images/discover-more/videos/videos-thumbnails/more-videos-05.jpg" class="card-img" alt="Video">
+								</div>
+								<div class="card-body text-center">
+									<p class="card-text m-0">SEA CLOUD CRUISES image clip</p>
+								</div>
+							</a>
+						</div>
+						<div class="swiper-slide">
+							<a href="#" class="card card-video">
+								<div class="card-img-container">
+									<img src="images/icons/play.svg" class="play-icon" alt="Play video">
+									<img src="images/discover-more/videos/videos-thumbnails/more-videos-06.jpg" class="card-img" alt="Video">
+								</div>
+								<div class="card-body text-center">
+									<p class="card-text m-0">Sail setting in real handwork</p>
+								</div>
+							</a>
+						</div>
+						<div class="swiper-slide">
+							<a href="#" class="card card-video">
+								<div class="card-img-container">
+									<img src="images/icons/play.svg" class="play-icon" alt="Play video">
+									<img src="images/discover-more/videos/videos-thumbnails/more-videos-07.jpg" class="card-img" alt="Video">
+								</div>
+								<div class="card-body text-center">
+									<p class="card-text m-0">Introducing the three SEA CLOUDs</p>
+								</div>
+							</a>
+						</div>
+						<div class="swiper-slide">
+							<a href="#" class="card card-video">
+								<div class="card-img-container">
+									<img src="images/icons/play.svg" class="play-icon" alt="Play video">
+									<img src="images/discover-more/videos/videos-thumbnails/more-videos-08.jpg" class="card-img" alt="Video">
+								</div>
+								<div class="card-body text-center">
+									<p class="card-text m-0">SEA CLOUD CRUISES image clip</p>
+								</div>
+							</a>
+						</div>
+						<div class="swiper-slide">
+							<a href="#" class="card card-video">
+								<div class="card-img-container">
+									<img src="images/icons/play.svg" class="play-icon" alt="Play video">
+									<img src="images/discover-more/videos/videos-thumbnails/more-videos-09.jpg" class="card-img" alt="Video">
+								</div>
+								<div class="card-body text-center">
+									<p class="card-text m-0">Sail setting in real handwork</p>
+								</div>
+							</a>
+						</div>
+					</div>
+					<div class="swiper-pagination mb-2"></div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- /Videos section -->
+
+    <!-- News section -->
+	<section id="news" class="position-relative bg-white">
+		<div class="container-fluid p-0">
+			<div class="row g-3 align-items-end justify-content-evenly">
+				<div class="col-md news-left-column">
+					<div class="news-column-container">
+						<div class="p-5 text-center news-content">
+							<h2 class="px-0 px-md-5">2025<br>Brochure</h2>
+							<div class="divider bg-secondary my-4"></div>
+							<p class="px-0 px-md-5 mb-4">Start planning now for your next luxury getaway. Discover every detail of the SEA CLOUD Difference, including elite itineraries to premier ports aboard sailing yachts.</p>
+							<div class="mb-3">
+								<a href="#" class="btn btn-secondary btn-block-sm">2025 Brochure</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- <div class="col-md-auto px-2 bg-white d-none d-md-flex"></div> -->
+				<div class="col-md news-right-column">
+					<div class="news-column-container">
+						<div class="p-5 bg-white text-center news-content">
+							<h2 class="px-0 px-md-5">Special<br>Offers</h2>
+							<div class="divider bg-secondary my-4"></div>
+							<p class="px-0 px-md-5 mb-4">Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+							<div class="mb-3">
+								<a href="#" class="btn btn-secondary btn-block-sm">More info</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- /News section -->
+
+	<!-- Social sea section -->
+	<section id="social-sea" class="position-relative py-5 bg-dark-seacloud-blue">
+		<div class="container py-5">
+			<div class="row align-items-center justify-content-between text-primary">
+				<div class="col-md col-lg-5 col-xl-4 text-center mb-5 mb-md-0">
+					<img class="d-block mx-auto mb-4" src="images/home/the-ship/the-ship.svg" width="74" height="63" alt="The ship">
+					<h3 class="text-primary">Social at sea</h3>
+					<div class="divider bg-primary my-3"></div>
+					<p class="mb-5">You’re social, we’re social, let’s connect! Follow, like, love, share, comment, tag. Social moments are happening @SEACLOUD CRUISES</p>
+					<div class="social">
+						<a href="#" class="btn-social">
+							<img src="images/icons/facebook-primary.svg" alt="Facebook">
+						</a>
+						<a href="#" class="btn-social">
+							<img src="images/icons/instagram-primary.svg" alt="Instagram">
+						</a>
+						<a href="#" class="btn-social">
+							<img src="images/icons/youtube-primary.svg" alt="Youtube">
+						</a>
+					</div>
+				</div>
+				<div class="col-md col-lg-6">
+					<p class="lead text-center text-md-start">Email subscribers get early access to our luxury travel deals. Sneak peek all the exclusives first, plus stay in touch with all the updates from our sailing world.</p>
+					<form class="my-4" action="">
+						<div class="input-group input-mail mb-3">
+							<input type="text" class="form-control" placeholder="Your mail" aria-label="Your mail" aria-describedby="mail-button-addon">
+							<button class="btn btn-primary" type="submit">Sign up</button>
+						</div>
+					</form>
+					<p class="small text-uppercase letter-spacing-sm text-white text-center-md"><small>By submitting this form, you are consenting to receive marketing emails from: Sea cloud us . You can revoke your consent to receive emails at any time by using the Safe Unsubscribe® link, found at the bottom of every email. Emails are serviced by Constant Contact</small></p>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- /Social sea section -->
+
+	<!-- Footer -->
+	<footer id="footer" class="pt-5 bg-white">
+		<div class="container pt-3 px-5 px-sm-4 px-md-2">
+			<img id="appbarLogo" class="d-block d-md-none mx-auto mx-lg-0 mb-5" src="images/appbar/seacloud-logo.png" width="130" height="92" alt="Logo">
+			<div class="row">
+				<!-- Plan a Sailing -->
+				<div class="col-md-6 col-lg">
+					<div class="accordion accordion-flush footer-accordion" id="accordion-planCruise">
+						<div class="accordion-item">
+							<p class="accordion-header">
+								<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-planCruise" aria-expanded="false" aria-controls="flush-planCruise">Plan a Sailing</button>
+							</p>
+							<div id="flush-planCruise" class="accordion-collapse collapse show" data-bs-parent="#accordion-planCruise">
+								<div class="accordion-body">
+									<ul class="nav nav-list d-block list-unstyled">
+										<li><a class="link link-secondary footer-link" href="#">Find a Sailing</a></li>
+										<li><a class="link link-secondary footer-link" href="#">Find a Travel Advisor</a></li>
+										<li class="accordion footer-sibling-accordion accordion-flush" id="request-info">
+											<div class="accordion-item">
+												<p class="accordion-header">
+													<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#request-info-acc" aria-expanded="false" aria-controls="request-info-acc">Request info</button>
+												</p>
+												<div id="request-info-acc" class="accordion-collapse collapse show" data-bs-parent="#request-info">
+													<div class="accordion-body">
+														<ul class="nav nav-list d-block sibling-list">
+															<li class="mb-0"><a class="link link-secondary footer-link text-primary" href="#">Order Brochure</a></li>
+															<li class="mb-0"><a class="link link-secondary footer-link text-primary" href="#">Sign Up for Offers</a></li>
+															<li class="mb-0"><a class="link link-secondary footer-link text-primary" href="#">Request Quote</a></li>
+															<li class="mb-0"><a class="link link-secondary footer-link text-primary" href="#">Group Travel Perks</a></li>
+															<li class="mb-0"><a class="link link-secondary footer-link text-primary" href="#">Submit Inquiry</a></li>
+														</ul>
+													</div>
+												</div>
+											</div>
+										</li>
+										<li><a class="link link-secondary footer-link" href="#">Special Offers</a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- /Plan a Sailing -->
+
+				<!-- Resources -->
+				<div class="col-md-6 col-lg">
+					<div class="accordion accordion-flush footer-accordion" id="accordion-resoucers">
+						<div class="accordion-item">
+							<p class="accordion-header">
+								<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-resoucers" aria-expanded="false" aria-controls="flush-resoucers">Plan a Resources</button>
+							</p>
+							<div id="flush-resoucers" class="accordion-collapse collapse show" data-bs-parent="#accordion-resoucers">
+								<div class="accordion-body">
+									<ul class="nav nav-list d-block list-unstyled">
+										<li><a class="link link-secondary footer-link" href="#">Frequently Asked Questions</a></li>
+										<li><a class="link link-secondary footer-link" href="#">Digital Brochures</a></li>
+										<li><a class="link link-secondary footer-link" href="#">Videos</a></li>
+										<li><a class="link link-secondary footer-link" href="#">Charters, Meetings & Incentives</a></li>
+										<li><a class="link link-secondary footer-link" href="#">Travel Partner Center</a></li>
+										<li><a class="link link-secondary footer-link" href="#">Sail & Sustain</a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- /Resources -->
+
+				<!-- Company info -->
+				<div class="col-md-6 col-lg">
+					<div class="accordion accordion-flush footer-accordion" id="accordion-compoanyInfo">
+						<div class="accordion-item">
+							<p class="accordion-header">
+								<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-compoanyInfo" aria-expanded="false" aria-controls="flush-compoanyInfo">Sign up for exclusive offers</button>
+							</p>
+							<div id="flush-compoanyInfo" class="accordion-collapse collapse show" data-bs-parent="#accordion-compoanyInfo">
+								<div class="accordion-body">
+									<ul class="nav nav-list d-block list-unstyled">
+										<li><a class="link link-secondary footer-link" href="#">About Us</a></li>
+										<li><a class="link link-secondary footer-link" href="#">Careers</a></li>
+										<li><a class="link link-secondary footer-link" href="#">Press & Media</a></li>
+										<li class="accordion footer-sibling-accordion accordion-flush" id="legal">
+											<div class="accordion-item">
+												<p class="accordion-header">
+													<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#legal-acc" aria-expanded="false" aria-controls="legal-acc">Legal</button>
+												</p>
+												<div id="legal-acc" class="accordion-collapse collapse show" data-bs-parent="#legal">
+													<div class="accordion-body">
+														<ul class="nav nav-list d-block sibling-list">
+															<li class="mb-0"><a class="link link-secondary footer-link text-primary" href="#">Terms & Condition</a></li>
+															<li class="mb-0"><a class="link link-secondary footer-link text-primary" href="#">Refunds</a></li>
+															<li class="mb-0"><a class="link link-secondary footer-link text-primary" href="#">EU regulation</a></li>
+															<li class="mb-0"><a class="link link-secondary footer-link text-primary" href="#">Disclaimer of Liability</a></li>
+															<li class="mb-0"><a class="link link-secondary footer-link text-primary" href="#">Legal Details</a></li>
+														</ul>
+													</div>
+												</div>
+											</div>
+										</li>
+										<li><a class="link link-secondary footer-link" href="#">Privacy Policy</a></li>
+										<li><a class="link link-secondary footer-link" href="#">Contact Us</a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- /Company info -->
+
+				<!-- Sign up -->
+				<div class="col-md-6 col-lg">
+					<div class="accordion accordion-flush footer-accordion" id="accordion-search">
+						<div class="accordion-item">
+							<p class="accordion-header">
+								<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-search" aria-expanded="false" aria-controls="flush-search">Find a Sailing</button>
+							</p>
+							<div id="flush-search" class="accordion-collapse collapse show" data-bs-parent="#accordion-search">
+								<div class="accordion-body">
+									<!-- <form class="my-4" action="">
+										<div class="input-group input-mail mb-3">
+											<input type="text" class="form-control" placeholder="Your mail" aria-label="Your mail" aria-describedby="mail-button-addon">
+											<button class="btn btn-primary px-2" type="submit">
+												<img width="25" height="15" src="images/icons/double-arrow-right-secondary.svg" alt="Sign up">
+												<span class="d-block d-md-none"></span>
+											</button>
+										</div>
+									</form> -->
+									<form action="" class="">
+										<div class="row gy-2 gx-0 bg-transparent pb-3 pt-2 justify-content-center">
+											<div class=" position-relative">
+												<select class="form-select" aria-label="Default select example">
+													<option selected>Ship</option>
+													<option value="1">One</option>
+													<option value="2">Two</option>
+													<option value="3">Three</option>
+												</select>
+											</div>
+						
+											<div class="divider bg-primary"></div>
+						
+											<div class=" position-relative">
+												<select class="form-select" aria-label="Default select example">
+													<option selected>Date</option>
+													<option value="1">One</option>
+													<option value="2">Two</option>
+													<option value="3">Three</option>
+												</select>
+											</div>
+						
+											<div class="divider bg-primary"></div>
+						
+											<div class="">
+												<select class="form-select" aria-label="Default select example">
+													<option selected>Sailing theme</option>
+													<option value="1">One</option>
+													<option value="2">Two</option>
+													<option value="3">Three</option>
+												</select>
+											</div>
+						
+											<div class="divider bg-primary mb-2"></div>
+						
+											<div class=" d-grid gap-2">
+												<button type="submit" class="btn btn-primary btn-block mb-3 mb-md-0 text-white">Serch</button>
+											</div>
+										</div>
+									</form>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- <div class="accordion accordion-flush footer-accordion border-0" id="accordion-followUs">
+						<div class="accordion-item">
+							<p class="accordion-header">
+								<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-followUs" aria-expanded="false" aria-controls="flush-followUs">Follow us</button>
+							</p>
+							<div id="flush-followUs" class="accordion-collapse collapse show" data-bs-parent="#accordion-followUs">
+								<div class="accordion-body">
+									<div class="social">
+										<a href="#" class="btn-social">
+											<img src="images/icons/facebook-primary.svg" alt="Facebook">
+										</a>
+										<a href="#" class="btn-social">
+											<img src="images/icons/instagram-primary.svg" alt="Instagram">
+										</a>
+										<a href="#" class="btn-social">
+											<img src="images/icons/youtube-primary.svg" alt="Youtube">
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div> -->
+				</div>
+				<!-- /Sign up -->
+			</div>
+		</div>
+		<div class="container-fluid text-center px-5 px-sm-4">
+			<p class="date py-4 m-0 text-uppercase letter-spacing-md fw-normal"><small>© sea cloud cruises <span id="year"></span></small></p>
+		</div>
+	</footer>
+	<!-- /Footer -->
+</body>
+</html>
