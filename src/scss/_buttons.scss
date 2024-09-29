@@ -3,6 +3,9 @@
 .btn {
     letter-spacing: 2px;
     text-transform: uppercase;
+	&.btn-primary {
+		color: white;
+	}
 }
 .btn-block-xs {
 	width: 100%;

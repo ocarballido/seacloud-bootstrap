@@ -61,6 +61,17 @@
     border: 0.75rem solid white;
 }
 
+// Font
+.font-primary {
+    font-family: "Amalfi Coast";
+}
+.font-secondary {
+    font-family: "Libre Baskerville";
+}
+.font-body {
+    font-family: "Roboto";
+}
+
 // Blur
 .blur-10 {
     backdrop-filter: blur(5px);

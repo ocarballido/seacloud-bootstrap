@@ -1,0 +1,96 @@
+// General styles
+@import "./general-styles";
+
+// Bootstrap components
+@import 'bootstrap/scss/accordion';
+@import 'bootstrap/scss/carousel';
+@import 'bootstrap/scss/card';
+@import 'bootstrap/scss/forms';
+@import 'bootstrap/scss/pagination';
+
+// Custom components
+@import './components/accordion';
+@import './components/card';
+@import './components/pagination';
+@import './components/carousel';
+@import './components/divider';
+@import './forms';
+@import './utils';
+
+// Custom pages styles
+// Videos
+#hero {
+    .hero-cover-image {
+        background-image: url("../images/find-your-sailing/book/hero.jpg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        .form-container {
+            background: rgb(14,32,80);
+            background: linear-gradient(0deg, rgba(14,32,80,1) 0%, rgba(14,32,80,0) 100%);
+            width: 100%;
+        }
+    }
+}
+
+// sailings-list
+#sailings {
+    .sailing-item {
+        padding-bottom: 1rem;
+        padding-top: 1rem;
+    }
+}
+
+// News section
+#news {
+    border: 0.75rem solid white;
+    .news-right-column {
+        display: flex;
+        min-height: 900px;
+        .news-column-container {
+            background-image: url("../images/home/news/news-right-bg.jpg");
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+    }
+    .news-left-column {
+        display: flex;
+        min-height: 900px;
+        .news-column-container {
+            background-image: url("../images/home/news/news-left-bg.jpg");
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+    }
+    .news-column-container {
+        align-items: flex-end;
+        display: flex;
+        width: 100%;
+    }
+    .news-content {
+        max-width: 450px;
+        margin: 0 auto;
+    }
+}
+
+// Media queries
+@include media-breakpoint-up(sm) {
+    #news {
+        border: 1.25rem solid white;
+    }
+}
+@include media-breakpoint-up(md) {
+    
+}
+
+@include media-breakpoint-up(lg) {
+    
+}
+@include media-breakpoint-up(xl) {
+    
+}
+@include media-breakpoint-up(xxl) {
+    
+}

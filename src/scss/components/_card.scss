@@ -113,6 +113,43 @@
         }
     }
 }
+.card-sails-content {
+    height: 100%;
+    position: relative;
+    .ship-icon {
+        position: absolute;
+        right: 1rem;
+        top: 1rem;
+    }
+    &.odd {
+        background-color: #e4f0f5;
+    }
+    &.even {
+        background-color: white;
+    }
+}
+.card-sails-image {
+    .swiper {
+        height: 100%;
+        .swiper-pagination {
+            .swiper-pagination-bullet {
+                background-color: white;
+                height: 10px;
+                opacity: .4;
+                width: 10px;
+            }
+            .swiper-pagination-bullet-active {
+                opacity: 1;
+            }
+        }
+    }
+    img {
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+        width: 100%;
+    }
+}
 
 // Queries
 // @include media-breakpoint-up(sm) { ... }
