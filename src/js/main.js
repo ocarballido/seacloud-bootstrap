@@ -95,8 +95,8 @@ const highlightsCarousel = new Swiper('#highlights-carousel', {
 const toggleClassShowOnQuery = () => {
 	const screenWidth = window.innerWidth;
 
-	const accordionsButon = document.querySelectorAll(".accordion-button");
-	const accordionsBody = document.querySelectorAll(".accordion-collapse");
+	const accordionsButon = document.querySelectorAll(".accordion-button-form");
+	const accordionsBody = document.querySelectorAll(".accordion-collapse-form");
 
 	for (let i = 0; i < accordionsBody.length; i++) {
 		const buttonEl = accordionsButon[i];

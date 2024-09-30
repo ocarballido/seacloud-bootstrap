@@ -59,8 +59,8 @@ export const footerAccordionUx = () => {
 
         const footer = document.getElementById("footer");
 
-        const accordionsButon = footer.querySelectorAll(".accordion-button");
-        const accordionsBody = footer.querySelectorAll(".accordion-collapse");
+        const accordionsButon = footer.querySelectorAll(".accordion-button-footer");
+        const accordionsBody = footer.querySelectorAll(".accordion-collapse-footer");
 
         for (let i = 0; i < accordionsBody.length; i++) {
             const buttonEl = accordionsButon[i];
