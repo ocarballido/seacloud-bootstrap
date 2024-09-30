@@ -74,10 +74,6 @@ const commonCarousel = new Swiper('.common-carousel', {
 	spaceBetween: 0,
 	speed: 750,
 	loop: true,
-	// autoplay: {
-    //     delay: 5000,
-    //     disableOnInteraction: false,
-    // },
 	pagination: {
 		el: '.swiper-pagination',
 		clickable: true,
@@ -96,14 +92,11 @@ const highlightsCarousel = new Swiper('#highlights-carousel', {
 	modules: [ Autoplay, Navigation, Pagination ],
 });
 
-// Footer accordion
 const toggleClassShowOnQuery = () => {
 	const screenWidth = window.innerWidth;
 
-	const accordionForm = document.getElementById("accordionForm");
-
-	const accordionsButon = accordionForm.querySelectorAll(".accordion-button");
-	const accordionsBody = accordionForm.querySelectorAll(".accordion-collapse");
+	const accordionsButon = document.querySelectorAll(".accordion-button");
+	const accordionsBody = document.querySelectorAll(".accordion-collapse");
 
 	for (let i = 0; i < accordionsBody.length; i++) {
 		const buttonEl = accordionsButon[i];
@@ -132,23 +125,3 @@ const toggleClassShowOnQuery = () => {
 
 toggleClassShowOnQuery();
 window.addEventListener("resize", toggleClassShowOnQuery);
-// Animation scroll
-// let responsive = gsap.matchMedia();
-
-// let sections = gsap.utils.toArray(".slide");
-
-// responsive.add("(min-width: 768px)", () => {
-// 	gsap.to(sections, {
-// 		xPercent: -100 * (sections.length - 1),
-// 		ease: "none",
-// 		scrollTrigger: {
-// 			trigger: ".horizontal-sliders",
-// 			// pin: true,
-// 			pin: ".main",
-// 			pinSpacing: true,
-// 			scrub: 1,
-// 			start: "center center",
-// 			// end: "bottom 70%",
-// 		}
-// 	});
-// });

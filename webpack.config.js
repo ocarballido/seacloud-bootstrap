@@ -241,28 +241,28 @@ export default {
       directory: path.resolve(process.cwd(), "public")
     },
     watchFiles: [
-      path.resolve(process.cwd(), "index.html"),///
-      path.resolve(process.cwd(), "special-offers.html"),///
-      path.resolve(process.cwd(), "luxury-all-inclusive.html"),///
-      path.resolve(process.cwd(), "luxury-five-stars.html"),///
-      path.resolve(process.cwd(), "luxury-lifestyle.html"),///
-      path.resolve(process.cwd(), "luxury-sailing-sustainability.html"),///
-      path.resolve(process.cwd(), "luxury-celebrate.html"),///
-      path.resolve(process.cwd(), "yachts-sea-cloud.html"),///
-      path.resolve(process.cwd(), "terms-and-conditions.html"),///
-      path.resolve(process.cwd(), "refund-instructions.html"),///
-      path.resolve(process.cwd(), "eu-regulation.html"),///
-      path.resolve(process.cwd(), "disclaimer-or-liability.html"),///
-      path.resolve(process.cwd(), "legal-details.html"),///
+      path.resolve(process.cwd(), "index.html"),
+      path.resolve(process.cwd(), "special-offers.html"),
+      path.resolve(process.cwd(), "luxury-all-inclusive.html"),
+      path.resolve(process.cwd(), "luxury-five-stars.html"),
+      path.resolve(process.cwd(), "luxury-lifestyle.html"),
+      path.resolve(process.cwd(), "luxury-sailing-sustainability.html"),
+      path.resolve(process.cwd(), "luxury-celebrate.html"),
+      path.resolve(process.cwd(), "yachts-sea-cloud.html"),
+      path.resolve(process.cwd(), "terms-and-conditions.html"),
+      path.resolve(process.cwd(), "refund-instructions.html"),
+      path.resolve(process.cwd(), "eu-regulation.html"),
+      path.resolve(process.cwd(), "disclaimer-or-liability.html"),
+      path.resolve(process.cwd(), "legal-details.html"),
       path.resolve(process.cwd(), "privacy-information.html"),
-      path.resolve(process.cwd(), "faq.html"),///
-      path.resolve(process.cwd(), "destinations-world-map.html"),///
-      path.resolve(process.cwd(), "destinations-caribbean.html"),///
-      path.resolve(process.cwd(), "destinations-atlantic-crossing.html"),///
-      path.resolve(process.cwd(), "destinations-mediterranean.html"),///
-      path.resolve(process.cwd(), "discover-more-digital-brochure.html"),///
-      path.resolve(process.cwd(), "discover-more-videos.html"),///
-      path.resolve(process.cwd(), "find-your-sailing-book.html"),///
+      path.resolve(process.cwd(), "faq.html"),
+      path.resolve(process.cwd(), "destinations-world-map.html"),
+      path.resolve(process.cwd(), "destinations-caribbean.html"),
+      path.resolve(process.cwd(), "destinations-atlantic-crossing.html"),
+      path.resolve(process.cwd(), "destinations-mediterranean.html"),
+      path.resolve(process.cwd(), "discover-more-digital-brochure.html"),
+      path.resolve(process.cwd(), "discover-more-videos.html"),
+      path.resolve(process.cwd(), "find-your-sailing-book.html"),
     ],
     compress: true,
     port: process.env.PORT || 9090,
