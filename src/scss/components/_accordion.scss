@@ -226,6 +226,62 @@
             padding: 1rem;
         }
     }
+    &.read-more-accordion {
+        --bs-accordion-bg: transparent;
+        --bs-accordion-active-bg: transparent;
+        --bs-accordion-btn-focus-border-color: transparent;
+        --bs-accordion-border-color: transparent;
+        --bs-accordion-border-width: none;
+        --bs-accordion-btn-icon: url('../images/icons/show-more.svg');
+        --bs-accordion-btn-active-icon: url('../images/icons/show-more.svg');
+        --bs-accordion-btn-padding-x: 0;
+        --bs-accordion-body-padding-x: 0;
+        .accordion-button {
+            color: $secondary;
+            display: flex;
+            font-size: .65rem;
+            font-weight: 500;
+            letter-spacing: 2px;
+            padding: 0;
+            text-transform: uppercase;
+            &.collapsed {
+                .read-more {
+                    display: block;
+                }
+                .read-less {
+                    display: none;
+                }
+            }
+            .read-more {
+                display: none;
+            }
+            .read-less {
+                display: block;
+            }
+            &:focus {
+                box-shadow: none;
+            }
+            &:after {
+                background-position: center;
+                background-size: 10px 16px;
+                display: inline-block;
+                vertical-align: middle;
+                height: 20px;
+                margin-left: 0.25rem;
+                width: 20px;
+            }
+        }
+        .accordion-body {
+            padding: 0;
+        }
+        &.primary {
+            .accordion-button {
+                color: $primary;
+            }
+            --bs-accordion-btn-icon: url('../images/icons/show-more-primary.svg');
+            --bs-accordion-btn-active-icon: url('../images/icons/show-more-primary.svg');
+        }
+    }
 }
 
 // Queries

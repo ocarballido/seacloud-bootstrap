@@ -1,0 +1,30 @@
+.spinner-container {
+    padding: 1rem;
+    text-align: center;
+}
+.spinner-dot {
+    animation-fill-mode: both;
+    animation: dotAnimation 1s infinite ease-in-out;
+    background-color: $primary;
+    border-radius: 50%;
+    display: inline-block;
+    height: 12px;
+    margin: 0 .15rem;
+    width: 12px;
+    &.first {
+        animation-delay: 0s;
+    }
+    &.middle {
+        animation-delay: 0.2s;
+    }
+    &.last {
+        animation-delay: 0.4s;
+    }
+}
+  
+@keyframes dotAnimation {
+    0% { transform: scale(0.1); opacity: 0; }
+    50% { transform: scale(1); opacity: 1; }
+    100% { transform: scale(0.1); opacity: 0; }
+}
+  
