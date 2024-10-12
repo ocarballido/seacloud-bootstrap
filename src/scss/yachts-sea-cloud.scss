@@ -6,6 +6,7 @@
 @import 'bootstrap/scss/carousel';
 @import 'bootstrap/scss/card';
 @import 'bootstrap/scss/forms';
+@import 'bootstrap/scss/modal';
 @import 'bootstrap/scss/nav';
 
 // Custom components
@@ -14,6 +15,7 @@
 @import './components/carousel';
 @import './components/divider';
 @import './components/nav';
+@import './components/stepper';
 @import './forms';
 @import './utils';
 
@@ -25,7 +27,6 @@
     }
 }
 
-// Section Poster
 .poster-section {
     #section-bg {
         left: 0;
@@ -79,6 +80,130 @@
             position: absolute;
             top: 0;
             transition: all 0.5s;
+        }
+    }
+}
+
+#zones-section {
+    .zones-content {
+        height: 100%;
+        left: 0;
+        position: absolute;
+        top: 0;
+        width: 100%;
+        z-index: 0;
+    }
+}
+
+#deck-plan-section {
+    #deck-slider {
+        .ship-illustration {
+            padding-bottom: 30%;
+            position: relative;
+            img {
+                object-fit: contain;
+                object-position: center;
+                position: absolute;
+            }
+        }
+    }
+    .legend {
+        .legend-item {
+            align-items: center;
+            display: flex;
+            margin-bottom: .35rem;
+            opacity: .2;
+            transition: all .4s;
+            &.active {
+                opacity: 1;
+            }
+            .legend-badge {
+                color: white;
+                letter-spacing: 1px;
+                padding: 0.1rem 0.75rem;
+                &.cat-1 {
+                    background-color: #F9B3CB;
+                }
+                &.cat-2 {
+                    background-color: #BB92BA;
+                }
+                &.cat-3 {
+                    background-color: #2C8FBD;
+                }
+                &.cat-4 {
+                    background-color: #8FCEE5;
+                }
+                &.cat-5 {
+                    background-color: #00A59D;
+                }
+                &.cat-c {
+                    background-color: #F79675;
+                }
+                &.cat-b {
+                    background-color: #FBB592;
+                }
+                &.cat-a {
+                    background-color: #F8CA74;
+                }
+            }
+            .legend-text {
+                margin-left: .75rem;
+            }
+        }
+        .legend-with-icon {
+            .icon-container {
+                align-items: center;
+                display: flex;
+                height: 24px;
+                justify-content: center;
+                width: 24px;
+            }
+        }
+    }
+}
+
+#sail-diagram-section {
+    .diagram-content {
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 400px;
+    }
+    .diagram-actions {
+        display: flex;
+        flex-wrap: wrap;
+        gap: .5rem;
+        justify-content: center;
+    }
+}
+
+#history-section {
+    border: 1rem solid white;
+    .history-text-content {
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 400px;
+    }
+    .swiper {
+        .swiper-slide {
+            max-width: 380px;
+        }
+    }
+    .history-card {
+        padding-left: 1rem;
+        padding-right: 1rem;
+        .history-image {
+            display: block;
+            height: 185px;
+            width: 100%;
+        }
+    }
+    .navigation {
+        .swiper-button-prev, .swiper-button-next {
+            height: 24px;
+            width: 14px;
+            &:after {
+                display: none;
+            }
         }
     }
 }
@@ -150,6 +275,9 @@
         .hero-content {
             background-color: transparent;
         }
+    }
+    #history-section {
+        border: 1.5rem solid white;
     }
 }
 @include media-breakpoint-up(lg) {
