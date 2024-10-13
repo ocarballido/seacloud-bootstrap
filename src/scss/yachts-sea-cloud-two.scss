@@ -124,29 +124,23 @@
                 color: white;
                 letter-spacing: 1px;
                 padding: 0.1rem 0.75rem;
-                &.cat-1 {
-                    background-color: #F9B3CB;
-                }
-                &.cat-2 {
-                    background-color: #BB92BA;
-                }
-                &.cat-3 {
-                    background-color: #2C8FBD;
-                }
-                &.cat-4 {
-                    background-color: #8FCEE5;
-                }
-                &.cat-5 {
-                    background-color: #00A59D;
-                }
-                &.cat-c {
-                    background-color: #F79675;
-                }
-                &.cat-b {
-                    background-color: #FBB592;
-                }
                 &.cat-a {
                     background-color: #F8CA74;
+                }
+                &.cat-b {
+                    background-color: #F09B7E;
+                }
+                &.cat-c {
+                    background-color: #F9B3CB;
+                }
+                &.cat-d {
+                    background-color: #BB92BA;
+                }
+                &.cat-e {
+                    background-color: #3E95BD;
+                }
+                &.cat-f {
+                    background-color: #8FCEE5;
                 }
             }
             .legend-text {
@@ -166,6 +160,9 @@
 }
 
 #sail-diagram-section {
+    border-left: 1rem solid white;
+    border-right: 1rem solid white;
+    border-bottom: 1rem solid white;
     .diagram-content {
         margin-left: auto;
         margin-right: auto;
@@ -176,50 +173,6 @@
         flex-wrap: wrap;
         gap: .5rem;
         justify-content: center;
-    }
-}
-
-#history-section {
-    border: 1rem solid white;
-    .history-text-content {
-        margin-left: auto;
-        margin-right: auto;
-        max-width: 400px;
-    }
-    .swiper {
-        .swiper-slide {
-            max-width: 380px;
-        }
-    }
-    .history-card {
-        padding-left: 1rem;
-        padding-right: 1rem;
-        .history-image {
-            display: block;
-            height: 185px;
-            width: 100%;
-        }
-    }
-    .navigation {
-        .swiper-button-prev, .swiper-button-next {
-            height: 24px;
-            width: 14px;
-            &:after {
-                display: none;
-            }
-        }
-    }
-    .read-more-accordion {
-        .accordion-collapse {
-            &.collapse:not(.show) {
-                display: block;
-                max-height: 125px;
-                overflow: hidden;
-            }
-            &.collapsing {
-                min-height: 125px;
-            }
-        }
     }
 }
 
@@ -296,8 +249,10 @@
             margin: 1.5rem;
         }
     }
-    #history-section {
-        border: 1.5rem solid white;
+    #sail-diagram-section {
+        border-left: 1.5rem solid white;
+        border-right: 1.5rem solid white;
+        border-bottom: 1.5rem solid white;
     }
 }
 @include media-breakpoint-up(lg) {

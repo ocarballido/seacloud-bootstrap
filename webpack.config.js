@@ -115,6 +115,11 @@ const htmlPluginConfigs = [
     filename: "find-your-sailing-book.html", // Output filename (e.g., "public/find-your-sailing-book.html")
     chunks: ["find-your-sailing-book"], // Specify which chunks to include (find-your-sailing-book is defined in your entry points)
   },
+  {
+    template: path.resolve(process.cwd(), "yachts-sea-cloud-two.html"), // Path to another HTML template
+    filename: "yachts-sea-cloud-two.html", // Output filename (e.g., "public/yachts-sea-cloud-two.html")
+    chunks: ["yachts-sea-cloud-two"], // Specify which chunks to include (yachts-sea-cloud-two is defined in your entry points)
+  },
   // Add more objects for additional HTML files as needed
 ];
 const htmlPlugins = htmlPluginConfigs.map((config) => new HtmlWebpackPlugin(config));
@@ -144,6 +149,7 @@ export default {
     "discover-more-digital-brochure": "./src/js/discover-more-digital-brochure.js",
     "discover-more-videos": "./src/js/discover-more-videos.js",
     "find-your-sailing-book": "./src/js/find-your-sailing-book.js",
+    "yachts-sea-cloud-two": "./src/js/yachts-sea-cloud-two.js",
   },
 
   // Define the destination directory and filenames of compiled resources
@@ -263,6 +269,7 @@ export default {
       path.resolve(process.cwd(), "discover-more-digital-brochure.html"),
       path.resolve(process.cwd(), "discover-more-videos.html"),
       path.resolve(process.cwd(), "find-your-sailing-book.html"),
+      path.resolve(process.cwd(), "yachts-sea-cloud-two.html"),
     ],
     compress: true,
     port: process.env.PORT || 9090,
