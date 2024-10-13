@@ -1,0 +1,266 @@
+// General styles
+@import "./general-styles";
+
+// Bootstrap components
+@import 'bootstrap/scss/accordion';
+@import 'bootstrap/scss/carousel';
+@import 'bootstrap/scss/card';
+@import 'bootstrap/scss/forms';
+@import 'bootstrap/scss/modal';
+@import 'bootstrap/scss/nav';
+
+// Custom components
+@import './components/accordion';
+@import './components/card';
+@import './components/carousel';
+@import './components/divider';
+@import './components/nav';
+@import './components/stepper';
+@import './forms';
+@import './utils';
+
+// Custom pages styles
+// Hero section
+#hero {
+    .content-container {
+        padding-top: 200px;
+    }
+}
+
+.poster-section {
+    #section-bg {
+        left: 0;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        width: 100%;
+        img {
+            left: 0;
+            position: absolute;
+            transition: all 0.5s;
+            top: 0;
+        }
+    }
+    .content-container {
+        padding-bottom: 8rem;
+        padding-top: 4rem;
+    }
+    .swiper-pagination {
+        bottom: 60px !important;
+    }
+    #section-bg-mobile {
+        height: 450px;
+        overflow: hidden;
+        position: relative;
+        width: 100%;
+        img {
+            left: 0;
+            position: absolute;
+            transition: all 0.5s;
+            top: 0;
+        }
+    }
+}
+
+#postcard-section {
+    border: 1.25rem solid white;
+    .half-carousel {
+        padding: 5rem 0;
+    }
+    .content-container {
+        margin: 0 auto;
+        max-width: 400px;
+        padding: 1.5rem 1.5rem 8rem 1.5rem;
+    }
+    .postcard-images {
+        min-height: 400px;
+        position: relative;
+        img {
+            left: 0;
+            position: absolute;
+            top: 0;
+            transition: all 0.5s;
+        }
+    }
+}
+
+#zones-section {
+    .zones-content {
+        height: 100%;
+        left: 0;
+        position: absolute;
+        top: 0;
+        width: 100%;
+        z-index: 0;
+    }
+}
+
+#deck-plan-section {
+    .border-container {
+        margin: 1rem;
+    }
+    #deck-slider {
+        .ship-illustration {
+            padding-bottom: 30%;
+            position: relative;
+            img {
+                object-fit: contain;
+                object-position: center;
+                position: absolute;
+            }
+        }
+    }
+    .legend {
+        .legend-item {
+            align-items: center;
+            display: flex;
+            margin-bottom: .35rem;
+            opacity: .2;
+            transition: all .4s;
+            &.active {
+                opacity: 1;
+            }
+            .legend-badge {
+                color: white;
+                letter-spacing: 1px;
+                padding: 0.1rem 0.75rem;
+                &.cat-a {
+                    background-color: #F8CA74;
+                }
+                &.cat-b {
+                    background-color: #F09B7E;
+                }
+                &.cat-c {
+                    background-color: #F9B3CB;
+                }
+                &.cat-d {
+                    background-color: #BB92BA;
+                }
+                &.cat-e {
+                    background-color: #3E95BD;
+                }
+                &.cat-f {
+                    background-color: #00A59D;
+                }
+            }
+            .legend-text {
+                margin-left: .75rem;
+            }
+        }
+        .legend-with-icon {
+            .icon-container {
+                align-items: center;
+                display: flex;
+                height: 24px;
+                justify-content: center;
+                width: 24px;
+            }
+        }
+    }
+}
+
+#sail-diagram-section {
+    border-left: 1rem solid white;
+    border-right: 1rem solid white;
+    border-bottom: 1rem solid white;
+    .diagram-content {
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 400px;
+    }
+    .diagram-actions {
+        display: flex;
+        flex-wrap: wrap;
+        gap: .5rem;
+        justify-content: center;
+    }
+}
+
+// Highlight section
+#highlights {
+    .swiper {
+        .swiper-slide {
+            max-width: 300px;
+        }
+    }
+}
+
+// News section
+#news {
+    border: 0.75rem solid white;
+    .news-right-column {
+        display: flex;
+        min-height: 900px;
+        .news-column-container {
+            background-image: url("../images/home/news/news-right-bg.jpg");
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+    }
+    .news-left-column {
+        display: flex;
+        min-height: 900px;
+        .news-column-container {
+            background-image: url("../images/home/news/news-left-bg.jpg");
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+    }
+    .news-column-container {
+        align-items: flex-end;
+        display: flex;
+        width: 100%;
+    }
+    .news-content {
+        max-width: 450px;
+        margin: 0 auto;
+    }
+}
+
+// Media queries
+@include media-breakpoint-up(sm) {
+    #news {
+        border: 1.25rem solid white;
+    }
+    #highlights {
+        .swiper {
+            .swiper-slide {
+                max-width: 350px;
+            }
+        }
+    }
+}
+@include media-breakpoint-up(md) {
+    #hero-section {
+        .home-hero-slider {
+            position: absolute;
+            &:before {
+                display: none;
+            }
+        }
+        .hero-content {
+            background-color: transparent;
+        }
+    }
+    #deck-plan-section {
+        .border-container {
+            margin: 1.5rem;
+        }
+    }
+    #sail-diagram-section {
+        border-left: 1.5rem solid white;
+        border-right: 1.5rem solid white;
+        border-bottom: 1.5rem solid white;
+    }
+}
+@include media-breakpoint-up(lg) {
+    
+}
+@include media-breakpoint-up(xl) {
+    
+}
+@include media-breakpoint-up(xxl) {
+    
+}
