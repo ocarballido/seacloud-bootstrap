@@ -21,12 +21,6 @@
 
 // Custom pages styles
 // Hero section
-#hero {
-    .content-container {
-        padding-top: 200px;
-    }
-}
-
 .poster-section {
     #section-bg {
         left: 0;
@@ -42,7 +36,7 @@
         }
     }
     .content-container {
-        padding-bottom: 8rem;
+        padding-bottom: 4rem;
         padding-top: 4rem;
     }
     .swiper-pagination {
@@ -280,15 +274,10 @@
     }
 }
 @include media-breakpoint-up(md) {
-    #hero-section {
-        .home-hero-slider {
-            position: absolute;
-            &:before {
-                display: none;
-            }
-        }
-        .hero-content {
-            background-color: transparent;
+    .poster-section {
+        .content-container {
+            padding-bottom: 8rem;
+            padding-top: 200px;
         }
     }
     #deck-plan-section {
