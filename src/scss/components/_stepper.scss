@@ -39,26 +39,20 @@
         }
     }
     &.secondary {
+        border-color: $secondary;
         .stepper-bullet {
-            background-color: $secondary;
-        }
-        .stepper-track {
             background-color: $secondary;
         }
     }
     &.white {
+        border-color: $white;
         .stepper-bullet {
-            background-color: white;
-        }
-        .stepper-track {
             background-color: white;
         }
     }
     &.black {
+        border-color: black;
         .stepper-bullet {
-            background-color: black;
-        }
-        .stepper-track {
             background-color: black;
         }
     }

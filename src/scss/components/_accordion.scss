@@ -103,6 +103,36 @@
                 }
             }
         }
+        &.zig-zag-accordion {
+            .accordion-header {
+                max-width: 760px;
+                margin: auto;
+                padding: 0;
+                .price {
+                    margin-left: auto;
+                }
+            }
+            .accordion-body {
+                padding-bottom: 1.5rem;
+                padding-top: 1.5rem;
+            }
+            .accordion-item {
+                .accordion-button {
+                    background-color: transparent;
+                    padding: .75rem 1rem;
+                }
+                &:nth-child(odd) {
+                    .accordion-header {
+                        background-color: #F6EFE8;
+                    }
+                }
+                &:first-child {
+                    .accordion-header {
+                        border-top: 1px solid $primary;
+                    }
+                }
+            }
+        }
     }
     &.accordion-form {
         --bs-accordion-bg: transparent;
