@@ -9,126 +9,151 @@ const htmlPluginConfigs = [
     template: path.resolve(process.cwd(), "index.html"), // Path to your main HTML template
     filename: "index.html", // Output filename (e.g., "public/index.html")
     chunks: ["main"], // Specify which chunks to include (main is defined in your entry points)
+    minify: false,
   },
   {
     template: path.resolve(process.cwd(), "special-offers.html"), // Path to another HTML template
     filename: "special-offers.html", // Output filename (e.g., "public/special-offers.html")
     chunks: ["special-offers"], // Specify which chunks to include (special-offers is defined in your entry points)
+    minify: false,
   },
   {
     template: path.resolve(process.cwd(), "luxury-all-inclusive.html"), // Path to another HTML template
     filename: "luxury-all-inclusive.html", // Output filename (e.g., "public/luxury-all-inclusive.html")
     chunks: ["luxury-all-inclusive"], // Specify which chunks to include (luxury-all-inclusive is defined in your entry points)
+    minify: false,
   },
   {
     template: path.resolve(process.cwd(), "luxury-five-stars.html"), // Path to another HTML template
     filename: "luxury-five-stars.html", // Output filename (e.g., "public/luxury-five-stars.html")
     chunks: ["luxury-five-stars"], // Specify which chunks to include (luxury-five-stars is defined in your entry points)
+    minify: false,
   },
   {
     template: path.resolve(process.cwd(), "luxury-lifestyle.html"), // Path to another HTML template
     filename: "luxury-lifestyle.html", // Output filename (e.g., "public/luxury-lifestyle.html")
     chunks: ["luxury-lifestyle"], // Specify which chunks to include (luxury-lifestyle is defined in your entry points)
+    minify: false,
   },
   {
     template: path.resolve(process.cwd(), "luxury-sailing-sustainability.html"), // Path to another HTML template
     filename: "luxury-sailing-sustainability.html", // Output filename (e.g., "public/luxury-sailing-sustainability.html")
     chunks: ["luxury-sailing-sustainability"], // Specify which chunks to include (luxury-sailing-sustainability is defined in your entry points)
+    minify: false,
   },
   {
     template: path.resolve(process.cwd(), "luxury-celebrate.html"), // Path to another HTML template
     filename: "luxury-celebrate.html", // Output filename (e.g., "public/luxury-celebrate.html")
     chunks: ["luxury-celebrate"], // Specify which chunks to include (luxury-celebrate is defined in your entry points)
+    minify: false,
   },
   {
     template: path.resolve(process.cwd(), "yachts-sea-cloud.html"), // Path to another HTML template
     filename: "yachts-sea-cloud.html", // Output filename (e.g., "public/yachts-sea-cloud.html")
     chunks: ["yachts-sea-cloud"], // Specify which chunks to include (yachts-sea-cloud is defined in your entry points)
+    minify: false,
   },
   {
     template: path.resolve(process.cwd(), "terms-and-conditions.html"), // Path to another HTML template
     filename: "terms-and-conditions.html", // Output filename (e.g., "public/terms-and-conditions.html")
     chunks: ["terms-and-conditions"], // Specify which chunks to include (terms-and-conditions is defined in your entry points)
+    minify: false,
   },
   {
     template: path.resolve(process.cwd(), "refund-instructions.html"), // Path to another HTML template
     filename: "refund-instructions.html", // Output filename (e.g., "public/refund-instructions.html")
     chunks: ["refund-instructions"], // Specify which chunks to include (refund-instructions is defined in your entry points)
+    minify: false,
   },
   {
     template: path.resolve(process.cwd(), "eu-regulation.html"), // Path to another HTML template
     filename: "eu-regulation.html", // Output filename (e.g., "public/eu-regulation.html")
     chunks: ["eu-regulation"], // Specify which chunks to include (eu-regulation is defined in your entry points)
+    minify: false,
   },
   {
     template: path.resolve(process.cwd(), "disclaimer-or-liability.html"), // Path to another HTML template
     filename: "disclaimer-or-liability.html", // Output filename (e.g., "public/disclaimer-or-liability.html")
     chunks: ["disclaimer-or-liability"], // Specify which chunks to include (disclaimer-or-liability is defined in your entry points)
+    minify: false,
   },
   {
     template: path.resolve(process.cwd(), "legal-details.html"), // Path to another HTML template
     filename: "legal-details.html", // Output filename (e.g., "public/legal-details.html")
     chunks: ["legal-details"], // Specify which chunks to include (legal-details is defined in your entry points)
+    minify: false,
   },
   {
     template: path.resolve(process.cwd(), "privacy-information.html"), // Path to another HTML template
     filename: "privacy-information.html", // Output filename (e.g., "public/privacy-information.html")
     chunks: ["privacy-information"], // Specify which chunks to include (privacy-information is defined in your entry points)
+    minify: false,
   },
   {
     template: path.resolve(process.cwd(), "faq.html"), // Path to another HTML template
     filename: "faq.html", // Output filename (e.g., "public/faq.html")
     chunks: ["faq"], // Specify which chunks to include (faq is defined in your entry points)
+    minify: false,
   },
   {
     template: path.resolve(process.cwd(), "destinations-world-map.html"), // Path to another HTML template
     filename: "destinations-world-map.html", // Output filename (e.g., "public/destinations-world-map.html")
     chunks: ["destinations-world-map"], // Specify which chunks to include (destinations-world-map is defined in your entry points)
+    minify: false,
   },
   {
     template: path.resolve(process.cwd(), "destinations-caribbean.html"), // Path to another HTML template
     filename: "destinations-caribbean.html", // Output filename (e.g., "public/destinations-caribbean.html")
     chunks: ["destinations-caribbean"], // Specify which chunks to include (destinations-caribbean is defined in your entry points)
+    minify: false,
   },
   {
     template: path.resolve(process.cwd(), "destinations-atlantic-crossing.html"), // Path to another HTML template
     filename: "destinations-atlantic-crossing.html", // Output filename (e.g., "public/destinations-atlantic-crossing.html")
     chunks: ["destinations-atlantic-crossing"], // Specify which chunks to include (destinations-atlantic-crossing is defined in your entry points)
+    minify: false,
   },
   {
     template: path.resolve(process.cwd(), "destinations-mediterranean.html"), // Path to another HTML template
     filename: "destinations-mediterranean.html", // Output filename (e.g., "public/destinations-mediterranean.html")
     chunks: ["destinations-mediterranean"], // Specify which chunks to include (destinations-mediterranean is defined in your entry points)
+    minify: false,
   },
   {
     template: path.resolve(process.cwd(), "discover-more-digital-brochure.html"), // Path to another HTML template
     filename: "discover-more-digital-brochure.html", // Output filename (e.g., "public/discover-more-digital-brochure.html")
     chunks: ["discover-more-digital-brochure"], // Specify which chunks to include (discover-more-digital-brochure is defined in your entry points)
+    minify: false,
   },
   {
     template: path.resolve(process.cwd(), "discover-more-videos.html"), // Path to another HTML template
     filename: "discover-more-videos.html", // Output filename (e.g., "public/discover-more-videos.html")
     chunks: ["discover-more-videos"], // Specify which chunks to include (discover-more-videos is defined in your entry points)
+    minify: false,
   },
   {
     template: path.resolve(process.cwd(), "find-your-sailing-book.html"), // Path to another HTML template
     filename: "find-your-sailing-book.html", // Output filename (e.g., "public/find-your-sailing-book.html")
     chunks: ["find-your-sailing-book"], // Specify which chunks to include (find-your-sailing-book is defined in your entry points)
+    minify: false,
   },
   {
     template: path.resolve(process.cwd(), "yachts-sea-cloud-two.html"), // Path to another HTML template
     filename: "yachts-sea-cloud-two.html", // Output filename (e.g., "public/yachts-sea-cloud-two.html")
     chunks: ["yachts-sea-cloud-two"], // Specify which chunks to include (yachts-sea-cloud-two is defined in your entry points)
+    minify: false,
   },
   {
     template: path.resolve(process.cwd(), "yachts-sea-cloud-spirit.html"), // Path to another HTML template
     filename: "yachts-sea-cloud-spirit.html", // Output filename (e.g., "public/yachts-sea-cloud-spirit.html")
     chunks: ["yachts-sea-cloud-spirit"], // Specify which chunks to include (yachts-sea-cloud-spirit is defined in your entry points)
+    minify: false,
   },
   {
     template: path.resolve(process.cwd(), "find-your-sailing-single.html"), // Path to another HTML template
     filename: "find-your-sailing-single.html", // Output filename (e.g., "public/find-your-sailing-single.html")
     chunks: ["find-your-sailing-single"], // Specify which chunks to include (find-your-sailing-single is defined in your entry points)
+    minify: false,
   },
   // Add more objects for additional HTML files as needed
 ];
