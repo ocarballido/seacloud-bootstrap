@@ -64,7 +64,7 @@
     }
 }
 #poster-section-2 {
-    border: 1.25rem solid white;
+    border: 0.75rem solid white;
     &.poster-section {
         .content-container {
             background: #161D3D;
@@ -142,6 +142,9 @@
         .hero-content {
             background-color: transparent;
         }
+    }
+    #poster-section-2 {
+        border: 1.25rem solid white;
     }
     #features-section, #features-section-two {
         min-height: 100vh;
