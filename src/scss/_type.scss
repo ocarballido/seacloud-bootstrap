@@ -63,6 +63,11 @@ h1, h2, h3, h4, h5, h5 {
 	line-height: inherit;
 }
 
+.lead {
+	font-size: 1rem;
+	line-height: inherit;
+}
+
 // Queries
 // @include media-breakpoint-up(sm) {}
 @include media-breakpoint-up(md) {
@@ -74,6 +79,10 @@ h1, h2, h3, h4, h5, h5 {
 	}
 	.display-5 {
 		font-size: 2.125rem;
+	}
+	.lead {
+		font-size: 1.125rem;
+		line-height: inherit;
 	}
 }
 // @include media-breakpoint-up(lg) {

@@ -14,7 +14,7 @@
                     font-size: 0.625rem;
                     font-style: normal;
                     font-weight: 500;
-                    line-height: 1.5rem;
+                    line-height: 0.35rem;
                     letter-spacing: 0.125rem;
                     text-transform: uppercase;
                     &.active {
@@ -28,19 +28,20 @@
         .nav-item {
             .nav-link {
                 color: $secondary;
-                font-size: 1.09375rem;
+                font-size: 0.875rem;
                 font-weight: 300;
                 display: flex;
                 justify-content: center;
                 padding-left: 1.5rem;
                 padding-right: 1.5rem;
+                padding-top: 0.35rem;
+                padding-bottom: 0.35rem;
                 position: relative;
                 width: 100%;
                 &.active {
                     color: $primary;
                     &:before {
                         content: "";
-                        // background-image: url("../images/icons/double-arrow-right-secondary.svg");
                         background-image: url("../images/icons/double-arrow-right.svg");
                         background-position: center;
                         background-repeat: no-repeat;
@@ -54,7 +55,6 @@
                     }
                     &:after {
                         content: "";
-                        // background-image: url("../images/icons/double-arrow-left-secondary.svg");
                         background-image: url("../images/icons/double-arrow-left.svg");
                         background-position: center;
                         background-repeat: no-repeat;
@@ -67,45 +67,25 @@
                         width: 14px;
                     }
                 }
-                // &:hover {
-                //     color: $primary;
-                //     &:before {
-                //         content: "";
-                //         // background-image: url("../images/icons/double-arrow-right-secondary.svg");
-                //         background-image: url("../images/icons/double-arrow-right.svg");
-                //         background-position: center;
-                //         background-repeat: no-repeat;
-                //         background-size: contain;
-                //         display: inline-block;
-                //         height: 14px;
-                //         margin-right: .5rem;
-                //         margin-top: .5rem;
-                //         flex-shrink: 0;
-                //         width: 14px;
-                //     }
-                //     &:after {
-                //         content: "";
-                //         // background-image: url("../images/icons/double-arrow-left-secondary.svg");
-                //         background-image: url("../images/icons/double-arrow-left.svg");
-                //         background-position: center;
-                //         background-repeat: no-repeat;
-                //         background-size: contain;
-                //         display: inline-block;
-                //         height: 14px;
-                //         margin-left: .5rem;
-                //         margin-top: .5rem;
-                //         flex-shrink: 0;
-                //         width: 14px;
-                //     }
-                // }
             }
         }
     }
 }
 
 // Queries
-// @include media-breakpoint-up(sm) { ... }
-// @include media-breakpoint-up(md) {}
+@include media-breakpoint-up(sm) {
+}
+@include media-breakpoint-up(md) {
+    .nav {
+        &.fancy-nav {
+            .nav-item {
+                .nav-link {
+                    font-size: 1rem;
+                }
+            }
+        }
+    }
+}
 // @include media-breakpoint-up(lg) {}
 // @include media-breakpoint-up(xl) {}
 // @include media-breakpoint-up(xxl) {}
