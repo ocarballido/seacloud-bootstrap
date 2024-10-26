@@ -24,39 +24,6 @@
     background-size: cover;
 }
 
-// News section
-#news {
-    border: 0.75rem solid white;
-    .news-right-column {
-        display: flex;
-        min-height: 900px;
-        .news-column-container {
-            background-image: url("../images/discover-more/digital-brochure/news-right-bg.jpg");
-            background-position: center;
-            background-repeat: no-repeat;
-            background-size: cover;
-        }
-    }
-    .news-left-column {
-        display: flex;
-        min-height: 900px;
-        .news-column-container {
-            background-image: url("../images/discover-more/digital-brochure/news-left-bg.jpg");
-            background-position: center;
-            background-repeat: no-repeat;
-            background-size: cover;
-        }
-    }
-    .news-column-container {
-        align-items: flex-end;
-        display: flex;
-        width: 100%;
-    }
-    .news-content {
-        margin: 0 auto;
-    }
-}
-
 // Highlight section
 #also-interesting {
     background: rgb(22,29,61);
@@ -76,9 +43,6 @@
 
 // Media queries
 @include media-breakpoint-up(sm) {
-    #news {
-        border: 1.25rem solid white;
-    }
 }
 @include media-breakpoint-up(md) {
     #also-interesting {

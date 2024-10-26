@@ -231,7 +231,62 @@ body {
     }
 }
 
-// OLD
+// Highlight section
+#highlights {
+    .swiper {
+        .swiper-slide {
+            max-width: 320px;
+        }
+    }
+}
+
+// News section
+#news {
+    border: 0.75rem solid white;
+    .news-right-column {
+        display: flex;
+        min-height: 900px;
+        .news-column-container {
+            background-image: url("../images/home/news/news-right-bg.jpg");
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+    }
+    .news-left-column {
+        display: flex;
+        min-height: 900px;
+        .news-column-container {
+            background-image: url("../images/home/news/news-left-bg.jpg");
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+    }
+    .news-column-container {
+        align-items: flex-end;
+        display: flex;
+        width: 100%;
+    }
+    .news-content {
+        max-width: 450px;
+        margin: 0 auto;
+    }
+}
+#discover-more-digital-brochure {
+    #news {
+        .news-right-column {
+            .news-column-container {
+                background-image: url("../images/discover-more/digital-brochure/news-right-bg.jpg");
+            }
+        }
+        .news-left-column {
+            .news-column-container {
+                background-image: url("../images/discover-more/digital-brochure/news-left-bg.jpg");
+            }
+        }
+    }
+}
 
 .find-your-cruise {
     font-size: 28px;
@@ -260,11 +315,19 @@ footer {
     .half-width-wraper {
         box-shadow: none;
         padding: 0;
-        // box-shadow: inset 0 0 0 1.25rem #fff;
-        // padding: 1.75rem;
     }
     .half-width-content {
         padding: 1.75rem;
+    }
+    #highlights {
+        .swiper {
+            .swiper-slide {
+                max-width: 370px;
+            }
+        }
+    }
+    #news {
+        border: 1.25rem solid white;
     }
 }
 @include media-breakpoint-up(md) {

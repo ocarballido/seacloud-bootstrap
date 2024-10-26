@@ -8,9 +8,12 @@
     &.center {
         margin: 0 auto;
     }
+    &.divider-big {
+        min-width: 80px;
+    }
 }
 .divider-vertical {
     display: inline-flex;
     width: 1px;
-    min-height: 40px;
+    min-height: 30px;
 }
