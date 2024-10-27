@@ -277,13 +277,19 @@ body {
     #news {
         .news-right-column {
             .news-column-container {
+                background-color: #c0c0c0;
                 background-image: url("../images/discover-more/digital-brochure/news-right-bg.jpg");
+                background-position: center -80px;
             }
         }
         .news-left-column {
             .news-column-container {
                 background-image: url("../images/discover-more/digital-brochure/news-left-bg.jpg");
             }
+        }
+        .news-content {
+            max-width: 768px;
+            margin: 0 auto;
         }
     }
 }
@@ -350,6 +356,15 @@ footer {
         }
         .news-content {
             max-width: 450px;
+        }
+    }
+    #discover-more-digital-brochure {
+        #news {
+            .news-right-column {
+                .news-column-container {
+                    background-position: center;
+                }
+            }
         }
     }
     footer {
