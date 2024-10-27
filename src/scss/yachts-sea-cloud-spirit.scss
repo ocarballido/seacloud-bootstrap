@@ -86,6 +86,21 @@
         top: 0;
         width: 100%;
         z-index: 0;
+        .zones-carousel {
+            position: relative;
+            &:before {
+                content: '';
+                background: rgb(22,29,61);
+                background: linear-gradient(0deg, rgba(22,29,61,1) 15%, rgba(22,29,61,0) 100%);
+                bottom: 0;
+                display: block;
+                height: 350px;
+                left: 0;
+                position: absolute;
+                width: 100%;
+                z-index: 2;
+            }
+        }
     }
 }
 
@@ -94,14 +109,8 @@
         margin: 1rem;
     }
     #deck-slider {
-        .ship-illustration {
-            padding-bottom: 30%;
-            position: relative;
-            img {
-                object-fit: contain;
-                object-position: center;
-                position: absolute;
-            }
+        .swiper-slide {
+            height: auto;
         }
     }
     .legend {
@@ -160,7 +169,7 @@
     .diagram-content {
         margin-left: auto;
         margin-right: auto;
-        max-width: 400px;
+        max-width: 500px;
     }
     .diagram-actions {
         display: flex;
@@ -190,12 +199,27 @@
         border-right: 1.5rem solid white;
         border-bottom: 1.5rem solid white;
     }
+    #zones-section {
+        .zones-carousel {
+            position: relative;
+            &:before {
+                height: 240px;
+            }
+        }
+    }
 }
 @include media-breakpoint-up(lg) {
     
 }
 @include media-breakpoint-up(xl) {
-    
+    #zones-section {
+        .zones-carousel {
+            position: relative;
+            &:before {
+                height: 140px;
+            }
+        }
+    }
 }
 @include media-breakpoint-up(xxl) {
     

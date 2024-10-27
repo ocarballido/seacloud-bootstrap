@@ -69,6 +69,7 @@ const zonesShipCarousel = new Swiper('.zones-carousel', {
 
 // Deck plan Ship carousel
 const allLegendItems = document.getElementsByClassName('legend-item');
+const planName = document.getElementById('plan-name');
 const slide0Active = document.getElementsByClassName('slide-0-active');
 const slide1Active = document.getElementsByClassName('slide-1-active');
 const slide2Active = document.getElementsByClassName('slide-2-active');
@@ -83,12 +84,16 @@ const activeLegend = (index) => {
 
 	if (index === 1) {
 		activeChuck = slide1Active;
+		planName.innerHTML = 'LIDO DECK'
 	} else if (index === 2) {
 		activeChuck = slide2Active;
+		planName.innerHTML = 'PROMENADE DECK'
 	} else if (index === 3) {
 		activeChuck = slide3Active;
+		planName.innerHTML = 'CABIN DECK'
 	} else {
 		activeChuck = slide0Active;
+		planName.innerHTML = 'SUN DECK'
 	}
 
 	for (let i = 0; i < activeChuck.length; i ++) {
@@ -110,13 +115,6 @@ const deckCarousel = new Swiper('.deck-carousel', {
 	},
 	modules: [ Autoplay, Pagination ],
 });
-
-const legendDesktop = document.getElementById('legend-desktop');
-const legendMobile = document.getElementById('legend-mobile');
-const template = document.getElementById('legend-template').content;
-
-legendDesktop.appendChild(template.cloneNode(true));
-legendMobile.appendChild(template.cloneNode(true));
 
 // History carousel
 const historyCarousel = new Swiper('.history-carousel', {

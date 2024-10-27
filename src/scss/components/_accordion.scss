@@ -191,22 +191,29 @@
         --bs-accordion-btn-padding-x: 0;
         --bs-accordion-body-padding-x: 0;
         .accordion-button {
+            align-items: center;
             border-bottom: 1px solid $primary;
             border-top: 1px solid $primary;
-            display: block;
+            display: flex;
+            flex-direction: row;
             font-size: .875rem;
             font-weight: 300;
+            justify-content: center;
             letter-spacing: 1px;
             text-align: center;
             text-transform: uppercase;
+            padding-bottom: .5rem;
+            padding-top: .5rem;
             &:focus {
                 box-shadow: none;
             }
             &:after {
                 background-size: 10px 16px;
                 display: inline-block;
-                vertical-align: middle;
                 height: 16px;
+                margin-left: 0.5rem;
+                margin-right: 1rem;
+                vertical-align: middle;
                 width: 10px;
             }
         }
