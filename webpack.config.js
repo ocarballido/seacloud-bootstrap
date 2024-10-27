@@ -258,8 +258,7 @@ export default {
     // Extracts CSS into separate files
     new MiniCssExtractPlugin({
       filename: "css/[name].css",
-      chunkFilename: "[id].css",
-      minify: false,
+      chunkFilename: "[id].css"
     }),
 
     // Copy images to the public folder
