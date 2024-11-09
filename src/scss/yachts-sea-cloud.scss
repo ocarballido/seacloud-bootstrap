@@ -109,6 +109,9 @@
         margin: 1rem;
     }
     #deck-slider {
+        .swiper {
+            padding-bottom: 7rem;
+        }
         .swiper-slide {
             height: auto;
         }

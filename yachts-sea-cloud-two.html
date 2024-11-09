@@ -374,7 +374,7 @@
     <!-- Deck plan section -->
 	<section id="deck-plan-section" class="full-height-section position-relative bg-white d-flex align-items-stretch">
 		<div class="border-container border border-primary w-100">
-			<div class="py-3 h-100 d-flex flex-column justify-content-evenly container">
+			<div class="py-5 h-100 d-flex flex-column justify-content-evenly container">
 				<div class="heading w-100">
 					<img class="d-block mx-auto mb-4" src="images/icons/seacloud-2-icon.png" alt="Seacloud">
 					<h2 class="text-primary text-center mb-0">Sea Cloud II<br>Deck Plan</h2>
@@ -382,7 +382,7 @@
 				</div>
 				<div id="deck-slider" class="">
 					<div class="deck-carousel swiper h-100">
-						<div class="swiper-wrapper align-items-center pb-5 mb-5">
+						<div class="swiper-wrapper align-items-center">
 							<div class="swiper-slide">
 								<img src="images/yachts/sea-cloud-two/deck-slider-1.svg" class="d-none d-md-block img-fluid mx-auto" alt="Sun deck">
 								<img src="images/yachts/sea-cloud-two/deck-slider-1-mobile.svg" class="d-block d-md-none img-fluid mx-auto" alt="Sun deck">
@@ -400,17 +400,17 @@
 								<img src="images/yachts/sea-cloud-two/deck-slider-4-mobile.svg" class="d-block d-md-none img-fluid mx-auto" alt="Cabin deck">
 							</div>
 						</div>
-						<div class="swiper-pagination primary m-0 bottom-0"></div>
+						<button type="button" class="btn btn-primary d-block d-md-none bg-transparent border-0 w-100 pb-2 border-bottom border-primary" data-bs-toggle="modal" data-bs-target="#legendModal">
+							<h3 class="text-center lead font-body m-0">
+								Suite &amp; stateroom
+								<img class="ms-3" src="images/icons/show-less.svg" alt="Open modal" width="12" height="12">
+							</h3>
+						</button>
+						<div class="swiper-pagination primary m-0 bottom-0 position-relative mt-3"></div>
 					</div>
 				</div>
 				<div class="legend">
 					<h3 class="text-center lead font-body pb-3 mb-4 border-bottom border-primary d-none d-md-block">Suite &amp; stateroom categories</h3>
-					<button type="button" class="btn btn-primary d-block d-md-none bg-transparent border-0 w-100" data-bs-toggle="modal" data-bs-target="#legendModal">
-						<h3 class="text-center lead font-body m-0 d-flex align-items-center">
-							Suite &amp; stateroom categories
-							<img class="ms-3" src="images/icons/show-less.svg" alt="Open modal" width="12" height="12">
-						</h3>
-					</button>
 
 					<!-- Legend template inserted via JS -->
 					<div id="legend-desktop" class="d-none d-md-block">
@@ -814,7 +814,7 @@
 				
 									<div class="col-xl col-lg-3 col-md-6 position-relative">
 										<select class="form-select transparent-select" aria-label="Default select example">
-											<option selected>Special sailings</option>
+											<option selected>Departure Rate</option>
 											<option value="1">One</option>
 											<option value="2">Two</option>
 											<option value="3">Three</option>
@@ -828,7 +828,7 @@
 				
 									<div class="col-xl col-lg-3 col-md-6">
 										<select class="form-select transparent-select" aria-label="Default select example">
-											<option selected>Travel</option>
+											<option selected>Special Sailings</option>
 											<option value="1">One</option>
 											<option value="2">Two</option>
 											<option value="3">Three</option>
@@ -1040,6 +1040,8 @@
 								<div class="accordion-body">
 									<form action="" class="">
 										<div class="row gy-2 gx-0 bg-transparent pb-3 pt-2 justify-content-center">
+											<div class="divider bg-primary"></div>
+											
 											<div class=" position-relative">
 												<select class="form-select" aria-label="Default select example">
 													<option selected>Ship</option>
