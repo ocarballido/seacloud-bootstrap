@@ -11,45 +11,69 @@
 <body class="my-body">
 	<!-- Appbar -->
 	<header id="appbar" class="navbar fixed-top py-4">
-		<nav class="container-fluid flex-row-reverse flex-lg-row">
-			<!-- Offcanvas Button -->
-			<button class="navbar-toggler border-0 ms-n5 ms-md-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
-				<img src="images/icons/menu-secondary.svg" width="26" height="26" alt="Open menu">
-			</button>
-			<!-- /Offcanvas Button -->
-
-			<!-- Rest -->
-			<div class="d-flex flex-grow-1 justify-content-evenly align-items-center">
-				<!-- Menu -->
-				<ul class="navbar-nav main-navbar flex-row flex-wrap align-items-center bd-navbar-nav d-none d-lg-flex ms-0 ms-lg-n5">
-					<li class="nav-item mx-3">
-						<a class="nav-link" aria-current="page" href="#">Find a sailing</a>
-					</li>
-					<li class="divider-vertical h-100 bg-secondary" style="min-height: 20px"></li>
-					<li class="nav-item mx-3">
-						<a class="nav-link" href="#">Special Offers</a>
-					</li>
-				</ul>
-				<!-- /Menu -->
-
-				<!-- Logo -->
-				<img id="appbarLogo" class="ms-0 ms-lg-n5" src="images/appbar/seacloud-logo.png" width="112" height="80" alt="Logo">
-				<img id="appbarLogoSymbol" class="ms-0 ms-lg-n5 d-none" src="images/appbar/seacloud-symbol.png" width="31" height="40" alt="Logo symbol">
-				<!-- /Logo -->
-
-				<!-- Menu -->
-				<ul class="navbar-nav main-navbar flex-row flex-wrap align-items-center bd-navbar-nav d-none d-lg-flex">
-					<li class="nav-item mx-3">
-						<a class="nav-link" aria-current="page" href="#">REQUEST BROCHURE</a>
-					</li>
-					<li class="nav-item mx-3 letter-spacing-md">
-						<img class="me-2" width="18" height="18" src="images/icons/phone-call.svg" alt="Phone number">
-						800 000 0000
-					</li>
-				</ul>
-				<!-- /Menu -->
+		<nav class="w-100 px-3">
+			<div class="row align-items-center flex-lg-row flex-row-reverse">
+				<div class="col-auto d-flex">
+					<button class="navbar-toggler border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+						<img src="images/icons/menu-secondary.svg" width="26" height="26" alt="Open menu">
+						<span class="offcanvas-menu-text">Menu</span>
+					</button>
+				</div>
+				<div class="col">
+					<div class="row justify-content-around">
+						<div class="col-auto d-none d-lg-flex">
+							<ul class="navbar-nav main-navbar d-flex flex-row">
+								<li class="nav-item mx-2 mx-xl-3">
+									<a class="nav-link text-center" aria-current="page" href="./find-your-sailing-book.html">
+										<span class="scroll-top">Find<br>a sailing</span>
+										<span class="scrolled d-none">Find a sailing</span>
+									</a>
+								</li>
+								<li class="nav-item mx-2 mx-xl-3">
+									<a class="nav-link text-center" href="./special-offers.html">
+										<span class="scroll-top">Special<br>Offers</span>
+										<span class="scrolled d-none"">Special Offers</span>
+									</a>
+								</li>
+							</ul>
+						</div>
+						<div class="col-auto d-flex align-items-center">
+							<img id="appbarLogo" class="" src="images/appbar/seacloud-logo.png" width="112" height="80" alt="Logo">
+							<img id="appbarLogoSymbol" class="d-none my-2" src="images/appbar/seacloud-symbol.png" width="31" height="40" alt="Logo symbol">
+						</div>
+						<div class="col-auto d-none d-lg-flex">
+							<ul class="navbar-nav main-navbar flex-row flex-wrap align-items-center bd-navbar-nav d-none d-lg-flex">
+								<li class="nav-item mx-2 mx-xl-3">
+									<a class="nav-link text-center" aria-current="page" href="./find-your-sailing-book.html">
+										<span class="scroll-top">Book your<br>sailing</span>
+										<span class="scrolled d-none">Book your sailing</span>
+									</a>
+								</li>
+								<li class="nav-item mx-2 mx-xl-3">
+									<a class="nav-link text-center" aria-current="page" href="#">
+										<span class="scroll-top">Request<br>information</span>
+										<span class="scrolled d-none">Request information</span>
+									</a>
+								</li>
+								<li class="nav-item mx-2 mx-xl-3 letter-spacing-md text-center text-uppercase fw-normal d-none d-xl-flex">
+									<p class="m-0 text-center">
+										<span class="scroll-top">
+											Call us
+											<br>
+											<img class="me-0" width="18" height="18" src="images/icons/phone-call.svg" alt="Phone number">
+											1.888.732.2568
+										</span>
+										<span class="scrolled d-none">
+											<img class="me-0" width="18" height="18" src="images/icons/phone-call.svg" alt="Phone number">
+											1.888.732.2568
+										</span>
+									</p>
+								</li>
+							</ul>
+						</div>
+					 </div>
+				</div>
 			</div>
-			<!-- /Rest -->
 
 			<!-- Offcanvas menu -->
 			<div class="offcanvas offcanvas-start bg-white" tabindex="-1" id="offcanvasNavbar" data-bs-scroll="true" aria-labelledby="offcanvasNavbarLabel">
@@ -61,10 +85,10 @@
 					<div class="container">
 						<ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
 							<li class="nav-item">
-								<a class="nav-link active" aria-current="page" href="#">Home</a>
+								<a class="nav-link active" aria-current="page" href="./">Home</a>
 							</li>
 							<li class="nav-item">
-								<a class="nav-link" href="#">Find a sailing</a>
+								<a class="nav-link" href="./find-your-sailing-book.html">Find a sailing</a>
 							</li>
 							<li class="nav-item">
 								<div class="accordion offcanvas-accordion" id="accordion-offcanvas-luxury">
@@ -77,11 +101,11 @@
 										<div id="collapse-offcanvas-luxury-01" class="accordion-collapse collapse" data-bs-parent="#accordion-offcanvas-luxury">
 											<div class="accordion-body px-0">
 												<ul class="accordion-list">
-													<li><a class="accordion-link" href="#">Sea Clouds All-Inclusive Fares</a></li>
-													<li><a class="accordion-link" href="#">Five Star Amenities</a></li>
-													<li><a class="accordion-link" href="#">The Sea Cloud Difference</a></li>
-													<li><a class="accordion-link" href="#">Sailing Sustainability</a></li>
-													<li><a class="accordion-link" href="#">Let's Celebrate</a></li>
+													<li><a class="accordion-link" href="./luxury-all-inclusive.html">Sea Clouds All-Inclusive Fares</a></li>
+													<li><a class="accordion-link" href="./luxury-five-stars.html">Five Star Amenities</a></li>
+													<li><a class="accordion-link" href="./luxury-lifestyle.html">The Sea Cloud Difference</a></li>
+													<li><a class="accordion-link" href="./luxury-sailing-sustainability.html">Sailing Sustainability</a></li>
+													<li><a class="accordion-link" href="./luxury-celebrate.html">Let's Celebrate</a></li>
 												</ul>
 											</div>
 										</div>
@@ -99,9 +123,9 @@
 										<div id="collapse-offcanvas-yachts-02" class="accordion-collapse collapse" data-bs-parent="#accordion-offcanvas-yachts">
 											<div class="accordion-body px-0">
 												<ul class="accordion-list">
-													<li><a class="accordion-link" href="/yachts-sea-cloud.html">Sea Cloud</a></li>
-													<li><a class="accordion-link" href="/yachts-sea-cloud-two.html">Sea Cloud II</a></li>
-													<li><a class="accordion-link" href="/yachts-sea-cloud-spirit.html">Sea Cloud Spirit</a></li>
+													<li><a class="accordion-link" href="./yachts-sea-cloud.html">Sea Cloud</a></li>
+													<li><a class="accordion-link" href="./yachts-sea-cloud-two.html">Sea Cloud II</a></li>
+													<li><a class="accordion-link" href="./yachts-sea-cloud-spirit.html">Sea Cloud Spirit</a></li>
 												</ul>
 											</div>
 										</div>
@@ -119,10 +143,10 @@
 										<div id="collapse-offcanvas-destinations-03" class="accordion-collapse collapse" data-bs-parent="#accordion-offcanvas-destinations">
 											<div class="accordion-body px-0">
 												<ul class="accordion-list">
-													<li><a class="accordion-link" href="#">World Map</a></li>
-													<li><a class="accordion-link" href="#">Caribbean</a></li>
-													<li><a class="accordion-link" href="#">Atlantic Crossing</a></li>
-													<li><a class="accordion-link" href="#">Mediterranean</a></li>
+													<li><a class="accordion-link" href="./destinations-world-map.html">World Map</a></li>
+													<li><a class="accordion-link" href="./destinations-caribbean.html">Caribbean</a></li>
+													<li><a class="accordion-link" href="./destinations-atlantic-crossing.html">Atlantic Crossing</a></li>
+													<li><a class="accordion-link" href="./destinations-mediterranean.html">Mediterranean</a></li>
 												</ul>
 											</div>
 										</div>
@@ -143,8 +167,8 @@
 										<div id="collapse-offcanvas-discover-04" class="accordion-collapse collapse" data-bs-parent="#accordion-offcanvas-discover">
 											<div class="accordion-body px-0">
 												<ul class="accordion-list">
-													<li><a class="accordion-link" href="#">Digital brochure</a></li>
-													<li><a class="accordion-link" href="#">Videos</a></li>
+													<li><a class="accordion-link" href="./discover-more-digital-brochure.html">Digital brochure</a></li>
+													<li><a class="accordion-link" href="./discover-more-videos.html">Videos</a></li>
 													<li><a class="accordion-link" href="#">Virtual Tours</a></li>
 													<li><a class="accordion-link" href="#">Social Media</a></li>
 												</ul>
@@ -154,7 +178,7 @@
 								</div>
 							</li>
 							<li class="nav-item">
-								<a class="nav-link" href="#">Book your Sailing</a>
+								<a class="nav-link" href="./find-your-sailing-book.html">Book your Sailing</a>
 							</li>
 						</ul>
 						<div class="divider my-4 bg-transparent w-100"></div>
